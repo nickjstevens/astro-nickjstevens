@@ -80,9 +80,11 @@ b {
 }
 a {
 	color: var(--accent);
+	text-decoration: none;
 }
 a:hover {
 	color: var(--accent);
+	text-decoration: underline;
 }
 p {
 	margin-bottom: 1em;
@@ -126,6 +128,17 @@ blockquote {
 hr {
 	border: none;
 	border-top: 1px solid rgb(var(--gray-light));
+}
+ul {
+	list-style-type: disc;
+	margin-left: 1.5em;
+	margin-bottom: 2em;
+}
+li {
+	margin-bottom: 0.5em;
+}
+em {
+	font-style: italic;
 }
 @media (max-width: 720px) {
 	body {

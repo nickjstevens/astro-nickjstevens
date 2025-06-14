@@ -12,7 +12,11 @@
     "@astrojs/mdx": "^4.3.0",
     "@astrojs/rss": "^4.0.12",
     "@astrojs/sitemap": "^3.4.1",
+    "@types/chart.js": "^2.9.41",
+    "@types/d3": "^7.4.3",
     "astro": "^5.9.1",
+    "chart.js": "^4.4.9",
+    "d3": "^7.9.0",
     "sharp": "^0.34.2"
   }
 }

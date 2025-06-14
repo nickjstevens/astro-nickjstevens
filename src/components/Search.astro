@@ -1,0 +1,228 @@
+<div class="search-container">
+  <div class="search-input-container">
+    <input
+      type="search"
+      id="search-input"
+      placeholder="Search posts..."
+      aria-label="Search posts"
+    />
+    <div id="search-results" class="search-results"></div>
+  </div>
+</div>
+
+<script>
+  interface SearchResult {
+    title: string;
+    description: string;
+    url: string;
+    tags?: string[];
+    pubDate: string;
+  }
+
+  let searchTimeout: number;
+  const searchInput = document.getElementById('search-input') as HTMLInputElement;
+  const searchResults = document.getElementById('search-results') as HTMLDivElement;
+  let allPosts: SearchResult[] = [];
+
+  // Fetch all posts data when the component loads
+  async function initializeSearch() {
+    try {
+      const response = await fetch('/search.json');
+      allPosts = await response.json();
+    } catch (error) {
+      console.error('Error loading search data:', error);
+    }
+  }
+
+  function highlightMatch(text: string, query: string) {
+    if (!query) return text;
+    const regex = new RegExp(`(${query})`, 'gi');
+    return text.replace(regex, '<mark>$1</mark>');
+  }
+
+  function truncateText(text: string, maxLength: number) {
+    if (text.length <= maxLength) return text;
+    return text.slice(0, maxLength) + '...';
+  }
+
+  function renderResults(results: SearchResult[], query: string) {
+    if (!query) {
+      searchResults.innerHTML = '';
+      searchResults.style.display = 'none';
+      return;
+    }
+
+    if (results.length === 0) {
+      searchResults.innerHTML = '<div class="no-results">No results found</div>';
+      searchResults.style.display = 'block';
+      return;
+    }
+
+    const resultsHTML = results
+      .map(
+        (post) => `
+        <a href="${post.url}" class="search-result-item">
+          <h3>${highlightMatch(post.title, query)}</h3>
+          <p>${highlightMatch(truncateText(post.description, 100), query)}</p>
+        </a>
+      `
+      )
+      .join('');
+
+    searchResults.innerHTML = resultsHTML;
+    searchResults.style.display = 'block';
+  }
+
+  function performSearch(query: string) {
+    if (!query) {
+      renderResults([], '');
+      return;
+    }
+
+    const searchTerms = query.toLowerCase().split(' ').filter(Boolean);
+    const results = allPosts.filter((post) => {
+      const searchableText = `
+        ${post.title} 
+        ${post.description} 
+        ${post.tags?.join(' ') || ''}
+      `.toLowerCase();
+
+      return searchTerms.every((term) => searchableText.includes(term));
+    });
+
+    renderResults(results, query);
+  }
+
+  // Initialize search when the component loads
+  initializeSearch();
+
+  // Handle search input
+  searchInput.addEventListener('input', (e) => {
+    const target = e.target as HTMLInputElement;
+    clearTimeout(searchTimeout);
+    searchTimeout = window.setTimeout(() => {
+      performSearch(target.value);
+    }, 300);
+  });
+
+  // Close search results when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!searchInput.contains(e.target as Node) && !searchResults.contains(e.target as Node)) {
+      searchResults.style.display = 'none';
+    }
+  });
+
+  // Handle keyboard navigation
+  searchInput.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      searchResults.style.display = 'none';
+      searchInput.blur();
+    }
+  });
+</script>
+
+<style>
+  .search-container {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .search-input-container {
+    position: relative;
+  }
+
+  #search-input {
+    width: 100%;
+    padding: 0.5em 0.75em;
+    font-size: 0.9em;
+    border: 1px solid rgb(var(--gray-light));
+    border-radius: 4px;
+    background: white;
+    transition: all 0.2s ease;
+  }
+
+  #search-input:focus {
+    outline: none;
+    border-color: rgb(var(--gray));
+    box-shadow: 0 0 0 2px rgba(var(--gray), 0.1);
+  }
+
+  .search-results {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border: 1px solid rgb(var(--gray-light));
+    border-radius: 4px;
+    margin-top: 0.25em;
+    max-height: 60vh;
+    overflow-y: auto;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(var(--black), 0.05);
+  }
+
+  .search-result-item {
+    display: block;
+    padding: 0.5em 0.75em;
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 1px solid rgb(var(--gray-light));
+    transition: background-color 0.15s ease;
+  }
+
+  .search-result-item:last-child {
+    border-bottom: none;
+  }
+
+  .search-result-item:hover {
+    background-color: rgba(var(--gray-light), 0.5);
+  }
+
+  .search-result-item h3 {
+    margin: 0 0 0.15em 0;
+    font-size: 0.85em;
+    color: rgb(var(--gray-dark));
+    font-weight: 500;
+  }
+
+  .search-result-item p {
+    margin: 0;
+    font-size: 0.75em;
+    color: rgb(var(--gray));
+    line-height: 1.3;
+  }
+
+  .no-results {
+    padding: 0.5em;
+    text-align: center;
+    color: rgb(var(--gray));
+    font-size: 0.8em;
+  }
+
+  mark {
+    background-color: rgba(var(--accent), 0.15);
+    padding: 0.1em 0.2em;
+    border-radius: 2px;
+  }
+
+  /* Custom scrollbar for search results */
+  .search-results::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .search-results::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .search-results::-webkit-scrollbar-thumb {
+    background: rgb(var(--gray-light));
+    border-radius: 3px;
+  }
+
+  .search-results::-webkit-scrollbar-thumb:hover {
+    background: rgb(var(--gray));
+  }
+</style> 

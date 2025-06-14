@@ -1,0 +1,176 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
+import { getCollection } from 'astro:content';
+import FormattedDate from '../../components/FormattedDate.astro';
+import { Image } from 'astro:assets';
+
+// Get all blog posts
+const posts = await getCollection('blog');
+
+// Group posts by tag, excluding 'newsletter'
+const postsByTag = posts.reduce((acc, post) => {
+	if (post.data.tags) {
+		post.data.tags.forEach((tag) => {
+			if (tag !== 'newsletter') {
+				if (!acc[tag]) {
+					acc[tag] = [];
+				}
+				acc[tag].push(post);
+			}
+		});
+	}
+	return acc;
+}, {} as Record<string, typeof posts>);
+
+// Sort posts within each tag by date
+Object.keys(postsByTag).forEach((tag) => {
+	postsByTag[tag].sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+});
+
+// Sort tags alphabetically
+const sortedTags = Object.keys(postsByTag).sort();
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title="Blog Tags" description="Browse blog posts by tag" />
+		<style>
+			.tags-container {
+				max-width: 960px;
+				margin: 0 auto;
+				padding: 2em 1em;
+			}
+			.tag-summary {
+				margin-bottom: 3em;
+				text-align: center;
+			}
+			.tags {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 0.5em;
+				justify-content: center;
+				margin: 1em 0;
+			}
+			.tag {
+				background: rgb(var(--gray-light));
+				color: rgb(var(--gray-dark));
+				padding: 0.25em 0.75em;
+				border-radius: 1em;
+				font-size: 0.9em;
+				text-decoration: none;
+				transition: background-color 0.2s ease;
+			}
+			.tag:hover {
+				background: rgb(var(--gray));
+				color: white;
+			}
+			.tag-section {
+				margin-bottom: 3em;
+			}
+			.tag-header {
+				display: flex;
+				align-items: center;
+				margin-bottom: 1em;
+				padding-bottom: 0.5em;
+				border-bottom: 2px solid rgb(var(--gray-light));
+			}
+			.tag-title {
+				margin: 0;
+				font-size: 1.953em;
+			}
+			.post-count {
+				margin-left: 1em;
+				color: rgb(var(--gray));
+				font-size: 1em;
+			}
+			.posts-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+				gap: 2em;
+			}
+			.post-card {
+				text-decoration: none;
+				color: inherit;
+				transition: transform 0.2s ease;
+			}
+			.post-card:hover {
+				transform: translateY(-4px);
+			}
+			.post-image {
+				width: 100%;
+				aspect-ratio: 2/1;
+				object-fit: cover;
+				border-radius: 12px;
+				margin-bottom: 1em;
+			}
+			.post-title {
+				margin: 0 0 0.5em 0;
+				font-size: 1.25em;
+				line-height: 1.4;
+			}
+			.post-date {
+				color: rgb(var(--gray));
+				font-size: 0.9em;
+				margin: 0;
+			}
+			@media (max-width: 720px) {
+				.posts-grid {
+					grid-template-columns: 1fr;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main class="tags-container">
+			<h1>Browse by Tag</h1>
+			<div class="tag-summary">
+				<div class="tags">
+					{
+						sortedTags.map((tag) => (
+							<a href={`#${tag}`} class="tag">
+								{tag} ({postsByTag[tag].length})
+							</a>
+						))
+					}
+				</div>
+			</div>
+			{
+				sortedTags.map((tag) => (
+					<section class="tag-section" id={tag}>
+						<div class="tag-header">
+							<h2 class="tag-title">{tag}</h2>
+							<span class="post-count">{postsByTag[tag].length} posts</span>
+						</div>
+						<div class="posts-grid">
+							{
+								postsByTag[tag].map((post) => (
+									<a href={`/blog/${post.id}/`} class="post-card">
+										{post.data.heroImage && (
+											<Image
+												class="post-image"
+												src={post.data.heroImage}
+												alt=""
+												width={600}
+												height={300}
+											/>
+										)}
+										<h3 class="post-title">{post.data.title}</h3>
+										<p class="post-date">
+											<FormattedDate date={post.data.pubDate} />
+										</p>
+									</a>
+								))
+							}
+						</div>
+					</section>
+				))
+			}
+		</main>
+		<Footer />
+	</body>
+</html> 

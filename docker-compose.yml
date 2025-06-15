@@ -1,0 +1,22 @@
+# version: '3.8'
+
+# services:
+#   build:
+#     build:
+#       context: .
+#       dockerfile: Dockerfile
+#     volumes:
+#       - ./dist:/app/dist
+#     # This service will exit after building
+
+version: '3.8'
+
+services:
+  # This service builds the Astro site and outputs to a host directory.
+  astro-builder:
+    build: .
+    container_name: astro-builder
+    # Map the local './dist' directory to the container's '/app/dist' directory.
+    # The build output will appear directly on your host machine.
+    volumes:
+      - ./dist:/app/dist

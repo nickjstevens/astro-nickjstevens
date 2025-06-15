@@ -1,22 +1,17 @@
-# version: '3.8'
-
-# services:
-#   build:
-#     build:
-#       context: .
-#       dockerfile: Dockerfile
-#     volumes:
-#       - ./dist:/app/dist
-#     # This service will exit after building
-
+# /docker-compose.yml (in your Astro repository)
 version: '3.8'
 
 services:
-  # This service builds the Astro site and outputs to a host directory.
   astro-builder:
     build: .
-    container_name: astro-builder
-    # Map the local './dist' directory to the container's '/app/dist' directory.
-    # The build output will appear directly on your host machine.
+    # This mounts the external volume to the container's build output directory.
+    # When this container runs, it will place the contents of /app/dist
+    # into the 'astro-site-content' volume.
     volumes:
-      - ./dist:/app/dist
+      - astro-site-content:/app/dist
+
+volumes:
+  # This tells Docker Compose to use the volume we already created in Portainer,
+  # rather than trying to create a new one.
+  astro-site-content:
+    external: true

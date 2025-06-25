@@ -4,14 +4,11 @@ version: '3.8'
 services:
   astro-builder:
     build: .
-    # This mounts the external volume to the container's build output directory.
-    # When this container runs, it will place the contents of /app/dist
-    # into the 'astro-site-content' volume.
     volumes:
-      - astro-site-content:/app/dist
+      - /root/astro:/app/dist
 
-volumes:
-  # This tells Docker Compose to use the volume we already created in Portainer,
-  # rather than trying to create a new one.
-  astro-site-content:
-    external: true
+# volumes:
+#   # This tells Docker Compose to use the volume we already created in Portainer,
+#   # rather than trying to create a new one.
+#   astro-site-content:
+#     external: true

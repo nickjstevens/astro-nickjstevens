@@ -4,6 +4,9 @@ version: '3.8'
 services:
   astro-builder:
     build: .
+    environment:
+      - PUID=0
+      - PGID=0
     volumes:
       - /root/astro:/app/dist
 

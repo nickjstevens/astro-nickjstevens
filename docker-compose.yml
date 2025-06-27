@@ -1,17 +1,31 @@
-# /docker-compose.yml (in your Astro repository)
+# # /docker-compose.yml (in your Astro repository)
+# version: '3.8'
+
+# services:
+#   astro-builder:
+#     build: .
+#     environment:
+#       - PUID=0
+#       - PGID=0
+#     volumes:
+#       - /root/astro:/app/dist
+
+# # volumes:
+# #   # This tells Docker Compose to use the volume we already created in Portainer,
+# #   # rather than trying to create a new one.
+# #   astro-site-content:
+# #     external: true
+
 version: '3.8'
 
 services:
-  astro-builder:
-    build: .
+  builder:
+    build:
+      context: .
+      dockerfile: Dockerfile
     environment:
       - PUID=0
       - PGID=0
     volumes:
-      - /root/astro:/app/dist
-
-# volumes:
-#   # This tells Docker Compose to use the volume we already created in Portainer,
-#   # rather than trying to create a new one.
-#   astro-site-content:
-#     external: true
+      - /root/astro:/built_site
+    command: sh -c "cp -r /app/dist/. /built_site/"

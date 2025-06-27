@@ -4,7 +4,7 @@ description: "A Comparative Analysis of Gross Domestic Product and Private Produ
 pubDate: 2025-06-25
 updatedDate: 2025-06-25
 heroImage: "https://images.unsplash.com/photo-1589223095536-e5a50ece9a48?q=80&w=1200&h=900&fit=crop&crop=top"
-tags: ["Newsletter", "Philosophy"]
+tags: ["Economics", "Money"]
 layout: '../../layouts/BlogPost.astro'
 ---
 
@@ -299,9 +299,9 @@ PPR, in contrast, would have registered an economic cataclysm. Private sector ac
 
 *Sources: Columns (A) and (B) are from Table 1 and Table 2 respectively. Columns (C) and (D) are calculated from this data.*
 
-![GDP to PRR Gap](../../assets/GDP%20to%20PPR%20Gap.png)
+![GDP to PPR Gap](../../assets/GDP%20to%20PPR%20Gap.png)
 
-*Figure 1: GDP to PRR Gap*
+*Figure 1: GDP to PPR Gap*
 
 ## Implications, Limitations, and Concluding Insights
 

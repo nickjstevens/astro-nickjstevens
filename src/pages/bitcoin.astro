@@ -61,7 +61,7 @@ import Layout from '../layouts/Page.astro';
 
 		async function fetchHistoricalData(): Promise<PriceData[]> {
 			try {
-				const response = await fetch('/BTCGBP.csv');
+				const response = await fetch('/data/BTCGBP.csv');
 				const csvText = await response.text();
 				
 				// Parse CSV data

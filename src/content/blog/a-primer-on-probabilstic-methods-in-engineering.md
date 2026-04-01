@@ -1,7 +1,7 @@
 ---
 title: "A Primer on Probabilistic Methods in Engineering - Part 1"
 description: "A high-level introduction to probabilistic methods in engineering"
-pubDate: 2022-05-13
+pubDate: 2020-12-01
 updatedDate: 2020-12-01
 heroImage: "https://images.unsplash.com/photo-1570303345338-e1f0eddf4946?q=80&w=1371&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 tags: ["Engineering", "Dynamics", "Simulation"]
@@ -257,5 +257,5 @@ The Jupyter notebook below is an interactive notebook where you can run and expl
 
 ### Further reading
 
-1. An article and set of Jupyter notebooks I wrote in response to a NAFEMS Stochastic Working Group challenge : <a href="/blog/nafems-challenge-problems/">NAFEMS Challenge Problems</a>
+1. An article and set of Jupyter notebooks I wrote in response to a NAFEMS Stochastic Working Group challenge : [NAFEMS Challenge Problems](/blog/nafems-challenge-problems).
 2. Nuclear Structural Integrity Probabilistics Working Principles, FESI, [https://www.fesi.org.uk/wp-content/uploads/2019/05/nuclear_SI_probabilistic_working_principlesat.pdf](https://www.fesi.org.uk/wp-content/uploads/2019/05/nuclear_SI_probabilistic_working_principlesat.pdf)

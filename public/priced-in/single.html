@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Priced In — Single Chart</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.4.38/dist/vue.global.prod.js"></script>
+    <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+  </head>
+  <body>
+    <main id="app" class="single-layout">
+      <div class="dashboard-shell">
+        <header class="app-header">
+          <a class="brand-panel" href="index.html" aria-label="Go to homepage">
+            <span class="brand-kicker">Single series focus</span>
+            <h1>{{ currentItem?.name || 'Single chart view' }}</h1>
+          </a>
+          <div class="header-actions">
+            <button class="theme-icon-toggle" @click="toggleTheme" :aria-label="`Switch to ${isDarkMode ? 'light' : 'dark'} mode`">
+              <span class="theme-toggle-icon" aria-hidden="true">{{ isDarkMode ? '☀️' : '🌙' }}</span>
+            </button>
+            <button
+              class="menu-toggle"
+              type="button"
+              @click="toggleMobileMenu"
+              :aria-expanded="isMobileMenuOpen ? 'true' : 'false'"
+              aria-controls="site-menu"
+              aria-label="Toggle navigation menu"
+            >
+              <span></span><span></span><span></span>
+            </button>
+            <div class="title-actions" :class="{ open: isMobileMenuOpen }" id="site-menu">
+              <nav class="page-nav" aria-label="Main sections">
+                <a class="page-link" href="index.html">Cost of Living</a>
+                <a class="page-link" :href="singleItemMenuUrl">Single Series</a>
+                <a class="page-link" href="macro.html">Macro Trends</a>
+                <a class="page-link" href="assumptions.html">About</a>
+              </nav>
+            </div>
+          </div>
+        </header>
+
+      <section class="single-controls panel-shell" v-if="!isLoading && !error && currentItem">
+        <label>Item
+          <select v-model="itemKey" @change="syncUrlAndRender">
+            <option v-for="item in items" :key="item.key" :value="item.key">{{ item.name }}</option>
+          </select>
+        </label>
+        <label>Priced In <span class="term-help" role="button" tabindex="0" aria-label="Priced In: choose the unit used to express this item's value (like GBP, gold, hours, or bitcoin)." title="Priced In: choose the unit used to express this item's value (like GBP, gold, hours, or bitcoin).">?</span>
+          <select v-model="denominator" @change="syncUrlAndRender">
+            <option v-for="denom in denominators" :key="denom.value" :value="denom.value">{{ denom.label }}</option>
+          </select>
+        </label>
+        <label v-if="canShowGbpOverlay"><input type="checkbox" v-model="showUsdOverlay" @change="syncUrlAndRender" /> Overlay GBP price (faded)</label>
+        <button type="button" class="swap-button" @click="swapPair" :disabled="!canSwapPair">
+          <span class="swap-button-icon">⇅</span>
+          <span class="swap-button-text">Swap pair</span>
+        </button>
+        <button class="copy-link-button" @click="copyShareLink">Copy share link</button>
+      </section>
+      <p class="share-feedback" v-if="shareFeedback">{{ shareFeedback }}</p>
+
+      <section v-if="isLoading" class="status-card">Loading pricing data… <span class="skeleton"></span></section>
+      <section v-else-if="error" class="status-card error">{{ error }}</section>
+
+      <article v-else-if="currentItem" class="chart-card single-page-chart panel-shell">
+        <header>
+          <div class="card-title-block">
+            <h2>{{ currentItem.name }}</h2>
+            <div class="chart-header-tags">
+              <span class="category-badge" :style="categoryBadgeStyle(currentItem.category, currentItem.key)">{{ categoryLabel(currentItem.category) }}</span>
+              <div
+                class="buying-power-badge-wrap"
+                :class="{ 'is-open': isBuyingPowerOverlayOpen }"
+                @mouseleave="closeBuyingPowerOverlay"
+              >
+                <button
+                  type="button"
+                  class="category-badge power-badge buying-power-trigger"
+                  :class="purchasingPowerTag().className"
+                  @click="toggleBuyingPowerOverlay"
+                  @focus="isBuyingPowerOverlayOpen = true"
+                  @blur="closeBuyingPowerOverlay"
+                >{{ purchasingPowerTag().icon }} {{ purchasingPowerTag().label }}</button>
+                <div class="buying-power-overlay" role="status">{{ purchasingPowerSummary() }}</div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <p class="lineage prominent-insight">{{ insightText() }}</p>
+        <p class="lineage">{{ purchasingPowerText() }}</p>
+        <p v-if="bitcoinSparseWarningApplies()" class="notice">Bitcoin is hidden before 2017 because early annual averages are sparse and highly volatile.</p>
+        <p v-if="goldAlternativeText()" class="lineage">{{ goldAlternativeText() }}</p>
+        <dl class="stats-strip">
+          <div class="stat"><dt>CAGR <span class="term-help" role="button" tabindex="0" aria-label="Compound annual growth rate: the average yearly rate of change over the selected period." title="Compound annual growth rate: the average yearly rate of change over the selected period.">?</span></dt><dd>{{ chartStats().cagrSelected }}</dd></div>
+          <div class="stat"><dt>Total change</dt><dd>{{ chartStats().totalChange }}</dd></div>
+          <div class="stat"><dt>Best year</dt><dd>{{ chartStats().bestYear }}</dd></div>
+          <div class="stat"><dt>Worst year</dt><dd>{{ chartStats().worstYear }}</dd></div>
+          <div class="stat"><dt>Volatility (5Y log-return) <span class="term-help" role="button" tabindex="0" aria-label="Volatility: how bumpy the returns have been, using a rolling five-year window." title="Volatility: how bumpy the returns have been, using a rolling five-year window.">?</span></dt><dd>{{ chartStats().vol5y }}</dd></div>
+          <div class="stat"><dt>Max drawdown <span class="term-help" role="button" tabindex="0" aria-label="Max drawdown: the largest drop from a previous high point during the selected period." title="Max drawdown: the largest drop from a previous high point during the selected period.">?</span></dt><dd>{{ chartStats().maxDrawdown }}</dd></div>
+          <div class="stat"><dt>From historical peak <span class="term-help" role="button" tabindex="0" aria-label="From historical peak: how far the latest value is below its all-time high in the selected range." title="From historical peak: how far the latest value is below its all-time high in the selected range.">?</span></dt><dd>{{ chartStats().fromPeak }}</dd></div>
+          <div class="stat"><dt>Latest value</dt><dd>{{ chartStats().latestValue }}</dd></div>
+        </dl>
+        <div class="chart-header-tags" v-if="rebased">
+          <span class="category-badge rebased-badge" :style="rebasedBadgeStyle()">Rebased <span class="term-help" role="button" tabindex="0" aria-label="Rebased means the first visible year is set to 100, so percentage growth can be compared directly." title="Rebased means the first visible year is set to 100, so percentage growth can be compared directly.">?</span></span>
+        </div>
+        <p v-if="chartZoomed" class="notice">Double-click the chart to zoom back out.</p>
+        <div class="chart-wrap"><div id="single-chart" class="plotly-chart"></div></div>
+        <details class="instructions-panel panel-shell meta-panel"><summary>What is being measured?</summary>
+          <ul>
+            <li>Unit basis: {{ currentItem.metadata?.unit_basis }}</li>
+            <li>Geography: {{ currentItem.metadata?.geography }}</li>
+            <li>Nominal/real: {{ currentItem.metadata?.price_basis }}</li>
+            <li>Frequency: {{ currentItem.metadata?.frequency }}</li>
+            <li>Last updated: {{ currentItem.metadata?.last_updated }}</li>
+          </ul>
+        </details>
+        <details class="instructions-panel panel-shell sources-panel"><summary>Sources & lineage</summary>
+          <ul>
+            <li v-for="source in sourceSet()" :key="`${currentItem.key}-${source.url}`"><span class="badge">{{ source.type || 'source' }}</span> <a :href="source.url" target="_blank" rel="noopener noreferrer">{{ source.name }}</a> ({{ source.date }}) — {{ source.note }}</li>
+          </ul>
+          <p v-if="dataLineage()" class="lineage">{{ dataLineage() }}</p>
+        </details>
+        <details class="instructions-panel panel-shell"><summary>Chart Instructions</summary><div class="instructions-list"><p>Drag on the chart to zoom into a specific period or value range, then double-click anywhere in the plot to zoom back out to the full visible range.</p><p>Use the chart menu bar to switch quick time ranges (10Y to All), toggle log scale, and toggle rebasing from the first visible year.</p><p>Use the “Data ↗” menu button to open the yearly data table and export CSV for deeper analysis.</p></div></details>
+      </article>
+      <footer class="app-footer panel-shell">
+        <p>
+          <strong>Enjoying this project?</strong>
+          <a class="footer-link" href="lightning:purehorse8@primal.net"><span class="footer-icon" aria-hidden="true">⚡</span>Tip via Lightning</a>
+          <a class="footer-link" href="https://primal.net/p/npub1ljq0jgmha3xlv90jyqwcel3f0fvhyzcshk3lugk3qmt8ufcm4e7qs2cpnl" target="_blank" rel="noopener noreferrer"><span class="footer-icon" aria-hidden="true">🫧</span>Find me on Nostr</a>
+        </p>
+      </footer>
+      </div>
+    </main>
+
+    <script src="single.js"></script>
+  </body>
+</html>

@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Priced In — UK Cost of Living Explorer</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.4.38/dist/vue.global.prod.js"></script>
+    <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+  </head>
+  <body data-page="cost">
+    <main id="app">
+      <div class="dashboard-shell">
+        <header class="app-header">
+          <a class="brand-panel" href="index.html" aria-label="Go to homepage">
+            <span class="brand-kicker">UK pricing explorer</span>
+            <h1>Priced In — UK Cost of Living Explorer</h1>
+            <p>Compare UK costs priced in nominal £, real £, gold, hours worked, and bitcoin.</p>
+          </a>
+          <div class="header-actions">
+            <button class="theme-icon-toggle" @click="toggleTheme" :aria-label="`Switch to ${isDarkMode ? 'light' : 'dark'} mode`">
+              <span class="theme-toggle-icon" aria-hidden="true">{{ isDarkMode ? '☀️' : '🌙' }}</span>
+            </button>
+            <button
+              class="menu-toggle"
+              type="button"
+              @click="toggleMobileMenu"
+              :aria-expanded="isMobileMenuOpen ? 'true' : 'false'"
+              aria-controls="site-menu"
+              aria-label="Toggle navigation menu"
+            >
+              <span></span><span></span><span></span>
+            </button>
+            <div class="title-actions" :class="{ open: isMobileMenuOpen }" id="site-menu">
+              <nav class="page-nav" aria-label="Main sections">
+                <a class="page-link" :class="{ active: currentPage === 'cost' }" href="index.html">Cost of Living</a>
+                <a class="page-link" :href="singleItemMenuUrl()">Single Series</a>
+                <a class="page-link" href="macro.html">Macro Trends</a>
+                <a class="page-link" :class="{ active: currentPage === 'assumptions' }" href="assumptions.html">About</a>
+              </nav>
+            </div>
+          </div>
+        </header>
+
+        <section class="quote-callout panel-shell">
+          <p>“The natural state of the free market is deflation.”</p>
+          <span>— Geoff Booth</span>
+          <p class="quote-callout-context">Inflation can mask the true value of your time and energy. By denominator-switching - pricing houses, eggs, or butter in hard assets like Gold or Bitcoin - you can strip away currency devaluation. Explore the data to see which assets are truly inflating, and which are following the natural path of deflation.</p>
+        </section>
+
+        <section v-if="isLoading" class="status-card">Loading pricing data… <span class="skeleton"></span></section>
+        <section v-else-if="error" class="status-card error">{{ error }}</section>
+
+        <section v-else>
+        <section class="controls panel-shell">
+          <label>Priced In <span class="term-help" role="button" tabindex="0" aria-label="Priced In: choose the unit used to express each item's value (like GBP, gold, hours, or bitcoin)." title="Priced In: choose the unit used to express each item's value (like GBP, gold, hours, or bitcoin).">?</span>
+            <select v-model="allDenominator" @change="applyToAll" aria-label="Priced in selector">
+              <option v-for="denom in denominators" :key="denom.value" :value="denom.value">{{ denom.label }}</option>
+            </select>
+          </label>
+          <label>Category
+            <select v-model="selectedCategory" @change="onCategorySelectionChange" aria-label="Category selector">
+              <option value="all">All</option>
+              <option v-for="category in availableCategories" :key="category.value" :value="category.value">{{ category.label }}</option>
+            </select>
+          </label>
+          <label class="search">Search
+            <input v-model="search" @input="onSearchInput" placeholder="house, tuition, eggs…" aria-label="Search items" />
+          </label>
+          <label>Item
+            <select v-model="selectedItemKey" @change="onItemSelectionChange" aria-label="Item selector">
+              <option value="all">All</option>
+              <option v-for="item in itemOptions" :key="item.key" :value="item.key">{{ item.name }}</option>
+            </select>
+          </label>
+        </section>
+
+        <p v-if="allDenominator==='bitcoin'" class="notice">Bitcoin is hidden before 2017 because early annual averages are sparse and highly volatile.</p>
+        <p v-if="costRebaseNotice" class="notice">{{ costRebaseNotice }}</p>
+
+        <article class="chart-card panel-shell">
+          <div class="compare-layout compare-layout-single">
+            <div class="compare-main">
+              <div class="chart-header-tags" v-if="rebased">
+                <span class="category-badge rebased-badge" :style="rebasedTagStyle()">Rebased <span class="term-help" role="button" tabindex="0" aria-label="Rebased means each series starts at 100 at the same visible starting point, so trend comparisons are easier." title="Rebased means each series starts at 100 at the same visible starting point, so trend comparisons are easier.">?</span></span>
+              </div>
+              <p v-if="compareChartZoomed" class="notice">Double-click the chart to zoom back out.</p>
+              <div class="chart-wrap chart-wrap-lg"><div id="chart-compare" class="plotly-chart"></div></div>
+              <details class="instructions-panel panel-shell">
+                <summary>Chart Instructions</summary>
+                <div class="instructions-list">
+                  <p>Drag on the chart to zoom into a specific period or value range, then double-click anywhere in the plot to zoom back out.</p>
+                  <p>Use the chart menu bar to switch quick time ranges (10Y to All), plus log scale and rebase toggles.</p>
+                  <p>Use the Data ↗ button in the chart menu bar to open the yearly data table and export CSV.</p>
+                  <p>Click legend entries to hide/show individual series and isolate comparisons.</p>
+                </div>
+              </details>
+              <section class="data-table-panel summary-table-panel">
+                <h3>Selected item summary</h3>
+                <div class="table-wrap summary-table-wrap" ref="summaryTableWrap">
+                  <table class="data-table summary-table">
+                    <thead>
+                      <tr>
+                        <th>
+                          <button type="button" class="summary-sort-button" @click="toggleSummarySort('name')">
+                            <span>Item</span>
+                            <span class="summary-sort-indicator" aria-hidden="true">{{ summarySortLabel('name') }}</span>
+                          </button>
+                        </th>
+                        <th v-for="column in summaryTableColumns" :key="column.key">
+                          <button type="button" class="summary-sort-button" @click="toggleSummarySort(column.key)">
+                            <span>{{ column.label }}</span>
+                            <span
+                              v-if="column.tooltip"
+                              class="term-help"
+                              role="button"
+                              tabindex="0"
+                              :aria-label="column.tooltip"
+                              :title="column.tooltip"
+                            >?</span>
+                            <span class="summary-sort-indicator" aria-hidden="true">{{ summarySortLabel(column.key) }}</span>
+                          </button>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr v-for="row in summaryTableRows" :key="row.key">
+                        <th>
+                          <div class="summary-item-cell">
+                            <div class="summary-item-heading">
+                              <span>{{ row.name }}</span>
+                              <a class="open-link-icon" :href="singleChartUrl(row.key)" :aria-label="`Open ${row.name} single chart in a new page`" title="Open single chart" target="_blank" rel="noopener noreferrer">↗</a>
+                              <span class="category-badge" :style="categoryTagStyle(row.category)">{{ categoryDisplayLabel(row.category) }}</span>
+                              <div
+                                class="buying-power-badge-wrap buying-power-badge-wrap-summary"
+                                :class="{ 'is-open': buyingPowerOverlayRowKey === row.key }"
+                                @mouseleave="closeBuyingPowerOverlay"
+                              >
+                                <button
+                                  type="button"
+                                  class="category-badge power-badge buying-power-trigger"
+                                  :class="row.buyingPower.className"
+                                  @click="toggleBuyingPowerOverlay(row.key)"
+                                  @focus="buyingPowerOverlayRowKey = row.key"
+                                  @blur="closeBuyingPowerOverlay"
+                                >{{ row.buyingPower.icon }} {{ row.buyingPower.label }}</button>
+                                <div class="buying-power-overlay" role="status">{{ row.buyingPowerSummary }}</div>
+                              </div>
+                            </div>
+                            <div :id="`summary-sparkline-${row.key}`" class="summary-row-sparkline"></div>
+                          </div>
+                        </th>
+                        <td
+                          v-for="column in summaryTableColumns"
+                          :key="`${row.key}-${column.key}`"
+                          :class="summaryCellExtremaClass(column.key, row.stats.raw?.[column.key])"
+                        >{{ row.stats[column.key] }}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </section>
+            </div>
+          </div>
+        </article>
+
+
+      </section>
+      <footer class="app-footer panel-shell">
+        <p>
+          <strong>Enjoying this project?</strong>
+          <a class="footer-link" href="lightning:purehorse8@primal.net"><span class="footer-icon" aria-hidden="true">⚡</span>Tip via Lightning</a>
+          <a class="footer-link" href="https://primal.net/p/npub1ljq0jgmha3xlv90jyqwcel3f0fvhyzcshk3lugk3qmt8ufcm4e7qs2cpnl" target="_blank" rel="noopener noreferrer"><span class="footer-icon" aria-hidden="true">🫧</span>Find me on Nostr</a>
+        </p>
+      </footer>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Priced In — About</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="doc">
+      <div class="dashboard-shell">
+        <header class="app-header app-header-static">
+          <a class="brand-panel" href="index.html" aria-label="Go to homepage">
+            <span class="brand-kicker">Methodology notes</span>
+            <h1>About</h1>
+            <p>Why this app exists, what it aims to show, and the assumptions behind the data.</p>
+          </a>
+          <div class="header-actions">
+            <button class="theme-icon-toggle" type="button" data-theme-toggle aria-label="Toggle light and dark mode">
+              <span class="theme-toggle-icon" aria-hidden="true">🌙</span>
+            </button>
+            <button
+              class="menu-toggle"
+              type="button"
+              data-menu-toggle
+              aria-expanded="false"
+              aria-controls="site-menu"
+              aria-label="Toggle navigation menu"
+            >
+              <span></span><span></span><span></span>
+            </button>
+            <div class="title-actions" id="site-menu" data-menu-panel>
+              <nav class="page-nav" aria-label="Main sections">
+                <a class="page-link" href="index.html">Cost of Living</a>
+                <a class="page-link" href="single.html?item=house&denom=context:fiat&theme=dark">Single Series</a>
+                <a class="page-link" href="macro.html">Macro Trends</a>
+                <a class="page-link active" href="assumptions.html">About</a>
+              </nav>
+            </div>
+          </div>
+        </header>
+        <section class="chart-card assumptions-card panel-shell">
+          <p>This web app exists to make long-run UK living costs more intuitive by re-pricing everyday goods and services in multiple “money lenses” (nominal pounds, real pounds, gold, hours worked, and bitcoin). The goal is to show how the same item can look very different depending on the unit of account, and to illustrate changes in purchasing power over time rather than just headline prices.</p>
+          <ul>
+            <li>Coverage is annual 1950–2025 for all items and all denominators except bitcoin, which is intentionally sparse before market launch years.</li>
+            <li>Denominators include nominal GBP, CPI-adjusted real GBP <span class="term-help" role="button" tabindex="0" aria-label="CPI-adjusted means values are adjusted for inflation so you compare purchasing power more fairly across time." title="CPI-adjusted means values are adjusted for inflation so you compare purchasing power more fairly across time.">?</span>, gold, hours worked at median wage, and bitcoin.</li>
+            <li>Where official annual series begin after 1950, the app back-casts earlier years using CPI-adjusted anchor points and conservative real-trend assumptions; inspect each card’s source notes before drawing strong conclusions.</li>
+            <li>Point colours follow source confidence metadata: high (official/statutory), medium (benchmark market + standard transformations), low (proxy reconstruction).</li>
+            <li>Added commodities: copper, silver, and Brent crude oil, each with annual points through the full range.</li>
+            <li>Most values are nominal unless the “Real GBP” denominator is selected.</li>
+            <li>Sources include official, market, and derived series with lineage notes in the app.</li>
+          </ul>
+        </section>
+        <footer class="app-footer panel-shell">
+          <p>
+            <strong>Enjoying this project?</strong>
+            <a class="footer-link" href="lightning:purehorse8@primal.net"><span class="footer-icon" aria-hidden="true">⚡</span>Tip via Lightning</a>
+            <a class="footer-link" href="https://primal.net/p/npub1ljq0jgmha3xlv90jyqwcel3f0fvhyzcshk3lugk3qmt8ufcm4e7qs2cpnl" target="_blank" rel="noopener noreferrer"><span class="footer-icon" aria-hidden="true">🫧</span>Find me on Nostr</a>
+          </p>
+        </footer>
+      </div>
+    </main>
+    <script>
+      (() => {
+        const root = document.documentElement;
+        const storageKey = 'priced-in-theme';
+        const toggle = document.querySelector('[data-theme-toggle]');
+        const icon = toggle?.querySelector('.theme-toggle-icon');
+        const menuToggle = document.querySelector('[data-menu-toggle]');
+        const menuPanel = document.querySelector('[data-menu-panel]');
+        const applyTheme = (theme) => {
+          root.setAttribute('data-theme', theme);
+          if (icon) icon.textContent = theme === 'dark' ? '☀️' : '🌙';
+        };
+        const savedTheme = localStorage.getItem(storageKey);
+        applyTheme(savedTheme === 'light' ? 'light' : 'dark');
+        toggle?.addEventListener('click', () => {
+          const nextTheme = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+          localStorage.setItem(storageKey, nextTheme);
+          applyTheme(nextTheme);
+        });
+        menuToggle?.addEventListener('click', () => {
+          const isOpen = menuPanel.classList.toggle('open');
+          menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        });
+      })();
+    </script>
+  </body>
+</html>

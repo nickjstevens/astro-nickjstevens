@@ -117,7 +117,7 @@ function plotlyConfig({ onToggleLogScale, onToggleRebase, rangeButtons = [], onO
 }
 
 const STORAGE_KEYS = {
-  theme: 'priced-in-theme',
+  theme: 'site-theme',
 };
 
 const RANGE_OPTIONS = [

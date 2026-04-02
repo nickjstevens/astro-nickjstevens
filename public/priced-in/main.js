@@ -1,6 +1,6 @@
 const PALETTE = ['#1f6feb', '#0ea5e9', '#f59e0b', '#10b981', '#ef4444', '#7c3aed', '#0f766e', '#f97316'];
 const STORAGE_KEYS = {
-  theme: 'priced-in-theme',
+  theme: 'site-theme',
 };
 
 const RANGE_OPTIONS = [

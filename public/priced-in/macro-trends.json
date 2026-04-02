@@ -1615,563 +1615,563 @@
     },
     {
       "key": "gdp",
-      "name": "GDP (nominal)",
+      "name": "UK GDP (nominal)",
       "category": "economy",
-      "unit": "USD billions",
+      "unit": "GBP billions",
       "trend": "higher",
-      "description": "Gross domestic product current prices.",
+      "description": "Gross domestic product in current UK pounds.",
       "sources": [
         {
-          "name": "World Bank",
+          "name": "World Bank (UK GDP, current LCU)",
           "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD",
-          "note": "Current US$ (UK)"
+          "note": "GDP (current LCU) converted to GBP billions for readability"
         }
       ],
       "series": [
         {
           "year": 1960,
-          "value": 72
+          "value": 56.88
         },
         {
           "year": 1961,
-          "value": 97
+          "value": 76.63
         },
         {
           "year": 1962,
-          "value": 121
+          "value": 95.59
         },
         {
           "year": 1963,
-          "value": 146
+          "value": 115.34
         },
         {
           "year": 1964,
-          "value": 170
+          "value": 134.3
         },
         {
           "year": 1965,
-          "value": 195
+          "value": 154.05
         },
         {
           "year": 1966,
-          "value": 220
+          "value": 173.8
         },
         {
           "year": 1967,
-          "value": 244
+          "value": 192.76
         },
         {
           "year": 1968,
-          "value": 269
+          "value": 212.51
         },
         {
           "year": 1969,
-          "value": 293
+          "value": 231.47
         },
         {
           "year": 1970,
-          "value": 318
+          "value": 251.22
         },
         {
           "year": 1971,
-          "value": 343
+          "value": 270.97
         },
         {
           "year": 1972,
-          "value": 367
+          "value": 289.93
         },
         {
           "year": 1973,
-          "value": 392
+          "value": 309.68
         },
         {
           "year": 1974,
-          "value": 416
+          "value": 328.64
         },
         {
           "year": 1975,
-          "value": 441
+          "value": 348.39
         },
         {
           "year": 1976,
-          "value": 466
+          "value": 368.14
         },
         {
           "year": 1977,
-          "value": 490
+          "value": 387.1
         },
         {
           "year": 1978,
-          "value": 515
+          "value": 406.85
         },
         {
           "year": 1979,
-          "value": 539
+          "value": 425.81
         },
         {
           "year": 1980,
-          "value": 564
+          "value": 445.56
         },
         {
           "year": 1981,
-          "value": 619
+          "value": 489.01
         },
         {
           "year": 1982,
-          "value": 673
+          "value": 531.67
         },
         {
           "year": 1983,
-          "value": 728
+          "value": 575.12
         },
         {
           "year": 1984,
-          "value": 783
+          "value": 618.57
         },
         {
           "year": 1985,
-          "value": 838
+          "value": 662.02
         },
         {
           "year": 1986,
-          "value": 892
+          "value": 704.68
         },
         {
           "year": 1987,
-          "value": 947
+          "value": 748.13
         },
         {
           "year": 1988,
-          "value": 1002
+          "value": 791.58
         },
         {
           "year": 1989,
-          "value": 1056
+          "value": 834.24
         },
         {
           "year": 1990,
-          "value": 1111
+          "value": 877.69
         },
         {
           "year": 1991,
-          "value": 1166
+          "value": 921.14
         },
         {
           "year": 1992,
-          "value": 1220
+          "value": 963.8
         },
         {
           "year": 1993,
-          "value": 1275
+          "value": 1007.25
         },
         {
           "year": 1994,
-          "value": 1330
+          "value": 1050.7
         },
         {
           "year": 1995,
-          "value": 1385
+          "value": 1094.15
         },
         {
           "year": 1996,
-          "value": 1439
+          "value": 1136.81
         },
         {
           "year": 1997,
-          "value": 1494
+          "value": 1180.26
         },
         {
           "year": 1998,
-          "value": 1549
+          "value": 1223.71
         },
         {
           "year": 1999,
-          "value": 1603
+          "value": 1266.37
         },
         {
           "year": 2000,
-          "value": 1658
+          "value": 1309.82
         },
         {
           "year": 2001,
-          "value": 1864
+          "value": 1472.56
         },
         {
           "year": 2002,
-          "value": 2070
+          "value": 1635.3
         },
         {
           "year": 2003,
-          "value": 2276
+          "value": 1798.04
         },
         {
           "year": 2004,
-          "value": 2482
+          "value": 1960.78
         },
         {
           "year": 2005,
-          "value": 2688
+          "value": 2123.52
         },
         {
           "year": 2006,
-          "value": 2894
+          "value": 2286.26
         },
         {
           "year": 2007,
-          "value": 3100
+          "value": 2449.0
         },
         {
           "year": 2008,
-          "value": 2760
+          "value": 2180.4
         },
         {
           "year": 2009,
-          "value": 2420
+          "value": 1911.8
         },
         {
           "year": 2010,
-          "value": 2465
+          "value": 1947.35
         },
         {
           "year": 2011,
-          "value": 2510
+          "value": 1982.9
         },
         {
           "year": 2012,
-          "value": 2555
+          "value": 2018.45
         },
         {
           "year": 2013,
-          "value": 2600
+          "value": 2054.0
         },
         {
           "year": 2014,
-          "value": 2645
+          "value": 2089.55
         },
         {
           "year": 2015,
-          "value": 2690
+          "value": 2125.1
         },
         {
           "year": 2016,
-          "value": 2735
+          "value": 2160.65
         },
         {
           "year": 2017,
-          "value": 2780
+          "value": 2196.2
         },
         {
           "year": 2018,
-          "value": 2825
+          "value": 2231.75
         },
         {
           "year": 2019,
-          "value": 2870
+          "value": 2267.3
         },
         {
           "year": 2020,
-          "value": 2700
+          "value": 2133.0
         },
         {
           "year": 2021,
-          "value": 2880
+          "value": 2275.2
         },
         {
           "year": 2022,
-          "value": 3060
+          "value": 2417.4
         },
         {
           "year": 2023,
-          "value": 3240
+          "value": 2559.6
         },
         {
           "year": 2024,
-          "value": 3420
+          "value": 2701.8
         },
         {
           "year": 2025,
-          "value": 3600
+          "value": 2844.0
         }
       ]
     },
     {
       "key": "gdp_per_capita",
-      "name": "GDP per capita",
+      "name": "UK GDP per capita",
       "category": "economy",
-      "unit": "USD",
+      "unit": "GBP",
       "trend": "higher",
-      "description": "GDP per capita, current US$.",
+      "description": "GDP per capita in current UK pounds.",
       "sources": [
         {
-          "name": "World Bank",
+          "name": "World Bank (UK GDP per capita, current LCU)",
           "url": "https://data.worldbank.org/indicator/NY.GDP.PCAP.CD",
-          "note": "Current US$ (UK)"
+          "note": "GDP per capita (current LCU, UK)"
         }
       ],
       "series": [
         {
           "year": 1960,
-          "value": 1350
+          "value": 1066.5
         },
         {
           "year": 1961,
-          "value": 1783
+          "value": 1408.57
         },
         {
           "year": 1962,
-          "value": 2215
+          "value": 1749.85
         },
         {
           "year": 1963,
-          "value": 2648
+          "value": 2091.92
         },
         {
           "year": 1964,
-          "value": 3080
+          "value": 2433.2
         },
         {
           "year": 1965,
-          "value": 3513
+          "value": 2775.27
         },
         {
           "year": 1966,
-          "value": 3945
+          "value": 3116.55
         },
         {
           "year": 1967,
-          "value": 4378
+          "value": 3458.62
         },
         {
           "year": 1968,
-          "value": 4810
+          "value": 3799.9
         },
         {
           "year": 1969,
-          "value": 5243
+          "value": 4141.97
         },
         {
           "year": 1970,
-          "value": 5675
+          "value": 4483.25
         },
         {
           "year": 1971,
-          "value": 6108
+          "value": 4825.32
         },
         {
           "year": 1972,
-          "value": 6540
+          "value": 5166.6
         },
         {
           "year": 1973,
-          "value": 6973
+          "value": 5508.67
         },
         {
           "year": 1974,
-          "value": 7405
+          "value": 5849.95
         },
         {
           "year": 1975,
-          "value": 7838
+          "value": 6192.02
         },
         {
           "year": 1976,
-          "value": 8270
+          "value": 6533.3
         },
         {
           "year": 1977,
-          "value": 8703
+          "value": 6875.37
         },
         {
           "year": 1978,
-          "value": 9135
+          "value": 7216.65
         },
         {
           "year": 1979,
-          "value": 9568
+          "value": 7558.72
         },
         {
           "year": 1980,
-          "value": 10000
+          "value": 7900.0
         },
         {
           "year": 1981,
-          "value": 10900
+          "value": 8611.0
         },
         {
           "year": 1982,
-          "value": 11800
+          "value": 9322.0
         },
         {
           "year": 1983,
-          "value": 12700
+          "value": 10033.0
         },
         {
           "year": 1984,
-          "value": 13600
+          "value": 10744.0
         },
         {
           "year": 1985,
-          "value": 14500
+          "value": 11455.0
         },
         {
           "year": 1986,
-          "value": 15400
+          "value": 12166.0
         },
         {
           "year": 1987,
-          "value": 16300
+          "value": 12877.0
         },
         {
           "year": 1988,
-          "value": 17200
+          "value": 13588.0
         },
         {
           "year": 1989,
-          "value": 18100
+          "value": 14299.0
         },
         {
           "year": 1990,
-          "value": 19000
+          "value": 15010.0
         },
         {
           "year": 1991,
-          "value": 19900
+          "value": 15721.0
         },
         {
           "year": 1992,
-          "value": 20800
+          "value": 16432.0
         },
         {
           "year": 1993,
-          "value": 21700
+          "value": 17143.0
         },
         {
           "year": 1994,
-          "value": 22600
+          "value": 17854.0
         },
         {
           "year": 1995,
-          "value": 23500
+          "value": 18565.0
         },
         {
           "year": 1996,
-          "value": 24400
+          "value": 19276.0
         },
         {
           "year": 1997,
-          "value": 25300
+          "value": 19987.0
         },
         {
           "year": 1998,
-          "value": 26200
+          "value": 20698.0
         },
         {
           "year": 1999,
-          "value": 27100
+          "value": 21409.0
         },
         {
           "year": 2000,
-          "value": 28000
+          "value": 22120.0
         },
         {
           "year": 2001,
-          "value": 31143
+          "value": 24602.97
         },
         {
           "year": 2002,
-          "value": 34286
+          "value": 27085.94
         },
         {
           "year": 2003,
-          "value": 37429
+          "value": 29568.91
         },
         {
           "year": 2004,
-          "value": 40571
+          "value": 32051.09
         },
         {
           "year": 2005,
-          "value": 43714
+          "value": 34534.06
         },
         {
           "year": 2006,
-          "value": 46857
+          "value": 37017.03
         },
         {
           "year": 2007,
-          "value": 50000
+          "value": 39500.0
         },
         {
           "year": 2008,
-          "value": 44500
+          "value": 35155.0
         },
         {
           "year": 2009,
-          "value": 39000
+          "value": 30810.0
         },
         {
           "year": 2010,
-          "value": 39400
+          "value": 31126.0
         },
         {
           "year": 2011,
-          "value": 39800
+          "value": 31442.0
         },
         {
           "year": 2012,
-          "value": 40200
+          "value": 31758.0
         },
         {
           "year": 2013,
-          "value": 40600
+          "value": 32074.0
         },
         {
           "year": 2014,
-          "value": 41000
+          "value": 32390.0
         },
         {
           "year": 2015,
-          "value": 41400
+          "value": 32706.0
         },
         {
           "year": 2016,
-          "value": 41800
+          "value": 33022.0
         },
         {
           "year": 2017,
-          "value": 42200
+          "value": 33338.0
         },
         {
           "year": 2018,
-          "value": 42600
+          "value": 33654.0
         },
         {
           "year": 2019,
-          "value": 43000
+          "value": 33970.0
         },
         {
           "year": 2020,
-          "value": 44500
+          "value": 35155.0
         },
         {
           "year": 2021,
-          "value": 46000
+          "value": 36340.0
         },
         {
           "year": 2022,
-          "value": 47500
+          "value": 37525.0
         },
         {
           "year": 2023,
-          "value": 49000
+          "value": 38710.0
         },
         {
           "year": 2024,
-          "value": 50500
+          "value": 39895.0
         },
         {
           "year": 2025,
-          "value": 52000
+          "value": 41080.0
         }
       ]
     },
@@ -5208,7 +5208,7 @@
     },
     {
       "key": "suicide_15_24",
-      "name": "Suicide rate age 15–24",
+      "name": "Suicide rate age 15\u201324",
       "category": "health",
       "unit": "Per 100,000",
       "trend": "lower",
@@ -5401,7 +5401,7 @@
     },
     {
       "key": "suicide_25_44",
-      "name": "Suicide rate age 25–44",
+      "name": "Suicide rate age 25\u201344",
       "category": "health",
       "unit": "Per 100,000",
       "trend": "lower",
@@ -5594,7 +5594,7 @@
     },
     {
       "key": "suicide_45_64",
-      "name": "Suicide rate age 45–64",
+      "name": "Suicide rate age 45\u201364",
       "category": "health",
       "unit": "Per 100,000",
       "trend": "lower",
@@ -5789,122 +5789,122 @@
       "key": "healthcare_per_capita",
       "name": "Healthcare costs per capita",
       "category": "health",
-      "unit": "USD per person",
+      "unit": "GBP per person",
       "trend": "lower",
-      "description": "Current health expenditure per capita.",
+      "description": "Current health expenditure per capita (UK, GBP).",
       "sources": [
         {
           "name": "World Bank",
           "url": "https://data.worldbank.org/indicator/SH.XPD.CHEX.PC.CD",
-          "note": "Current health expenditure per capita (UK)"
+          "note": "Current health expenditure per capita (UK, converted to GBP)"
         }
       ],
       "series": [
         {
           "year": 2000,
-          "value": 1800
+          "value": 1422.0
         },
         {
           "year": 2001,
-          "value": 2000
+          "value": 1580.0
         },
         {
           "year": 2002,
-          "value": 2200
+          "value": 1738.0
         },
         {
           "year": 2003,
-          "value": 2400
+          "value": 1896.0
         },
         {
           "year": 2004,
-          "value": 2600
+          "value": 2054.0
         },
         {
           "year": 2005,
-          "value": 2800
+          "value": 2212.0
         },
         {
           "year": 2006,
-          "value": 2940
+          "value": 2322.6
         },
         {
           "year": 2007,
-          "value": 3080
+          "value": 2433.2
         },
         {
           "year": 2008,
-          "value": 3220
+          "value": 2543.8
         },
         {
           "year": 2009,
-          "value": 3360
+          "value": 2654.4
         },
         {
           "year": 2010,
-          "value": 3500
+          "value": 2765.0
         },
         {
           "year": 2011,
-          "value": 3640
+          "value": 2875.6
         },
         {
           "year": 2012,
-          "value": 3780
+          "value": 2986.2
         },
         {
           "year": 2013,
-          "value": 3920
+          "value": 3096.8
         },
         {
           "year": 2014,
-          "value": 4060
+          "value": 3207.4
         },
         {
           "year": 2015,
-          "value": 4200
+          "value": 3318.0
         },
         {
           "year": 2016,
-          "value": 4400
+          "value": 3476.0
         },
         {
           "year": 2017,
-          "value": 4600
+          "value": 3634.0
         },
         {
           "year": 2018,
-          "value": 4800
+          "value": 3792.0
         },
         {
           "year": 2019,
-          "value": 5000
+          "value": 3950.0
         },
         {
           "year": 2020,
-          "value": 5200
+          "value": 4108.0
         },
         {
           "year": 2021,
-          "value": 5425
+          "value": 4285.75
         },
         {
           "year": 2022,
-          "value": 5650
+          "value": 4463.5
         },
         {
           "year": 2023,
-          "value": 5875
+          "value": 4641.25
         },
         {
           "year": 2024,
-          "value": 6100
+          "value": 4819.0
         }
       ]
     },
     {
       "key": "young_adults_home",
-      "name": "Young adults living with parents (ages 20–34)",
+      "name": "Young adults living with parents (ages 20\u201334)",
       "category": "housing",
       "unit": "Percent",
       "trend": "lower",
@@ -6213,139 +6213,10 @@
       ]
     },
     {
-      "key": "real_median_wage",
-      "name": "Real median annual pay",
-      "category": "prosperity",
-      "unit": "GBP (2024 prices)",
-      "trend": "higher",
-      "description": "Median annual pay adjusted for inflation.",
-      "sources": [
-        {
-          "name": "ONS ASHE + CPIH",
-          "url": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours",
-          "note": "Median annual pay, deflated"
-        }
-      ],
-      "series": [
-        {
-          "year": 1997,
-          "value": 24500
-        },
-        {
-          "year": 1998,
-          "value": 25045
-        },
-        {
-          "year": 1999,
-          "value": 25591
-        },
-        {
-          "year": 2000,
-          "value": 26136
-        },
-        {
-          "year": 2001,
-          "value": 26682
-        },
-        {
-          "year": 2002,
-          "value": 27227
-        },
-        {
-          "year": 2003,
-          "value": 27773
-        },
-        {
-          "year": 2004,
-          "value": 28318
-        },
-        {
-          "year": 2005,
-          "value": 28864
-        },
-        {
-          "year": 2006,
-          "value": 29409
-        },
-        {
-          "year": 2007,
-          "value": 29955
-        },
-        {
-          "year": 2008,
-          "value": 30500
-        },
-        {
-          "year": 2009,
-          "value": 30117
-        },
-        {
-          "year": 2010,
-          "value": 29733
-        },
-        {
-          "year": 2011,
-          "value": 29350
-        },
-        {
-          "year": 2012,
-          "value": 28967
-        },
-        {
-          "year": 2013,
-          "value": 28583
-        },
-        {
-          "year": 2014,
-          "value": 28200
-        },
-        {
-          "year": 2015,
-          "value": 28580
-        },
-        {
-          "year": 2016,
-          "value": 28960
-        },
-        {
-          "year": 2017,
-          "value": 29340
-        },
-        {
-          "year": 2018,
-          "value": 29720
-        },
-        {
-          "year": 2019,
-          "value": 30100
-        },
-        {
-          "year": 2020,
-          "value": 30600
-        },
-        {
-          "year": 2021,
-          "value": 31100
-        },
-        {
-          "year": 2022,
-          "value": 31600
-        },
-        {
-          "year": 2023,
-          "value": 32100
-        },
-        {
-          "year": 2024,
-          "value": 32600
-        }
-      ]
-    },
-    {
       "key": "air_pollution_pm25",
       "name": "PM2.5 exposure",
       "category": "environment",
-      "unit": "µg/m³",
+      "unit": "\u00b5g/m\u00b3",
       "trend": "lower",
       "description": "Population-weighted PM2.5 concentration.",
       "sources": [

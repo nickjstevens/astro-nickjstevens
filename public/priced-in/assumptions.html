@@ -9,27 +9,33 @@
   <body>
     <main class="doc">
       <div class="dashboard-shell">
-        <header class="app-header app-header-static">
-          <a class="brand-panel" href="index.html" aria-label="Go to homepage">
-            <span class="brand-kicker">Methodology notes</span>
-            <h1>About</h1>
-            <p>Why this app exists, what it aims to show, and the assumptions behind the data.</p>
-          </a>
-          <div class="header-actions">
-            <nav class="page-nav header-nav" aria-label="Main sections">
-              <a class="page-link" href="index.html">Cost of Living</a>
-              <a class="page-link" href="single.html?item=house&denom=context:fiat&theme=dark">Single Series</a>
-              <a class="page-link" href="macro.html">Macro Trends</a>
-              <a class="page-link active" href="assumptions.html">About</a>
+        <header class="app-header app-header-static site-header panel-shell">
+          <div class="site-header-left">
+            <a class="site-logo" href="/" aria-label="Go to Nick J Stevens home page">Nick J Stevens</a>
+            <nav class="site-nav" aria-label="Site navigation">
+              <a class="site-link" href="/">Home</a>
+              <a class="site-link" href="/blog">Blog</a>
+              <a class="site-link" href="/blog/tags">Tags</a>
+              <details class="site-dropdown" open>
+                <summary class="site-link active">Priced In</summary>
+                <div class="site-dropdown-menu">
+                  <a class="site-link" href="/priced-in/">Cost of Living</a>
+                  <a class="site-link" href="/priced-in/single.html?item=house&denom=context:fiat">Single Series</a>
+                  <a class="site-link" href="/priced-in/macro.html">Macro Trends</a>
+                  <a class="site-link active" href="/priced-in/assumptions.html">About Priced In</a>
+                </div>
+              </details>
+              <a class="site-link" href="/about">About</a>
+              <a class="site-link" href="/now">Now</a>
             </nav>
-            <div class="header-social">
-              <a class="social-icon-link" href="https://x.com/nick_j_stevens" target="_blank" rel="noopener noreferrer" aria-label="Follow me on X">
-                <svg viewBox="0 0 16 16" aria-hidden="true" width="22" height="22"><path fill="currentColor" d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"></path></svg>
-              </a>
-              <button class="theme-icon-toggle" type="button" data-theme-toggle aria-label="Toggle light and dark mode">
-                <span class="theme-toggle-icon" aria-hidden="true">🌙</span>
-              </button>
-            </div>
+          </div>
+          <div class="header-social">
+            <a class="social-icon-link" href="https://x.com/nick_j_stevens" target="_blank" rel="noopener noreferrer" aria-label="Follow me on X">𝕏</a>
+            <a class="social-icon-link" href="https://github.com/nickjstevens" target="_blank" rel="noopener noreferrer" aria-label="Find me on GitHub">GH</a>
+            <a class="social-icon-link" href="https://primal.net/p/npub1ljq0jgmha3xlv90jyqwcel3f0fvhyzcshk3lugk3qmt8ufcm4e7qs2cpnl" target="_blank" rel="noopener noreferrer" aria-label="Find me on Nostr">N</a>
+            <button class="theme-icon-toggle" type="button" data-theme-toggle aria-label="Toggle light and dark mode">
+              <span class="theme-toggle-icon" aria-hidden="true">🌙</span>
+            </button>
           </div>
         </header>
         <section class="chart-card assumptions-card panel-shell">

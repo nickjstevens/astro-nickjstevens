@@ -269,7 +269,7 @@ createApp({
       params.set('item', 'house');
       params.set('denom', 'context:fiat');
       params.set('theme', this.isDarkMode ? 'dark' : 'light');
-      return `single.html?${params.toString()}`;
+      return `/priced-in/single?${params.toString()}`;
     },
   },
   methods: {
@@ -803,7 +803,7 @@ createApp({
       return this.rebased ? 'Rebased to start from 100' : defaultTitle;
     },
     openYearlyDataPage() {
-      window.open(`yearly.html?${this.buildYearlyDataParams().toString()}`, '_blank', 'noopener');
+      window.open(`/priced-in/yearly?${this.buildYearlyDataParams().toString()}`, '_blank', 'noopener');
     },
     buildYearlyDataParams() {
       const params = new URLSearchParams();

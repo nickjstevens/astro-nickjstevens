@@ -102,12 +102,12 @@ createApp({
       if (this.mode === 'single') {
         params.set('denom', this.allDenominator);
         if (this.itemKey) params.set('item', this.itemKey);
-        return `single.html?${params.toString()}`;
+        return `/priced-in/single?${params.toString()}`;
       }
       if (this.mode === 'ratio') {
         params.set('item', this.numeratorKey || 'house');
         params.set('denom', this.denominatorKey || 'context:fiat');
-        return `single.html?${params.toString()}`;
+        return `/priced-in/single?${params.toString()}`;
       }
       params.set('denom', this.allDenominator);
       if (this.selectedKeys.length) params.set('items', this.selectedKeys.join(','));

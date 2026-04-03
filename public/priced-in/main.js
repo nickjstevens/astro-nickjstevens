@@ -951,10 +951,10 @@ createApp({
       });
     },
     openYearlyDataPage() {
-      window.open(`yearly.html?${this.buildYearlyDataParams().toString()}`, '_blank', 'noopener');
+      window.open(`/priced-in/yearly?${this.buildYearlyDataParams().toString()}`, '_blank', 'noopener');
     },
     openRatioYearlyDataPage() {
-      window.open(`yearly.html?${this.buildRatioYearlyDataParams().toString()}`, '_blank', 'noopener');
+      window.open(`/priced-in/yearly?${this.buildRatioYearlyDataParams().toString()}`, '_blank', 'noopener');
     },
     buildYearlyDataParams() {
       const params = new URLSearchParams();
@@ -1406,7 +1406,7 @@ createApp({
       params.set('item', 'house');
       params.set('denom', 'fiat');
       params.set('theme', this.isDarkMode ? 'dark' : 'light');
-      return `single.html?${params.toString()}`;
+      return `/priced-in/single?${params.toString()}`;
     },
     ratioPageUrl() {
       const params = new URLSearchParams();
@@ -1417,7 +1417,7 @@ createApp({
       if (this.useLogScale) params.set('log', '1');
       if (this.showUsdOverlay) params.set('overlayUsd', '1');
       params.set('theme', this.isDarkMode ? 'dark' : 'light');
-      return `single.html?${params.toString()}`;
+      return `/priced-in/single?${params.toString()}`;
     },
     singleChartUrl(itemKey) {
       const params = new URLSearchParams();
@@ -1428,7 +1428,7 @@ createApp({
       if (this.useLogScale) params.set('log', '1');
       if (this.showUsdOverlay) params.set('overlayUsd', '1');
       params.set('theme', this.isDarkMode ? 'dark' : 'light');
-      return `single.html?${params.toString()}`;
+      return `/priced-in/single?${params.toString()}`;
     },
     async fetchPricingData() {
       this.isLoading = true;

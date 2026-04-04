@@ -215,3 +215,80 @@ em {
 	clip-path: inset(50%);
 	white-space: nowrap;
 }
+
+:root {
+	--container-wide: 1040px;
+	--container-prose: 760px;
+}
+
+body {
+	font-size: 18px;
+	line-height: 1.6;
+}
+
+main {
+	width: min(var(--container-prose), calc(100% - 2rem));
+	max-width: 100%;
+	padding: 2.2rem 0;
+}
+
+.page-shell,
+.blog-shell,
+.tags-shell {
+	width: min(var(--container-wide), calc(100% - 2rem));
+	margin: 0 auto;
+}
+
+.site-header {
+	padding: 0 1rem;
+	background: var(--surface-strong);
+	border-bottom: 1px solid var(--border);
+	position: sticky;
+	top: 0;
+	z-index: 60;
+}
+.site-nav-shell { display: flex; align-items: center; gap: 1rem; min-height: 74px; }
+.site-logo { font-weight: 700; color: var(--text); text-decoration: none; }
+.site-nav-panel { display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex: 1; }
+.site-nav { display: flex; align-items: center; gap: 0.2rem; }
+.site-nav a, .site-dropdown summary { padding: 0.65rem 0.55rem; color: var(--text); text-decoration: none; border-bottom: 2px solid transparent; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem; }
+.site-nav a.active, .site-dropdown summary.active, .site-dropdown-menu a.active { border-bottom-color: var(--accent); }
+.site-dropdown { position: relative; }
+.site-dropdown summary::-webkit-details-marker { display: none; }
+.site-dropdown-caret { font-size: 0.72rem; opacity: 0.8; }
+.site-dropdown-menu { position: absolute; top: calc(100% + 0.2rem); left: 0; display: none; min-width: 240px; background: var(--surface-strong); border: 1px solid var(--border); border-radius: 12px; box-shadow: var(--box-shadow); z-index: 20; padding: 0.2rem; }
+.site-dropdown[open] .site-dropdown-menu { display: grid; }
+.site-dropdown-menu a { border-bottom: 0; }
+.social-links, .header-social { display: flex; align-items: center; gap: 0.45rem; }
+.social-links a, #site-theme-toggle, .social-icon-link, .theme-icon-toggle {
+	display: inline-flex; align-items: center; justify-content: center;
+	width: 38px; height: 38px; border-radius: 999px; border: 1px solid var(--input-border);
+	background: var(--surface-alt); color: var(--text); text-decoration: none; position: relative; padding: 0;
+}
+.social-icon-glyph, .theme-toggle-icon { width: 16px; height: 16px; font-size: 0.95rem; }
+.site-menu-toggle { display: none; margin-left: auto; min-height: 38px; border-radius: 10px; border: 1px solid var(--input-border); background: var(--surface-alt); color: var(--text); padding: 0.45rem 0.75rem; }
+
+.footer-shell {
+	margin-top: 2rem;
+	padding: 1.6rem 1rem 2.4rem;
+	border-top: 1px solid var(--border);
+	background: color-mix(in srgb, var(--surface-strong) 86%, transparent);
+}
+.footer-inner { width: min(var(--container-wide), calc(100% - 2rem)); margin: 0 auto; display: flex; justify-content: space-between; gap: 1rem; align-items: center; color: var(--text-muted); font-size: 0.95rem; }
+
+.blog-heading { margin-bottom: 1.5rem; }
+.blog-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 1.2rem; list-style: none; padding: 0; margin: 0; }
+.post-card { border: 1px solid var(--border); border-radius: 12px; overflow: hidden; background: var(--surface-alt); }
+.post-card a { display: block; padding: 0.75rem; color: inherit; text-decoration: none; }
+.post-card h2, .post-card h3 { font-size: 1.15rem; margin: 0 0 0.35rem; }
+.post-card .post-date { margin: 0; color: var(--text-muted); font-size: 0.9rem; }
+
+@media (max-width: 900px) {
+	.site-menu-toggle { display: inline-flex; }
+	.site-nav-panel { position: absolute; left: 0; right: 0; top: 74px; background: var(--surface-strong); border-bottom: 1px solid var(--border); padding: 0.6rem 1rem 1rem; display: none; flex-direction: column; align-items: stretch; }
+	.site-nav-panel.is-open { display: flex; }
+	.site-nav { flex-direction: column; align-items: flex-start; }
+	.site-dropdown-menu { position: static; margin-top: 0.35rem; }
+	.social-links, .header-social { justify-content: flex-start; }
+	.footer-inner { flex-direction: column; align-items: flex-start; }
+}

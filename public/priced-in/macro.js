@@ -165,9 +165,37 @@ createApp({
         onRangeSelect: (range) => { this.selectedRange = range; },
         onOpenYearlyData: () => this.openYearlyData(),
       }));
+      this.$nextTick(() => this.applyModebarTextButtons(chartElement));
+    },
+    applyModebarTextButtons(chartElement) {
+      if (!chartElement) return;
+      chartElement.querySelectorAll('.modebar-btn').forEach((button) => {
+        const title = button.getAttribute('data-title') || button.getAttribute('title') || '';
+        const rangeButton = RANGE_OPTIONS.find((option) => title.includes(`Apply ${option.label} range`));
+        const customButtonLabels = [
+          { match: 'Toggle log scale', label: 'log' },
+          { match: 'Toggle rebase to 100', label: 'Rebase' },
+          { match: 'Open yearly data table in a dedicated page', label: 'Data ↗' },
+        ];
+        const mappedButton = customButtonLabels.find((entry) => title.includes(entry.match));
+        const label = rangeButton
+          ? (rangeButton.value === 'full' ? 'All' : rangeButton.label.replace(/^Last\s+/i, '').toLowerCase())
+          : mappedButton?.label;
+        if (!label) return;
+        button.classList.add('modebar-text-button');
+        button.textContent = label;
+        button.setAttribute('aria-label', title);
+      });
     },
     openYearlyData() {
-      document.getElementById('macro-summary-table')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      const params = new URLSearchParams();
+      params.set('mode', 'macro');
+      params.set('metric', this.currentMetric?.key || this.selectedMetricKey || '');
+      params.set('category', this.selectedCategory || 'all');
+      params.set('range', this.selectedRange || 'full');
+      if (this.showRebased) params.set('rebased', '1');
+      params.set('theme', this.theme);
+      window.open(`/priced-in/yearly.html?${params.toString()}`, '_blank', 'noopener');
     },
     toggleTheme() {
       this.theme = this.theme === 'dark' ? 'light' : 'dark';

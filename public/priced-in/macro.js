@@ -23,7 +23,7 @@ function plotlyAxisBase(isDarkMode) {
   };
 }
 
-function plotlyConfig({ onToggleLogScale, onToggleRebase, onRangeSelect, onExportData } = {}) {
+function plotlyConfig({ onToggleLogScale, onToggleRebase, onRangeSelect, onOpenYearlyData } = {}) {
   const rangeButtons = RANGE_OPTIONS.map((option) => ({
     name: `Range: ${option.label}`,
     title: `Apply ${option.label} range`,
@@ -40,7 +40,7 @@ function plotlyConfig({ onToggleLogScale, onToggleRebase, onRangeSelect, onExpor
       { name: 'Toggle log scale', title: 'Toggle log scale', icon: PLOTLY_MODEBAR_ICON.log, click: () => onToggleLogScale?.() },
       { name: 'Toggle rebase', title: 'Toggle rebase to 100', icon: PLOTLY_MODEBAR_ICON.rebase, click: () => onToggleRebase?.() },
       ...rangeButtons,
-      { name: 'Data ↗', title: 'Export visible yearly data as CSV', icon: PLOTLY_MODEBAR_ICON.yearly, click: () => onExportData?.() },
+      { name: 'Open yearly data', title: 'Open yearly data table in a dedicated page', icon: PLOTLY_MODEBAR_ICON.yearly, click: () => onOpenYearlyData?.() },
     ],
     modeBarButtonsToRemove: ['zoom2d', 'pan2d', 'select2d', 'lasso2d', 'zoomIn2d', 'zoomOut2d', 'autoScale2d', 'resetScale2d', 'toggleSpikelines', 'hoverClosestCartesian', 'hoverCompareCartesian', 'toImage'],
   };
@@ -163,18 +163,11 @@ createApp({
         onToggleLogScale: () => { this.useLogScale = !this.useLogScale; },
         onToggleRebase: () => { this.showRebased = !this.showRebased; },
         onRangeSelect: (range) => { this.selectedRange = range; },
-        onExportData: () => {
-          const rows = [['Year', this.currentMetric.name], ...this.transformedSeries.map((point) => [point.year, point.value])];
-          const csv = rows.map((row) => row.join(',')).join('\n');
-          const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
-          const url = URL.createObjectURL(blob);
-          const a = document.createElement('a');
-          a.href = url;
-          a.download = `${this.currentMetric.key}-${this.selectedRange}${this.showRebased ? '-rebased' : ''}.csv`;
-          a.click();
-          URL.revokeObjectURL(url);
-        },
+        onOpenYearlyData: () => this.openYearlyData(),
       }));
+    },
+    openYearlyData() {
+      document.getElementById('macro-summary-table')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
     },
     toggleTheme() {
       this.theme = this.theme === 'dark' ? 'light' : 'dark';
@@ -202,6 +195,14 @@ createApp({
       const series = metric?.series || [];
       if (series.length < 2 || !series[0].value) return '—';
       const change = ((series.at(-1).value - series[0].value) / Math.abs(series[0].value)) * 100;
+      return `${change > 0 ? '+' : ''}${change.toFixed(1)}%`;
+    },
+    latestYearChange(metric) {
+      const series = metric?.series || [];
+      if (series.length < 2 || !series.at(-2)?.value) return '—';
+      const previous = series.at(-2).value;
+      const latest = series.at(-1)?.value;
+      const change = ((latest - previous) / Math.abs(previous)) * 100;
       return `${change > 0 ? '+' : ''}${change.toFixed(1)}%`;
     },
   },

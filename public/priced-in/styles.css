@@ -141,6 +141,7 @@ a { color: inherit; }
   flex-wrap: wrap;
 }
 .site-link {
+  text-decoration: none;
   border-bottom: 2px solid transparent;
   border-radius: 0;
   min-height: 34px;
@@ -156,6 +157,7 @@ a { color: inherit; }
 .site-dropdown summary.active,
 .site-dropdown-menu .site-link.active {
   border-bottom-color: var(--accent);
+  text-decoration: none;
 }
 .site-dropdown { position: relative; }
 .site-dropdown summary::-webkit-details-marker { display: none; }

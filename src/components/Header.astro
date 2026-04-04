@@ -1,14 +1,15 @@
 ---
-const pathname = Astro.url.pathname.replace(import.meta.env.BASE_URL, '');
+const rawPathname = Astro.url.pathname.replace(import.meta.env.BASE_URL, '');
+const pathname = rawPathname.length > 1 ? rawPathname.replace(/\/$/, '') : rawPathname;
 const isPricedIn = pathname.startsWith('/priced-in');
 const isBlog = pathname === '/blog' || pathname.startsWith('/blog/');
 const isTags = pathname === '/blog/tags' || pathname.startsWith('/blog/tag/');
 
 const pricedInLinks = [
-	{ href: '/priced-in', label: 'Cost of Living', active: pathname === '/priced-in' || pathname === '/priced-in/' },
-	{ href: '/priced-in/single?item=house&denom=context:fiat', label: 'Single Series', active: pathname.includes('/priced-in/single') },
-	{ href: '/priced-in/macro', label: 'Macro Trends', active: pathname.includes('/priced-in/macro') },
-	{ href: '/priced-in/assumptions', label: 'About Priced In', active: pathname.includes('/priced-in/assumptions') },
+	{ href: '/priced-in/', label: 'Cost of Living', active: pathname === '/priced-in' },
+	{ href: '/priced-in/single/?item=house&denom=context:fiat', label: 'Single Series', active: pathname.startsWith('/priced-in/single') },
+	{ href: '/priced-in/macro/', label: 'Macro Trends', active: pathname.startsWith('/priced-in/macro') },
+	{ href: '/priced-in/assumptions/', label: 'About Priced In', active: pathname.startsWith('/priced-in/assumptions') },
 ];
 ---
 
@@ -33,9 +34,9 @@ const pricedInLinks = [
 			</div>
 		</div>
 		<div class="social-links">
-			<a href="https://x.com/nick_j_stevens" target="_blank" rel="noopener noreferrer" aria-label="Follow me on X">𝕏</a>
-			<a href="https://github.com/nickjstevens" target="_blank" rel="noopener noreferrer" aria-label="Find me on Github">GH</a>
-			<a href="https://primal.net/p/npub1ljq0jgmha3xlv90jyqwcel3f0fvhyzcshk3lugk3qmt8ufcm4e7qs2cpnl" target="_blank" rel="noopener noreferrer" aria-label="Find me on Nostr">N</a>
+			<a href="https://x.com/nick_j_stevens" target="_blank" rel="noopener noreferrer" aria-label="Follow me on X" title="Follow me on X">𝕏</a>
+			<a href="https://github.com/nickjstevens" target="_blank" rel="noopener noreferrer" aria-label="Follow me on GitHub" title="Follow me on GitHub">GH</a>
+			<a href="https://primal.net/p/npub1ljq0jgmha3xlv90jyqwcel3f0fvhyzcshk3lugk3qmt8ufcm4e7qs2cpnl" target="_blank" rel="noopener noreferrer" aria-label="Follow me on Nostr" title="Follow me on Nostr">N</a>
 			<button id="site-theme-toggle" type="button" aria-label="Toggle light and dark mode">🌙</button>
 		</div>
 	</nav>

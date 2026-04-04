@@ -2,14 +2,9 @@
 const today = new Date();
 ---
 
-<footer>
-	&copy; {today.getFullYear()} Nick Stevens. All rights reserved.
+<footer class="footer-shell">
+	<div class="footer-inner">
+		<p>&copy; {today.getFullYear()} Nick Stevens. All rights reserved.</p>
+		<p>Built as a calm corner for writing and tools.</p>
+	</div>
 </footer>
-<style>
-	footer {
-		padding: 2em 1em 6em 1em;
-		background: linear-gradient(var(--gray-gradient)) no-repeat;
-		color: rgb(var(--gray));
-		text-align: center;
-	}
-</style>

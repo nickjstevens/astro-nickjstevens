@@ -18,62 +18,44 @@ const { title, description, pubDate, updatedDate } = Astro.props;
 	<head>
 		<BaseHead title={title} description={description} />
 		<style>
-			main {
-				width: calc(100% - 2em);
-				max-width: 100%;
-				margin: 0;
-			}
-			.prose {
-				width: 720px;
-				max-width: calc(100% - 2em);
-				margin: auto;
-				padding: 1em;
-				color: rgb(var(--gray-dark));
+			.page-prose {
+				width: min(var(--container-prose), 100%);
+				margin: 0 auto;
 			}
 			.title {
-				margin-bottom: 1em;
-				padding: 1em 0;
-				text-align: center;
-				line-height: 1;
+				margin-bottom: 1.5rem;
+				padding: 0.25rem 0 1rem;
+				line-height: 1.1;
 			}
-			.title h1 {
-				margin: 0 0 0.5em 0;
-			}
-			.date {
-				margin-bottom: 0.5em;
-				color: rgb(var(--gray));
-			}
-			.last-updated-on {
-				font-style: italic;
-			}
+			.title h1 { margin: 0 0 0.4rem 0; }
+			.date { margin-bottom: 0.5rem; color: rgb(var(--gray)); }
+			.last-updated-on { font-style: italic; font-size: 0.95rem; }
 		</style>
 	</head>
 
 	<body>
 		<Header />
-		<main>
-			<article>
-				<div class="prose">
-					<div class="title">
-						{pubDate && (
-							<div class="date">
-								<FormattedDate date={pubDate} />
-								{
-									updatedDate && (
-										<div class="last-updated-on">
-											Last updated on <FormattedDate date={updatedDate} />
-										</div>
-									)
-								}
-							</div>
-						)}
-						<h1>{title}</h1>
-						<hr />
-					</div>
-					<slot />
+		<main class="page-shell">
+			<article class="page-prose">
+				<div class="title">
+					{pubDate && (
+						<div class="date">
+							<FormattedDate date={pubDate} />
+							{
+								updatedDate && (
+									<div class="last-updated-on">
+										Last updated on <FormattedDate date={updatedDate} />
+									</div>
+								)
+							}
+						</div>
+					)}
+					<h1>{title}</h1>
+					<hr />
 				</div>
+				<slot />
 			</article>
 		</main>
 		<Footer />
 	</body>
-</html> 
+</html>

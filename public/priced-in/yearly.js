@@ -32,6 +32,7 @@ createApp({
       years: [],
       contextSeries: {},
       items: [],
+      macroMetrics: [],
       isLoading: true,
       error: '',
       allDenominator: 'context:fiat',
@@ -42,24 +43,52 @@ createApp({
       mode: 'compare',
       numeratorKey: '',
       denominatorKey: '',
+      macroMetricKey: '',
+      macroCategory: 'all',
       isMobileMenuOpen: false,
       theme: 'dark',
     };
   },
   computed: {
     compareTableColumns() {
+      if (this.mode === 'macro') {
+        return this.macroMetricKey ? [{ key: this.macroMetricKey, name: this.seriesName(this.macroMetricKey) }] : [];
+      }
       if (this.mode === 'single') return this.itemKey ? [{ key: this.itemKey, name: this.seriesName(this.itemKey) }] : [];
       if (this.mode === 'ratio') return [{ key: 'ratio', name: this.ratioLabel }];
       return this.selectedKeys.map((key) => ({ key, name: this.seriesName(key) }));
     },
     compareTableRows() {
+      if (this.mode === 'macro') {
+        return this.macroSeriesPoints.map((point) => ({ year: point.year, values: { [this.macroMetricKey]: point.value } }));
+      }
       const years = [...new Set(this.compareTableColumns.flatMap((column) => (this.seriesMap[column.key] || []).map((point) => point.year)))].sort((a, b) => a - b);
       return years.map((year) => ({
         year,
         values: Object.fromEntries(this.compareTableColumns.map((column) => [column.key, (this.seriesMap[column.key] || []).find((point) => point.year === year)?.value ?? null])),
       }));
     },
+    macroMetric() {
+      return this.macroMetrics.find((metric) => metric.key === this.macroMetricKey) || this.macroMetrics[0] || null;
+    },
+    macroSeriesPoints() {
+      if (!this.macroMetric?.series?.length) return [];
+      const series = this.macroMetric.series;
+      const lastYear = series.at(-1)?.year;
+      if (!lastYear) return [];
+      const minYear = this.selectedRange === 'last10' ? lastYear - 9
+        : this.selectedRange === 'last20' ? lastYear - 19
+          : this.selectedRange === 'last30' ? lastYear - 29
+            : this.selectedRange === 'last40' ? lastYear - 39
+              : series[0]?.year;
+      const filtered = series.filter((point) => point.year >= minYear);
+      if (!this.rebased || !filtered.length) return filtered;
+      const base = filtered[0]?.value;
+      if (!base) return filtered;
+      return filtered.map((point) => ({ year: point.year, value: (point.value / base) * 100 }));
+    },
     seriesMap() {
+      if (this.mode === 'macro') return {};
       if (this.mode === 'single') {
         return this.itemKey
           ? { [this.itemKey]: this.visiblePairSeries(this.itemKey, this.denominatorSeriesRef(), this.costRebaseForcedStartYear([this.itemKey], this.denominatorType() === 'context' ? this.denominatorKey() : null)) }
@@ -74,11 +103,16 @@ createApp({
       return `${this.seriesName(this.numeratorKey)} / ${this.seriesName(this.denominatorKey)}`;
     },
     titleText() {
+      if (this.mode === 'macro') return this.macroMetric?.name || 'Macro yearly data table';
       if (this.mode === 'single') return this.seriesName(this.itemKey);
       if (this.mode === 'ratio') return this.ratioLabel;
       return 'Yearly data table';
     },
     descriptionText() {
+      if (this.mode === 'macro') {
+        const valueBasis = this.rebased ? 'rebased to 100 at the first visible year' : (this.macroMetric?.unit || 'raw units');
+        return `Yearly macro values for ${this.macroMetric?.name || 'the selected metric'}, ${valueBasis}, across the ${this.selectedRange} range.`;
+      }
       const denominatorLabel = this.denominatorLabel();
       const rebaseLabel = this.rebased ? 'rebased to 100 at the first shared visible year' : 'shown in raw priced-in terms';
       const bitcoinLabel = 'with bitcoin history truncated before 2017';
@@ -95,6 +129,15 @@ createApp({
       return `Yearly values for the selected items priced in ${denominatorLabel}, ${rebaseLabel}, across the ${this.selectedRange} range${suffix}.`;
     },
     backUrl() {
+      if (this.mode === 'macro') {
+        const params = new URLSearchParams();
+        if (this.macroMetricKey) params.set('metric', this.macroMetricKey);
+        if (this.macroCategory && this.macroCategory !== 'all') params.set('category', this.macroCategory);
+        params.set('range', this.selectedRange);
+        if (this.rebased) params.set('rebased', '1');
+        params.set('theme', this.theme);
+        return `/priced-in/macro.html?${params.toString()}`;
+      }
       const params = new URLSearchParams();
       params.set('range', this.selectedRange);
       if (this.rebased) params.set('rebased', '1');
@@ -142,11 +185,15 @@ createApp({
       return this.contextSeries[this.denominatorKey()]?.label || this.denominatorKey();
     },
     formatTableValue(value, columnKey) {
+      if (this.mode === 'macro') {
+        return formatNumber(value);
+      }
       if (this.isBitcoinQuotedColumn(columnKey)) return formatBitcoinHuman(value);
       return formatNumber(value);
     },
     seriesName(seriesKey) {
       if (!seriesKey) return '—';
+      if (this.mode === 'macro') return this.macroMetrics.find((metric) => metric.key === seriesKey)?.name || seriesKey;
       if (seriesKey.startsWith('context:')) return this.contextSeries[seriesKey.replace('context:', '')]?.label || seriesKey;
       return this.items.find((item) => item.key === seriesKey)?.name || seriesKey;
     },
@@ -161,6 +208,8 @@ createApp({
       this.mode = p.get('mode') || 'compare';
       this.numeratorKey = p.get('itemA') || '';
       this.denominatorKey = p.get('itemB') || '';
+      this.macroMetricKey = p.get('metric') || '';
+      this.macroCategory = p.get('category') || 'all';
       this.theme = p.get('theme') === 'light' ? 'light' : 'dark';
       document.documentElement.setAttribute('data-theme', this.theme);
     },
@@ -245,6 +294,20 @@ createApp({
       this.isLoading = true;
       this.error = '';
       try {
+        if (this.mode === 'macro') {
+          const macroResponse = await fetch('macro-trends.json', { cache: 'no-store' });
+          if (!macroResponse.ok) throw new Error(`Macro dataset unavailable (${macroResponse.status})`);
+          const macroPayload = await macroResponse.json();
+          this.macroMetrics = Array.isArray(macroPayload?.metrics) ? macroPayload.metrics : [];
+          if (!this.macroMetrics.length) throw new Error('macro dataset malformed');
+          if (!this.macroMetricKey || !this.macroMetrics.some((metric) => metric.key === this.macroMetricKey)) {
+            const metricFromCategory = this.macroCategory === 'all'
+              ? this.macroMetrics[0]
+              : this.macroMetrics.find((metric) => metric.category === this.macroCategory);
+            this.macroMetricKey = metricFromCategory?.key || this.macroMetrics[0]?.key || '';
+          }
+          return;
+        }
         const response = await fetch('prices-api.json', { cache: 'no-store' });
         if (!response.ok) throw new Error(`Data unavailable (${response.status})`);
         const payload = await response.json();

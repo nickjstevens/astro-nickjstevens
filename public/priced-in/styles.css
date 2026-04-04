@@ -213,6 +213,9 @@ a { color: inherit; }
   line-height: 1.2;
   transition: opacity 0.16s ease, transform 0.16s ease, visibility 0.16s ease;
   z-index: 40;
+  max-width: min(18rem, calc(100vw - 1.25rem));
+  white-space: normal;
+  text-align: center;
 }
 .social-icon-link:hover::after,
 .social-icon-link:focus-visible::after,
@@ -592,6 +595,10 @@ summary { cursor: pointer; }
   max-height: min(70vh, 900px);
 }
 
+.macro-summary-card .yearly-table-wrap {
+  min-height: clamp(24rem, 52vh, 34rem);
+  max-height: clamp(24rem, 52vh, 34rem);
+}
 
 .modebar-text-button {
   min-width: 2.25rem !important;
@@ -780,6 +787,21 @@ summary { cursor: pointer; }
 
   .modebar-text-button {
     font-size: 0.7rem !important;
+  }
+
+  .social-icon-link::after,
+  .theme-icon-toggle::after {
+    left: auto;
+    right: 0;
+    transform: translate(0, 0.2rem);
+    text-align: left;
+  }
+
+  .social-icon-link:hover::after,
+  .social-icon-link:focus-visible::after,
+  .theme-icon-toggle:hover::after,
+  .theme-icon-toggle:focus-visible::after {
+    transform: translate(0, 0);
   }
 }
 

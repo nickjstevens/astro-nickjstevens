@@ -6,10 +6,10 @@ const isBlog = pathname === '/blog' || pathname.startsWith('/blog/');
 const isTags = pathname === '/blog/tags' || pathname.startsWith('/blog/tag/');
 
 const pricedInLinks = [
-	{ href: '/priced-in/', label: 'Cost of Living', active: pathname === '/priced-in' },
-	{ href: '/priced-in/single/?item=house&denom=context:fiat', label: 'Single Series', active: pathname.startsWith('/priced-in/single') },
-	{ href: '/priced-in/macro/', label: 'Macro Trends', active: pathname.startsWith('/priced-in/macro') },
-	{ href: '/priced-in/assumptions/', label: 'About Priced In', active: pathname.startsWith('/priced-in/assumptions') },
+	{ href: '/priced-in/index.html', label: 'Cost of Living', active: pathname === '/priced-in' || pathname.startsWith('/priced-in/index.html') },
+	{ href: '/priced-in/single.html?item=house&denom=context:fiat', label: 'Single Series', active: pathname.startsWith('/priced-in/single') },
+	{ href: '/priced-in/macro.html', label: 'Macro Trends', active: pathname.startsWith('/priced-in/macro') },
+	{ href: '/priced-in/assumptions.html', label: 'About Priced In', active: pathname.startsWith('/priced-in/assumptions') },
 ];
 ---
 
@@ -34,9 +34,9 @@ const pricedInLinks = [
 			</div>
 		</div>
 		<div class="social-links">
-			<a href="https://x.com/nick_j_stevens" target="_blank" rel="noopener noreferrer" aria-label="Follow me on X" title="Follow me on X">𝕏</a>
-			<a href="https://github.com/nickjstevens" target="_blank" rel="noopener noreferrer" aria-label="Follow me on GitHub" title="Follow me on GitHub">GH</a>
-			<a href="https://primal.net/p/npub1ljq0jgmha3xlv90jyqwcel3f0fvhyzcshk3lugk3qmt8ufcm4e7qs2cpnl" target="_blank" rel="noopener noreferrer" aria-label="Follow me on Nostr" title="Follow me on Nostr">N</a>
+			<a href="https://x.com/nick_j_stevens" target="_blank" rel="noopener noreferrer" aria-label="Follow me on X" data-tooltip="Follow me on X">𝕏</a>
+			<a href="https://github.com/nickjstevens" target="_blank" rel="noopener noreferrer" aria-label="Follow me on GitHub" data-tooltip="Follow me on GitHub">GH</a>
+			<a href="https://primal.net/p/npub1ljq0jgmha3xlv90jyqwcel3f0fvhyzcshk3lugk3qmt8ufcm4e7qs2cpnl" target="_blank" rel="noopener noreferrer" aria-label="Follow me on Nostr" data-tooltip="Follow me on Nostr">N</a>
 			<button id="site-theme-toggle" type="button" aria-label="Toggle light and dark mode">🌙</button>
 		</div>
 	</nav>
@@ -104,6 +104,30 @@ const pricedInLinks = [
 		width: 36px; height: 36px; border-radius: 999px;
 		border: 1px solid var(--input-border); background: var(--surface-alt);
 		color: var(--text); text-decoration: none; font-size: 0.8rem; font-weight: 700;
+	}
+	.social-links a { position: relative; }
+	.social-links a::after {
+		content: attr(data-tooltip);
+		position: absolute;
+		left: 50%;
+		bottom: calc(100% + 0.5rem);
+		transform: translate(-50%, 0.2rem);
+		opacity: 0;
+		pointer-events: none;
+		white-space: nowrap;
+		background: var(--surface-strong);
+		color: var(--text);
+		border: 1px solid var(--border);
+		border-radius: 8px;
+		padding: 0.2rem 0.45rem;
+		font-size: 0.7rem;
+		line-height: 1.2;
+		transition: opacity 0.15s ease, transform 0.15s ease;
+	}
+	.social-links a:hover::after,
+	.social-links a:focus-visible::after {
+		opacity: 1;
+		transform: translate(-50%, 0);
 	}
 	#site-theme-toggle { cursor: pointer; }
 	@media (max-width: 900px) {

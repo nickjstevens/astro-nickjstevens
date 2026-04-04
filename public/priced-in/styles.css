@@ -189,6 +189,11 @@ a { color: inherit; }
   border-radius: 999px;
   border: 1px solid var(--input-border);
   background: var(--surface-alt);
+  text-decoration: none;
+}
+.social-icon-link:hover,
+.social-icon-link:focus-visible {
+  text-decoration: none;
 }
 .page-link, .share-link, .theme-toggle, .theme-icon-toggle, button {
   display: inline-flex;

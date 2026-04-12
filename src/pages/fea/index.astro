@@ -1,0 +1,28 @@
+---
+import Layout from '../../layouts/Page.astro';
+import cvFile from '../../assets/CV Nick Stevens 2025.pdf';
+---
+
+<Layout
+	title="FEA"
+	description="Finite Element Analysis resources, tools, and practical engineering insights from Nick Stevens"
+>
+	<p>
+		Finite Element Analysis (FEA) is a numerical method for turning complex engineering reality into a solvable model,
+		so you can predict stresses, strains, deflections, temperatures, and failure margins before hardware is built.
+	</p>
+	<p>
+		My engineering background combines practical FEA delivery, systems thinking, and clear communication across technical
+		and non-technical audiences. My CV highlights experience in engineering analysis, simulation-led decision making,
+		and Python-supported workflows.
+	</p>
+	<p>
+		<a href={cvFile} target="_blank" rel="noopener noreferrer">View my CV (PDF)</a>.
+	</p>
+
+	<h2>Explore</h2>
+	<ul>
+		<li><a href="/fea/ebook">FEA E-Book</a> — practical guidance and workflows for better analysis work.</li>
+		<li><a href="/fea/richardson-extrapolation">Richardson Extrapolation Tool</a> — upcoming interactive SPA.</li>
+	</ul>
+</Layout>

@@ -56,7 +56,7 @@ createApp({
       selectedMetricKey: '',
       showRebased: false,
       useLogScale: false,
-      selectedRange: 'full',
+      selectedRange: 'last30',
       theme: localStorage.getItem(THEME_KEY) === 'light' ? 'light' : 'dark',
     };
   },

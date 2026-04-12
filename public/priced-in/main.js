@@ -255,7 +255,7 @@ createApp({
     return {
       currentPage: document.body.dataset.page || 'cost',
       years: [], contextSeries: {}, items: [], denominators: [], charts: {},
-      perChartDenominator: {}, allDenominator: 'fiat',
+      perChartDenominator: {}, allDenominator: 'context:fiat',
       viewMode: 'compare', selectedRange: 'full', rebased: false,
       useLogScale: false, showUsdOverlay: false, showSpreadRollingCorrelation: false,
       compareKeys: [], search: '', selectedCategory: 'all', selectedItemKey: 'all',
@@ -301,7 +301,7 @@ createApp({
     spreadSeriesOptions() {
       const itemSeries = this.items.map((item) => ({ key: item.key, name: item.name, isDenominator: false }));
       const denominatorSeries = this.denominators.map((denom) => ({
-        key: `context:${denom.value}`,
+        key: denom.value,
         name: denom.label,
         isDenominator: true,
       }));
@@ -337,7 +337,7 @@ createApp({
     compareSeriesMap() {
       return Object.fromEntries(this.compareSelectionKeys.map((key) => {
         const item = this.items.find((x) => x.key === key);
-        return [key, this.visiblePairSeries(key, `context:${this.allDenominator}`, this.costRebaseForcedStartYear())];
+        return [key, this.visiblePairSeries(key, this.denominatorSeriesRef(this.allDenominator), this.costRebaseForcedStartYear())];
       }));
     },
     compareTableColumns() {
@@ -504,9 +504,9 @@ createApp({
     buyingPowerSummary(itemKey) {
       const item = this.items.find((x) => x.key === itemKey);
       const denominator = this.perChartDenominator[itemKey] || this.allDenominator;
-      const denominatorLabel = this.contextSeries[denominator]?.label || denominator;
+      const denominatorLabel = this.denominatorDisplayLabel(denominator);
       const totalChange = this.chartStats(itemKey).raw?.totalChange;
-      const points = this.visiblePairSeries(itemKey, `context:${denominator}`, this.costRebaseForcedStartYear()).filter((point) => point.value != null);
+      const points = this.visiblePairSeries(itemKey, this.denominatorSeriesRef(denominator), this.costRebaseForcedStartYear()).filter((point) => point.value != null);
       const first = points[0];
       const last = points[points.length - 1];
       const yearSpan = first && last ? Math.max(0, Math.round(last.year - first.year)) : null;
@@ -560,6 +560,20 @@ createApp({
       if (seriesKey.startsWith('context:')) return this.contextSeries[seriesKey.replace('context:', '')]?.label || seriesKey;
       return this.items.find((item) => item.key === seriesKey)?.name || seriesKey;
     },
+    normalizeDenominatorValue(value) {
+      const raw = String(value || '').trim();
+      if (!raw) return 'context:fiat';
+      if (raw.startsWith('context:') || raw.startsWith('item:')) return raw;
+      if (this.contextSeries[raw]) return `context:${raw}`;
+      if (this.items.some((item) => item.key === raw)) return `item:${raw}`;
+      return raw;
+    },
+    denominatorSeriesRef(value = this.allDenominator) {
+      return this.normalizeDenominatorValue(value);
+    },
+    denominatorDisplayLabel(value = this.allDenominator) {
+      return this.seriesName(this.denominatorSeriesRef(value));
+    },
     formatTableValue(value) {
       return formatNumber(value);
     },
@@ -608,7 +622,7 @@ createApp({
     },
     readUrlState() {
       const p = new URLSearchParams(location.search);
-      this.allDenominator = p.get('denom') || 'fiat';
+      this.allDenominator = this.normalizeDenominatorValue(p.get('denom') || 'context:fiat');
       this.selectedRange = p.get('range') || 'full';
       this.viewMode = 'compare';
       this.rebased = p.get('rebased') === '1';
@@ -695,8 +709,10 @@ createApp({
       return [this.years[0], this.years[this.years.length - 1]];
     },
     convertSeries(item, denominator) {
+      const denominatorRef = this.denominatorSeriesRef(denominator);
+      const denominatorValues = this.annualSeriesValuesForKey(denominatorRef);
       return item.values.map((price, idx) => {
-        const d = this.contextSeries[denominator]?.values?.[idx];
+        const d = denominatorValues[idx];
         if (price == null || d == null || d === 0) return null;
         return price / d;
       });
@@ -753,7 +769,7 @@ createApp({
         const value = this.pointValueForSeries(seriesKey, year);
         return { year, value, observed: value != null };
       }).filter((point) => point.year >= fromYear && point.year <= toYear && point.observed);
-      if (this.pairUsesBitcoin(seriesKey, `context:${denominator}`)) points = points.filter((point) => point.year >= 2017);
+      if (this.pairUsesBitcoin(seriesKey, this.denominatorSeriesRef(denominator))) points = points.filter((point) => point.year >= 2017);
       const rebaseStarts = this.rebaseStartYears([seriesKey]);
       const forcedStart = forcedStartYear ?? (this.rebased && rebaseStarts.length ? Math.max(...rebaseStarts) : null);
       return this.applySeriesTransforms(points.map((point) => ({ ...point, rawValue: point.value })), forcedStart);
@@ -761,12 +777,14 @@ createApp({
     visibleSeries(item, denominator, forcedStartYear = null) {
       if (!item) return [];
       const [from, to] = this.rangeBounds();
+      const denominatorRef = this.denominatorSeriesRef(denominator);
+      const denominatorValues = this.annualSeriesValuesForKey(denominatorRef);
       let points = this.years.map((year, idx) => ({
         year,
         value: this.convertSeries(item, denominator)[idx],
-        observed: item.values[idx] != null && this.contextSeries[denominator]?.values?.[idx] != null,
+        observed: item.values[idx] != null && denominatorValues[idx] != null,
       })).filter((p) => p.year >= from && p.year <= to && p.observed);
-      if (this.pairUsesBitcoin(item.key, `context:${denominator}`)) points = points.filter((p) => p.year >= 2017);
+      if (this.pairUsesBitcoin(item.key, denominatorRef)) points = points.filter((p) => p.year >= 2017);
       const rebaseStarts = this.rebaseStartYears([item.key], denominator);
       const forcedStart = forcedStartYear ?? (this.rebased && rebaseStarts.length ? Math.max(...rebaseStarts) : null);
       return this.applySeriesTransforms(points.map((point) => ({ ...point, rawValue: point.value })), forcedStart);
@@ -792,7 +810,7 @@ createApp({
       const item = this.items.find((x) => x.key === itemKey);
       const d = this.perChartDenominator[itemKey] || this.allDenominator;
       if (!item) return { latest: null, series: [] };
-      const pts = this.visiblePairSeries(itemKey, `context:${d}`).filter((p) => p.value != null);
+      const pts = this.visiblePairSeries(itemKey, this.denominatorSeriesRef(d)).filter((p) => p.value != null);
       if (pts.length < 6) return { latest: null, series: [] };
       const returns = [];
       for (let i = 1; i < pts.length; i += 1) {
@@ -815,7 +833,7 @@ createApp({
         cagrSelected: '—', totalChange: '—', bestYear: '—', worstYear: '—', vol5y: '—', maxDrawdown: '—', fromPeak: '—', correlationToDenominator: '—',
         raw: { cagrSelected: null, totalChange: null, bestYear: null, worstYear: null },
       };
-      const pts = this.visiblePairSeries(itemKey, `context:${d}`).filter((p) => p.value != null);
+      const pts = this.visiblePairSeries(itemKey, this.denominatorSeriesRef(d)).filter((p) => p.value != null);
       if (pts.length < 2) return {
         cagrSelected: '—', totalChange: '—', bestYear: '—', worstYear: '—', vol5y: '—', maxDrawdown: '—', fromPeak: '—', correlationToDenominator: '—',
         raw: { cagrSelected: null, totalChange: null, bestYear: null, worstYear: null },
@@ -834,7 +852,7 @@ createApp({
       const volatility = this.rollingVolatility(itemKey).latest;
       const corr = this.pairCorrelation(
         this.visiblePairSeries(itemKey, 'context:fiat').filter((p) => p.value != null),
-        this.visiblePairSeries(`context:${d}`, 'context:fiat').filter((p) => p.value != null),
+        this.visiblePairSeries(this.denominatorSeriesRef(d), 'context:fiat').filter((p) => p.value != null),
       );
       return {
         cagrSelected: formatPercent(cagr),
@@ -947,7 +965,7 @@ createApp({
     compareChartLayout() {
       return this.plotlyLayout({
         xaxis: { ...plotlyAxisBase(this.isDarkMode), title: 'Year', tickmode: 'auto', nticks: 8, tickformat: 'd' },
-        yaxis: { ...plotlyAxisBase(this.isDarkMode), title: this.rebasedYAxisTitle(this.contextSeries[this.allDenominator]?.label || this.allDenominator), type: this.useLogScale ? 'log' : 'linear', rangemode: this.useLogScale ? undefined : 'tozero' },
+        yaxis: { ...plotlyAxisBase(this.isDarkMode), title: this.rebasedYAxisTitle(this.denominatorDisplayLabel(this.allDenominator)), type: this.useLogScale ? 'log' : 'linear', rangemode: this.useLogScale ? undefined : 'tozero' },
       });
     },
     openYearlyDataPage() {
@@ -1030,11 +1048,11 @@ createApp({
       const denominator = this.perChartDenominator[itemKey] || this.allDenominator;
       if (!item) return;
       const forcedStartYear = denominator === this.allDenominator ? this.costRebaseForcedStartYear() : null;
-      const pts = this.visiblePairSeries(itemKey, `context:${denominator}`, forcedStartYear);
-      const useSatsAxis = denominator === 'bitcoin' && this.shouldUseSatsAxis([pts]);
+      const pts = this.visiblePairSeries(itemKey, this.denominatorSeriesRef(denominator), forcedStartYear);
+      const useSatsAxis = this.denominatorSeriesRef(denominator) === 'context:bitcoin' && this.shouldUseSatsAxis([pts]);
       const displayPts = this.scalePointsForDisplay(pts, { useSatsAxis });
-      const denominatorKey = `context:${denominator}`;
-      const denominatorLabel = this.contextSeries[denominator]?.label || denominator;
+      const denominatorKey = this.denominatorSeriesRef(denominator);
+      const denominatorLabel = this.denominatorDisplayLabel(denominator);
       const chartEl = document.getElementById(`chart-${itemKey}`);
       if (!chartEl) return;
       const hoverStatsByPoint = this.rebasedHoverStats(pts);
@@ -1055,7 +1073,7 @@ createApp({
         ])),
       })];
       traces[0].hovertemplate = '%{customdata[0]}<extra></extra>';
-      if (this.showUsdOverlay && denominator !== 'fiat') {
+      if (this.showUsdOverlay && this.denominatorSeriesRef(denominator) !== 'context:fiat') {
         const overlayPoints = this.visibleOverlaySeries(itemKey, denominator, forcedStartYear);
         const overlayTrace = this.plotlyLineTrace({
           name: `${item.name} (GBP overlay)`,
@@ -1072,7 +1090,7 @@ createApp({
         shapes: rebaseReferenceLine(this.isDarkMode, this.rebased),
         yaxis: {
           ...plotlyAxisBase(this.isDarkMode),
-          title: this.rebasedYAxisTitle(this.contextSeries[denominator]?.label || denominator),
+          title: this.rebasedYAxisTitle(this.denominatorDisplayLabel(denominator)),
           type: this.useLogScale ? 'log' : 'linear',
           rangemode: this.useLogScale ? undefined : 'tozero',
           ...(useSatsAxis ? this.satsAxisConfig() : {}),
@@ -1128,7 +1146,7 @@ createApp({
       entries.forEach(({ item, color }) => {
         const chartEl = document.getElementById(`summary-sparkline-${item.key}`);
         if (!chartEl) return;
-        const points = this.visiblePairSeries(item.key, `context:${this.allDenominator}`, forcedStartYear);
+        const points = this.visiblePairSeries(item.key, this.denominatorSeriesRef(this.allDenominator), forcedStartYear);
         this.renderCompactSparkline(chartEl, points, color, `summary-${item.key}`, { height: 34, margins: { l: 2, r: 2, t: 2, b: 2 }, lineWidth: 1.6 });
       });
     },
@@ -1140,9 +1158,9 @@ createApp({
       const forcedStartYear = this.costRebaseForcedStartYear();
       const rawSeriesByItemKey = new Map(entries.map(({ item }) => [
         item.key,
-        this.visiblePairSeries(item.key, `context:${this.allDenominator}`, forcedStartYear),
+        this.visiblePairSeries(item.key, this.denominatorSeriesRef(this.allDenominator), forcedStartYear),
       ]));
-      const useSatsAxis = this.allDenominator === 'bitcoin' && this.shouldUseSatsAxis([...rawSeriesByItemKey.values()]);
+      const useSatsAxis = this.denominatorSeriesRef(this.allDenominator) === 'context:bitcoin' && this.shouldUseSatsAxis([...rawSeriesByItemKey.values()]);
       const traces = sortLegendTraces(entries.map(({ item, color }) => {
         const points = rawSeriesByItemKey.get(item.key) || [];
         const hoverStatsByPoint = this.rebasedHoverStats(points);
@@ -1155,10 +1173,10 @@ createApp({
             this.buildHoverLabel({
               itemName: item.name,
               year: point.year,
-              denominatorSeriesKey: `context:${this.allDenominator}`,
+              denominatorSeriesKey: this.denominatorSeriesRef(this.allDenominator),
               pricedValue: point.value,
               gbpValue: this.pointValueForSeries(item.key, point.year),
-              denominatorLabel: this.contextSeries[this.allDenominator]?.label || this.allDenominator,
+              denominatorLabel: this.denominatorDisplayLabel(this.allDenominator),
               hoverStats: hoverStatsByPoint[idx],
             }),
           ])),
@@ -1404,14 +1422,14 @@ createApp({
     singleItemMenuUrl() {
       const params = new URLSearchParams();
       params.set('item', 'house');
-      params.set('denom', 'fiat');
+      params.set('denom', 'context:fiat');
       params.set('theme', this.isDarkMode ? 'dark' : 'light');
       return `/priced-in/single.html?${params.toString()}`;
     },
     ratioPageUrl() {
       const params = new URLSearchParams();
       params.set('item', this.selectedItemKey === 'all' ? 'house' : this.selectedItemKey);
-      params.set('denom', `context:${this.allDenominator}`);
+      params.set('denom', this.allDenominator);
       params.set('range', this.selectedRange);
       if (this.rebased) params.set('rebased', '1');
       if (this.useLogScale) params.set('log', '1');
@@ -1441,13 +1459,16 @@ createApp({
         this.years = payload.years;
         this.contextSeries = payload.contextSeries;
         this.items = payload.items;
-        this.denominators = Object.entries(this.contextSeries).map(([value, d]) => ({ value, label: d.label }));
-        if (!this.contextSeries[this.allDenominator]) this.allDenominator = this.denominators[0]?.value || 'fiat';
+        this.denominators = [
+          ...Object.entries(this.contextSeries).map(([value, d]) => ({ value: `context:${value}`, label: d.label })),
+          ...this.items.map((item) => ({ value: `item:${item.key}`, label: item.name })),
+        ];
+        if (!this.denominators.some((denominator) => denominator.value === this.allDenominator)) this.allDenominator = this.denominators[0]?.value || 'context:fiat';
         this.perChartDenominator = Object.fromEntries(this.items.map((item) => [item.key, this.allDenominator]));
         if (this.selectedCategory !== 'all' && !this.availableCategories.some((category) => category.value === this.selectedCategory)) this.selectedCategory = 'all';
         if (!this.compareKeys.length) this.compareKeys = this.items.slice(0, 3).map((i) => i.key);
         if (!this.spreadNumeratorItemKey) this.spreadNumeratorItemKey = this.items[0]?.key || '';
-        if (!this.spreadDenominatorItemKey) this.spreadDenominatorItemKey = this.denominators[0] ? `context:${this.denominators[0].value}` : (this.items[1]?.key || this.items[0]?.key || '');
+        if (!this.spreadDenominatorItemKey) this.spreadDenominatorItemKey = this.denominators[0]?.value || (this.items[1]?.key || this.items[0]?.key || '');
       } catch (err) {
         this.error = `Unable to load pricing data: ${err.message}`;
       } finally {

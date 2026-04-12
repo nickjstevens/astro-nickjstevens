@@ -237,7 +237,7 @@ createApp({
       denominators: [],
       itemKey: '',
       denominator: 'context:fiat',
-      selectedRange: 'full',
+      selectedRange: 'last30',
       rebased: false,
       useLogScale: false,
       chartZoomed: false,
@@ -320,7 +320,7 @@ createApp({
       this.itemKey = p.get('item') || '';
       const denom = p.get('denom') || 'fiat';
       this.denominator = denom.includes(':') ? denom : `context:${denom}`;
-      this.selectedRange = p.get('range') || 'full';
+      this.selectedRange = p.get('range') || 'last30';
       this.rebased = p.get('rebased') === '1';
       this.useLogScale = p.get('log') === '1';
       this.showUsdOverlay = p.get('overlayUsd') === '1';

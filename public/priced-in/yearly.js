@@ -36,7 +36,7 @@ createApp({
       isLoading: true,
       error: '',
       allDenominator: 'context:fiat',
-      selectedRange: 'full',
+      selectedRange: 'last30',
       rebased: false,
       selectedKeys: [],
       itemKey: '',
@@ -201,7 +201,7 @@ createApp({
       const p = new URLSearchParams(window.location.search);
       const denom = p.get('denom') || 'context:fiat';
       this.allDenominator = denom.includes(':') ? denom : `context:${denom}`;
-      this.selectedRange = p.get('range') || 'full';
+      this.selectedRange = p.get('range') || 'last30';
       this.rebased = p.get('rebased') === '1';
       this.selectedKeys = (p.get('items') || '').split(',').filter(Boolean);
       this.itemKey = p.get('item') || '';

@@ -256,7 +256,7 @@ createApp({
       currentPage: document.body.dataset.page || 'cost',
       years: [], contextSeries: {}, items: [], denominators: [], charts: {},
       perChartDenominator: {}, allDenominator: 'context:fiat',
-      viewMode: 'compare', selectedRange: 'full', rebased: false,
+      viewMode: 'compare', selectedRange: 'last30', rebased: false,
       useLogScale: false, showUsdOverlay: false, showSpreadRollingCorrelation: false,
       compareKeys: [], search: '', selectedCategory: 'all', selectedItemKey: 'all',
       isLoading: true, error: '',
@@ -624,7 +624,7 @@ createApp({
     readUrlState() {
       const p = new URLSearchParams(location.search);
       this.allDenominator = this.normalizeDenominatorValue(p.get('denom') || 'context:fiat');
-      this.selectedRange = p.get('range') || 'full';
+      this.selectedRange = p.get('range') || 'last30';
       this.viewMode = 'compare';
       this.rebased = p.get('rebased') === '1';
       this.useLogScale = p.get('log') === '1';

@@ -5,18 +5,20 @@ import Footer from '../components/Footer.astro';
 
 const nodes = {
   AgentsMD: {
-    id: 'AgentsMD', label: 'AGENTS.md', category: 'Shared Context', color: 'gray',
+    id: 'AgentsMD', label: '📘 AGENTS.md', category: 'Shared Context', color: 'gray',
     uvp: 'Portable instruction contracts that ensure your AI persona and rules follow the codebase across any IDE.',
     purpose: 'Standardizes agent behavior across different IDEs and CLIs using a simple markdown file.',
     usage: 'Place in root to define available tools and constraints.',
-    flow: 'Fed into execution agents (Codex/Gemini) as system instructions.'
+    flow: 'Fed into execution agents (Codex/Gemini) as system instructions.',
+    link: 'https://agents.md/'
   },
   Skills: {
-    id: 'Skills', label: 'Skills', category: 'Shared Context', color: 'yellow',
+    id: 'Skills', label: '🧠 Skills', category: 'Shared Context', color: 'yellow',
     uvp: 'Knowledge-as-code: Encapsulates complex task logic into reusable, proven blueprints.',
     purpose: 'Library of reusable "know-how" and tool definitions.',
     usage: 'Define common workflows like deployment or API auth here.',
-    flow: 'Retrieved by Orchestrators and mapped to execution routines.'
+    flow: 'Retrieved by Orchestrators and mapped to execution routines.',
+    link: 'https://github.com/openai/codex'
   },
   OpenSpec: {
     id: 'OpenSpec', label: 'Open Spec', category: 'Shared Context', color: 'gray',
@@ -25,7 +27,7 @@ const nodes = {
     usage: 'Adhere to this when defining custom tools for vendor-neutrality.'
   },
   SpecKit: {
-    id: 'SpecKit', label: 'spec-kit', category: 'Shared Context', color: 'gray',
+    id: 'SpecKit', label: '🧩 spec-kit', category: 'Shared Context', color: 'gray',
     uvp: 'The planning compiler: Converts high-level design specs into actionable task lists for agents.',
     purpose: 'Transforms design docs into executable task structures.',
     usage: 'Bridge human requirements and agent action items.'
@@ -37,36 +39,36 @@ const nodes = {
     usage: 'Follow for structured handoffs between Analyst/Dev/QA roles.'
   },
   Paperclip: {
-    id: 'Paperclip', label: 'Paperclip', category: 'Governance', color: 'orange',
+    id: 'Paperclip', label: '📎 Paperclip', category: 'Governance', color: 'orange',
     uvp: 'The autonomous executive: Oversees token budgets and security guardrails for the entire stack.',
     purpose: 'Administrative control plane for resource allocation.',
     usage: 'Set token budgets and approved tool lists here.'
   },
-  OpenClaw: { id: 'OpenClaw', label: 'OpenClaw', category: 'Orchestration', color: 'blue', uvp: 'Always-on infrastructure: The server hub for persistent background assistant activities.', purpose: 'Server-side hub for long-running assistant tasks.' },
-  Hermes: { id: 'Hermes', label: 'Hermes Agent', category: 'Orchestration', color: 'blue', uvp: 'Closed-loop learning: Turning development history into a private architectural intelligence asset.', purpose: 'Closed-loop learning system for agent improvement.' },
-  Letta: { id: 'Letta', label: 'Letta', category: 'Orchestration', color: 'blue', uvp: 'Stateful continuity: Solves LLM "amnesia" by providing long-term persistent memory.', purpose: 'Stateful memory engine ensuring persistent agent state.', usage: 'Critical for long-term projects requiring history.' },
-  PicoClaw: { id: 'PicoClaw', label: 'PicoClaw', category: 'Orchestration', color: 'blue', uvp: 'Local-first agility: Minimalist orchestration optimized for edge and mobile deployments.', purpose: 'Minimalist orchestration for edge/mobile devices.' },
-  OpenAgents: { id: 'OpenAgents', label: 'OpenAgents.org', category: 'Orchestration', color: 'green', uvp: 'Visual Workspace: A browser-based canvas for human-agent collaboration.', purpose: 'Web UI layer for visualizing multi-agent workspaces.' },
-  Goose: { id: 'Goose', label: 'goose (by Block)', category: 'Orchestration', color: 'green', uvp: 'Grand Central: The meta-orchestrator that chooses the right model for the right task.', purpose: 'Meta-orchestrator coordinating cross-model execution.', usage: 'Primary CLI for AI-driven dev sessions.' },
-  OMX: { id: 'OMX', label: 'oh-my-codex (OMX)', category: 'Orchestration', color: 'green', uvp: 'Performance tuning: Specifically optimized for high-velocity OpenAI code generation.', purpose: 'Performance harness for parallel Codex workflows.' },
-  OMOA: { id: 'OMOA', label: 'oh-my-openagent', category: 'Orchestration', color: 'green', uvp: 'Parallel execution: Background harness for the OpenCode runtime.', purpose: 'Background harness for OpenCode runtime.' },
-  GeminiCLI: { id: 'GeminiCLI', label: 'Gemini CLI', category: 'Execution', color: 'green', uvp: 'Context King: The only CLI tool built to analyze 1M+ tokens of project history.', purpose: 'Google coding agent leveraging massive context.' },
-  CodexCLI: { id: 'CodexCLI', label: 'Codex CLI', category: 'Execution', color: 'green', uvp: 'Incremental precision: The gold standard for surgical repository edits.', purpose: 'OpenAI-based agent for repo edits and automation.' },
-  PiAgent: { id: 'PiAgent', label: 'Pi Agent', category: 'Execution', color: 'green', uvp: 'Universal toolkit: A model-agnostic execution layer for hybrid workflows.', purpose: 'Unified toolkit abstracting multiple LLM providers.' },
-  OpenCode: { id: 'OpenCode', label: 'OpenCode', category: 'Execution', color: 'green', uvp: 'Open Runtime: Full local-to-cloud flexibility without proprietary lock-in.', purpose: 'Flexible runtime for local or cloud coding tasks.' },
-  Ollama: { id: 'Ollama', label: 'Ollama + Gemma 4', category: 'Inference', color: 'blue', uvp: 'Air-gapped privacy: Private local inference with zero data leakage.', purpose: 'Private local model inference.' },
-  OpenAIModels: { id: 'OpenAIModels', label: 'OpenAI Models', category: 'Inference', color: 'blue', uvp: 'Logic Leader: High-complexity cloud reasoning for core features.', purpose: 'Cloud reasoning engine for high complexity.' },
-  GeminiModels: { id: 'GeminiModels', label: 'Gemini Models', category: 'Inference', color: 'blue', uvp: 'Massive Context: Cloud-scale reasoning across your entire project history.', purpose: 'Context-heavy cloud models (1M+ tokens).' },
-  FileSystem: { id: 'FileSystem', label: 'Local File System', category: 'Storage', color: 'white', uvp: 'Artifact Truth: The physical anchor for all generated outputs.', purpose: 'Physical source of truth for all code and research.' },
-  MCP: { id: 'MCP', label: 'MCP', category: 'Protocol', color: 'yellow', uvp: 'The USB standard for AI: One protocol to connect any agent to any local tool.', purpose: 'Model Context Protocol connecting agents to tools.' },
-  MCPTools: { id: 'MCPTools', label: 'Tools', category: 'Protocol', color: 'yellow', uvp: 'Standard tool interaction protocol.', purpose: 'Standard interfaces for agents to interact with external code.' },
-  MCPMemory: { id: 'MCPMemory', label: 'Memory', category: 'Protocol', color: 'yellow', uvp: 'Standard context retrieval protocol.', purpose: 'Allows different memory engines to talk to the same agents.' },
-  MCPSearch: { id: 'MCPSearch', label: 'Search', category: 'Protocol', color: 'yellow', uvp: 'Standard discovery protocol.', purpose: 'Gives agents a unified way to perform web or local searches.' },
-  MCPFiles: { id: 'MCPFiles', label: 'Files', category: 'Protocol', color: 'yellow', uvp: 'Standard file access protocol.', purpose: 'Secure, protocol-based file manipulation for agents.' },
-  MCPAPIs: { id: 'MCPAPIs', label: 'APIs', category: 'Protocol', color: 'yellow', uvp: 'Standard web integration protocol.', purpose: 'Connects the MCP bus to any REST or GraphQL endpoint.' }
+  OpenClaw: { id: 'OpenClaw', label: '🦞 OpenClaw', category: 'Orchestration', color: 'blue', uvp: 'Always-on infrastructure: The server hub for persistent background assistant activities.', purpose: 'Server-side hub for long-running assistant tasks.' },
+  Hermes: { id: 'Hermes', label: '⚡ Hermes Agent', category: 'Orchestration', color: 'blue', uvp: 'Closed-loop learning: Turning development history into a private architectural intelligence asset.', purpose: 'Closed-loop learning system for agent improvement.' },
+  Letta: { id: 'Letta', label: '🧭 Letta', category: 'Orchestration', color: 'blue', uvp: 'Stateful continuity: Solves LLM "amnesia" by providing long-term persistent memory.', purpose: 'Stateful memory engine ensuring persistent agent state.', usage: 'Critical for long-term projects requiring history.' },
+  PicoClaw: { id: 'PicoClaw', label: '🪶 PicoClaw', category: 'Orchestration', color: 'blue', uvp: 'Local-first agility: Minimalist orchestration optimized for edge and mobile deployments.', purpose: 'Minimalist orchestration for edge/mobile devices.' },
+  OpenAgents: { id: 'OpenAgents', label: '🕸️ OpenAgents.org', category: 'Orchestration', color: 'green', uvp: 'Visual Workspace: A browser-based canvas for human-agent collaboration.', purpose: 'Web UI layer for visualizing multi-agent workspaces.' },
+  Goose: { id: 'Goose', label: '🪿 goose', category: 'Orchestration', color: 'green', uvp: 'Grand Central: The meta-orchestrator that chooses the right model for the right task.', purpose: 'Meta-orchestrator coordinating cross-model execution.', usage: 'Primary CLI for AI-driven dev sessions.', link: 'https://github.com/block/goose' },
+  OMX: { id: 'OMX', label: '🛠️ oh-my-codex (OMX)', category: 'Orchestration', color: 'green', uvp: 'Performance tuning: Specifically optimized for high-velocity OpenAI code generation.', purpose: 'Performance harness for parallel Codex workflows.' },
+  OMOA: { id: 'OMOA', label: '🧵 oh-my-openagent', category: 'Orchestration', color: 'green', uvp: 'Parallel execution: Background harness for the OpenCode runtime.', purpose: 'Background harness for OpenCode runtime.' },
+  GeminiCLI: { id: 'GeminiCLI', label: '💎 Gemini CLI', category: 'Execution', color: 'green', uvp: 'Context King: The only CLI tool built to analyze 1M+ tokens of project history.', purpose: 'Google coding agent leveraging massive context.' },
+  CodexCLI: { id: 'CodexCLI', label: '🤖 Codex CLI', category: 'Execution', color: 'green', uvp: 'Incremental precision: The gold standard for surgical repository edits.', purpose: 'OpenAI-based agent for repo edits and automation.', link: 'https://github.com/openai/codex' },
+  PiAgent: { id: 'PiAgent', label: '🧰 Pi Agent', category: 'Execution', color: 'green', uvp: 'Universal toolkit: A model-agnostic execution layer for hybrid workflows.', purpose: 'Unified toolkit abstracting multiple LLM providers.' },
+  OpenCode: { id: 'OpenCode', label: '🧪 OpenCode', category: 'Execution', color: 'green', uvp: 'Open Runtime: Full local-to-cloud flexibility without proprietary lock-in.', purpose: 'Flexible runtime for local or cloud coding tasks.' },
+  Ollama: { id: 'Ollama', label: '🦙 Ollama + Gemma 4', category: 'Inference', color: 'blue', uvp: 'Air-gapped privacy: Private local inference with zero data leakage.', purpose: 'Private local model inference.', link: 'https://ollama.com/' },
+  OpenAIModels: { id: 'OpenAIModels', label: '🧠 OpenAI Models', category: 'Inference', color: 'blue', uvp: 'Logic Leader: High-complexity cloud reasoning for core features.', purpose: 'Cloud reasoning engine for high complexity.' },
+  GeminiModels: { id: 'GeminiModels', label: '🌌 Gemini Models', category: 'Inference', color: 'blue', uvp: 'Massive Context: Cloud-scale reasoning across your entire project history.', purpose: 'Context-heavy cloud models (1M+ tokens).' },
+  FileSystem: { id: 'FileSystem', label: '🗂️ Local File System', category: 'Storage', color: 'white', uvp: 'Artifact Truth: The physical anchor for all generated outputs.', purpose: 'Physical source of truth for all code and research.' },
+  MCP: { id: 'MCP', label: '🔌 MCP', category: 'Protocol', color: 'yellow', uvp: 'The USB standard for AI: One protocol to connect any agent to any local tool.', purpose: 'Model Context Protocol connecting agents to tools.' },
+  MCPTools: { id: 'MCPTools', label: '🧰 Tools', category: 'Protocol', color: 'yellow', uvp: 'Standard tool interaction protocol.', purpose: 'Standard interfaces for agents to interact with external code.' },
+  MCPMemory: { id: 'MCPMemory', label: '🧠 Memory', category: 'Protocol', color: 'yellow', uvp: 'Standard context retrieval protocol.', purpose: 'Allows different memory engines to talk to the same agents.' },
+  MCPSearch: { id: 'MCPSearch', label: '🔎 Search', category: 'Protocol', color: 'yellow', uvp: 'Standard discovery protocol.', purpose: 'Gives agents a unified way to perform web or local searches.' },
+  MCPFiles: { id: 'MCPFiles', label: '📁 Files', category: 'Protocol', color: 'yellow', uvp: 'Standard file access protocol.', purpose: 'Secure, protocol-based file manipulation for agents.' },
+  MCPAPIs: { id: 'MCPAPIs', label: '🌐 APIs', category: 'Protocol', color: 'yellow', uvp: 'Standard web integration protocol.', purpose: 'Connects the MCP bus to any REST or GraphQL endpoint.' }
 };
 
-const recommendedStack = ['Paperclip', 'Goose', 'CodexCLI', 'OpenAIModels', 'FileSystem', 'Letta', 'Skills', 'AgentsMD', 'MCP', 'MCPTools', 'MCPMemory'];
+const recommendedStack = ['Goose', 'CodexCLI', 'OpenAIModels', 'FileSystem', 'Skills', 'SpecKit', 'Ollama', 'MCP', 'MCPSearch', 'MCPFiles', 'OMX'];
 const labels = {
   context: ['AgentsMD', 'Skills', 'OpenSpec', 'SpecKit', 'BMad'],
   orchestration1: ['OpenClaw', 'Hermes', 'Letta', 'PicoClaw'],
@@ -199,6 +201,10 @@ const labels = {
             <small>System Logic</small>
             <div id="ov-flow"></div>
           </div>
+          <div id="ov-link-wrap" style="display:none; border-top:1px solid #334155; padding-top:.7rem;">
+            <small>Link</small>
+            <a id="ov-link" href="#" target="_blank" rel="noopener noreferrer" style="color:#93c5fd; text-decoration:underline;"></a>
+          </div>
         </div>
       </div>
     </main>
@@ -225,10 +231,17 @@ const labels = {
           document.getElementById('ov-purpose').textContent = node.purpose;
           const usageWrap = document.getElementById('ov-usage-wrap');
           const flowWrap = document.getElementById('ov-flow-wrap');
+          const linkWrap = document.getElementById('ov-link-wrap');
+          const linkEl = document.getElementById('ov-link');
           usageWrap.style.display = node.usage ? 'block' : 'none';
           flowWrap.style.display = node.flow ? 'block' : 'none';
+          linkWrap.style.display = node.link ? 'block' : 'none';
           document.getElementById('ov-usage').textContent = node.usage || '';
           document.getElementById('ov-flow').textContent = node.flow || '';
+          if (node.link && linkEl) {
+            linkEl.href = node.link;
+            linkEl.textContent = node.link;
+          }
 
           const x = Math.min((event?.clientX || window.innerWidth / 2) + 16, window.innerWidth - 360);
           const y = Math.min((event?.clientY || window.innerHeight / 2) + 16, window.innerHeight - 420);

@@ -558,7 +558,8 @@ createApp({
     seriesName(seriesKey) {
       if (!seriesKey) return '—';
       if (seriesKey.startsWith('context:')) return this.contextSeries[seriesKey.replace('context:', '')]?.label || seriesKey;
-      return this.items.find((item) => item.key === seriesKey)?.name || seriesKey;
+      const itemKey = seriesKey.startsWith('item:') ? seriesKey.replace('item:', '') : seriesKey;
+      return this.items.find((item) => item.key === itemKey)?.name || itemKey;
     },
     normalizeDenominatorValue(value) {
       const raw = String(value || '').trim();
@@ -686,7 +687,8 @@ createApp({
       if (seriesKey.startsWith('context:')) {
         return this.contextSeries[seriesKey.replace('context:', '')]?.values || [];
       }
-      return this.items.find((x) => x.key === seriesKey)?.values || [];
+      const itemKey = seriesKey.startsWith('item:') ? seriesKey.replace('item:', '') : seriesKey;
+      return this.items.find((x) => x.key === itemKey)?.values || [];
     },
     isBitcoinSeriesRef(seriesKey = '') {
       const normalized = String(seriesKey || '').toLowerCase();

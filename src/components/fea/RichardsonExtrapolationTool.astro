@@ -6,10 +6,7 @@
 			Enter three systematically refined meshes, from coarsest to finest, to estimate the continuum value and the 95%
 			confidence interval using the Grid Convergence Index method.
 		</p>
-		<p class="hero-note">
-			Use consistent units for mesh edge length and result value. The factor of safety is fixed at <strong>1.25</strong>,
-			which matches the previous tool.
-		</p>
+		<p class="hero-note">Use consistent units for mesh edge length and result value.</p>
 	</div>
 
 	<form class="tool-panel input-panel" data-form novalidate>
@@ -17,10 +14,6 @@
 			<div>
 				<h3>Input data</h3>
 				<p>Mesh sizes must decrease each row. Result values can be any consistent scalar quantity from your analysis.</p>
-			</div>
-			<div class="button-row">
-				<button type="button" class="ghost-button" data-action="sample">Load sample data</button>
-				<button type="submit">Calculate extrapolation</button>
 			</div>
 		</div>
 
@@ -71,7 +64,12 @@
 			</table>
 		</div>
 
-		<p class="status-message" data-status role="status" aria-live="polite"></p>
+		<div class="status-message" data-status role="status" aria-live="polite">
+			<h4>Convergence checks</h4>
+			<ul class="status-list" data-status-list>
+				<li>No warnings. The refinement ratios and convergence check are within the usual screening thresholds.</li>
+			</ul>
+		</div>
 	</form>
 
 	<div class="results-grid">
@@ -84,46 +82,119 @@
 			</div>
 
 			<dl class="metric-grid">
-				<div class="metric-card">
-					<dt>Estimated exact value</dt>
+				<div class="metric-card is-key-output">
+					<dt>
+						<span class="metric-label">
+							Estimated exact value
+							<button
+								type="button"
+								class="term-help"
+								aria-label="Explain estimated exact value"
+								title="Estimated exact value: the continuum solution estimated by Richardson extrapolation as mesh size approaches zero."
+							>?</button>
+						</span>
+					</dt>
 					<dd data-field="extrapolatedValue">--</dd>
 				</div>
 				<div class="metric-card">
-					<dt>95% lower bound</dt>
+					<dt>
+						<span class="metric-label">
+							Iterations
+							<button
+								type="button"
+								class="term-help"
+								aria-label="Explain iterations"
+								title="Iterations: the number of fixed-point updates used to converge the estimated order of convergence."
+							>?</button>
+						</span>
+					</dt>
+					<dd data-field="iterations">--</dd>
+				</div>
+				<div class="metric-card">
+					<dt>
+						<span class="metric-label">
+							95% lower bound
+							<button
+								type="button"
+								class="term-help"
+								aria-label="Explain 95 percent lower bound"
+								title="95% lower bound: the lower end of the estimated uncertainty interval derived from the fine-grid GCI."
+							>?</button>
+						</span>
+					</dt>
 					<dd data-field="lowerBound">--</dd>
 				</div>
 				<div class="metric-card">
-					<dt>95% upper bound</dt>
+					<dt>
+						<span class="metric-label">
+							95% upper bound
+							<button
+								type="button"
+								class="term-help"
+								aria-label="Explain 95 percent upper bound"
+								title="95% upper bound: the upper end of the estimated uncertainty interval derived from the fine-grid GCI."
+							>?</button>
+						</span>
+					</dt>
 					<dd data-field="upperBound">--</dd>
 				</div>
 				<div class="metric-card">
-					<dt>Order of convergence</dt>
+					<dt>
+						<span class="metric-label">
+							Order of convergence
+							<button
+								type="button"
+								class="term-help"
+								aria-label="Explain order of convergence"
+								title="Order of convergence: the rate at which the solution approaches the continuum value as the mesh is refined."
+							>?</button>
+						</span>
+					</dt>
 					<dd data-field="orderOfConvergence">--</dd>
 				</div>
 				<div class="metric-card">
-					<dt>Convergence check</dt>
+					<dt>
+						<span class="metric-label">
+							Convergence check
+							<button
+								type="button"
+								class="term-help"
+								aria-label="Explain convergence check"
+								title="Convergence check: the asymptotic-range check based on the ratio of the two GCI values. Values near 1.0 are preferred."
+							>?</button>
+						</span>
+					</dt>
 					<dd data-field="convergenceCheck">--</dd>
 				</div>
 				<div class="metric-card">
-					<dt>Fine-grid GCI</dt>
+					<dt>
+						<span class="metric-label">
+							Fine-grid GCI
+							<button
+								type="button"
+								class="term-help"
+								aria-label="Explain fine-grid GCI"
+								title="Fine-grid GCI: the Grid Convergence Index computed from the medium and finest meshes, reported as a relative uncertainty estimate."
+							>?</button>
+						</span>
+					</dt>
 					<dd data-field="gci23">--</dd>
 				</div>
 				<div class="metric-card">
-					<dt>Refinement ratios</dt>
+					<dt>
+						<span class="metric-label">
+							Refinement ratios
+							<button
+								type="button"
+								class="term-help"
+								aria-label="Explain refinement ratios"
+								title="Refinement ratios: the coarse-to-medium and medium-to-fine mesh size ratios used in the extrapolation."
+							>?</button>
+						</span>
+					</dt>
 					<dd data-field="ratios">--</dd>
 				</div>
-				<div class="metric-card">
-					<dt>Iterations</dt>
-					<dd data-field="iterations">--</dd>
-				</div>
 			</dl>
-
-			<div class="warnings-panel">
-				<h4>Checks</h4>
-				<ul class="warning-list" data-warnings>
-					<li>No warnings yet.</li>
-				</ul>
-			</div>
 		</section>
 
 		<section class="tool-panel chart-panel">
@@ -176,8 +247,11 @@
 		--tool-exact: #f59e0b;
 		--tool-error: #fca5a5;
 		--tool-note: #fef3c7;
+		--help-icon-size: 1.25rem;
 		display: grid;
 		gap: 1.25rem;
+		width: min(var(--container-wide), calc(100vw - 2rem));
+		margin-inline: calc(50% - min(var(--container-wide), calc(100vw - 2rem)) / 2);
 	}
 
 	.tool-panel {
@@ -262,28 +336,13 @@
 		margin: 0;
 	}
 
-	.button-row {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 0.75rem;
-	}
-
-	.button-row button {
-		margin-left: 0;
-	}
-
-	.ghost-button {
-		background: transparent;
-	}
-
 	.status-message {
 		margin: 1rem 0 0;
-		min-height: 1.6rem;
-		padding: 0.85rem 1rem;
+		padding: 0.95rem 1rem 1rem;
 		border-radius: 16px;
 		background: color-mix(in srgb, var(--tool-accent) 8%, transparent);
 		border: 1px solid color-mix(in srgb, var(--tool-accent) 22%, transparent);
-		color: var(--text-muted);
+		color: var(--text);
 	}
 
 	.status-message.is-error {
@@ -292,15 +351,34 @@
 		color: var(--tool-error);
 	}
 
+	.status-message h4 {
+		margin: 0 0 0.6rem;
+		font-size: 1rem;
+	}
+
+	.status-list {
+		margin: 0;
+		padding-left: 1.2rem;
+		color: var(--text-muted);
+	}
+
+	.status-message.is-error .status-list {
+		color: inherit;
+	}
+
+	.status-list li:last-child {
+		margin-bottom: 0;
+	}
+
 	.results-grid {
 		display: grid;
 		gap: 1.25rem;
-		grid-template-columns: repeat(2, minmax(0, 1fr));
+		grid-template-columns: minmax(0, 1fr);
 	}
 
 	.metric-grid {
 		display: grid;
-		grid-template-columns: repeat(2, minmax(0, 1fr));
+		grid-template-columns: repeat(4, minmax(0, 1fr));
 		gap: 0.85rem;
 		margin: 0;
 	}
@@ -310,6 +388,12 @@
 		border-radius: 18px;
 		background: color-mix(in srgb, var(--tool-accent) 6%, transparent);
 		border: 1px solid var(--tool-border);
+	}
+
+	.metric-card.is-key-output {
+		border: 3px solid color-mix(in srgb, var(--tool-exact) 88%, white 12%);
+		background: linear-gradient(160deg, color-mix(in srgb, var(--tool-exact) 15%, transparent), color-mix(in srgb, var(--tool-exact) 4%, transparent));
+		box-shadow: 0 0 0 4px color-mix(in srgb, var(--tool-exact) 14%, transparent);
 	}
 
 	.metric-card dt {
@@ -327,24 +411,97 @@
 		line-height: 1.2;
 	}
 
-	.warnings-panel {
-		margin-top: 1rem;
-		padding-top: 1rem;
-		border-top: 1px solid var(--tool-border);
+	.metric-card.is-key-output dd {
+		font-size: clamp(1.6rem, 3.2vw, 2rem);
 	}
 
-	.warnings-panel h4 {
-		margin: 0 0 0.6rem;
-		font-size: 1rem;
+	.metric-label {
+		display: inline-flex;
+		align-items: center;
+		flex-wrap: nowrap;
+		gap: 0.4rem;
 	}
 
-	.warning-list {
-		margin: 0;
-		padding-left: 1.2rem;
+	.term-help {
+		position: relative;
+		display: inline-grid;
+		place-items: center;
+		align-items: center;
+		justify-content: center;
+		flex: 0 0 var(--help-icon-size);
+		width: var(--help-icon-size);
+		min-width: var(--help-icon-size);
+		height: var(--help-icon-size);
+		padding: 0;
+		border: 0;
+		border-radius: 999px;
+		border: 1px solid color-mix(in srgb, var(--tool-accent) 32%, transparent);
+		background: color-mix(in srgb, var(--tool-accent) 12%, transparent);
+		color: var(--tool-accent-strong);
+		font-size: 0.72rem;
+		font-family: inherit;
+		font-weight: 700;
+		line-height: 1;
+		cursor: help;
+		appearance: none;
+		box-shadow: none;
+		vertical-align: middle;
 	}
 
-	.warning-list li {
-		margin-bottom: 0.45rem;
+	.term-help::after,
+	.term-help::before {
+		position: absolute;
+		left: 50%;
+		opacity: 0;
+		visibility: hidden;
+		pointer-events: none;
+		transition: opacity 0.18s ease, transform 0.18s ease, visibility 0.18s ease;
+		z-index: 20;
+	}
+
+	.term-help::after {
+		content: attr(title);
+		bottom: calc(100% + 0.75rem);
+		transform: translate(-50%, 0.25rem);
+		width: min(18rem, calc(100vw - 3rem));
+		padding: 0.65rem 0.75rem;
+		border-radius: 12px;
+		border: 1px solid color-mix(in srgb, var(--tool-accent) 18%, var(--tool-border));
+		background: color-mix(in srgb, var(--surface-strong) 96%, transparent);
+		color: var(--text);
+		font-size: 0.78rem;
+		font-weight: 400;
+		line-height: 1.4;
+		text-transform: none;
+		letter-spacing: normal;
+		text-align: left;
+		white-space: normal;
+		box-shadow: var(--box-shadow);
+	}
+
+	.term-help::before {
+		content: '';
+		bottom: calc(100% + 0.35rem);
+		transform: translate(-50%, 0.25rem);
+		border-left: 0.4rem solid transparent;
+		border-right: 0.4rem solid transparent;
+		border-top: 0.45rem solid color-mix(in srgb, var(--surface-strong) 96%, transparent);
+	}
+
+	.term-help:hover::after,
+	.term-help:hover::before,
+	.term-help:focus::after,
+	.term-help:focus::before,
+	.term-help:focus-visible::after,
+	.term-help:focus-visible::before {
+		opacity: 1;
+		visibility: visible;
+		transform: translate(-50%, 0);
+	}
+
+	.term-help:focus-visible {
+		outline: 2px solid var(--tool-accent-strong);
+		outline-offset: 2px;
 	}
 
 	.chart-frame {
@@ -390,23 +547,23 @@
 	}
 
 	@media (max-width: 900px) {
-		.results-grid,
 		.metric-grid {
-			grid-template-columns: minmax(0, 1fr);
+			grid-template-columns: repeat(2, minmax(0, 1fr));
 		}
 	}
 
 	@media (max-width: 720px) {
+		.richardson-tool {
+			width: 100%;
+			margin-inline: 0;
+		}
+
 		.section-heading {
 			flex-direction: column;
 		}
 
-		.button-row {
-			width: 100%;
-		}
-
-		.button-row button {
-			flex: 1 1 220px;
+		.metric-grid {
+			grid-template-columns: minmax(0, 1fr);
 		}
 
 		.tool-panel {
@@ -480,7 +637,7 @@
 	function initialiseTool(root) {
 		const form = root.querySelector('[data-form]');
 		const status = root.querySelector('[data-status]');
-		const warningList = root.querySelector('[data-warnings]');
+		const statusList = root.querySelector('[data-status-list]');
 		const chart = root.querySelector('[data-chart]');
 		const chartEmpty = root.querySelector('[data-chart-empty]');
 		const chartCaption = root.querySelector('[data-chart-caption]');
@@ -490,20 +647,18 @@
 		const inputs = Object.fromEntries(
 			Array.from(root.querySelectorAll('input[data-key]')).map((node) => [node.dataset.key, node]),
 		);
-		const sampleButton = root.querySelector('[data-action="sample"]');
 
 		let lastState = null;
 
-		function setStatus(message, isError = false) {
-			status.textContent = message;
+		function renderStatusMessages(messages, isError = false) {
 			status.classList.toggle('is-error', isError);
+			statusList.innerHTML = messages.map((message) => `<li>${message}</li>`).join('');
 		}
 
 		function resetOutputs() {
 			Object.values(fields).forEach((field) => {
 				field.textContent = '--';
 			});
-			warningList.innerHTML = '<li>No warnings yet.</li>';
 			chartEmpty.classList.remove('is-hidden');
 			chartCaption.textContent = 'Confidence bounds are shown around the extrapolated exact value.';
 			select(chart).selectAll('*').remove();
@@ -529,11 +684,11 @@
 
 		function renderWarnings(warnings) {
 			if (!warnings.length) {
-				warningList.innerHTML = '<li>No warnings. The refinement ratios and convergence check are within the usual screening thresholds.</li>';
+				renderStatusMessages(['No warnings. The refinement ratios and convergence check are within the usual screening thresholds.']);
 				return;
 			}
 
-			warningList.innerHTML = warnings.map((warning) => `<li>${warning}</li>`).join('');
+			renderStatusMessages(warnings);
 		}
 
 		function renderChart(state) {
@@ -747,13 +902,12 @@
 				const results = calculateRichardsonExtrapolation(payload);
 
 				renderResults(results);
-				setStatus('Calculation complete. Review the convergence checks before using the extrapolated value.');
 				lastState = { inputs: payload, results };
 				renderChart(lastState);
 			} catch (error) {
 				resetOutputs();
 				const message = error instanceof Error ? error.message : 'The calculation failed.';
-				setStatus(message, true);
+				renderStatusMessages([message], true);
 			}
 		}
 
@@ -781,17 +935,9 @@
 			runCalculation();
 		});
 
-		sampleButton?.addEventListener('click', () => {
-			loadSampleInputs();
-			runCalculation();
-		});
-
 		Object.values(inputs).forEach((input) => {
-			input.addEventListener('change', () => {
-				if (lastState) {
-					runCalculation();
-				}
-			});
+			input.addEventListener('input', runCalculation);
+			input.addEventListener('change', runCalculation);
 		});
 
 		loadSampleInputs();

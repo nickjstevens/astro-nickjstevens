@@ -1,0 +1,806 @@
+<section class="richardson-tool" data-richardson-tool>
+	<div class="tool-panel hero-panel">
+		<p class="eyebrow">Finite element verification</p>
+		<h2>Richardson extrapolation for mesh convergence studies</h2>
+		<p>
+			Enter three systematically refined meshes, from coarsest to finest, to estimate the continuum value and the 95%
+			confidence interval using the Grid Convergence Index method.
+		</p>
+		<p class="hero-note">
+			Use consistent units for mesh edge length and result value. The factor of safety is fixed at <strong>1.25</strong>,
+			which matches the previous tool.
+		</p>
+	</div>
+
+	<form class="tool-panel input-panel" data-form novalidate>
+		<div class="section-heading">
+			<div>
+				<h3>Input data</h3>
+				<p>Mesh sizes must decrease each row. Result values can be any consistent scalar quantity from your analysis.</p>
+			</div>
+			<div class="button-row">
+				<button type="button" class="ghost-button" data-action="sample">Load sample data</button>
+				<button type="submit">Calculate extrapolation</button>
+			</div>
+		</div>
+
+		<div class="table-wrap">
+			<table class="mesh-table">
+				<thead>
+					<tr>
+						<th scope="col">Mesh level</th>
+						<th scope="col">Element edge length</th>
+						<th scope="col">Result value</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row">Coarsest mesh</th>
+						<td>
+							<label class="sr-only" for="mesh-size-1">Coarsest mesh element edge length</label>
+							<input id="mesh-size-1" data-key="meshSize1" inputmode="decimal" step="any" type="number" value="2" />
+						</td>
+						<td>
+							<label class="sr-only" for="result-value-1">Coarsest mesh result value</label>
+							<input id="result-value-1" data-key="resultValue1" inputmode="decimal" step="any" type="number" value="200" />
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">Medium mesh</th>
+						<td>
+							<label class="sr-only" for="mesh-size-2">Medium mesh element edge length</label>
+							<input id="mesh-size-2" data-key="meshSize2" inputmode="decimal" step="any" type="number" value="1" />
+						</td>
+						<td>
+							<label class="sr-only" for="result-value-2">Medium mesh result value</label>
+							<input id="result-value-2" data-key="resultValue2" inputmode="decimal" step="any" type="number" value="210" />
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">Finest mesh</th>
+						<td>
+							<label class="sr-only" for="mesh-size-3">Finest mesh element edge length</label>
+							<input id="mesh-size-3" data-key="meshSize3" inputmode="decimal" step="any" type="number" value="0.5" />
+						</td>
+						<td>
+							<label class="sr-only" for="result-value-3">Finest mesh result value</label>
+							<input id="result-value-3" data-key="resultValue3" inputmode="decimal" step="any" type="number" value="215" />
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<p class="status-message" data-status role="status" aria-live="polite"></p>
+	</form>
+
+	<div class="results-grid">
+		<section class="tool-panel output-panel">
+			<div class="section-heading">
+				<div>
+					<h3>Output data</h3>
+					<p>The extrapolated result is the estimated continuum value based on your finest three meshes.</p>
+				</div>
+			</div>
+
+			<dl class="metric-grid">
+				<div class="metric-card">
+					<dt>Estimated exact value</dt>
+					<dd data-field="extrapolatedValue">--</dd>
+				</div>
+				<div class="metric-card">
+					<dt>95% lower bound</dt>
+					<dd data-field="lowerBound">--</dd>
+				</div>
+				<div class="metric-card">
+					<dt>95% upper bound</dt>
+					<dd data-field="upperBound">--</dd>
+				</div>
+				<div class="metric-card">
+					<dt>Order of convergence</dt>
+					<dd data-field="orderOfConvergence">--</dd>
+				</div>
+				<div class="metric-card">
+					<dt>Convergence check</dt>
+					<dd data-field="convergenceCheck">--</dd>
+				</div>
+				<div class="metric-card">
+					<dt>Fine-grid GCI</dt>
+					<dd data-field="gci23">--</dd>
+				</div>
+				<div class="metric-card">
+					<dt>Refinement ratios</dt>
+					<dd data-field="ratios">--</dd>
+				</div>
+				<div class="metric-card">
+					<dt>Iterations</dt>
+					<dd data-field="iterations">--</dd>
+				</div>
+			</dl>
+
+			<div class="warnings-panel">
+				<h4>Checks</h4>
+				<ul class="warning-list" data-warnings>
+					<li>No warnings yet.</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="tool-panel chart-panel">
+			<div class="section-heading">
+				<div>
+					<h3>Grid convergence plot</h3>
+					<p>The chart shows the three mesh results and the continuum estimate at zero mesh size.</p>
+				</div>
+			</div>
+
+			<div class="chart-frame">
+				<svg data-chart viewBox="0 0 720 360" role="img" aria-label="Grid convergence plot"></svg>
+				<p class="chart-empty" data-chart-empty>Valid results will appear here after calculation.</p>
+			</div>
+			<p class="chart-caption" data-chart-caption>Confidence bounds are shown around the extrapolated exact value.</p>
+		</section>
+	</div>
+
+	<section class="tool-panel notes-panel">
+		<div class="section-heading">
+			<div>
+				<h3>Interpretation notes</h3>
+				<p>These checks help you decide whether the mesh sequence is good enough for a credible continuum estimate.</p>
+			</div>
+		</div>
+		<ul class="notes-list">
+			<li>Keep the mesh sizes in descending order from coarse to fine.</li>
+			<li>Refinement ratios below 1.3 are often too narrow for a stable extrapolation.</li>
+			<li>A convergence check close to 1.0 suggests the solution is approaching the asymptotic range.</li>
+			<li>Oscillatory convergence means the result changes sign between refinements and deserves extra scrutiny.</li>
+		</ul>
+		<p class="references">
+			References:
+			<a href="https://www.grc.nasa.gov/www/wind/valid/tutorial/spatconv.html" target="_blank" rel="noopener noreferrer">NASA spatial convergence guide</a>
+			and
+			<a href="https://www.dynamore.de/de/download/papers/forum08/dokumente/I-I-03.pdf" target="_blank" rel="noopener noreferrer">DYNAmore Richardson extrapolation paper</a>.
+		</p>
+	</section>
+</section>
+
+<style>
+	.richardson-tool {
+		--tool-accent: var(--accent);
+		--tool-accent-strong: color-mix(in srgb, var(--accent) 75%, white 25%);
+		--tool-surface: color-mix(in srgb, var(--surface-alt) 82%, transparent);
+		--tool-surface-strong: color-mix(in srgb, var(--surface-strong) 96%, transparent);
+		--tool-border: color-mix(in srgb, var(--border) 85%, transparent);
+		--tool-grid-line: color-mix(in srgb, var(--border) 75%, transparent);
+		--tool-finite: #38bdf8;
+		--tool-exact: #f59e0b;
+		--tool-error: #fca5a5;
+		--tool-note: #fef3c7;
+		display: grid;
+		gap: 1.25rem;
+	}
+
+	.tool-panel {
+		background: linear-gradient(160deg, color-mix(in srgb, var(--tool-accent) 8%, transparent), transparent 48%), var(--tool-surface);
+		border: 1px solid var(--tool-border);
+		border-radius: 22px;
+		box-shadow: var(--box-shadow);
+		padding: 1.2rem;
+	}
+
+	.hero-panel {
+		background: linear-gradient(145deg, color-mix(in srgb, var(--tool-accent) 16%, transparent), transparent 60%), var(--tool-surface-strong);
+	}
+
+	.eyebrow {
+		margin: 0 0 0.55rem;
+		font-size: 0.78rem;
+		font-weight: 700;
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+		color: var(--tool-accent-strong);
+	}
+
+	.hero-panel h2,
+	.output-panel h3,
+	.chart-panel h3,
+	.input-panel h3,
+	.notes-panel h3 {
+		font-size: clamp(1.4rem, 3vw, 1.9rem);
+	}
+
+	.hero-panel p:last-child,
+	.chart-panel p:last-child,
+	.notes-panel p:last-child,
+	.output-panel p:last-child,
+	.input-panel p:last-child {
+		margin-bottom: 0;
+	}
+
+	.hero-note {
+		color: var(--text-muted);
+	}
+
+	.section-heading {
+		display: flex;
+		gap: 1rem;
+		align-items: flex-start;
+		justify-content: space-between;
+		margin-bottom: 1rem;
+	}
+
+	.section-heading h3,
+	.section-heading h4 {
+		margin-bottom: 0.3rem;
+	}
+
+	.section-heading p {
+		margin: 0;
+		color: var(--text-muted);
+	}
+
+	.table-wrap {
+		overflow-x: auto;
+	}
+
+	.mesh-table {
+		margin: 0;
+		min-width: 100%;
+	}
+
+	.mesh-table th,
+	.mesh-table td {
+		vertical-align: middle;
+	}
+
+	.mesh-table th[scope='row'] {
+		font-size: 0.98rem;
+	}
+
+	.mesh-table input {
+		width: 100%;
+		margin: 0;
+	}
+
+	.button-row {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.75rem;
+	}
+
+	.button-row button {
+		margin-left: 0;
+	}
+
+	.ghost-button {
+		background: transparent;
+	}
+
+	.status-message {
+		margin: 1rem 0 0;
+		min-height: 1.6rem;
+		padding: 0.85rem 1rem;
+		border-radius: 16px;
+		background: color-mix(in srgb, var(--tool-accent) 8%, transparent);
+		border: 1px solid color-mix(in srgb, var(--tool-accent) 22%, transparent);
+		color: var(--text-muted);
+	}
+
+	.status-message.is-error {
+		background: color-mix(in srgb, #7f1d1d 50%, transparent);
+		border-color: color-mix(in srgb, var(--tool-error) 45%, transparent);
+		color: var(--tool-error);
+	}
+
+	.results-grid {
+		display: grid;
+		gap: 1.25rem;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.metric-grid {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 0.85rem;
+		margin: 0;
+	}
+
+	.metric-card {
+		padding: 1rem;
+		border-radius: 18px;
+		background: color-mix(in srgb, var(--tool-accent) 6%, transparent);
+		border: 1px solid var(--tool-border);
+	}
+
+	.metric-card dt {
+		font-size: 0.8rem;
+		font-weight: 700;
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+		color: var(--text-muted);
+	}
+
+	.metric-card dd {
+		margin: 0.55rem 0 0;
+		font-size: 1.4rem;
+		font-weight: 700;
+		line-height: 1.2;
+	}
+
+	.warnings-panel {
+		margin-top: 1rem;
+		padding-top: 1rem;
+		border-top: 1px solid var(--tool-border);
+	}
+
+	.warnings-panel h4 {
+		margin: 0 0 0.6rem;
+		font-size: 1rem;
+	}
+
+	.warning-list {
+		margin: 0;
+		padding-left: 1.2rem;
+	}
+
+	.warning-list li {
+		margin-bottom: 0.45rem;
+	}
+
+	.chart-frame {
+		position: relative;
+		border-radius: 18px;
+		border: 1px solid var(--tool-border);
+		background: color-mix(in srgb, var(--surface-strong) 90%, transparent);
+		padding: 0.65rem;
+	}
+
+	.chart-frame svg {
+		display: block;
+		width: 100%;
+		height: auto;
+		min-height: 320px;
+	}
+
+	.chart-empty {
+		position: absolute;
+		inset: 0;
+		display: grid;
+		place-items: center;
+		padding: 1rem;
+		text-align: center;
+		color: var(--text-muted);
+	}
+
+	.chart-empty.is-hidden {
+		display: none;
+	}
+
+	.chart-caption {
+		margin: 0.9rem 0 0;
+		color: var(--text-muted);
+	}
+
+	.notes-list {
+		margin-bottom: 1rem;
+	}
+
+	.references {
+		margin-bottom: 0;
+	}
+
+	@media (max-width: 900px) {
+		.results-grid,
+		.metric-grid {
+			grid-template-columns: minmax(0, 1fr);
+		}
+	}
+
+	@media (max-width: 720px) {
+		.section-heading {
+			flex-direction: column;
+		}
+
+		.button-row {
+			width: 100%;
+		}
+
+		.button-row button {
+			flex: 1 1 220px;
+		}
+
+		.tool-panel {
+			padding: 1rem;
+		}
+
+		.metric-card dd {
+			font-size: 1.2rem;
+		}
+	}
+</style>
+
+<script>
+	import { axisBottom, axisLeft, line, scaleLinear, select } from 'd3';
+	import { calculateRichardsonExtrapolation } from '../../lib/richardson-extrapolation.js';
+
+	const SAMPLE_INPUTS = {
+		meshSize1: 2,
+		meshSize2: 1,
+		meshSize3: 0.5,
+		resultValue1: 200,
+		resultValue2: 210,
+		resultValue3: 215,
+	};
+
+	const valueFormat = new Intl.NumberFormat('en-GB', {
+		minimumFractionDigits: 5,
+		maximumFractionDigits: 5,
+	});
+
+	const compactFormat = new Intl.NumberFormat('en-GB', {
+		minimumFractionDigits: 0,
+		maximumFractionDigits: 3,
+	});
+
+	const percentFormat = new Intl.NumberFormat('en-GB', {
+		style: 'percent',
+		minimumFractionDigits: 2,
+		maximumFractionDigits: 2,
+	});
+
+	function formatDecimal(value, digits = 3) {
+		return Number.isFinite(value) ? value.toFixed(digits) : '--';
+	}
+
+	function formatValue(value) {
+		return Number.isFinite(value) ? valueFormat.format(value) : '--';
+	}
+
+	function formatPercent(value) {
+		return Number.isFinite(value) ? percentFormat.format(value) : '--';
+	}
+
+	function formatAxisValue(value) {
+		if (Math.abs(value) >= 1000) {
+			return compactFormat.format(Math.round(value));
+		}
+
+		if (Math.abs(value) >= 1) {
+			return compactFormat.format(value);
+		}
+
+		return value.toFixed(2);
+	}
+
+	function numericPadding(minimum, maximum) {
+		const span = Math.abs(maximum - minimum) || Math.max(Math.abs(maximum), 1);
+		return span * 0.14;
+	}
+
+	function initialiseTool(root) {
+		const form = root.querySelector('[data-form]');
+		const status = root.querySelector('[data-status]');
+		const warningList = root.querySelector('[data-warnings]');
+		const chart = root.querySelector('[data-chart]');
+		const chartEmpty = root.querySelector('[data-chart-empty]');
+		const chartCaption = root.querySelector('[data-chart-caption]');
+		const fields = Object.fromEntries(
+			Array.from(root.querySelectorAll('[data-field]')).map((node) => [node.dataset.field, node]),
+		);
+		const inputs = Object.fromEntries(
+			Array.from(root.querySelectorAll('input[data-key]')).map((node) => [node.dataset.key, node]),
+		);
+		const sampleButton = root.querySelector('[data-action="sample"]');
+
+		let lastState = null;
+
+		function setStatus(message, isError = false) {
+			status.textContent = message;
+			status.classList.toggle('is-error', isError);
+		}
+
+		function resetOutputs() {
+			Object.values(fields).forEach((field) => {
+				field.textContent = '--';
+			});
+			warningList.innerHTML = '<li>No warnings yet.</li>';
+			chartEmpty.classList.remove('is-hidden');
+			chartCaption.textContent = 'Confidence bounds are shown around the extrapolated exact value.';
+			select(chart).selectAll('*').remove();
+			lastState = null;
+		}
+
+		function loadSampleInputs() {
+			Object.entries(SAMPLE_INPUTS).forEach(([key, value]) => {
+				inputs[key].value = String(value);
+			});
+		}
+
+		function readInputs() {
+			const rawValues = Object.fromEntries(
+				Object.entries(inputs).map(([key, input]) => [key, Number(input.value)]),
+			);
+
+			return {
+				meshSizes: [rawValues.meshSize1, rawValues.meshSize2, rawValues.meshSize3],
+				resultValues: [rawValues.resultValue1, rawValues.resultValue2, rawValues.resultValue3],
+			};
+		}
+
+		function renderWarnings(warnings) {
+			if (!warnings.length) {
+				warningList.innerHTML = '<li>No warnings. The refinement ratios and convergence check are within the usual screening thresholds.</li>';
+				return;
+			}
+
+			warningList.innerHTML = warnings.map((warning) => `<li>${warning}</li>`).join('');
+		}
+
+		function renderChart(state) {
+			const rect = chart.getBoundingClientRect();
+			const width = Math.max(Math.round(rect.width), 320);
+			const height = 360;
+			const margin = { top: 28, right: 24, bottom: 58, left: 72 };
+			const innerWidth = width - margin.left - margin.right;
+			const innerHeight = height - margin.top - margin.bottom;
+			const meshPoints = state.inputs.meshSizes.map((meshSize, index) => ({
+				meshSize,
+				value: state.inputs.resultValues[index],
+				label: ['Coarsest', 'Medium', 'Finest'][index],
+				kind: 'mesh',
+			}));
+			const exactPoint = {
+				meshSize: 0,
+				value: state.results.extrapolatedValue,
+				label: 'Continuum',
+				kind: 'exact',
+			};
+			const plottedPoints = [exactPoint, ...meshPoints].sort((left, right) => left.meshSize - right.meshSize);
+			const allYValues = [
+				...state.inputs.resultValues,
+				state.results.extrapolatedValue,
+				state.results.lowerBound,
+				state.results.upperBound,
+			];
+			const maximumMeshSize = Math.max(...state.inputs.meshSizes);
+			const xScale = scaleLinear()
+				.domain([maximumMeshSize * -0.12, maximumMeshSize * 1.08])
+				.range([margin.left, width - margin.right]);
+			const yMinimum = Math.min(...allYValues);
+			const yMaximum = Math.max(...allYValues);
+			const yPadding = numericPadding(yMinimum, yMaximum);
+			const yScale = scaleLinear()
+				.domain([yMinimum - yPadding, yMaximum + yPadding])
+				.range([height - margin.bottom, margin.top]);
+			const styles = getComputedStyle(root);
+			const axisColor = styles.getPropertyValue('--text-muted').trim() || '#94a3b8';
+			const gridColor = styles.getPropertyValue('--tool-grid-line').trim() || 'rgba(148, 163, 184, 0.25)';
+			const finiteColor = styles.getPropertyValue('--tool-finite').trim() || '#38bdf8';
+			const exactColor = styles.getPropertyValue('--tool-exact').trim() || '#f59e0b';
+			const cardBackground = styles.getPropertyValue('--tool-surface-strong').trim() || 'rgba(15, 23, 42, 0.96)';
+			const lineGenerator = line()
+				.x((point) => xScale(point.meshSize))
+				.y((point) => yScale(point.value));
+			const svg = select(chart);
+
+			svg.attr('viewBox', `0 0 ${width} ${height}`);
+			svg.selectAll('*').remove();
+
+			const horizontalGridTicks = yScale.ticks(5);
+
+			svg
+				.append('g')
+				.attr('aria-hidden', 'true')
+				.selectAll('line')
+				.data(horizontalGridTicks)
+				.enter()
+				.append('line')
+				.attr('x1', margin.left)
+				.attr('x2', width - margin.right)
+				.attr('y1', (tick) => yScale(tick))
+				.attr('y2', (tick) => yScale(tick))
+				.attr('stroke', gridColor)
+				.attr('stroke-width', 1);
+
+			svg
+				.append('path')
+				.datum(plottedPoints)
+				.attr('fill', 'none')
+				.attr('stroke', finiteColor)
+				.attr('stroke-width', 2.5)
+				.attr('stroke-dasharray', '8 6')
+				.attr('d', lineGenerator);
+
+			const errorBarGroup = svg.append('g').attr('aria-hidden', 'true');
+			const exactX = xScale(exactPoint.meshSize);
+			const capWidth = Math.max(innerWidth * 0.03, 10);
+
+			errorBarGroup
+				.append('line')
+				.attr('x1', exactX)
+				.attr('x2', exactX)
+				.attr('y1', yScale(state.results.lowerBound))
+				.attr('y2', yScale(state.results.upperBound))
+				.attr('stroke', exactColor)
+				.attr('stroke-width', 3);
+
+			errorBarGroup
+				.selectAll('line.cap')
+				.data([state.results.lowerBound, state.results.upperBound])
+				.enter()
+				.append('line')
+				.attr('class', 'cap')
+				.attr('x1', exactX - capWidth)
+				.attr('x2', exactX + capWidth)
+				.attr('y1', (value) => yScale(value))
+				.attr('y2', (value) => yScale(value))
+				.attr('stroke', exactColor)
+				.attr('stroke-width', 3);
+
+			const pointGroup = svg.append('g');
+			const points = pointGroup
+				.selectAll('g.point')
+				.data(plottedPoints)
+				.enter()
+				.append('g')
+				.attr('class', 'point');
+
+			points
+				.append('circle')
+				.attr('cx', (point) => xScale(point.meshSize))
+				.attr('cy', (point) => yScale(point.value))
+				.attr('r', (point) => (point.kind === 'exact' ? 7 : 6))
+				.attr('fill', (point) => (point.kind === 'exact' ? exactColor : finiteColor))
+				.attr('stroke', cardBackground)
+				.attr('stroke-width', 2);
+
+			points
+				.append('text')
+				.attr('x', (point) => xScale(point.meshSize))
+				.attr('y', (point) => yScale(point.value) - 12)
+				.attr('text-anchor', 'middle')
+				.attr('fill', axisColor)
+				.attr('font-size', 12)
+				.attr('font-weight', 700)
+				.text((point) => point.label);
+
+			svg
+				.append('g')
+				.attr('transform', `translate(0, ${height - margin.bottom})`)
+				.call(axisBottom(xScale).ticks(6).tickFormat((tick) => formatAxisValue(tick)))
+				.call((group) => group.selectAll('path, line').attr('stroke', axisColor))
+				.call((group) => group.selectAll('text').attr('fill', axisColor));
+
+			svg
+				.append('g')
+				.attr('transform', `translate(${margin.left}, 0)`)
+				.call(axisLeft(yScale).ticks(5).tickFormat((tick) => formatAxisValue(tick)))
+				.call((group) => group.selectAll('path, line').attr('stroke', axisColor))
+				.call((group) => group.selectAll('text').attr('fill', axisColor));
+
+			svg
+				.append('text')
+				.attr('x', margin.left + innerWidth / 2)
+				.attr('y', height - 14)
+				.attr('fill', axisColor)
+				.attr('font-size', 13)
+				.attr('text-anchor', 'middle')
+				.text('Element edge length');
+
+			svg
+				.append('text')
+				.attr('transform', `translate(18, ${margin.top + innerHeight / 2}) rotate(-90)`)
+				.attr('fill', axisColor)
+				.attr('font-size', 13)
+				.attr('text-anchor', 'middle')
+				.text('Result value');
+
+			const legend = svg.append('g').attr('transform', `translate(${width - margin.right - 180}, ${margin.top - 4})`);
+			const legendRows = [
+				{ label: 'Mesh results', color: finiteColor },
+				{ label: 'Exact estimate + 95% CI', color: exactColor },
+			];
+
+			const legendItems = legend
+				.selectAll('g')
+				.data(legendRows)
+				.enter()
+				.append('g')
+				.attr('transform', (_, index) => `translate(0, ${index * 22})`);
+
+			legendItems
+				.append('line')
+				.attr('x1', 0)
+				.attr('x2', 18)
+				.attr('y1', 8)
+				.attr('y2', 8)
+				.attr('stroke', (item) => item.color)
+				.attr('stroke-width', 3);
+
+			legendItems
+				.append('text')
+				.attr('x', 24)
+				.attr('y', 12)
+				.attr('fill', axisColor)
+				.attr('font-size', 12)
+				.text((item) => item.label);
+
+			chartEmpty.classList.add('is-hidden');
+			chartCaption.textContent = `Exact estimate ${formatValue(state.results.extrapolatedValue)} with a 95% interval from ${formatValue(state.results.lowerBound)} to ${formatValue(state.results.upperBound)}.`;
+		}
+
+		function renderResults(payload) {
+			fields.extrapolatedValue.textContent = formatValue(payload.extrapolatedValue);
+			fields.lowerBound.textContent = formatValue(payload.lowerBound);
+			fields.upperBound.textContent = formatValue(payload.upperBound);
+			fields.orderOfConvergence.textContent = formatDecimal(payload.orderOfConvergence, 3);
+			fields.convergenceCheck.textContent = formatDecimal(payload.convergenceCheck, 3);
+			fields.gci23.textContent = formatPercent(payload.gridConvergenceIndex.gci23);
+			fields.ratios.textContent = `${formatDecimal(payload.refinementRatios.r12, 3)} / ${formatDecimal(payload.refinementRatios.r23, 3)}`;
+			fields.iterations.textContent = String(payload.iterations);
+			renderWarnings(payload.warnings);
+		}
+
+		function runCalculation() {
+			try {
+				const payload = readInputs();
+				const results = calculateRichardsonExtrapolation(payload);
+
+				renderResults(results);
+				setStatus('Calculation complete. Review the convergence checks before using the extrapolated value.');
+				lastState = { inputs: payload, results };
+				renderChart(lastState);
+			} catch (error) {
+				resetOutputs();
+				const message = error instanceof Error ? error.message : 'The calculation failed.';
+				setStatus(message, true);
+			}
+		}
+
+		const resizeObserver = new ResizeObserver(() => {
+			if (lastState) {
+				renderChart(lastState);
+			}
+		});
+
+		resizeObserver.observe(chart);
+
+		const themeObserver = new MutationObserver(() => {
+			if (lastState) {
+				renderChart(lastState);
+			}
+		});
+
+		themeObserver.observe(document.documentElement, {
+			attributes: true,
+			attributeFilter: ['data-theme'],
+		});
+
+		form.addEventListener('submit', (event) => {
+			event.preventDefault();
+			runCalculation();
+		});
+
+		sampleButton?.addEventListener('click', () => {
+			loadSampleInputs();
+			runCalculation();
+		});
+
+		Object.values(inputs).forEach((input) => {
+			input.addEventListener('change', () => {
+				if (lastState) {
+					runCalculation();
+				}
+			});
+		});
+
+		loadSampleInputs();
+		runCalculation();
+	}
+
+	document.querySelectorAll('[data-richardson-tool]').forEach((root) => {
+		if (root instanceof HTMLElement) {
+			initialiseTool(root);
+		}
+	});
+</script>

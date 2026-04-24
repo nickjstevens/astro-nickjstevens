@@ -1,0 +1,40 @@
+name: Markdown lint
+
+on:
+  pull_request:
+    paths:
+      - "**/*.md"
+      - ".markdownlint-cli2.jsonc"
+      - ".github/workflows/markdownlint.yml"
+  push:
+    branches:
+      - master
+    paths:
+      - "**/*.md"
+      - ".markdownlint-cli2.jsonc"
+      - ".github/workflows/markdownlint.yml"
+
+jobs:
+  markdownlint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Collect changed Markdown files
+        id: changed-markdown
+        uses: tj-actions/changed-files@v46
+        with:
+          files: |
+            **/*.md
+          separator: ","
+
+      - name: Run markdownlint-cli2
+        if: steps.changed-markdown.outputs.any_changed == 'true'
+        uses: DavidAnson/markdownlint-cli2-action@v23
+        with:
+          config: ".markdownlint-cli2.jsonc"
+          globs: ${{ steps.changed-markdown.outputs.all_changed_files }}
+          separator: ","

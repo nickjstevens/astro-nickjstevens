@@ -12,6 +12,14 @@ const nodes = {
     flow: 'Fed into execution agents (Codex/Gemini) as system instructions.',
     link: 'https://agents.md/'
   },
+  DesignMD: {
+    id: 'DesignMD', label: '🎨 DESIGN.md', category: 'Shared Context', color: 'gray',
+    uvp: 'Design-system context for agents: compresses brand, tokens, component rules, and accessibility standards into a portable markdown brief.',
+    purpose: 'Guides AI-generated interfaces with implementation-ready design-system rules instead of ad hoc visual guesses.',
+    usage: 'Use alongside AGENTS.md when UI work needs consistent style foundations, component behavior, and accessibility acceptance criteria.',
+    flow: 'Fed into design-aware coding agents and UI generators as design instructions for interface implementation.',
+    link: 'https://www.typeui.sh/design-md'
+  },
   Skills: {
     id: 'Skills', label: '🧠 Skills', category: 'Shared Context', color: 'yellow',
     uvp: 'Knowledge-as-code: Encapsulates complex task logic into reusable, proven blueprints.',
@@ -58,7 +66,6 @@ const nodes = {
   OMX: { id: 'OMX', label: '🛠️ oh-my-codex (OMX)', category: 'Orchestration', color: 'green', uvp: 'Performance tuning: Specifically optimized for high-velocity OpenAI code generation.', purpose: 'Performance harness for parallel Codex workflows.', link: 'https://github.com/Yeachan-Heo/oh-my-codex' },
   OMOA: { id: 'OMOA', label: '🧵 oh-my-openagent', category: 'Orchestration', color: 'green', uvp: 'Parallel execution: Background harness for the OpenCode runtime.', purpose: 'Background harness for OpenCode runtime.', link: 'https://ohmyopenagent.com' },
   Trellis: { id: 'Trellis', label: '🌿 Trellis', category: 'Orchestration', color: 'green', uvp: 'Multi-platform coding harness: Unifies specs, tasks, and workflow wiring across many AI coding tools.', purpose: 'Agent harness and workflow framework for AI coding platforms (Codex, OpenCode, Claude Code, Gemini CLI, and more).', usage: 'Use to standardize coding workflows and context injection across teams and tools.', link: 'https://github.com/mindfold-ai/Trellis' },
-  Polpo: { id: 'Polpo', label: '📱 Polpo', category: 'Orchestration', color: 'green', uvp: 'Remote supervision layer: Run and control coding-agent sessions from your phone.', purpose: 'Mobile control plane for Claude Code, Codex, Gemini CLI, OpenCode, Pi, and Goose sessions.', usage: 'Ideal for remote approvals, monitoring, and session takeover while away from desktop.', link: 'https://github.com/pugliatechs/polpo' },
   GeminiCLI: { id: 'GeminiCLI', label: '💎 Gemini CLI', category: 'Execution', color: 'green', uvp: 'Context King: The only CLI tool built to analyze 1M+ tokens of project history.', purpose: 'Google coding agent leveraging massive context.', link: 'https://github.com/google-gemini/gemini-cli' },
   CodexCLI: { id: 'CodexCLI', label: '🤖 Codex CLI', category: 'Execution', color: 'green', uvp: 'Incremental precision: The gold standard for surgical repository edits.', purpose: 'OpenAI coding agent for terminal-based repo edits and coding automation.', usage: 'Primarily focused on software development tasks (code changes, tests, repo workflows).', link: 'https://github.com/openai/codex' },
   PiAgent: { id: 'PiAgent', label: '🧰 Pi Agent', category: 'Execution', color: 'green', uvp: 'Universal toolkit: A model-agnostic execution layer for hybrid workflows.', purpose: 'Unified toolkit abstracting multiple LLM providers.', link: 'https://shittycodingagent.ai' },
@@ -81,9 +88,9 @@ const nodes = {
 
 const recommendedStack = ['Hermes', 'CodexCLI', 'OpenAIModels', 'FileSystem', 'Skills', 'SpecKit', 'Ollama', 'MCP', 'MCPSearch', 'MCPFiles', 'OMX'];
 const labels = {
-  context: ['AgentsMD', 'Skills', 'OpenSpec', 'SpecKit', 'BMad'],
+  context: ['AgentsMD', 'DesignMD', 'Skills', 'OpenSpec', 'SpecKit', 'BMad'],
   orchestration1: ['OpenClaw', 'Hermes', 'Letta', 'PicoClaw'],
-  orchestration2: ['OpenAgents', 'OpenAgentsControl', 'Goose', 'OMX', 'OMOA', 'Trellis', 'Polpo'],
+  orchestration2: ['OpenAgents', 'OpenAgentsControl', 'Goose', 'OMX', 'OMOA', 'Trellis'],
   execution: ['GeminiCLI', 'CodexCLI', 'PiAgent', 'OpenCode', 'OpenClaude', 'Aider', 'Plandex', 'RooCode'],
   intelligence: ['Ollama', 'OpenAIModels', 'GeminiModels'],
   mcp: ['MCP', 'MCPTools', 'MCPMemory', 'MCPSearch', 'MCPFiles', 'MCPAPIs']
@@ -185,7 +192,7 @@ const labels = {
         </div>
 
         <p class="footer-note" id="hover-hint">Hover components to explore architectural purpose and unique value propositions.</p>
-        <div class="build">Orchestration Topology • Build v20.2</div>
+        <div class="build">Orchestration Topology • Build v20.4</div>
       </section>
       <div id="node-overlay" class="overlay" aria-live="polite">
         <div class="overlay-head">

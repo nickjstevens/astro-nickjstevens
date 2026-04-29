@@ -1,0 +1,253 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-04-29T05:56:11+01:00",
+  "title": "Design System: Nick J Stevens",
+  "extensions": {
+    "colorMeta": {
+      "clear-sky-blue": {
+        "role": "primary",
+        "displayName": "Clear Sky Blue",
+        "canonical": "#3b82f6",
+        "tonalRamp": [
+          "oklch(15% 0.12 255)",
+          "oklch(25% 0.14 255)",
+          "oklch(35% 0.16 255)",
+          "oklch(45% 0.18 255)",
+          "oklch(58% 0.19 255)",
+          "oklch(70% 0.15 255)",
+          "oklch(82% 0.1 255)",
+          "oklch(94% 0.04 255)"
+        ]
+      },
+      "night-slate": {
+        "role": "neutral",
+        "displayName": "Night Slate",
+        "canonical": "#0f172a",
+        "tonalRamp": [
+          "#020617",
+          "#0f172a",
+          "#1e293b",
+          "#334155",
+          "#475569",
+          "#64748b",
+          "#94a3b8",
+          "#e2e8f0"
+        ]
+      },
+      "paper-frost": {
+        "role": "neutral",
+        "displayName": "Paper Frost",
+        "canonical": "#f8fafc",
+        "tonalRamp": [
+          "#0f172a",
+          "#334155",
+          "#64748b",
+          "#94a3b8",
+          "#cbd5e1",
+          "#e2e8f0",
+          "#f1f5f9",
+          "#f8fafc"
+        ]
+      },
+      "signal-violet": {
+        "role": "secondary",
+        "displayName": "Signal Violet",
+        "canonical": "#a855f7",
+        "tonalRamp": [
+          "oklch(15% 0.11 300)",
+          "oklch(25% 0.14 300)",
+          "oklch(35% 0.17 300)",
+          "oklch(48% 0.2 300)",
+          "oklch(62% 0.22 300)",
+          "oklch(74% 0.16 300)",
+          "oklch(86% 0.09 300)",
+          "oklch(95% 0.04 300)"
+        ]
+      },
+      "exact-amber": {
+        "role": "tertiary",
+        "displayName": "Exact Amber",
+        "canonical": "#f59e0b",
+        "tonalRamp": [
+          "oklch(16% 0.07 75)",
+          "oklch(27% 0.09 75)",
+          "oklch(39% 0.12 75)",
+          "oklch(52% 0.15 75)",
+          "oklch(66% 0.17 75)",
+          "oklch(78% 0.13 75)",
+          "oklch(88% 0.08 75)",
+          "oklch(96% 0.04 75)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Large page and article titles only."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Major content and tool-section headings."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Post cards, compact panels, and minor sections."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Long-form essays, page copy, and explanatory text."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Short uppercase labels, metric captions, and eyebrows."
+      }
+    },
+    "shadows": [
+      {
+        "name": "ambient-site-shadow",
+        "value": "0 12px 40px rgba(2, 6, 23, 0.35)",
+        "purpose": "Default dark-theme image, dropdown, table, and panel lift."
+      },
+      {
+        "name": "ambient-light-shadow",
+        "value": "0 12px 32px rgba(148, 163, 184, 0.2)",
+        "purpose": "Light-theme equivalent for panels and images."
+      },
+      {
+        "name": "tool-depth-shadow",
+        "value": "0 18px 60px rgba(2, 6, 23, 0.38)",
+        "purpose": "Priced In and larger dashboard-like tool surfaces."
+      },
+      {
+        "name": "search-popover-shadow",
+        "value": "0 2px 8px rgba(15, 23, 42, 0.05)",
+        "purpose": "Small, practical floating result lists."
+      }
+    ],
+    "motion": [
+      {
+        "name": "state-ease",
+        "value": "0.18s ease",
+        "purpose": "Default hover, border, background, and focus transitions."
+      },
+      {
+        "name": "popover-ease",
+        "value": "0.16s ease",
+        "purpose": "Tooltip and popover reveal transitions."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "mobile-prose",
+        "value": "720px"
+      },
+      {
+        "name": "mobile-nav",
+        "value": "900px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Icon Button",
+      "kind": "button",
+      "refersTo": "icon-button",
+      "description": "Circular header control for theme and social actions.",
+      "html": "<button class=\"ds-icon-button\" type=\"button\" aria-label=\"Toggle theme\">☀</button>",
+      "css": ".ds-icon-button { display: inline-flex; align-items: center; justify-content: center; width: 38px; height: 38px; padding: 0; border-radius: 999px; border: 1px solid rgba(96, 165, 250, 0.28); background: rgba(30, 41, 59, 0.7); color: #f8fafc; font: 700 0.95rem Atkinson, sans-serif; cursor: pointer; transition: transform 0.18s ease, border-color 0.18s ease, background 0.18s ease; } .ds-icon-button:hover { transform: translateY(-1px); border-color: #3b82f6; } .ds-icon-button:focus-visible { outline: 2px solid #60a5fa; outline-offset: 2px; }"
+    },
+    {
+      "name": "Post Card",
+      "kind": "card",
+      "refersTo": "post-card",
+      "description": "Image-led article preview for blog grids and tag pages.",
+      "html": "<article class=\"ds-post-card\"><img src=\"/favicon.svg\" alt=\"\" /><h3>A clear essay title</h3><p>29 Apr 2026</p></article>",
+      "css": ".ds-post-card { width: min(100%, 320px); overflow: hidden; border: 1px solid rgba(148, 163, 184, 0.18); border-radius: 12px; background: rgba(30, 41, 59, 0.7); color: #f8fafc; font-family: Atkinson, sans-serif; } .ds-post-card img { display: block; width: 100%; aspect-ratio: 2 / 1; object-fit: cover; background: #0f172a; } .ds-post-card h3 { margin: 0; padding: 0.75rem 0.75rem 0.25rem; font-size: 1.15rem; line-height: 1.2; } .ds-post-card p { margin: 0; padding: 0 0.75rem 0.75rem; color: #94a3b8; font-size: 0.9rem; }"
+    },
+    {
+      "name": "Tag Pill",
+      "kind": "chip",
+      "refersTo": "tag-pill",
+      "description": "Compact topic navigation with a soft bordered shape.",
+      "html": "<a class=\"ds-tag-pill\" href=\"#\">Systems thinking</a>",
+      "css": ".ds-tag-pill { display: inline-flex; align-items: center; min-height: 32px; padding: 0.22rem 0.65rem; border: 1px solid rgba(148, 163, 184, 0.18); border-radius: 999px; color: #f8fafc; font: 400 0.95rem Atkinson, sans-serif; text-decoration: none; background: transparent; transition: border-color 0.18s ease, color 0.18s ease; } .ds-tag-pill:hover { border-color: #3b82f6; color: #60a5fa; } .ds-tag-pill:focus-visible { outline: 2px solid #60a5fa; outline-offset: 2px; }"
+    },
+    {
+      "name": "Search Input",
+      "kind": "input",
+      "refersTo": "search-input",
+      "description": "Focused search field with compact results-popover behavior.",
+      "html": "<label class=\"ds-search-label\">Search posts<input class=\"ds-search-input\" type=\"search\" placeholder=\"Search posts...\" /></label>",
+      "css": ".ds-search-label { display: grid; gap: 0.35rem; max-width: 600px; color: #94a3b8; font: 700 0.78rem Atkinson, sans-serif; letter-spacing: 0.08em; text-transform: uppercase; } .ds-search-input { width: 100%; padding: 0.5em 0.75em; border: 1px solid #cbd5e1; border-radius: 4px; background: #ffffff; color: #0f172a; font: 400 0.9em Atkinson, sans-serif; transition: border-color 0.2s ease, box-shadow 0.2s ease; } .ds-search-input:focus { outline: none; border-color: #64748b; box-shadow: 0 0 0 2px rgba(100, 116, 139, 0.1); }"
+    },
+    {
+      "name": "Tool Panel",
+      "kind": "custom",
+      "refersTo": "tool-button",
+      "description": "Rounded instrument panel used for engineering tools.",
+      "html": "<section class=\"ds-tool-panel\"><p>Finite element verification</p><h3>Richardson extrapolation</h3><button>Calculate</button></section>",
+      "css": ".ds-tool-panel { max-width: 420px; padding: 1.2rem; border: 1px solid rgba(148, 163, 184, 0.18); border-radius: 22px; background: linear-gradient(160deg, rgba(59, 130, 246, 0.08), transparent 48%), rgba(30, 41, 59, 0.7); color: #f8fafc; box-shadow: 0 12px 40px rgba(2, 6, 23, 0.35); font-family: Atkinson, sans-serif; } .ds-tool-panel p { margin: 0 0 0.55rem; color: #60a5fa; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; } .ds-tool-panel h3 { margin: 0 0 1rem; font-size: 1.4rem; line-height: 1.2; } .ds-tool-panel button { min-height: 44px; padding: 0.7rem 1rem; border: 1px solid rgba(96, 165, 250, 0.28); border-radius: 14px; background: rgba(30, 41, 59, 0.7); color: #f8fafc; font-weight: 700; cursor: pointer; transition: transform 0.18s ease, border-color 0.18s ease; } .ds-tool-panel button:hover { transform: translateY(-1px); border-color: #3b82f6; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Polished Field Notebook",
+    "overview": "This visual system should feel like a carefully kept personal field notebook: clear enough for engineering notes, warm enough for reflective essays, and polished enough to make a strong first impression. It is a brand system for an independent thinker, not a corporate portfolio or generic content template.\n\nThe current implementation is dark-first, with a light mode available for long reading. Night Slate surfaces, Clear Sky Blue accents, restrained shadows, and Atkinson typography create a calm, technical, personal voice. The site should feel clean, polished, and beautiful while keeping the texture of a real person with varied interests.",
+    "keyCharacteristics": [
+      "Dark-first reading environment with a practical light-mode counterpart.",
+      "Generous prose width, stable navigation, and unhurried page rhythm.",
+      "Blue accent used for action, focus, active state, and technical emphasis.",
+      "Rounded surfaces and ambient shadows used only to clarify hierarchy.",
+      "Personal imagery and writing remain the main brand signal."
+    ],
+    "rules": [
+      {
+        "name": "The Blue Rarity Rule",
+        "body": "Clear Sky Blue should mark links, active states, and important tool feedback. It should not flood broad content surfaces.",
+        "section": "colors"
+      },
+      {
+        "name": "The Night-Then-Paper Rule",
+        "body": "Dark mode owns the default atmosphere; light mode exists for comfortable reading and must preserve the same hierarchy.",
+        "section": "colors"
+      },
+      {
+        "name": "The Reading First Rule",
+        "body": "Do not sacrifice body readability for visual drama. Large type belongs to titles, not dense panels or buttons.",
+        "section": "typography"
+      },
+      {
+        "name": "The No Costume Mono Rule",
+        "body": "Do not add monospace type as a lazy signal for engineering or technology. Atkinson is the project voice.",
+        "section": "typography"
+      },
+      {
+        "name": "The Clarify, Never Decorate Rule",
+        "body": "Add depth only when it helps a visitor understand layering, state, or affordance.",
+        "section": "elevation"
+      },
+      {
+        "name": "The No Glass Default Rule",
+        "body": "Backdrop blur exists in the Priced In tool, but it is not the default brand treatment for the main site.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do preserve the personal brand direction: clean, polished, beautiful.",
+      "Do use Clear Sky Blue for action, active state, and technical emphasis.",
+      "Do keep prose near 760px and prioritize long-form readability.",
+      "Do use Atkinson consistently across writing, navigation, and tools.",
+      "Do use personal imagery decisively on articles and the home page.",
+      "Do keep cards and panels useful: post previews, tools, dropdowns, and search results.",
+      "Do protect keyboard navigation for menus, search, theme toggle, and interactive tools."
+    ],
+    "donts": [
+      "Don't make the site feel boring, cluttered, or corporate.",
+      "Don't drift into generic SaaS polish, dense academic CV presentation, influencer-newsletter tropes, or consultancy brochure language.",
+      "Don't use colored border-left or border-right stripes as accents.",
+      "Don't use gradient text, decorative glassmorphism, or hero-metric templates.",
+      "Don't make identical card grids the dominant expression of the brand.",
+      "Don't use monospace as a costume for technical authority.",
+      "Don't let tool surfaces overpower the reading and personal publishing purpose of the site."
+    ]
+  }
+}

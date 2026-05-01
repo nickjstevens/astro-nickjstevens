@@ -1,0 +1,303 @@
+---
+import { getCollection } from 'astro:content';
+import FormattedDate from './FormattedDate.astro';
+
+const blog = await getCollection('blog');
+const recentPosts = blog
+	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+	.slice(0, 3);
+---
+
+<section class="featured-content">
+	<div class="featured-section featured-posts" aria-labelledby="latest-essays">
+		<div class="section-heading">
+			<p class="section-kicker">Recent writing</p>
+			<h2 id="latest-essays">Latest essays</h2>
+		</div>
+		<div class="posts-list">
+			{recentPosts.map((post) => (
+				<article class="featured-post">
+					<div class="post-header">
+						<h3><a href={`/blog/${post.id}/`}>{post.data.title}</a></h3>
+						<div class="post-meta">
+							<FormattedDate date={post.data.pubDate} />
+							{post.data.tags && post.data.tags.length > 0 && (
+								<span class="tag-badge">{post.data.tags[0]}</span>
+							)}
+						</div>
+					</div>
+					<p class="post-excerpt">{post.data.description}</p>
+				</article>
+			))}
+		</div>
+		<div class="view-all">
+			<a href="/blog" class="link-subtle">View all essays →</a>
+		</div>
+	</div>
+
+	<div class="featured-section featured-tools" aria-labelledby="featured-work">
+		<div class="section-heading">
+			<p class="section-kicker">Practical work</p>
+			<h2 id="featured-work">Featured work</h2>
+		</div>
+		<div class="tools-grid">
+			<article class="featured-tool priced-in">
+				<div class="tool-header">
+					<h3>Priced In</h3>
+					<span class="tool-icon" aria-hidden="true">£</span>
+				</div>
+				<p class="tool-description">
+					Compare UK prices across pounds, gold, work hours, and bitcoin. Explore how the cost of living changes across time and context.
+				</p>
+				<a href="/priced-in/index.html" class="tool-cta">Explore tool →</a>
+			</article>
+
+			<article class="featured-tool fea-guide">
+				<div class="tool-header">
+					<h3>FEA E-book</h3>
+					<span class="tool-icon" aria-hidden="true">FEA</span>
+				</div>
+				<p class="tool-description">
+					A practical guide to finite element analysis. Learn the fundamentals of FEA for engineering applications and simulations.
+				</p>
+				<a href="/fea" class="tool-cta">Learn more →</a>
+			</article>
+		</div>
+	</div>
+</section>
+
+<style>
+	.featured-content {
+		display: grid;
+		grid-template-columns: minmax(0, 1fr);
+		gap: clamp(3.6rem, 6vw, 5.5rem);
+		margin: 4rem auto 0;
+		max-width: 900px;
+	}
+
+	.featured-section {
+		display: grid;
+		gap: 1.45rem;
+	}
+
+	.section-heading {
+		display: grid;
+		gap: 0.3rem;
+	}
+
+	.section-kicker {
+		margin: 0;
+		color: var(--accent);
+		font-size: 0.75rem;
+		font-weight: 700;
+		letter-spacing: 0.08em;
+		line-height: 1.2;
+		text-transform: uppercase;
+	}
+
+	.section-heading h2 {
+		font-size: clamp(1.55rem, 3vw, 2.2rem);
+		margin: 0;
+		color: var(--text);
+		font-weight: 700;
+	}
+
+	.posts-list {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.featured-post {
+		padding: 0 0 1.55rem;
+		border-bottom: 1px solid var(--border);
+	}
+
+	.featured-post + .featured-post {
+		padding-top: 1.55rem;
+	}
+
+	.featured-post:last-child {
+		border-bottom: none;
+		padding-bottom: 0;
+	}
+
+	.post-header {
+		margin-bottom: 0.75rem;
+	}
+
+	.featured-post h3 {
+		font-size: 1.25em;
+		margin: 0 0 0.5rem 0;
+		line-height: 1.3;
+	}
+
+	.featured-post h3 a {
+		color: var(--text);
+		text-decoration: none;
+		text-underline-offset: 0.2em;
+		transition: color 180ms cubic-bezier(0.22, 1, 0.36, 1);
+	}
+
+	.featured-post h3 a:hover,
+	.featured-post h3 a:focus-visible {
+		color: var(--accent);
+		text-decoration: underline;
+	}
+
+	.post-meta {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: 0.5rem 0.8rem;
+		font-size: 0.875rem;
+		color: var(--text-muted);
+	}
+
+	.tag-badge {
+		background: color-mix(in srgb, var(--accent) 12%, transparent);
+		border: 1px solid color-mix(in srgb, var(--accent) 22%, transparent);
+		color: color-mix(in srgb, var(--accent) 70%, var(--text));
+		padding: 0.22rem 0.55rem;
+		border-radius: 999px;
+		font-weight: 600;
+		font-size: 0.75rem;
+		text-transform: capitalize;
+	}
+
+	.post-excerpt {
+		margin: 0.75rem 0 0;
+		color: var(--text-muted);
+		line-height: 1.6;
+		font-size: 0.95rem;
+	}
+
+	.view-all {
+		margin-top: 0.3rem;
+	}
+
+	.link-subtle {
+		color: var(--accent);
+		text-decoration: none;
+		font-size: 0.95rem;
+		font-weight: 700;
+		text-underline-offset: 0.2em;
+		transition: color 180ms cubic-bezier(0.22, 1, 0.36, 1);
+	}
+
+	.link-subtle:hover,
+	.link-subtle:focus-visible {
+		color: var(--accent-dark);
+		text-decoration: underline;
+	}
+
+	.tools-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(min(100%, 290px), 1fr));
+		gap: 1rem;
+	}
+
+	.featured-tool {
+		min-height: 220px;
+		padding: 1.25rem;
+		background: var(--surface-alt);
+		border-radius: 12px;
+		border: 1px solid var(--border);
+		display: flex;
+		flex-direction: column;
+		transition:
+			background-color 180ms cubic-bezier(0.22, 1, 0.36, 1),
+			border-color 180ms cubic-bezier(0.22, 1, 0.36, 1),
+			transform 180ms cubic-bezier(0.22, 1, 0.36, 1);
+	}
+
+	.featured-tool:hover {
+		background: color-mix(in srgb, var(--surface-alt) 85%, var(--accent) 15%);
+		border-color: color-mix(in srgb, var(--accent) 36%, var(--border));
+		transform: translateY(-2px);
+	}
+
+	.tool-header {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		margin-bottom: 1rem;
+	}
+
+	.featured-tool h3 {
+		font-size: 1.25em;
+		margin: 0;
+		color: var(--text);
+		font-weight: 700;
+	}
+
+	.tool-icon {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		min-width: 2.35rem;
+		height: 2.35rem;
+		border: 1px solid var(--border);
+		border-radius: 999px;
+		color: var(--accent);
+		font-size: 0.82rem;
+		font-weight: 700;
+		line-height: 1;
+	}
+
+	.tool-description {
+		flex-grow: 1;
+		color: var(--text-muted);
+		font-size: 0.95rem;
+		line-height: 1.6;
+		margin: 0;
+		margin-bottom: 1.25rem;
+	}
+
+	.tool-cta {
+		color: var(--accent);
+		text-decoration: none;
+		font-weight: 700;
+		text-underline-offset: 0.2em;
+		transition: color 180ms cubic-bezier(0.22, 1, 0.36, 1);
+		align-self: flex-start;
+		font-size: 0.95rem;
+	}
+
+	.tool-cta:hover,
+	.tool-cta:focus-visible {
+		color: var(--accent-dark);
+		text-decoration: underline;
+	}
+
+	@media (max-width: 720px) {
+		.featured-content {
+			margin: 3rem auto 0;
+			gap: 3.6rem;
+		}
+
+		.featured-tool {
+			padding: 1.5rem;
+		}
+
+		.featured-post {
+			padding-bottom: 1.5rem;
+		}
+
+		.featured-post + .featured-post {
+			padding-top: 1.5rem;
+		}
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.featured-post h3 a,
+		.link-subtle,
+		.featured-tool,
+		.tool-cta {
+			transition: none;
+		}
+
+		.featured-tool:hover {
+			transform: none;
+		}
+	}
+</style>

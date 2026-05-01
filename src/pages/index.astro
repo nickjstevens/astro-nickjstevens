@@ -2,6 +2,7 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import FeaturedContent from '../components/FeaturedContent.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 import { Image } from 'astro:assets';
 import headerImage from '../assets/header.png';
@@ -12,31 +13,142 @@ import headerImage from '../assets/header.png';
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 		<style>
+			.home-main {
+				width: min(var(--container-wide), calc(100% - 2rem));
+				padding: clamp(1.6rem, 3vw, 3rem) 0 3.8rem;
+			}
+
+			.hero-section {
+				position: relative;
+				overflow: hidden;
+				border: 1px solid var(--border);
+				border-radius: 14px;
+				box-shadow: var(--box-shadow);
+				margin-bottom: clamp(3.4rem, 7vw, 5.8rem);
+				background: var(--surface-strong);
+			}
+
 			.hero-image {
 				width: 100%;
-				margin-bottom: 2em;
+				margin: 0;
+				position: relative;
 			}
+
+			.hero-image::after {
+				content: '';
+				position: absolute;
+				inset: 0;
+				background:
+					linear-gradient(105deg, rgba(2, 6, 23, 0.82) 0%, rgba(2, 6, 23, 0.45) 38%, rgba(2, 6, 23, 0.08) 72%),
+					linear-gradient(0deg, rgba(2, 6, 23, 0.28), rgba(2, 6, 23, 0));
+				pointer-events: none;
+			}
+
 			.hero-image img {
 				display: block;
-				margin: 0 auto;
-				border-radius: 12px;
-				box-shadow: var(--box-shadow);
+				width: 100%;
+				min-height: clamp(430px, 50vw, 560px);
+				height: clamp(430px, 50vw, 560px);
+				object-fit: cover;
+				object-position: center;
+				border-radius: 0;
+			}
+
+			.hero-copy {
+				position: absolute;
+				top: clamp(1.2rem, 5vw, 4rem);
+				left: clamp(1.1rem, 5vw, 4.5rem);
+				z-index: 1;
+				width: min(690px, 100%);
+				padding-right: 1.2rem;
+			}
+
+			.hero-kicker {
+				margin: 0 0 0.7rem;
+				color: oklch(77% 0.13 247);
+				font-size: 0.78rem;
+				font-weight: 700;
+				letter-spacing: 0.08em;
+				line-height: 1.2;
+				text-transform: uppercase;
+			}
+
+			.hero-copy h1 {
+				margin-bottom: 0.8rem;
+				color: oklch(98% 0.006 247);
+				font-size: clamp(2.45rem, 7vw, 4.8rem);
+				line-height: 0.98;
+				text-shadow: 0 2px 22px rgba(2, 6, 23, 0.55);
+			}
+
+			.hero-copy p {
+				max-width: 62ch;
+				margin: 0;
+				color: oklch(88% 0.018 247);
+				font-size: clamp(1.05rem, 2vw, 1.2rem);
+				line-height: 1.65;
+				text-shadow: 0 2px 18px rgba(2, 6, 23, 0.72);
+			}
+
+			.hero-links {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 0.65rem 1.1rem;
+				margin-top: 1.35rem;
+			}
+
+			.hero-link {
+				color: oklch(98% 0.006 247);
+				font-weight: 700;
+				text-decoration: none;
+				text-underline-offset: 0.22em;
+				transition: color 180ms cubic-bezier(0.22, 1, 0.36, 1);
+			}
+
+			.hero-link:hover,
+			.hero-link:focus-visible {
+				color: oklch(77% 0.13 247);
+				text-decoration: underline;
+			}
+
+			@media (max-width: 720px) {
+				.hero-section {
+					margin-inline: -0.15rem;
+				}
+
+				.hero-image img {
+					min-height: 520px;
+					height: 520px;
+					object-position: 44% center;
+				}
+
+				.hero-copy h1 {
+					font-size: clamp(2.25rem, 14vw, 3.25rem);
+				}
 			}
 		</style>
 	</head>
 	<body>
 		<Header />
-		<main>
-			<div class="hero-image">
-				<Image src={headerImage} alt="Header image" width={1020} height={510} />
-			</div>
-			<h1>👋 I'm Nick. Welcome.</h1>
-			<p>
-				This is my self-sovereign home in cyberspace, where I write at the intersection of health, philosophy and systems thinking.
-			</p>
-			<p>
-				Explore <a href="/priced-in/index.html">Priced In</a>, a static cost-of-living explorer for comparing UK prices across pounds, gold, work hours, and bitcoin.
-			</p>
+		<main class="home-main">
+			<section class="hero-section">
+				<figure class="hero-image">
+					<Image src={headerImage} alt="Nick swimming in a rocky stream below an open moorland sky" width={1020} height={510} loading="eager" />
+				</figure>
+				<div class="hero-copy">
+					<p class="hero-kicker">Independent field notebook</p>
+					<h1>Nick J Stevens</h1>
+					<p>
+						Essays, engineering notes, and practical field reports from the overlap of health, philosophy, systems thinking, running, and self-sovereign technology.
+					</p>
+					<nav class="hero-links" aria-label="Homepage shortcuts">
+						<a class="hero-link" href="/blog">Read essays →</a>
+						<a class="hero-link" href="/about">About Nick →</a>
+					</nav>
+				</div>
+			</section>
+
+			<FeaturedContent />
 		</main>
 		<Footer />
 	</body>

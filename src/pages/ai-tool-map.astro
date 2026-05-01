@@ -35,6 +35,14 @@ const nodes = {
     usage: 'Adhere to this when defining custom tools for vendor-neutrality.',
     link: 'https://openspec.dev'
   },
+  Impeccable: {
+    id: 'Impeccable', label: '✨ Impeccable', category: 'Shared Context', color: 'gray',
+    uvp: 'Open Spec for taste: A portable design-language layer that gives agents sharper style vocabulary, anti-patterns, and polish commands.',
+    purpose: 'Improves AI-generated frontend design with reusable skills, style references, and critique/audit/polish workflows.',
+    usage: 'Use when UI work needs stronger visual judgment, design-system alignment, and explicit avoidance of generic AI design clichés.',
+    flow: 'Fed into design-aware coding agents as style guidance alongside requirement specs and DESIGN.md context.',
+    link: 'https://github.com/pbakaus/impeccable'
+  },
   SpecKit: {
     id: 'SpecKit', label: '🧩 spec-kit', category: 'Shared Context', color: 'gray',
     uvp: 'The planning compiler: Converts high-level design specs into actionable task lists for agents.',
@@ -88,7 +96,7 @@ const nodes = {
 
 const recommendedStack = ['Hermes', 'CodexCLI', 'OpenAIModels', 'FileSystem', 'Skills', 'SpecKit', 'Ollama', 'MCP', 'MCPSearch', 'MCPFiles', 'OMX'];
 const labels = {
-  context: ['AgentsMD', 'DesignMD', 'Skills', 'OpenSpec', 'SpecKit', 'BMad'],
+  context: ['AgentsMD', 'DesignMD', 'Skills', 'OpenSpec', 'Impeccable', 'SpecKit', 'BMad'],
   orchestration1: ['OpenClaw', 'Hermes', 'Letta', 'PicoClaw'],
   orchestration2: ['OpenAgents', 'OpenAgentsControl', 'Goose', 'OMX', 'OMOA', 'Trellis'],
   execution: ['GeminiCLI', 'CodexCLI', 'PiAgent', 'OpenCode', 'OpenClaude', 'Aider', 'Plandex', 'RooCode'],
@@ -192,7 +200,7 @@ const labels = {
         </div>
 
         <p class="footer-note" id="hover-hint">Hover components to explore architectural purpose and unique value propositions.</p>
-        <div class="build">Orchestration Topology • Build v20.4</div>
+        <div class="build">Orchestration Topology • Build v20.5</div>
       </section>
       <div id="node-overlay" class="overlay" aria-live="polite">
         <div class="overlay-head">

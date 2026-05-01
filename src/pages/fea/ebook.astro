@@ -6,19 +6,195 @@ import Layout from '../../layouts/Page.astro';
 	title="FEA E-Book"
 	description="Learn practical finite element analysis with Nick Stevens' concise, field-tested e-book"
 >
-	<p>
-		Want to produce stronger, more credible FEA in less time?
-	</p>
-	<p>
-		This e-book is a practical guide built for engineers who need to go beyond button-clicking: better model setup,
-		smarter assumptions, cleaner validation, and clearer reporting. It's focused, usable, and designed to help you make
-		better engineering decisions with confidence.
-	</p>
-	<p>
-		Whether you're early in your FEA journey or sharpening an established workflow, this resource gives you a structured
-		path to improve analysis quality and reduce avoidable mistakes.
-	</p>
-	<p>
-		<a href="https://nickjstevens.gumroad.com/l/Aougc" target="_blank" rel="noopener noreferrer">Buy the e-book on Gumroad</a>
-	</p>
+	<style>
+		.ebook-intro {
+			margin-bottom: clamp(1.4rem, 3vw, 2.2rem);
+		}
+
+		.ebook-cta {
+			--cta-surface: oklch(22% 0.034 247 / 0.82);
+			--cta-surface-strong: oklch(28% 0.048 247 / 0.8);
+			--cta-text: oklch(98% 0.006 247);
+			--cta-muted: oklch(79% 0.032 247);
+			--cta-border: oklch(70% 0.09 247 / 0.32);
+			--cta-accent: oklch(69% 0.145 247);
+			--cta-accent-strong: oklch(61% 0.17 247);
+			--cta-amber: oklch(75% 0.16 76);
+			display: grid;
+			grid-template-columns: minmax(0, 1fr) auto;
+			gap: clamp(1.2rem, 4vw, 2rem);
+			align-items: center;
+			margin: clamp(2rem, 5vw, 3.2rem) 0 0;
+			padding: clamp(1.15rem, 4vw, 1.75rem);
+			border: 1px solid var(--cta-border);
+			border-radius: 14px;
+			background:
+				linear-gradient(135deg, var(--cta-surface), var(--cta-surface-strong)),
+				var(--surface-alt);
+			box-shadow: 0 18px 48px oklch(10% 0.03 247 / 0.28);
+		}
+
+		.ebook-cta-copy {
+			display: grid;
+			gap: 0.75rem;
+		}
+
+		.ebook-cta-kicker {
+			margin: 0;
+			color: var(--cta-amber);
+			font-size: 0.76rem;
+			font-weight: 700;
+			letter-spacing: 0.08em;
+			line-height: 1.2;
+			text-transform: uppercase;
+		}
+
+		.ebook-cta h2 {
+			margin: 0;
+			color: var(--cta-text);
+			font-size: clamp(1.35rem, 3vw, 1.9rem);
+			line-height: 1.12;
+		}
+
+		.ebook-cta p {
+			max-width: 58ch;
+			margin: 0;
+			color: var(--cta-muted);
+			font-size: 0.98rem;
+			line-height: 1.55;
+		}
+
+		.ebook-outcomes {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 0.45rem;
+			margin-top: 0.15rem;
+		}
+
+		.ebook-outcome {
+			display: inline-flex;
+			align-items: center;
+			min-height: 1.9rem;
+			padding: 0.24rem 0.62rem;
+			border: 1px solid oklch(76% 0.07 247 / 0.25);
+			border-radius: 999px;
+			color: var(--cta-text);
+			background: oklch(98% 0.006 247 / 0.06);
+			font-size: 0.78rem;
+			font-weight: 700;
+			line-height: 1.2;
+		}
+
+		.ebook-buy {
+			box-sizing: border-box;
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			min-width: 12rem;
+			min-height: 3rem;
+			padding: 0.78rem 1.1rem;
+			border: 1px solid oklch(78% 0.11 247 / 0.44);
+			border-radius: 12px;
+			background: var(--cta-accent);
+			color: oklch(99% 0.004 247);
+			font-weight: 700;
+			line-height: 1.2;
+			text-align: center;
+			text-decoration: none;
+			box-shadow: 0 12px 28px oklch(13% 0.04 247 / 0.3);
+			transition:
+				background-color 180ms cubic-bezier(0.22, 1, 0.36, 1),
+				border-color 180ms cubic-bezier(0.22, 1, 0.36, 1),
+				box-shadow 180ms cubic-bezier(0.22, 1, 0.36, 1),
+				color 180ms cubic-bezier(0.22, 1, 0.36, 1),
+				transform 180ms cubic-bezier(0.22, 1, 0.36, 1);
+		}
+
+		.ebook-buy:hover,
+		.ebook-buy:focus-visible {
+			background: var(--cta-accent-strong);
+			border-color: oklch(82% 0.11 247 / 0.58);
+			color: oklch(99% 0.004 247);
+			text-decoration: none;
+			box-shadow: 0 16px 34px oklch(13% 0.04 247 / 0.36);
+			transform: translateY(-1px);
+		}
+
+		.ebook-buy:focus-visible {
+			outline: 3px solid oklch(82% 0.13 247 / 0.36);
+			outline-offset: 3px;
+		}
+
+		:global(html[data-theme='light']) .ebook-cta {
+			--cta-surface: oklch(98% 0.009 247 / 0.98);
+			--cta-surface-strong: oklch(94% 0.025 247 / 0.98);
+			--cta-text: oklch(22% 0.035 247);
+			--cta-muted: oklch(42% 0.036 247);
+			--cta-border: oklch(68% 0.09 247 / 0.32);
+			--cta-accent: oklch(57% 0.18 247);
+			--cta-accent-strong: oklch(49% 0.19 247);
+			--cta-amber: oklch(52% 0.14 76);
+			box-shadow: 0 16px 36px oklch(70% 0.04 247 / 0.25);
+		}
+
+		:global(html[data-theme='light']) .ebook-outcome {
+			border-color: oklch(64% 0.08 247 / 0.32);
+			background: oklch(99% 0.006 247 / 0.7);
+		}
+
+		@media (max-width: 720px) {
+			.ebook-cta {
+				grid-template-columns: 1fr;
+			}
+
+			.ebook-buy {
+				width: 100%;
+			}
+		}
+
+		@media (prefers-reduced-motion: reduce) {
+			.ebook-buy {
+				transition: none;
+			}
+
+			.ebook-buy:hover,
+			.ebook-buy:focus-visible {
+				transform: none;
+			}
+		}
+	</style>
+
+	<div class="ebook-intro">
+		<p>
+			Want to produce stronger, more credible FEA in less time?
+		</p>
+		<p>
+			This e-book is a practical guide built for engineers who need to go beyond button-clicking: better model setup,
+			smarter assumptions, cleaner validation, and clearer reporting. It's focused, usable, and designed to help you
+			make better engineering decisions with confidence.
+		</p>
+		<p>
+			Whether you're early in your FEA journey or sharpening an established workflow, this resource gives you a
+			structured path to improve analysis quality and reduce avoidable mistakes.
+		</p>
+	</div>
+
+	<section class="ebook-cta" aria-labelledby="ebook-buy-heading">
+		<div class="ebook-cta-copy">
+			<p class="ebook-cta-kicker">Practical FEA guide</p>
+			<h2 id="ebook-buy-heading">Improve the next model you build.</h2>
+			<p>
+				Get the e-book for a focused path through assumptions, validation, and reporting, written for engineers who
+				need analysis they can defend.
+			</p>
+			<div class="ebook-outcomes" aria-label="Topics covered">
+				<span class="ebook-outcome">Model setup</span>
+				<span class="ebook-outcome">Validation checks</span>
+				<span class="ebook-outcome">Clear reporting</span>
+			</div>
+		</div>
+		<a class="ebook-buy" href="https://nickjstevens.gumroad.com/l/Aougc" target="_blank" rel="noopener noreferrer">
+			Buy on Gumroad
+		</a>
+	</section>
 </Layout>

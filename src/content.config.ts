@@ -16,4 +16,27 @@ const blog = defineCollection({
 	}),
 });
 
-export const collections = { blog };
+const adventures = defineCollection({
+	loader: glob({ base: './src/content/adventures', pattern: '**/*.{md,mdx}' }),
+	schema: z.object({
+		title: z.string(),
+		description: z.string(),
+		tripTitle: z.string(),
+		tripSlug: z.string(),
+		kind: z.enum(['trip', 'day']),
+		year: z.number(),
+		order: z.number(),
+		date: z.coerce.date().optional(),
+		sleepLocation: z.string().optional(),
+		activitiesAm: z.string().optional(),
+		activitiesPm: z.string().optional(),
+		activitiesEvening: z.string().optional(),
+		drivingTime: z.string().optional(),
+		accommodation: z.string().optional(),
+		heroImage: z.string().optional(),
+		icon: z.string().optional(),
+		sourceUrl: z.string().url().optional(),
+	}),
+});
+
+export const collections = { blog, adventures };

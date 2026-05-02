@@ -1,0 +1,143 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import FormattedDate from '../components/FormattedDate.astro';
+
+interface Props {
+	title: string;
+	description: string;
+	tripTitle?: string;
+	date?: Date;
+	heroImage?: string;
+	meta?: Array<{ label: string; value?: string }>;
+}
+
+const { title, description, tripTitle, date, heroImage, meta = [] } = Astro.props;
+const visibleMeta = meta.filter((item) => item.value);
+---
+
+<html lang="en">
+	<head>
+		<BaseHead title={`${title} | Adventures`} description={description} />
+	</head>
+	<body>
+		<Header />
+		<main class="adventure-shell">
+			<a class="adventure-back" href={tripTitle ? '/adventures/' : '/'}>← {tripTitle ? 'All adventures' : 'Home'}</a>
+			<article class="adventure-article">
+				<header class="adventure-hero">
+					{tripTitle && <p class="adventure-kicker">{tripTitle}</p>}
+					<h1>{title}</h1>
+					<p class="adventure-description">{description}</p>
+					{date && <p class="adventure-date"><FormattedDate date={date} /></p>}
+					{heroImage && <img class="adventure-hero-image" src={heroImage} alt="" loading="eager" />}
+				</header>
+				{visibleMeta.length > 0 && (
+					<dl class="adventure-meta">
+						{visibleMeta.map((item) => (
+							<div>
+								<dt>{item.label}</dt>
+								<dd>{item.value}</dd>
+							</div>
+						))}
+					</dl>
+				)}
+				<div class="adventure-prose">
+					<slot />
+				</div>
+			</article>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.adventure-shell {
+		width: min(1080px, calc(100% - 2rem));
+	}
+	.adventure-back {
+		display: inline-flex;
+		margin-bottom: 1.2rem;
+		color: var(--text-muted);
+		font-size: 0.95rem;
+	}
+	.adventure-article {
+		display: grid;
+		gap: 1.6rem;
+	}
+	.adventure-hero {
+		padding: clamp(1.25rem, 3vw, 2.5rem);
+		border: 1px solid var(--border);
+		border-radius: 24px;
+		background: linear-gradient(135deg, color-mix(in srgb, var(--surface-alt) 92%, transparent), color-mix(in srgb, var(--accent) 14%, transparent));
+		box-shadow: var(--box-shadow);
+		overflow: hidden;
+	}
+	.adventure-kicker,
+	.adventure-date {
+		margin: 0 0 0.6rem;
+		color: var(--text-muted);
+		font-size: 0.98rem;
+		font-weight: 700;
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+	}
+	.adventure-hero h1 {
+		font-size: clamp(2.4rem, 7vw, 5rem);
+		margin-bottom: 0.7rem;
+		max-width: 12ch;
+	}
+	.adventure-description {
+		max-width: 760px;
+		margin: 0;
+		color: var(--text-muted);
+		font-size: clamp(1.1rem, 2vw, 1.35rem);
+	}
+	.adventure-hero-image {
+		width: 100%;
+		max-height: 620px;
+		object-fit: cover;
+		margin-top: 1.4rem;
+		border: 1px solid var(--border);
+		border-radius: 18px;
+	}
+	.adventure-meta {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+		gap: 0.75rem;
+		margin: 0;
+	}
+	.adventure-meta div {
+		padding: 0.9rem 1rem;
+		border: 1px solid var(--border);
+		border-radius: 16px;
+		background: var(--surface-alt);
+	}
+	.adventure-meta dt {
+		color: var(--text-muted);
+		font-size: 0.78rem;
+		font-weight: 700;
+		letter-spacing: 0.06em;
+		text-transform: uppercase;
+	}
+	.adventure-meta dd {
+		margin: 0.25rem 0 0;
+	}
+	.adventure-prose {
+		width: min(820px, 100%);
+		margin: 0 auto;
+	}
+	.adventure-prose :global(img),
+	.adventure-prose :global(video) {
+		display: block;
+		width: 100%;
+		margin: 1.6rem auto;
+		border: 1px solid var(--border);
+		border-radius: 8px;
+		box-shadow: var(--box-shadow);
+	}
+	.adventure-prose :global(video) {
+		background: #000;
+	}
+</style>

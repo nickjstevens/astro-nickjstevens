@@ -13,5 +13,3 @@ sourceUrl: "https://nickjstevens.notion.site/day-12-boxing-day-2d6ed18142a58015b
 - drive to Woodstock
 - McDonald’s for lunch
 - Walmart break
--
--

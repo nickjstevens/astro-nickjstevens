@@ -15,7 +15,6 @@ sourceUrl: "https://nickjstevens.notion.site/day-10-christmas-eve-2d4ed18142a580
 - Alex and Nick went to Boonton and a bit of shopping in Target
 - Kids decorated pinecones in glitter
 - Evening drive around neighbourhoods with nice Christmas lights
--
 ![IMG_3308.jpeg](/adventures/assets/2025-usa/day-10-christmas-eve-01.webp)
 
 ![IMG_3316.jpeg](/adventures/assets/2025-usa/day-10-christmas-eve-02.webp)

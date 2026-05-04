@@ -15,10 +15,9 @@ drivingTime: "4.5 Hours"
 accommodation: "Fairfield by Marriot"
 heroImage: "/adventures/assets/2024-usa/day-25-the-coast-01.webp"
 ---
-# Travel Log
+## Travel Log
 
 To write
-
 
 ![Morning reflections as we leave Yosemite](/adventures/assets/2024-usa/day-25-the-coast-02.webp)
 
@@ -37,7 +36,6 @@ To write
 ![The biggest meatball ever in this ‘kids’ meal](/adventures/assets/2024-usa/day-25-the-coast-09.webp)
 
 ![The land of the setting sun](/adventures/assets/2024-usa/day-25-the-coast-10.webp)
-
 
 Accommodation:
 

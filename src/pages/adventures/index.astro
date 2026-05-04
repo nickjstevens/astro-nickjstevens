@@ -7,7 +7,7 @@ import Footer from '../../components/Footer.astro';
 const entries = await getCollection('adventures');
 const trips = entries
 	.filter((entry) => entry.data.kind === 'trip')
-	.sort((a, b) => b.data.year - a.data.year || a.data.title.localeCompare(b.data.title));
+	.sort((a, b) => b.data.year - a.data.year || b.data.title.localeCompare(a.data.title));
 const daysByTrip = new Map<string, number>();
 for (const entry of entries) {
 	if (entry.data.kind !== 'day') continue;

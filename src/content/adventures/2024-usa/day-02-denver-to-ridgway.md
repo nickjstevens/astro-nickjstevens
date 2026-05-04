@@ -14,7 +14,7 @@ drivingTime: "6 hours"
 accommodation: "Airbnb"
 heroImage: "/adventures/assets/2024-usa/day-02-denver-to-ridgway-01.webp"
 ---
-# Travel Log
+## Travel Log
 
 We were clearly still on UK time to some extent and all woke at 4am Denver time. Luckily the hotel served breakfast from 6am and we were first. The kids made up for lack of dinner last night by making the most of the all you can eat buffet which included a waffle maker and rainbow Cheerios.
 

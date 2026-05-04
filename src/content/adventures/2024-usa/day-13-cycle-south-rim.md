@@ -14,7 +14,7 @@ drivingTime: "2.5 hours"
 accommodation: "Hyatt Place Page"
 heroImage: "/adventures/assets/2024-usa/day-13-cycle-south-rim-01.webp"
 ---
-# Travel Log
+## Travel Log
 
 We checked out of our hotel very early to make it over to the bike store for our cycle ride. They also did delicious lattes. We had arranged a shuttle to take us to the highest point on the rim. We then rode around 5 miles downhill before being collected again. It was the very manageable for the kids, Thea had a little tag along. Thea very sweetly repeatedly insisted that Nick stop peddling and relaxed and she would peddle for them - she actually did a great job!
 

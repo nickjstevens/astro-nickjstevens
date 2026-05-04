@@ -13,7 +13,7 @@ drivingTime: "3 hours"
 accommodation: "Bluff Dwellings Resort"
 heroImage: "/adventures/assets/2024-usa/day-08-bluff-01.webp"
 ---
-# Travel Log
+## Travel Log
 
 We got up early and said goodbye to Purgatory resort and our holiday house (and the hot tub) to drive down to Durango for a wander down Main Street for some retail therapy and good coffee. The coffee was amazing at the Durango Coffee Company. We also picked up some croissants at a French bakery in town for tomorrow’s breakfast. We then started the 2.5hr drive to Bluff our next stop. We broke the journey with a stop at Walmart which turned out to be unexpectedly long and expensive. In fact we bought so much we had to also buy an extra suitcase to bring it all home!
 
@@ -56,7 +56,6 @@ Bluff: 8/10 (we want to come back again)
 ![](/adventures/assets/2024-usa/day-08-bluff-17.webp)
 
 ![](/adventures/assets/2024-usa/day-08-bluff-18.webp)
-
 
 Accommodation:
 

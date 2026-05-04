@@ -9,7 +9,7 @@ order: 18
 date: "2025-08-14"
 heroImage: "/adventures/assets/2025-switzerland/day-18-grindelwald-to-devon-uk-01.webp"
 ---
-# Travel Log
+## Travel Log
 
 Last day, and out promptly for the drive to Geneva Airport. En route we stopped at the Callier chocolate factory - world famous Swiss chocolate. The tour was interestingly and with lots of tasting. We may have over-indulged and made ourselves feel a bit sick!
 

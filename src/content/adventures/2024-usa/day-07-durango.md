@@ -15,7 +15,7 @@ drivingTime: "30 minutes"
 accommodation: "Airbnb"
 heroImage: "/adventures/assets/2024-usa/day-07-durango-01.webp"
 ---
-# Travel Log
+## Travel Log
 
 We headed north towards Silverton where the road gets more and more scenic for a morning of hiking. Our first stop was a 2km walk around Andrews Lake. It was beautiful and very peaceful, we had the trail to ourselves. We were hoping to see a bear but aside from a few dear visible on the drive there was no wildlife, still it was a fun and easy walk with no dramas. This changed for the next hike up above Molas Lake. We had a picnic on a rock ledge above Molas Creek, but then it went downhill, literally. We decided we were doing well so continued to descend following the river through a lovely aspen grove (but not realising all the height we were losing). When it came to heading back towards the car the trail turned fainter and then nonexistent. We had to bushwhack directly up a steep hillside, far from the car and not really sure if there would ever be a trail again. The girls had meltdowns and it took a long time to climb the few hundred metres of height we’d lost, it was also harder than expected as we still hadn’t fully adjusted to the altitude. Eventually we rejoined a path and on flatter ground made our way, thankfully, back to the car. We earnt some downtime back at the holiday house relaxing in the hot tub. We also had an early dinner before the rodeo - delicious fresh sweetcorn and huge steaks (far bigger and juicer than any steak we have ever had in the UK)
 

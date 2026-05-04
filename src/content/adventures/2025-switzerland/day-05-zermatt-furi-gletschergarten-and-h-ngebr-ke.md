@@ -10,7 +10,7 @@ date: "2025-08-01"
 sleepLocation: "Zermatt"
 heroImage: "/adventures/assets/2025-switzerland/day-05-zermatt-furi-gletschergarten-and-h-ngebr-ke-01.webp"
 ---
-# Travel Log
+## Travel Log
 
 Today didn’t demand quite such an early start so we made a sedate pace getting out of the apartment, including time to test pilot the bidet (!), and headed on the cable car up to Furi where a trail took us across a gorge on a suspension bridge and to a place called Gletschergarten - glacier garden - where there were a bunch of smooth holes sanded out of the rock. We explored and found a hidden valley with a waterfall and rocks to scramble about on. This was bliss and reminded us of Yosemite. The smell of the pine forest made for pleasant hiking, and the temperature was perfect.
 

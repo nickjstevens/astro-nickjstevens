@@ -13,7 +13,7 @@ activitiesPm: "Sentinel dome and taft point"
 accommodation: "Airbnb"
 heroImage: "/adventures/assets/2024-usa/day-23-yosemite-valley-01.webp"
 ---
-# Travel Log
+## Travel Log
 
 We had planned to hike Mist trail but decided we wouldn’t get two days in a row of long hikes out of the kids so prioritised Sentinel dome and taft point thinking this would be quieter. This was a 6 mile loop and was, as expected, very quiet, we didn’t see any bears but it was cool with great views and fun with some rocky areas to scramble on, it was also relatively flat, only around 1000ft of elevation in total.  The kids did really well with almost no complaining and Thea walked every step herself, this is a first for her!
 
@@ -64,7 +64,6 @@ Sentinel Dome and Taft Point
 ![](/adventures/assets/2024-usa/day-23-yosemite-valley-22.webp)
 
 ![](/adventures/assets/2024-usa/day-23-yosemite-valley-23.webp)
-
 
 Accommodation:
 

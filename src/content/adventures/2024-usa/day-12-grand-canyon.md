@@ -14,7 +14,7 @@ drivingTime: "2 hours 15 minutes"
 accommodation: "Maswik Lodge"
 heroImage: "/adventures/assets/2024-usa/day-12-grand-canyon-01.webp"
 ---
-# Travel Log
+## Travel Log
 
 We left early to start our drive over to the Grand Canyon. We did have to stop at Walmart again to pick up some Cowboy boots we had reserved for Bess (the Cowboy boot saga began when Bess found a pair she loved a few Walmarts ago but they didn’t have her size, they did have Thea’s and since they like to match all their clothes we ended up buying Thea a pair but then couldn’t find them in Bess’ size at any subsequent Walmart. We realised we could reserve them online to collect but needed a US telephone number to make a Walmart account. To obtain this we had to get an eSIM and then US phone number, then open the Walmart account, then struggled to pay as we had no US bank card, managed to get it to take PayPal but then we’re almost stuck at the last hurdle when we couldn’t download the app to arrange to click and collect. Luckily customer service stepped in and located the parcel resulting in a very happy Bess!)
 
@@ -63,8 +63,6 @@ We watched a magnificent thunder storm from the rim (the one place you are not m
 ![](/adventures/assets/2024-usa/day-12-grand-canyon-20.webp)
 
 ![](/adventures/assets/2024-usa/day-12-grand-canyon-21.webp)
-
-
 
 Accommodation:
 

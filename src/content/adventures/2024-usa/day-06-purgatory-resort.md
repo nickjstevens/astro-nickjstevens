@@ -14,7 +14,7 @@ activitiesEvening: "Live music & dinner @ James Ranch"
 accommodation: "Airbnb"
 heroImage: "/adventures/assets/2024-usa/day-06-purgatory-resort-01.webp"
 ---
-# Travel Log
+## Travel Log
 
 Nick got out for an early trail run, finding bear scat almost immediately right in the middle of the trail. No bear sighting though. The run down on to Purgatory Flats though was lovely and felt like a real taste of wilderness and nature.
 

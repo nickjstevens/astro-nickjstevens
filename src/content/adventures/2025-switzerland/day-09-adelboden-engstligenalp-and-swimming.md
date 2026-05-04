@@ -10,7 +10,7 @@ date: "2025-08-05"
 sleepLocation: "Adelboden"
 heroImage: "/adventures/assets/2025-switzerland/day-09-adelboden-engstligenalp-and-swimming-01.webp"
 ---
-# Travel Log
+## Travel Log
 
 We slept well in the new hotel and today it was a buffet style breakfast. The spread was great with fruit, meats, yogurts, breads, eggs.
 

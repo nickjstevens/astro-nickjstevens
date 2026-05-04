@@ -10,7 +10,7 @@ date: "2025-08-08"
 sleepLocation: "Grindelwald"
 heroImage: "/adventures/assets/2025-switzerland/day-12-grindelwald-grindelwald-first-01.webp"
 ---
-# Travel Log
+## Travel Log
 
 Well, what a day! Today we wanted to start with Grindelwald First, getting the cable car up to the sky walkway and walking to Bachalpsee (a high altitude lake). It was pretty heaving and there were a lot of people on the slog to the lake, not helped by a moaning Thea. We were very glad we weren’t one of the unlucky souls signed up for a 2+ hour wait for the glider ride thingy.
 

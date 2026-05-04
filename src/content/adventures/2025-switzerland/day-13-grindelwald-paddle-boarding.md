@@ -10,7 +10,7 @@ date: "2025-08-09"
 sleepLocation: "Grindelwald"
 heroImage: "/adventures/assets/2025-switzerland/day-13-grindelwald-paddle-boarding-01.webp"
 ---
-# Travel Log
+## Travel Log
 
 To escape the heat and the tourist hordes we headed to Lake Brienz for some stand up paddle boarding. We started with three boards but soon realised (well ok, Alex realised, Nick was grumpy!) that we should have four boards so we picked up a fourth board and spent the next two hours paddling around the lake. We even made it to the other shore and landed at a small gravel island beneath a cliff. The lake water was about 17 degrees apparently but it felt warmer and was pleasant to swim in. After paddle boarding around we spotted a beach area with a pontoon and inflatable trampoline islands and we paid for entry to spend a few more hours in the water. There was also a pool as well as the lake beach. It wasn’t quite the authentic and quiet lake we were after, but the kids enjoyed it.
 

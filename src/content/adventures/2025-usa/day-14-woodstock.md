@@ -16,7 +16,6 @@ sourceUrl: "https://nickjstevens.notion.site/day-14-woodstock-2d7ed18142a580b9b2
 - Finished watching Snow Days film
 - Played Clue - a cluedo like game that was Nicks secret Santa present. Hard work with kids being silly! Alex won.
 - Thea made a snow hill in the garden - snow was too powdery for a snow man
--
 ![IMG_3484.jpeg](/adventures/assets/2025-usa/day-14-woodstock-01.webp)
 
 ![IMG_3488.jpeg](/adventures/assets/2025-usa/day-14-woodstock-02.webp)

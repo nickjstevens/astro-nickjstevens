@@ -10,7 +10,7 @@ date: "2025-07-29"
 sleepLocation: "Zermatt"
 heroImage: "/adventures/assets/2025-switzerland/day-02-chamonix-to-zermatt-via-emosson-dam-01.webp"
 ---
-# Travel Log
+## Travel Log
 
 Even with a very late night last night Jasper and Bess were still awake at 6:30am (UK 5:30am!) to look out the window and see the mountains in the dawn. Luckily they went back to sleep for a bit.
 

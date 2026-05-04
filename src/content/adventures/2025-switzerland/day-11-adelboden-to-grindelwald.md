@@ -10,7 +10,7 @@ date: "2025-08-07"
 sleepLocation: "Grindelwald"
 heroImage: "/adventures/assets/2025-switzerland/day-11-adelboden-to-grindelwald-01.webp"
 ---
-# Travel Log
+## Travel Log
 
 We enjoyed a last buffet breakfast at our hotel before maximising our time in Adelboden by getting the cable car up to Sillerenbühl and following the Vogellisi walk down through the woods with some sort of play area every few hundred metres or so. This was good fun and we had the longest break at an immaculate mini chalet built for kids to play in. Locals were making full use of the BBQs by cooking bratwurst.
 

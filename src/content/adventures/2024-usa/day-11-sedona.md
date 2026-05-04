@@ -13,7 +13,7 @@ activitiesPm: "Relax by pool"
 accommodation: "Airbnb"
 heroImage: "/adventures/assets/2024-usa/day-11-sedona-01.webp"
 ---
-# Travel Log
+## Travel Log
 
 Today we did the Broken Arrow Pink Jeep Tour- the iconic Pink Jeep crawled over rocks and inclines and slid down steep tracks. We saw beautiful rock formations and had a great guide who gave us a geology lesson and told us stories about the area. It was fascinating and a lot of fun.
 
@@ -70,7 +70,6 @@ We spent the rest of the day relaxing again at our holiday house and pool, makin
 ![Table tennis champion](/adventures/assets/2024-usa/day-11-sedona-25.webp)
 
 ![](/adventures/assets/2024-usa/day-11-sedona-26.webp)
-
 
 Pink Jeep Tour: 7/10
 

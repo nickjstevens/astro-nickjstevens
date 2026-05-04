@@ -9,12 +9,8 @@ order: 0
 icon: "🇺🇸"
 heroImage: "/adventures/assets/2024-usa/index-01.webp"
 ---
-# {PLANNED} 2025 Winter Skiing
-
-# 2024 Summer Road Trip
-
-<!-- Linked database (not supported by Notion API) -->
+## 2024 Summer Road Trip
 
 ## Route
 
-[https://www.google.com/maps/d/u/0/edit?mid=1Xo-fi_DRVDqQBm0sL7hFpGtT2vdjnD8&usp=sharing](https://www.google.com/maps/d/u/0/edit?mid=1Xo-fi_DRVDqQBm0sL7hFpGtT2vdjnD8&usp=sharing)
+[View the 2024 USA route on Google Maps](https://www.google.com/maps/d/u/0/edit?mid=1Xo-fi_DRVDqQBm0sL7hFpGtT2vdjnD8&usp=sharing)

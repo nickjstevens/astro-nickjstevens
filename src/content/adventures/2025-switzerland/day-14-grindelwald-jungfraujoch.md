@@ -10,7 +10,7 @@ date: "2025-08-10"
 sleepLocation: "Grindelwald"
 heroImage: "/adventures/assets/2025-switzerland/day-14-grindelwald-jungfraujoch-01.webp"
 ---
-# Travel Log
+## Travel Log
 
 To avoid either the long walk or the tedious bus we decided to drive to Grindelwald Terminal instead today, and what a good decision that was. Not only was there plenty of parking, it also had a Coop (fresh bread and croissants) and a bunch of other shops. Worth the 15CHF easily.
 

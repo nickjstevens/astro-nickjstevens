@@ -10,7 +10,7 @@ date: "2025-08-02"
 sleepLocation: "Zermatt"
 heroImage: "/adventures/assets/2025-switzerland/day-06-zermatt-pottering-in-town-01.webp"
 ---
-# Travel Log
+## Travel Log
 
 Today was a slow pace day, partly due to the rain forecast for the morning but also because Jasper was sick with tonsillitis. Getting antibiotics for Jasper via our travel insurance turned out to be surprisingly painless.
 

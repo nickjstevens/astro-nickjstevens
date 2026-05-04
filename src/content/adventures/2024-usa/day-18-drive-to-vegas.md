@@ -13,15 +13,11 @@ drivingTime: "3 hours"
 accommodation: "Hilton Grand Vacations Club Elara"
 heroImage: "/adventures/assets/2024-usa/day-18-drive-to-vegas-01.webp"
 ---
-# Travel Log
+## Travel Log
 
 We had a leisurely start as it was a fairly short drive to Vegas. The kids had a morning swim then we grabbed a coffee in town (at our local favourite Bumbleberry’s) before hitting the road. There was not much to see on the way (although we did stop at our favourite pit-stop Walmart and the kids had a mcdonald’s brunch) and we arrived in Vegas mid afternoon.  Fortunately we were able to check-in early. It was a bit of a shock driving in a city and google maps took us along some dodgy back streets. We stopped at a supermarket to stock up on food and even this area felt a little unsafe, it was also strange to see slot machines at every gas station and supermarket but this is normal for Nevada. Our hotel was amazing and it was a relief to be off the roads and checked in. After a couple nights sharing a small hotel room the apartment was incredible. the beds, including the sofa beds were very comfortable, it had a huge projector screen, jacuzzi bath and a view of the Sphere and Eiffel tower.  We were transfixed by the view and the Sphere kept Thea up for hours as she couldn’t take her eyes off of it.
 
 After checking in we went for a wander on the strip to see the Paris casino, Bellagio garden, Ceasar’s palace and the miracle mile shops and have some delicious ice cream. We then stayed in for the evening cooking dinner in our apartment and enjoying the view and movies on the projector.
-
-
-
-
 
 ![The view from our room in the Elara by Hilton](/adventures/assets/2024-usa/day-18-drive-to-vegas-02.webp)
 

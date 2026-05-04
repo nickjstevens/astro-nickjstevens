@@ -14,14 +14,11 @@ drivingTime: "5 hours"
 accommodation: "Holiday Inn & Suites"
 heroImage: "/adventures/assets/2024-usa/day-21-death-valley-01.webp"
 ---
-# Travel Log
+## Travel Log
 
 We left Vegas early for a long day on the road. It was a relief to leave the chaos and noise of LV. We had loved Vegas 18 years ago but now older, with kids, it just felt overwhelming and exhausting and we were glad to leave and head back to the peace of the desert. The drive through Death Valley was pretty and despite worrying the car would break down and we’d be left to die in the heat on the side of the road it was actually fine, there was no such tragedy and it was very uneventful! We stopped at one view point for a short walk and actually it didn’t feel much hotted than LV. We then went to the visitor centre, watched the movie and explored the exhibit. The drive through Stovepipe Wells was probably the hottest as we had to turn our air con off for 20 minutes, it felt like a very long 20 minutes! It actually was cooler to open the windows and have the breeze. Once we started to climb up out of Stovepipe Wells the temperature dropped considerably, we went from 0 feet to a much more comfortable 6000 feet in around 30 minutes and we also saw some Joshua trees as we left the park. We took a break in Lone Pine which had a cool hiker vibe being the start of the Mt Whitney trail head. There was a great little store (Lone Star Bistro) that did coffee and ice cream as well as merchandise and we spent a while here enjoying the break from the car and heat and buying various things we didn’t need!
 
 Finally we arrived in Bishop around 5pm, we checked into our hotel, it was pretty basic but had everything we needed. The kids managed a quick swim at the pool and then we had Sushi for dinner at Yamatani Japanese Restaurant this was a real treat as we were trying not to eat out much but there was no catering option at our hotel and it was nice to not have something smoked or fried for a change!
-
-
-
 
 ![The hot road](/adventures/assets/2024-usa/day-21-death-valley-02.webp)
 
@@ -38,8 +35,6 @@ Finally we arrived in Bishop around 5pm, we checked into our hotel, it was prett
 ![Furnace Creek living up to it’s name. It was 3 degC hotter when we came out of the visitor centre.](/adventures/assets/2024-usa/day-21-death-valley-08.webp)
 
 ![A sushi restaurant in Bistop, CA.](/adventures/assets/2024-usa/day-21-death-valley-09.webp)
-
-
 
 Accommodation:
 

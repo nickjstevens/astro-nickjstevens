@@ -10,7 +10,7 @@ date: "2025-07-31"
 sleepLocation: "Zermatt"
 heroImage: "/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-01.webp"
 ---
-# Travel Log
+## Travel Log
 
 Another day, another epic breakfast. Based on the weather forecast we had picked out today for our day up to Matterhorn Glacier Paradise, the highest viewing platform in Europe. We upgraded to the roof top ride gondola out of Zermatt which gave us excellent views, including of the Matterhorn, and we had the whole gondola to ourselves. For the final gondola to the Klein Matterhorn, where Matterhorn Glacier Paradise is located, we had a glass-bottomed gondola and could look through our feet at the glacier below - neat! The glacier at the top was vast and a playground for summer skiers. We were able to take a walk on the snow for views to Italy and a bunch of high snow-capped peaks with tiny dots for mountaineers. Unfortunately the girls had both managed to lose their sunglasses on this holiday already so we couldn’t linger long as it was so bright.
 

@@ -14,7 +14,7 @@ activitiesEvening: "Flight"
 accommodation: "Flight"
 heroImage: "/adventures/assets/2024-usa/day-26-silicon-valley-01.webp"
 ---
-# Travel Log
+## Travel Log
 
 Overall we drove 2,840 miles over the 3.5 weeks or so.
 

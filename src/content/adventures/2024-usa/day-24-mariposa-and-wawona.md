@@ -14,7 +14,7 @@ activitiesEvening: "Barn dance"
 accommodation: "Airbnb"
 heroImage: "/adventures/assets/2024-usa/day-24-mariposa-and-wawona-01.webp"
 ---
-# Travel Log
+## Travel Log
 
 Our plans for today were a bit uncertain. This is the first day of our holiday where the weather affected our plans. It was raining and cold when we woke up and snowing up on the Tioga pass! We had considered driving back up to Tuolumne meadows to have fun on the granite but realising it was around 6c and 40mph winds we figured the kids may refuse to get out of the car! The kids reported legs that did not work after the hike yesterday so a valley hike was also not an option. So we went to Wawona to small museum and to the grove of sequoias. Overall we weren’t especially awe struck by the big trees  but it was an easy morning and Wawona was charming.
 
@@ -79,7 +79,6 @@ We then drove up to Glacier point, the weather wasn’t looking great but this w
 ![](/adventures/assets/2024-usa/day-24-mariposa-and-wawona-30.webp)
 
 ![The camera can’t really capture it, but we went stargazing after the barn dance a short way up the Glacier Point road](/adventures/assets/2024-usa/day-24-mariposa-and-wawona-31.webp)
-
 
 Accommodation:
 

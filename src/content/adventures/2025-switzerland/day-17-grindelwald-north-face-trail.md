@@ -10,7 +10,7 @@ date: "2025-08-13"
 sleepLocation: "Grindelwald"
 heroImage: "/adventures/assets/2025-switzerland/day-17-grindelwald-north-face-trail-01.webp"
 ---
-# Travel Log
+## Travel Log
 
 Our last full day and we wanted to head back to Mürren to walk the north face trail. We were now seasoned so we headed straight for the good coffee shop for more coffee and smoothies. Unfortunately Jasper managed to drop and smash his smoothie on the first sip, broken glass everywhere! The staff cleared it up and gave us a new smoothie. We left 10CHF for their trouble.
 

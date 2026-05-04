@@ -15,7 +15,7 @@ drivingTime: "1.5 hours"
 accommodation: "Airbnb"
 heroImage: "/adventures/assets/2024-usa/day-05-million-dollar-highway-01.webp"
 ---
-# Travel Log
+## Travel Log
 
 Today we said goodbye to Ridgway, a really perfect  small Colorado town and somewhere we’d love to come back to (or live!). After checking out of our Airbnb we had a leisurely morning at the park, drinking coffee from the Cimarron coffee shop  across the street whilst the kids played in the playground.
 

@@ -14,7 +14,7 @@ drivingTime: "1.25 hours"
 accommodation: "Desert Pearl Inn"
 heroImage: "/adventures/assets/2024-usa/day-16-zion-np-01.webp"
 ---
-# Travel Log
+## Travel Log
 
 We left Hatch at a leisurely time and made our way over towards Zion National Park. There wasn’t much of interest on the way, except a herd of buffalo, and sadly nowhere to refuel with a decent coffee.
 
@@ -55,8 +55,6 @@ Once we were home for the day we were glad to escape the heat in the hotel pool.
 ![Enjoying the pool](/adventures/assets/2024-usa/day-16-zion-np-16.webp)
 
 ![Zion Lodge](/adventures/assets/2024-usa/day-16-zion-np-17.webp)
-
-
 
 Accommodation:
 

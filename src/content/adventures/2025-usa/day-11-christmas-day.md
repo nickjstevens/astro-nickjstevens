@@ -15,4 +15,3 @@ sourceUrl: "https://nickjstevens.notion.site/day-11-christmas-day-2d6ed18142a580
 - Alex being cranky and Viv woke up at 6:45am
 - Little stroll to burn off some calories to the lake and back
 - Playing fun games - the upgraded pass the parcel with oven gloves and clingfilm
--

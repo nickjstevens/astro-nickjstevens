@@ -14,12 +14,11 @@ activitiesEvening: "Mesa Grill at Airport Rock for dinner"
 accommodation: "Airbnb"
 heroImage: "/adventures/assets/2024-usa/day-10-sedona-01.webp"
 ---
-# Travel Log
+## Travel Log
 
 We had yet  another early start for a hike up Cathedral rock. It is so hot in Sedona in August that any hiking needs to be done first thing. We left the house by 7:30 and by 8am we were at the trailhead. It was already uncomfortably warm. The hike was short, only 1.5miles round trip but with a steep scramble uphill around 700-800ft. There were some quite steep hairy bits that had us questioning the description we had read of ‘easy family hike’ but we all survived, just! The girls didn’t quite make it to the top so Jasper did the last bit twice with each of us whilst the other waited with the girls. Jasper earnt himself two scoops of ice cream in town after the hike- we had some delicious gelato for brunch and we plan to visit the same ice cream parlour  tomorrow after our jeep tour. We have spent the afternoon relaxing at our holiday house avoiding the heat by keeping cool in the pool and inside with the air con and a movie. We had planned dinner out but are so exhausted after a few early starts, long drives and the heat we have decided to stay in and take advantage of the probably most luxurious holiday house we will ever stay in. We were entertained by the daily afternoon thunderstorm which we still find thrilling (we don’t get good thunder and lightning in Devon). Alex has also taken up birdwatching after discovering all the exotic looking species in Arizona.
 
 Cathedral Rock hike: 7/10
-
 
 ![Northern Cardinal (red bird)](/adventures/assets/2024-usa/day-10-sedona-02.webp)
 

@@ -15,7 +15,7 @@ drivingTime: "3.5"
 accommodation: "Hyatt Place Pena Station/Denver Airport"
 heroImage: "/adventures/assets/2024-usa/day-01-devon-uk-to-denver-usa-01.webp"
 ---
-# Travel Log
+## Travel Log
 
 An early start, up at 3:30am to drive to Heathrow. Easy drive in the end and we arrived in plenty of time, although the kids didn’t sleep like we thought they would!
 

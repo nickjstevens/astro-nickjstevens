@@ -14,7 +14,7 @@ drivingTime: "45 minutes"
 accommodation: "Airbnb"
 heroImage: "/adventures/assets/2024-usa/day-03-telluride-01.webp"
 ---
-# Travel Log
+## Travel Log
 
 We woke to enjoy the fresh mountain air and  gorgeous views from our balcony. The kids had popcorn for breakfast! We headed to Telluride on the magnificent scenic drive from Ridgway. Telluride is tucked into a steep glacially-carved cirque and is utterly spectacular. We found a cute bakery and ate the best bagels in the world!  We then headed up the free gondala to 10,700 ft to look down on  Telluride and Mountain Village. We were definitely feeling the heat and the altitude so didn’t stay long, lingering to take in the vista and to see the nature museum. Back down in Telluride we took the river trail to the town park (there was a skate contest going on) and then had several dips in the river to cool off as we meandered back to the car park (car henge!).
 

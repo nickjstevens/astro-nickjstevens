@@ -14,10 +14,9 @@ drivingTime: "3.5 Hours"
 accommodation: "Airbnb"
 heroImage: "/adventures/assets/2024-usa/day-22-tuolumne-meadows-01.webp"
 ---
-# Travel Log
+## Travel Log
 
 We grabbed a coffee and some bagel sandwiches for the day from Great Basin Bakery and then drove the Tioga Pass. This road was incredible, it is our favourite scenery of Yosemite, in our opinion more impressive than the valley. We love the granite boulders and scrambling up them. We popped to the visitor centre and then took the kids up  Pot hole dome. We didn’t take the most sensible route and found ourselves half way up a steep wall of granite, too dangerous to go back down we had to keep going and hope that no one slipped and fell! Fortunately we all survived and after exploring the granite plateau at the top (Thea developed an obsession with granite boulders and pretending they were a horse to ride) we cooled off after with a dip in Tanaya lake. It was icy cold but invigorating and so peaceful, the girls declined to join us but played happily on the beach. We reluctantly had to leave this area as we still had a long way to drive to our accommodation in Yosemite West. We stopped at Olmsted point for our first view of half dome and then drove into the valley to stock up on food at the general store. We eventually got to our holiday house around 6pm. Nick went for an evening run and we had a little walk out to meet him before dinner.
-
 
 ![Pothole Dome](/adventures/assets/2024-usa/day-22-tuolumne-meadows-02.webp)
 
@@ -68,7 +67,6 @@ We grabbed a coffee and some bagel sandwiches for the day from Great Basin Baker
 ![](/adventures/assets/2024-usa/day-22-tuolumne-meadows-25.webp)
 
 ![Yosemite sunset](/adventures/assets/2024-usa/day-22-tuolumne-meadows-26.webp)
-
 
 Accommodation:
 

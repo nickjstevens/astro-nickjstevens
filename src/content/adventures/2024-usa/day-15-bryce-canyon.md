@@ -15,7 +15,7 @@ drivingTime: "30 minutes"
 accommodation: "Airbnb"
 heroImage: "/adventures/assets/2024-usa/day-15-bryce-canyon-01.webp"
 ---
-# Travel Log
+## Travel Log
 
 We drove the short drive to Bryce National Park and parked at the visitor centre to orient ourselves. Taking the shuttle we started at Sunset Point for and hiked down “Wall Street” and past Thor’s Hammer. It is presumably called Wall Street because of the steep walls of rock. The descent is down a series of switchbacks and is cool out of the sun. At the bottom is a tree that has miraculously taken root and grown tall and spectacular in the middle of the slot canyon.
 
@@ -28,7 +28,6 @@ Just outside the park, Ruby’s Inn and general store was awesome, selling every
 For dinner we enjoyed a nice Mexican at Arriba - the fajitas were better than the burrito. Then we went to the rodeo but this was a big disappointment compared to Durango, and there were some rowdy New Yorkers cleared pretty drunk and making a nuisance of themselves.
 
 The drive home into the sunset and through the Red Rock canyon was relaxing, although the kids went crazy and hyper!
-
 
 ![](/adventures/assets/2024-usa/day-15-bryce-canyon-02.webp)
 

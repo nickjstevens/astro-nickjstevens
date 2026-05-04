@@ -10,7 +10,7 @@ date: "2025-08-11"
 sleepLocation: "Grindelwald"
 heroImage: "/adventures/assets/2025-switzerland/day-15-grindelwald-m-nnlichen-01.webp"
 ---
-# Travel Log
+## Travel Log
 
 We took the cable car up to Männlichen this morning. Jasper and Nick walked the Royal Walk to the viewpoint while the girls stayed in the playground. Even at 10am it was hot, hot, hot. Before melting into the grass we started the walk to Kleine Scheidegg. The walk was ok, but it was hot, and the girls weren’t loving the heat.
 

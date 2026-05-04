@@ -14,7 +14,7 @@ drivingTime: "4.5 hours"
 accommodation: "Airbnb"
 heroImage: "/adventures/assets/2024-usa/day-09-monument-valley-01.webp"
 ---
-# Travel Log
+## Travel Log
 
 We had an early start as had to get on the road by 7:30 for our monument valley tour. It was difficult to leave the luxurious Bluff resort but we have promised ourselves we will be back (it was a pleasant surprise to work our that Bluff is only 3.5 hours from Ridgway, our other favourite place/future home!).
 

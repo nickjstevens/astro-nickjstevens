@@ -10,7 +10,7 @@ date: "2025-08-04"
 sleepLocation: "Adelboden"
 heroImage: "/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-01.webp"
 ---
-# Travel Log
+## Travel Log
 
 As we leave Zermatt it’s worth reflecting on our stay here. Overall we’d rate Zermatt as a destination 7/10. Car free, friendly, but expensive and quite busy. Plus we feel like we've done a good deal of the best walks and activities.
 
@@ -33,7 +33,6 @@ Our hotel is a spa hotel so when we got back we checked out the facilities. The 
 Dinner is included in our stay and was a very fancy pants dining experience. Haute cuisine and a set menu. Nick and Alex had a four course meal; five if you count the cheese course. The food was really lovely. We hardly ever eat out in a really nice restaurant is this was a real treat. The kids were well catered for with the children’s menu; shame they lack even basic manners and etiquette!
 
 As a busy day ended, we watched the sunset make the mountains turn red, and the moon rise over the distant waterfall. Breathtaking.
-
 
 ![](/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-02.webp)
 

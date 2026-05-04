@@ -10,7 +10,7 @@ date: "2025-08-12"
 sleepLocation: "Grindelwald"
 heroImage: "/adventures/assets/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-01.webp"
 ---
-# Travel Log
+## Travel Log
 
 It was to be another really hot day today. We left the chalet about 9am and headed for Lauterbrunnen and wanted to explore a bit more of Mürren. Mürren in the early morning before it was too hot and too busy was absolutely delightful. We picked up some fresh bread in the Coop and had amazing coffee and smoothies at an Intersport cafe.
 

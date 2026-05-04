@@ -10,7 +10,7 @@ date: "2025-08-06"
 sleepLocation: "Adelboden"
 heroImage: "/adventures/assets/2025-switzerland/day-10-adelboden-oeschinensee-01.webp"
 ---
-# Travel Log
+## Travel Log
 
 Today we wanted to drive around to Kandersteg and head up to Oeschinensee, an alpine lake surrounded by snow-capped peaks. We talked ourselves out of the hard walk the night before, so didn’t rush out. On the way we picked up some snacks from Coop - baguette, crisps and sweets!
 

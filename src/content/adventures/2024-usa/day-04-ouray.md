@@ -14,7 +14,7 @@ drivingTime: "15 minutes"
 accommodation: "Airbnb"
 heroImage: "/adventures/assets/2024-usa/day-04-ouray-01.webp"
 ---
-# Travel Log
+## Travel Log
 
 ![](/adventures/assets/2024-usa/day-04-ouray-02.webp)
 

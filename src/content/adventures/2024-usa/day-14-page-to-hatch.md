@@ -14,7 +14,7 @@ drivingTime: "2 hours"
 accommodation: "Airbnb"
 heroImage: "/adventures/assets/2024-usa/day-14-page-to-hatch-01.webp"
 ---
-# Travel Log
+## Travel Log
 
 Sadly due to the risk of flash floods our antelope canyon tour was cancelled. Another thing we will need to come back for. We had a lesuirely morning in Page making the last Walmart stop of our holiday then drove over to Hatch to our next holiday house stopping to buy groceries and have an ice cream on the way. Alex drove for the first time in the US on quiet desert roads, despite getting everyone to our destination safely the kids were pleading for Nick to take the wheel again!!  Thanks for the vote of confidence!
 
@@ -33,7 +33,6 @@ Because the time changed again and we lost an hour we arrived at check in time m
 ![Panorama near Hatch](/adventures/assets/2024-usa/day-14-page-to-hatch-07.webp)
 
 ![Sunset view](/adventures/assets/2024-usa/day-14-page-to-hatch-08.webp)
-
 
 Accommodation:
 

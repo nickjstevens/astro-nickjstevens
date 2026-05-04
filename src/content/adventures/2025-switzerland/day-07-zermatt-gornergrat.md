@@ -10,7 +10,7 @@ date: "2025-08-03"
 sleepLocation: "Zermatt"
 heroImage: "/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-01.webp"
 ---
-# Travel Log
+## Travel Log
 
 After dosing Jasper all night with antibiotics, calpol and ibuprofen, he was back on the mend, and we could continue with the plan to take the tracing up to Gornergrat today. The weather forecast was very good too.
 

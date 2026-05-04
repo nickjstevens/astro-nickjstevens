@@ -76,6 +76,11 @@ const trips = [
 const slugify = (value) => value.toLowerCase().replace(/&/g, 'and').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 const escapeYaml = (value) => JSON.stringify(String(value ?? ''));
 const plainText = (notionRichText = []) => notionRichText.map((part) => part[0]).join('');
+const titleText = (value) => String(value ?? '').replace(/\s*:\s*/g, ', ').replace(/\s+/g, ' ').trim();
+
+function firstMarkdownImage(markdown) {
+  return markdown.match(/!\[[^\]]*\]\((\/adventures\/assets\/[^)]+)\)/)?.[1] ?? null;
+}
 
 function splitFrontmatter(raw) {
   if (!raw.startsWith('---\n')) return [{}, raw];
@@ -182,6 +187,11 @@ async function convertLocalBody(body, tripSlug, pageSlug, counters) {
   }
   out = out.replace(/\[\[([^\]|]+)\|([^\]]+)\]\]/g, '$2');
   out = out.replace(/\[\[([^\]]+)\]\]/g, '$1');
+  out = out.replace(/^#\s+/gm, '## ');
+  out = out.replace(/^##\s+\{PLANNED\}.*$/gmi, '');
+  out = out.replace(/^<!--\s*Linked database \(not supported by Notion API\)\s*-->$/gmi, '');
+  out = out.replace(/\[https:\/\/www\.google\.com\/maps\/d\/u\/0\/edit\?mid=1Xo-fi_DRVDqQBm0sL7hFpGtT2vdjnD8&usp=sharing\]\(https:\/\/www\.google\.com\/maps\/d\/u\/0\/edit\?mid=1Xo-fi_DRVDqQBm0sL7hFpGtT2vdjnD8&usp=sharing\)/g, '[View the 2024 USA route on Google Maps](https://www.google.com/maps/d/u/0/edit?mid=1Xo-fi_DRVDqQBm0sL7hFpGtT2vdjnD8&usp=sharing)');
+  out = out.replace(/^-\s*$/gm, '');
   return out.trim() + '\n';
 }
 
@@ -209,6 +219,8 @@ function yamlFrontmatter(data) {
 
 function cleanMarkdown(text) {
   return text
+    .replace(/^-\s*$/gm, '')
+    .replace(/\n{3,}/g, '\n\n')
     .replace(/[ \t]+$/gm, '')
     .trimEnd() + '\n';
 }
@@ -228,28 +240,13 @@ async function migrateLocalTrip(trip) {
   const overviewCover = coverRefFromFrontmatter(overviewFm.cover);
   if (overviewCover) heroImage = await publicImageForLocal(overviewCover, trip.slug, 'index', imageCounters);
   const overviewBody = await convertLocalBody(overviewBodyRaw, trip.slug, 'index', imageCounters);
-  await writeEntry(trip, {
-    slug: 'index',
-    frontmatter: {
-      title: trip.title,
-      description: trip.subtitle,
-      tripTitle: trip.title,
-      tripSlug: trip.slug,
-      kind: 'trip',
-      year: trip.year,
-      order: 0,
-      icon: trip.icon,
-      heroImage,
-    },
-    body: overviewBody || `${trip.subtitle}\n`,
-  });
 
   const files = await listMarkdownFiles(trip.daysDir);
   const dayEntries = [];
   for (const file of files) {
     const raw = await fs.readFile(file, 'utf8');
     const [fm, bodyRaw] = splitFrontmatter(raw);
-    const title = path.basename(file, '.md');
+    const title = titleText(path.basename(file, '.md'));
     if (!fm.Date || /untitled|new page/i.test(title)) continue;
     const order = dayOrder(title, dayEntries.length + 1);
     const slug = `day-${String(order).padStart(2, '0')}-${slugify(title.replace(/^Day\s+\d+\s*-\s*/i, ''))}`;
@@ -257,6 +254,7 @@ async function migrateLocalTrip(trip) {
     const coverRef = coverRefFromFrontmatter(fm.cover);
     if (coverRef) pageHero = await publicImageForLocal(coverRef, trip.slug, slug, imageCounters);
     const body = await convertLocalBody(bodyRaw, trip.slug, slug, imageCounters);
+    pageHero ||= firstMarkdownImage(body);
     const description = [fm['Activities AM'], fm['Activities PM'], fm['Activities Evening']].filter(Boolean).join(' · ') || `${trip.title} day ${order}`;
     dayEntries.push({
       slug,
@@ -281,6 +279,22 @@ async function migrateLocalTrip(trip) {
     });
   }
   dayEntries.sort((a, b) => a.frontmatter.order - b.frontmatter.order);
+  heroImage ||= firstMarkdownImage(overviewBody) || dayEntries.find((entry) => entry.frontmatter.heroImage)?.frontmatter.heroImage;
+  await writeEntry(trip, {
+    slug: 'index',
+    frontmatter: {
+      title: trip.title,
+      description: trip.subtitle,
+      tripTitle: trip.title,
+      tripSlug: trip.slug,
+      kind: 'trip',
+      year: trip.year,
+      order: 0,
+      icon: trip.icon,
+      heroImage,
+    },
+    body: overviewBody || `${trip.subtitle}\n`,
+  });
   for (const entry of dayEntries) await writeEntry(trip, entry);
   return { trip: trip.slug, days: dayEntries.length, source: 'local' };
 }
@@ -359,8 +373,8 @@ async function notionBlockMarkdown(block, blocks, tripSlug, pageSlug, counters) 
   if (block.type === 'header') return `## ${text}\n\n`;
   if (block.type === 'sub_header') return `### ${text}\n\n`;
   if (block.type === 'sub_sub_header') return `#### ${text}\n\n`;
-  if (block.type === 'bulleted_list') return `- ${text}\n`;
-  if (block.type === 'numbered_list') return `1. ${text}\n`;
+  if (block.type === 'bulleted_list') return text.trim() ? `- ${text}\n` : '';
+  if (block.type === 'numbered_list') return text.trim() ? `1. ${text}\n` : '';
   if (block.type === 'quote') return `> ${text}\n\n`;
   if (block.type === 'text') return text ? `${text}\n\n` : '';
   if (block.type === 'image') {
@@ -388,17 +402,12 @@ async function migrateNotionTrip(trip) {
   } catch (error) {
     overviewBody = `${trip.subtitle}\n\n> Notion overview import failed: ${error.message}\n`;
   }
-  await writeEntry(trip, {
-    slug: 'index',
-    frontmatter: { title: trip.title, description: trip.subtitle, tripTitle: trip.title, tripSlug: trip.slug, kind: 'trip', year: trip.year, order: 0, icon: trip.icon, heroImage },
-    body: overviewBody,
-  });
-
   let count = 0;
+  const dayEntries = [];
   for (const [fallbackTitle, pageId] of trip.dayPages) {
     const { root, blocks } = await loadNotionPage(pageId);
     const props = root.properties || {};
-    const title = notionPropText(props, 'title') || fallbackTitle;
+    const title = titleText(notionPropText(props, 'title') || fallbackTitle);
     const order = dayOrder(title, count + 1);
     const slug = `day-${String(order).padStart(2, '0')}-${slugify(title.replace(/^Day\s+\d+\s*-\s*/i, ''))}`;
     let heroImage = null;
@@ -409,7 +418,7 @@ async function migrateNotionTrip(trip) {
       if (!heroImage && (imageCounters[slug] || 0) > before) heroImage = `/adventures/assets/${trip.slug}/${slug}-${String(imageCounters[slug]).padStart(2, '0')}.webp`;
     }
     body ||= `${trip.title} day ${order}.\n`;
-    await writeEntry(trip, {
+    dayEntries.push({
       slug,
       frontmatter: {
         title,
@@ -433,6 +442,13 @@ async function migrateNotionTrip(trip) {
     });
     count++;
   }
+  heroImage ||= dayEntries.find((entry) => entry.frontmatter.heroImage)?.frontmatter.heroImage;
+  await writeEntry(trip, {
+    slug: 'index',
+    frontmatter: { title: trip.title, description: trip.subtitle, tripTitle: trip.title, tripSlug: trip.slug, kind: 'trip', year: trip.year, order: 0, icon: trip.icon, heroImage },
+    body: overviewBody,
+  });
+  for (const entry of dayEntries) await writeEntry(trip, entry);
   return { trip: trip.slug, days: count, source: 'notion' };
 }
 

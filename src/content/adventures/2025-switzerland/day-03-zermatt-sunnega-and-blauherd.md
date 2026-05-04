@@ -10,7 +10,7 @@ date: "2025-07-30"
 sleepLocation: "Zermatt"
 heroImage: "/adventures/assets/2025-switzerland/day-03-zermatt-sunnega-and-blauherd-01.webp"
 ---
-# Travel Log
+## Travel Log
 
 Breakfast was provided in our new apartment in Zermatt - a continental base and custom options where the kids chose eggs, bacon, crepes. It was a feast of epic proportions! We ate half and packed the other half as lunch. So it was that we left for our day hike with overly full bellies and the dangerous promise of looming bowel movements!
 

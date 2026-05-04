@@ -1,68 +1,92 @@
-# Astro Starter Kit: Blog
+# nickjstevens.com
 
-```sh
-npm create astro@latest -- --template blog
-```
+Personal website for Nick J Stevens, built with [Astro](https://astro.build/). The site is a self-owned publishing home for long-form articles, family adventure journals, engineering notes, and small interactive projects such as Priced In and the AI Tool Map.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/blog)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/blog)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/blog/devcontainer.json)
+## What is in here
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+- **Articles** — Markdown/MDX writing in `src/content/blog/`, published under `/blog/`.
+- **Categories** — generated article tag/category pages under `/blog/tags/` and `/blog/tag/[tag]/`.
+- **Adventures** — family travel journals in `src/content/adventures/`, with optimised media in `public/adventures/assets/`.
+- **Priced In** — static interactive cost-of-living pages under `public/priced-in/`.
+- **FEA, AI Tool Map, About, Now** — standalone Astro pages under `src/pages/`.
 
-![blog](https://github.com/withastro/astro/assets/2244813/ff10799f-a816-4703-b967-c78997e8323d)
+The site uses Astro content collections, RSS, sitemap generation, MDX support, and Sharp for image processing.
 
-Features:
-
-- ✅ Minimal styling (make it your own!)
-- ✅ 100/100 Lighthouse performance
-- ✅ SEO-friendly with canonical URLs and OpenGraph data
-- ✅ Sitemap support
-- ✅ RSS Feed support
-- ✅ Markdown & MDX support
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
+## Project structure
 
 ```text
-├── public/
+.
+├── public/                  # Static assets and generated adventure media
+│   ├── adventures/assets/   # Optimised travel images/videos
+│   └── priced-in/           # Static Priced In app pages
+├── scripts/                 # Import/migration helpers
 ├── src/
-│   ├── components/
-│   ├── content/
-│   ├── layouts/
-│   └── pages/
+│   ├── components/          # Shared Astro components
+│   ├── content/             # Articles and adventures content collections
+│   ├── layouts/             # Page and post layouts
+│   ├── pages/               # Astro routes
+│   └── styles/              # Global CSS
 ├── astro.config.mjs
-├── README.md
-├── package.json
-└── tsconfig.json
+├── DESIGN.md
+├── PRODUCT.md
+└── package.json
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Development
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+Install dependencies:
 
-The `src/content/` directory contains "collections" of related Markdown and MDX documents. Use `getCollection()` to retrieve posts from `src/content/blog/`, and type-check your frontmatter using an optional schema. See [Astro's Content Collections docs](https://docs.astro.build/en/guides/content-collections/) to learn more.
+```sh
+npm install
+```
 
-Any static assets, like images, can be placed in the `public/` directory.
+Start the local development server:
 
-## 🧞 Commands
+```sh
+npm run dev
+```
 
-All commands are run from the root of the project, from a terminal:
+Build the production site:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+```sh
+npm run build
+```
 
-## 👀 Want to learn more?
+Preview the built site locally:
 
-Check out [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+```sh
+npm run preview
+```
 
-## Credit
+## Content workflows
 
-This theme is based off of the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).
+### Articles
+
+Articles live in `src/content/blog/`. Each post uses frontmatter for title, description, publication date, tags/categories, and layout metadata.
+
+### Adventures
+
+Adventure content is generated from the source travel archive using:
+
+```sh
+node scripts/migrate-adventures.mjs
+npm run build
+```
+
+The migration script regenerates `src/content/adventures/`, copies and optimises media into `public/adventures/assets/`, assigns cover images, and cleans common Notion/Obsidian import artefacts.
+
+After regenerating adventures, check:
+
+```sh
+rm -rf .astro
+npm run build
+git diff --check
+```
+
+## Deployment
+
+Changes are committed to `master` and pushed to the `origin` GitHub remote. The production deployment is expected to build from the committed Astro project.
+
+## Credits
+
+The original site started from Astro's blog starter and the Bear Blog-inspired default styling, but has since been customised for Nick's personal site and projects.

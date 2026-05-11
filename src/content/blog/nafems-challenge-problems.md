@@ -3,7 +3,7 @@ title: "NAFEMS Challenge Problems"
 description: "NAFEMS Stochastic Working Group Challenge Problems 01 and 02"
 pubDate: 2019-10-22
 updatedDate: 2022-05-13
-tags: ["Engineering", "Simulation", "Python"]
+tags: ["Engineering", "Simulation", "Software"]
 ---
 
 ## NAFEMS Stochastic Working Group Challenge Problems 01 and 02

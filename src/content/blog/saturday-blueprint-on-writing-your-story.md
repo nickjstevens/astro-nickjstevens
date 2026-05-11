@@ -4,7 +4,7 @@ description: "Writing what you know, think and believe is a great gift to yourse
 pubDate: 2023-02-25
 updatedDate: 2023-02-25
 heroImage: "https://images.unsplash.com/photo-1584967918940-a7d51b064268?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDJ8fG1lbW9pcnxlbnwwfHx8fDE2NzYxMDIwNTM&ixlib=rb-4.0.3&q=80&w=2000"
-tags: ["Newsletter", "Writing"]
+tags: ["Newsletter", "Creativity"]
 layout: '../../layouts/BlogPost.astro'
 ---
 

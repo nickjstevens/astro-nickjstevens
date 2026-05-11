@@ -12,7 +12,21 @@ const blog = defineCollection({
 		pubDate: z.coerce.date(),
 		updatedDate: z.coerce.date().optional(),
 		heroImage: image().optional(),
-		tags: z.array(z.string()).optional(), 
+		tags: z.array(z.enum([
+			"Newsletter",
+			"Philosophy",
+			"Engineering",
+			"Productivity",
+			"Simulation",
+			"Software",
+			"ANSYS",
+			"Running",
+			"Health",
+			"Creativity",
+			"Nature",
+			"Books",
+			"Economics"
+		])).optional(), 
 	}),
 });
 

@@ -4,7 +4,7 @@ description: "Stuck to unstuck, and an intermittent fasting micro challenge"
 pubDate: 2022-08-13
 updatedDate: 2022-08-13
 heroImage: "https://images.unsplash.com/photo-1565551223391-be988013ee6d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDN8fGJyb2tlbnxlbnwwfHx8fDE2NjAzMjc5NTU&ixlib=rb-1.2.1&q=80&w=2000"
-tags: ["Newsletter", "Philosophy", "Diet"]
+tags: ["Newsletter", "Philosophy", "Health"]
 layout: '../../layouts/BlogPost.astro'
 ---
 

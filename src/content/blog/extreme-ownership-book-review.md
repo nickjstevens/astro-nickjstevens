@@ -3,7 +3,7 @@ title: "Extreme Ownership book review"
 description: "I listened to audiobook on Audible as of 2019 05 23 . Extreme Ownership by Jocko Willink has an odd title but what an excellent book. It’s written by a forme..."
 pubDate: 2019-06-27
 updatedDate: 2022-05-13
-tags: ["Productivity", "Book review"]
+tags: ["Productivity", "Books"]
 ---
 
 ## Introduction and Context

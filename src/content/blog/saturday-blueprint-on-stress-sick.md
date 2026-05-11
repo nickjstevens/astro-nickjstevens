@@ -4,7 +4,7 @@ description: "A reflection a year on from having a breakdown and how I have chan
 pubDate: 2023-01-28
 updatedDate: 2023-01-28
 heroImage: "https://images.unsplash.com/photo-1674231262658-9a98bc841270?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8YWxsfDd8fHx8fHwyfHwxNjc0MzcyMTg4&ixlib=rb-4.0.3&q=80&w=2000"
-tags: ["Newsletter", "Philosophy", "Diet"]
+tags: ["Newsletter", "Philosophy", "Health"]
 layout: '../../layouts/BlogPost.astro'
 ---
 

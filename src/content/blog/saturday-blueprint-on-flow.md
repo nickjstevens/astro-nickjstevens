@@ -4,7 +4,7 @@ description: "A flow state is a state of optimal performance and deep immersion 
 pubDate: 2023-06-10
 updatedDate: 2023-06-10
 heroImage: "https://images.unsplash.com/photo-1601388152430-4ad0f14c0788?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDF8fGZsb3d8ZW58MHx8fHwxNjg1NzE4NTI5fDA&ixlib=rb-4.0.3&q=80&w=2000"
-tags: ["Newsletter", "Wisdom"]
+tags: ["Newsletter", "Philosophy"]
 layout: '../../layouts/BlogPost.astro'
 ---
 

@@ -4,7 +4,7 @@ description: "A short story on growing old"
 pubDate: 2022-05-27
 updatedDate: 2022-05-27
 heroImage: "https://images.unsplash.com/photo-1597572376022-df1b82a39c1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDd8fEJlbmNoJTIwd2lsbG93JTIwdHJlZXxlbnwwfHx8fDE2NTMyMDE0ODI&ixlib=rb-1.2.1&q=80&w=2000"
-tags: ["Creativity", "Writing"]
+tags: ["Creativity"]
 layout: '../../layouts/BlogPost.astro'
 ---
 

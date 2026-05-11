@@ -4,7 +4,7 @@ description: "Take action on what you read by creating personal directives, or i
 pubDate: 2023-02-04
 updatedDate: 2023-02-04
 heroImage: "https://images.unsplash.com/photo-1509239129736-8c395375220d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDJ8fGluc3RydWN0aW9ufGVufDB8fHx8MTY3NDM3NDA1Mw&ixlib=rb-4.0.3&q=80&w=2000"
-tags: ["Newsletter", "Leadership", "Wisdom"]
+tags: ["Newsletter", "Productivity", "Philosophy"]
 layout: '../../layouts/BlogPost.astro'
 ---
 

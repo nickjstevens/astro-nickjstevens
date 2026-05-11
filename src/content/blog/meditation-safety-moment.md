@@ -3,7 +3,7 @@ title: "Meditation safety moment"
 description: "It’s a common practice in the workplace these days to have a short safety moment at the beginning of meetings. This is an excellent mechanism to stop and ref..."
 pubDate: 2019-11-09
 updatedDate: 2022-05-13
-tags: ["Productivity", "Philosophy", "Meditations"]
+tags: ["Productivity", "Philosophy"]
 ---
 
 It’s a common practice in the workplace these days to have a short **safety moment** at the beginning of meetings. This is an excellent mechanism to stop and reflect on something important, but not directly related to the current task. It’s vital for ensuring a thriving safety culture as it promotes discussion and communication on safety matters. The excellent INPO “Traits of a Healthy Nuclear Safety Culture” is a handy reference, specifically this [pocket guide](https://www.energy-northwest.com/Documents/Employee%20Portal/INPO%20Safety%20Culture%20Traits.pdf).

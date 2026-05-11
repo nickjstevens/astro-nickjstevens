@@ -3,7 +3,7 @@ title: "Richardson Extrapolation and Grid Convergence Index"
 description: "Update December 2017 – Web App Version!"
 pubDate: 2019-06-17
 updatedDate: 2022-05-13
-tags: ["Engineering", "Simulation", "Excel"]
+tags: ["Engineering", "Simulation", "Software"]
 ---
 
 ## Update December 2017 – Web App Version!

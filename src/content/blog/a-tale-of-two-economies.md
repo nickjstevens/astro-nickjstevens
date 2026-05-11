@@ -4,7 +4,7 @@ description: "A Comparative Analysis of Gross Domestic Product and Private Produ
 pubDate: 2025-06-25
 updatedDate: 2025-06-25
 heroImage: "https://images.unsplash.com/photo-1589223095536-e5a50ece9a48?q=80&w=1200&h=900&fit=crop&crop=top"
-tags: ["Economics", "Money"]
+tags: ["Economics"]
 layout: '../../layouts/BlogPost.astro'
 ---
 

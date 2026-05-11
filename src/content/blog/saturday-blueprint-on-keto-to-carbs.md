@@ -4,7 +4,7 @@ description: "A self-experiment in diet and performance: from ketogenic to carbo
 pubDate: 2023-04-08
 updatedDate: 2023-04-08
 heroImage: "https://images.unsplash.com/photo-1579613832125-5d34a13ffe2a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDJ8fGFwcGxlfGVufDB8fHx8MTY3OTIxMDgwOQ&ixlib=rb-4.0.3&q=80&w=2000"
-tags: ["Newsletter", "Health", "Diet"]
+tags: ["Newsletter", "Health"]
 layout: '../../layouts/BlogPost.astro'
 ---
 

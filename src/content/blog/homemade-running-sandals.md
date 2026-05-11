@@ -3,7 +3,7 @@ title: "Homemade Running Sandals"
 description: "I am now thoroughly converted to the barefoot and minimalist running thing, and so it was time for me to make my own running sandals (huaraches). I used the..."
 pubDate: 2019-06-23
 updatedDate: 2022-05-13
-tags: ["Running", "Minimalism"]
+tags: ["Running", "Productivity"]
 ---
 
 *Reposted from 2012...*

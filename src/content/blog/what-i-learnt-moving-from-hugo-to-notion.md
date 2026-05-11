@@ -3,7 +3,7 @@ title: "What I learnt moving from Hugo to Notion"
 description: "I recently made the decision to migrate my website from Hugo, a static site generator, to Notion, a no code tool."
 pubDate: 2020-10-14
 updatedDate: 2022-05-13
-tags: ["Productivity", "Notion"]
+tags: ["Productivity", "Software"]
 ---
 
 I recently made the decision to migrate my website from [Hugo](https://gohugo.io/), a static site generator, to [Notion](https://www.notion.so/), a no code tool.

@@ -4,7 +4,7 @@ description: "I never thought I could meditate, but after 100 days, I changed my
 pubDate: 2023-04-22
 updatedDate: 2023-04-22
 heroImage: "https://images.unsplash.com/photo-1458501534264-7d326fa0ca04?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDExMHx8bWVkaXRhdGlvbnxlbnwwfHx8fDE2ODE4Mzc5Njk&ixlib=rb-4.0.3&q=80&w=2000"
-tags: ["Newsletter", "Habits", "Meditation"]
+tags: ["Newsletter", "Productivity", "Philosophy"]
 layout: '../../layouts/BlogPost.astro'
 ---
 

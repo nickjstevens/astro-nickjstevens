@@ -4,7 +4,7 @@ description: "Haiku is a form of micro poetry; I did one haiku a day for 100 day
 pubDate: 2022-05-27
 updatedDate: 2022-05-27
 heroImage: "https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDMzNXx8bGVhZiUyMGF1dHVtbnxlbnwwfHx8fDE2NTI4MjE4ODI&ixlib=rb-1.2.1&q=80&w=2000"
-tags: ["Creativity", "Writing"]
+tags: ["Creativity"]
 layout: '../../layouts/BlogPost.astro'
 ---
 

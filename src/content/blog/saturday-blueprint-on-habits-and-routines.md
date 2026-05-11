@@ -4,7 +4,7 @@ description: "How simple, daily habits transformed my life and at nearly 40 I lo
 pubDate: 2023-02-11
 updatedDate: 2023-02-11
 heroImage: "https://images.unsplash.com/photo-1422493757035-1e5e03968f95?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDU1fHxoYWJpdHxlbnwwfHx8fDE2NzQ4OTMwODY&ixlib=rb-4.0.3&q=80&w=2000"
-tags: ["Newsletter", "Habits"]
+tags: ["Newsletter", "Productivity"]
 layout: '../../layouts/BlogPost.astro'
 ---
 

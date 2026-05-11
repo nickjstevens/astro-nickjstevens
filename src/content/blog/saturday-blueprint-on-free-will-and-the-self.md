@@ -4,7 +4,7 @@ description: "We explore the illusion of free will and the absence of a self, hi
 pubDate: 2023-06-03
 updatedDate: 2023-06-03
 heroImage: "https://images.unsplash.com/photo-1538991383142-36c4edeaffde?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDV8fGZyZWV8ZW58MHx8fHwxNjg1NzE3Nzc1fDA&ixlib=rb-4.0.3&q=80&w=2000"
-tags: ["Newsletter", "Meditation"]
+tags: ["Newsletter", "Philosophy"]
 layout: '../../layouts/BlogPost.astro'
 ---
 

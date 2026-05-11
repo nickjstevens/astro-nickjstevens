@@ -4,7 +4,7 @@ description: "An essay on Dartmoor and the beauty of this wild landscape."
 pubDate: 2023-01-29
 updatedDate: 2023-01-29
 heroImage: "../../assets/images/2023/01/79E78B5C-40FC-4FD8-848F-7EF99143E2C9-1.jpeg"
-tags: ["Philosophy", "Writing", "Nature"]
+tags: ["Philosophy", "Creativity", "Nature"]
 layout: '../../layouts/BlogPost.astro'
 ---
 

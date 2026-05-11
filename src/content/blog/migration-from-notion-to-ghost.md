@@ -4,7 +4,7 @@ description: "My website, nickjstevens.com, has been a little corner of the inte
 pubDate: 2022-04-30
 updatedDate: 2022-05-05
 heroImage: "https://images.unsplash.com/photo-1636558286559-f5b676b820a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDU5fHxtaWdyYXRpb258ZW58MHx8fHwxNjUxMzMwNDk5&ixlib=rb-1.2.1&q=80&w=2000"
-tags: ["Technology"]
+tags: ["Software"]
 layout: '../../layouts/BlogPost.astro'
 ---
 

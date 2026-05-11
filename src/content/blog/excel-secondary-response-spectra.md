@@ -3,7 +3,7 @@ title: "Excel Secondary Response Spectra"
 description: "I’ve created two Excel functions that are useful for seismic analysis. One function calculates secondary response spectra from an acceleration time history;..."
 pubDate: 2019-06-12
 updatedDate: 2022-05-13
-tags: ["Engineering", "Seismic", "Excel"]
+tags: ["Engineering", "Simulation", "Software"]
 ---
 
 I’ve created two **Excel functions **that are useful for seismic analysis. One function calculates **secondary response spectra** from an acceleration time history; the other function calculates the **time history response** of a single degree of freedom (SDOF) oscillator to arbitrary base excitation.

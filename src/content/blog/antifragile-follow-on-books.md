@@ -3,7 +3,7 @@ title: "Antifragile Follow-on Books"
 description: "In September 2020 I had my first \"viral\" tweet (271,000 impressions, 22,000 engagements). For me (who had about 100 followers at this time) it was big enough."
 pubDate: 2020-09-24
 updatedDate: 2022-05-13
-tags: ["Productivity", "Philosophy", "Book review"]
+tags: ["Productivity", "Philosophy", "Books"]
 ---
 
 In September 2020 I had my first "viral" tweet (271,000 impressions, 22,000 engagements). For me (who had about 100 followers at this time) it was big enough. 

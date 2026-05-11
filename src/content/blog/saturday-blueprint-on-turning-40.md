@@ -4,7 +4,7 @@ description: "Things I wished I knew a decade ago, and other musings on turning 
 pubDate: 2023-03-04
 updatedDate: 2023-03-04
 heroImage: "../../assets/images/2023/02/2023-01-29-06-39-38.jpeg"
-tags: ["Newsletter", "Philosophy", "Wisdom"]
+tags: ["Newsletter", "Philosophy"]
 layout: '../../layouts/BlogPost.astro'
 ---
 

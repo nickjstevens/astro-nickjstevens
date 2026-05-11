@@ -3,7 +3,7 @@ title: "My safety story"
 description: "There is no single, universal definition of safety. Its personal. It’s relative. Which is why I want to share a little personal safety story. Perhaps this ac..."
 pubDate: 2021-02-08
 updatedDate: 2025-07-13
-tags: ["Philosophy", "Engineering", "Resilience", "Meditations"]
+tags: ["Philosophy", "Engineering"]
 ---
 
 There is no single, universal definition of safety. Its personal. It’s relative. Which is why I want to share a little personal safety story. Perhaps this acts as a catalyst to engage. Or perhaps it’s just some self catharsis in writing this down. Either way, mental health and wellbeing is the lens through which I look at safety. 

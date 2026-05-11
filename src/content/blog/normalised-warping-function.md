@@ -3,7 +3,7 @@ title: "Normalised Warping Function"
 description: "SCI P057 (Ref 1) provides an excellent reference for warping and torsion of beams . It contains useful formulas for standard I and channel sections. However,..."
 pubDate: 2019-06-23
 updatedDate: 2022-05-13
-tags: ["Engineering", "ANSYS", "Warping"]
+tags: ["Engineering", "ANSYS", "Simulation"]
 ---
 
 ## Warping and Torsion

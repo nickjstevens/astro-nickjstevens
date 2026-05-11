@@ -3,7 +3,7 @@ title: "Watch ANSYS Monitor Files Using Python"
 description: "A small Python script for watching the most recent ANSYS monitor file and printing progress as it updates."
 pubDate: 2026-05-10
 updatedDate: 2022-05-13
-tags: ["Engineering", "ANSYS", "Python"]
+tags: ["Engineering", "ANSYS", "Software"]
 ---
 
 If you regularly spend your day opening ANSYS monitor (`.mntr`) files then this post is for you. I’ve written a little script to watch monitor files using Python. The script watches a folder and will print out the last line of the file whenever a new line is written to the monitor file. The other clever thing is that it’ll always use the most recent monitor file, so if you have a series of runs then you only need to run the script once and it’ll always give you the status of the most recent monitor file.

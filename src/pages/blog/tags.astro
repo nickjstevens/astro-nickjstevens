@@ -10,7 +10,7 @@ const posts = await getCollection('blog');
 const postsByTag = posts.reduce((acc, post) => {
 	if (post.data.tags) {
 		post.data.tags.forEach((tag) => {
-			if (tag !== 'newsletter') {
+			if (tag !== 'Newsletter') {
 				if (!acc[tag]) acc[tag] = [];
 				acc[tag].push(post);
 			}

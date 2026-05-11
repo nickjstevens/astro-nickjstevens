@@ -3,7 +3,7 @@ title: "The One Thing book review"
 description: "I listened to this on Audible and it’s an excellent and engaging book on the subject of productivity. The author’s style is very easy to follow he speaks in..."
 pubDate: 2019-06-12
 updatedDate: 2022-05-13
-tags: ["Productivity", "Book review"]
+tags: ["Productivity", "Books"]
 ---
 
 ![Untitled 217](/blog-assets/notion-migration/the-one-thing-book-review/Untitled%20217.png)

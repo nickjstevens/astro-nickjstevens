@@ -3,7 +3,7 @@ title: "Beam Elements with Warping in ANSYS Workbench"
 description: "Introduction to Warping of Open Sections"
 pubDate: 2019-06-20
 updatedDate: 2022-05-13
-tags: ["Engineering", "Simulation", "Warping"]
+tags: ["Engineering", "Simulation"]
 ---
 
 ## Introduction to Warping of Open Sections

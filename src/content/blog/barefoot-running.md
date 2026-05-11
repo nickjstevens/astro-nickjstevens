@@ -3,7 +3,7 @@ title: "Barefoot Running"
 description: "What is Barefoot or Minimalist Running?"
 pubDate: 2012-01-20
 updatedDate: 2022-05-13
-tags: ["Running", "Minimalism"]
+tags: ["Running", "Productivity"]
 ---
 
 ## What is Barefoot or Minimalist Running?

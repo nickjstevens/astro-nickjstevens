@@ -4,7 +4,7 @@ description: "A parenting reflection on the nature of children and the importanc
 pubDate: 2023-04-15
 updatedDate: 2023-04-15
 heroImage: "../../assets/images/2023/04/IMG_0107.jpeg"
-tags: ["Newsletter", "Philosophy", "Leadership", "Wisdom"]
+tags: ["Newsletter", "Philosophy", "Productivity"]
 layout: '../../layouts/BlogPost.astro'
 ---
 

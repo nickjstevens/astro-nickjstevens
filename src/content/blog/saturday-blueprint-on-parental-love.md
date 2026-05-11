@@ -4,7 +4,7 @@ description: "My perspective on love, particularly parental love, and how it is 
 pubDate: 2023-04-29
 updatedDate: 2023-04-29
 heroImage: "../../assets/images/2023/04/IMG_3686.jpeg"
-tags: ["Newsletter", "Wisdom"]
+tags: ["Newsletter", "Philosophy"]
 layout: '../../layouts/BlogPost.astro'
 ---
 

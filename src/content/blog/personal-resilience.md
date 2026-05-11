@@ -3,7 +3,7 @@ title: "Personal Resilience"
 description: "Those on the Babcock Graduate Scheme have been given the task of asking managers and mentors for opinions on the topic of personal resilience."
 pubDate: 2020-07-12
 updatedDate: 2022-05-13
-tags: ["Productivity", "Philosophy", "Meditations", "Resilience"]
+tags: ["Productivity", "Philosophy"]
 ---
 
 ![](https://images.unsplash.com/photo-1525857597365-5f6dbff2e36e?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjYzOTIxfQ)

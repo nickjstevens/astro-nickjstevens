@@ -7,7 +7,7 @@ kind: "day"
 year: 2025
 order: 2
 sleepLocation: "Bartlett, NH"
-heroImage: "/adventures/assets/2025-usa/day-02-london-uk-to-north-conway-nh-01.webp"
+heroImage: "../../../assets/adventures/assets/2025-usa/day-02-london-uk-to-north-conway-nh-01.webp"
 sourceUrl: "https://nickjstevens.notion.site/day-2-london-uk-to-north-conway-nh-2cced18142a5809d97e4fa9a43757110?pvs=25"
 ---
 ## Travel Log
@@ -26,12 +26,12 @@ After getting out of the city we pulled into a Walmart to get some food and bits
 
 The place where we are staying was just off the highway and luckily the drive was shoveled otherwise we’d have had a hard time parking! The holiday house is lovely and by now we were exhausted and pretty soon all asleep, at about 7pm local time 😬.
 
-![IMG_2650.jpeg](/adventures/assets/2025-usa/day-02-london-uk-to-north-conway-nh-01.webp)
+![IMG_2650.jpeg](../../../assets/adventures/assets/2025-usa/day-02-london-uk-to-north-conway-nh-01.webp)
 
-![IMG_2647.jpeg](/adventures/assets/2025-usa/day-02-london-uk-to-north-conway-nh-02.webp)
+![IMG_2647.jpeg](../../../assets/adventures/assets/2025-usa/day-02-london-uk-to-north-conway-nh-02.webp)
 
-![IMG_2637.jpeg](/adventures/assets/2025-usa/day-02-london-uk-to-north-conway-nh-03.webp)
+![IMG_2637.jpeg](../../../assets/adventures/assets/2025-usa/day-02-london-uk-to-north-conway-nh-03.webp)
 
-![IMG_2629.jpeg](/adventures/assets/2025-usa/day-02-london-uk-to-north-conway-nh-04.webp)
+![IMG_2629.jpeg](../../../assets/adventures/assets/2025-usa/day-02-london-uk-to-north-conway-nh-04.webp)
 
-![IMG_9669.jpeg](/adventures/assets/2025-usa/day-02-london-uk-to-north-conway-nh-05.webp)
+![IMG_9669.jpeg](../../../assets/adventures/assets/2025-usa/day-02-london-uk-to-north-conway-nh-05.webp)

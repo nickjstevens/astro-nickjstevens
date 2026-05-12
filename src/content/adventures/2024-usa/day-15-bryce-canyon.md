@@ -13,7 +13,7 @@ activitiesPm: "Bryce canyon"
 activitiesEvening: "Ruby’s Rodeo"
 drivingTime: "30 minutes"
 accommodation: "Airbnb"
-heroImage: "/adventures/assets/2024-usa/day-15-bryce-canyon-01.webp"
+heroImage: "../../../assets/adventures/assets/2024-usa/day-15-bryce-canyon-01.webp"
 ---
 ## Travel Log
 
@@ -29,73 +29,73 @@ For dinner we enjoyed a nice Mexican at Arriba - the fajitas were better than th
 
 The drive home into the sunset and through the Red Rock canyon was relaxing, although the kids went crazy and hyper!
 
-![](/adventures/assets/2024-usa/day-15-bryce-canyon-02.webp)
+![](../../../assets/adventures/assets/2024-usa/day-15-bryce-canyon-02.webp)
 
-![](/adventures/assets/2024-usa/day-15-bryce-canyon-03.webp)
+![](../../../assets/adventures/assets/2024-usa/day-15-bryce-canyon-03.webp)
 
-![Looking down “Wall Street”](/adventures/assets/2024-usa/day-15-bryce-canyon-04.webp)
+![Looking down “Wall Street”](../../../assets/adventures/assets/2024-usa/day-15-bryce-canyon-04.webp)
 
-![](/adventures/assets/2024-usa/day-15-bryce-canyon-05.webp)
+![](../../../assets/adventures/assets/2024-usa/day-15-bryce-canyon-05.webp)
 
-![](/adventures/assets/2024-usa/day-15-bryce-canyon-06.webp)
+![](../../../assets/adventures/assets/2024-usa/day-15-bryce-canyon-06.webp)
 
-![](/adventures/assets/2024-usa/day-15-bryce-canyon-07.webp)
+![](../../../assets/adventures/assets/2024-usa/day-15-bryce-canyon-07.webp)
 
-![](/adventures/assets/2024-usa/day-15-bryce-canyon-08.webp)
+![](../../../assets/adventures/assets/2024-usa/day-15-bryce-canyon-08.webp)
 
-![](/adventures/assets/2024-usa/day-15-bryce-canyon-09.webp)
+![](../../../assets/adventures/assets/2024-usa/day-15-bryce-canyon-09.webp)
 
-![](/adventures/assets/2024-usa/day-15-bryce-canyon-10.webp)
+![](../../../assets/adventures/assets/2024-usa/day-15-bryce-canyon-10.webp)
 
-![](/adventures/assets/2024-usa/day-15-bryce-canyon-11.webp)
+![](../../../assets/adventures/assets/2024-usa/day-15-bryce-canyon-11.webp)
 
-![](/adventures/assets/2024-usa/day-15-bryce-canyon-12.webp)
+![](../../../assets/adventures/assets/2024-usa/day-15-bryce-canyon-12.webp)
 
-![](/adventures/assets/2024-usa/day-15-bryce-canyon-13.webp)
+![](../../../assets/adventures/assets/2024-usa/day-15-bryce-canyon-13.webp)
 
-![](/adventures/assets/2024-usa/day-15-bryce-canyon-14.webp)
+![](../../../assets/adventures/assets/2024-usa/day-15-bryce-canyon-14.webp)
 
-![](/adventures/assets/2024-usa/day-15-bryce-canyon-15.webp)
+![](../../../assets/adventures/assets/2024-usa/day-15-bryce-canyon-15.webp)
 
-![](/adventures/assets/2024-usa/day-15-bryce-canyon-16.webp)
+![](../../../assets/adventures/assets/2024-usa/day-15-bryce-canyon-16.webp)
 
-![](/adventures/assets/2024-usa/day-15-bryce-canyon-17.webp)
+![](../../../assets/adventures/assets/2024-usa/day-15-bryce-canyon-17.webp)
 
-![](/adventures/assets/2024-usa/day-15-bryce-canyon-18.webp)
+![](../../../assets/adventures/assets/2024-usa/day-15-bryce-canyon-18.webp)
 
-![](/adventures/assets/2024-usa/day-15-bryce-canyon-19.webp)
+![](../../../assets/adventures/assets/2024-usa/day-15-bryce-canyon-19.webp)
 
-![](/adventures/assets/2024-usa/day-15-bryce-canyon-20.webp)
+![](../../../assets/adventures/assets/2024-usa/day-15-bryce-canyon-20.webp)
 
-![](/adventures/assets/2024-usa/day-15-bryce-canyon-21.webp)
+![](../../../assets/adventures/assets/2024-usa/day-15-bryce-canyon-21.webp)
 
-![](/adventures/assets/2024-usa/day-15-bryce-canyon-22.webp)
+![](../../../assets/adventures/assets/2024-usa/day-15-bryce-canyon-22.webp)
 
-![](/adventures/assets/2024-usa/day-15-bryce-canyon-23.webp)
+![](../../../assets/adventures/assets/2024-usa/day-15-bryce-canyon-23.webp)
 
-![](/adventures/assets/2024-usa/day-15-bryce-canyon-24.webp)
+![](../../../assets/adventures/assets/2024-usa/day-15-bryce-canyon-24.webp)
 
-![](/adventures/assets/2024-usa/day-15-bryce-canyon-25.webp)
+![](../../../assets/adventures/assets/2024-usa/day-15-bryce-canyon-25.webp)
 
-![](/adventures/assets/2024-usa/day-15-bryce-canyon-26.webp)
+![](../../../assets/adventures/assets/2024-usa/day-15-bryce-canyon-26.webp)
 
-![](/adventures/assets/2024-usa/day-15-bryce-canyon-27.webp)
+![](../../../assets/adventures/assets/2024-usa/day-15-bryce-canyon-27.webp)
 
-![](/adventures/assets/2024-usa/day-15-bryce-canyon-28.webp)
+![](../../../assets/adventures/assets/2024-usa/day-15-bryce-canyon-28.webp)
 
-![](/adventures/assets/2024-usa/day-15-bryce-canyon-29.webp)
+![](../../../assets/adventures/assets/2024-usa/day-15-bryce-canyon-29.webp)
 
-![](/adventures/assets/2024-usa/day-15-bryce-canyon-30.webp)
+![](../../../assets/adventures/assets/2024-usa/day-15-bryce-canyon-30.webp)
 
-![](/adventures/assets/2024-usa/day-15-bryce-canyon-31.webp)
+![](../../../assets/adventures/assets/2024-usa/day-15-bryce-canyon-31.webp)
 
-![](/adventures/assets/2024-usa/day-15-bryce-canyon-32.webp)
+![](../../../assets/adventures/assets/2024-usa/day-15-bryce-canyon-32.webp)
 
-![Blue tongues from the slushy](/adventures/assets/2024-usa/day-15-bryce-canyon-33.webp)
+![Blue tongues from the slushy](../../../assets/adventures/assets/2024-usa/day-15-bryce-canyon-33.webp)
 
-![Cowgirl boots at the rodeo](/adventures/assets/2024-usa/day-15-bryce-canyon-34.webp)
+![Cowgirl boots at the rodeo](../../../assets/adventures/assets/2024-usa/day-15-bryce-canyon-34.webp)
 
-![](/adventures/assets/2024-usa/day-15-bryce-canyon-35.webp)
+![](../../../assets/adventures/assets/2024-usa/day-15-bryce-canyon-35.webp)
 
 Accommodation:
 

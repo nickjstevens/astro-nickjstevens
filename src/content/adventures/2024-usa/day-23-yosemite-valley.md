@@ -11,7 +11,7 @@ sleepLocation: "Yosemite"
 activitiesAm: "Sentinel dome and taft point"
 activitiesPm: "Sentinel dome and taft point"
 accommodation: "Airbnb"
-heroImage: "/adventures/assets/2024-usa/day-23-yosemite-valley-01.webp"
+heroImage: "../../../assets/adventures/assets/2024-usa/day-23-yosemite-valley-01.webp"
 ---
 ## Travel Log
 
@@ -21,49 +21,49 @@ After our hike we headed back into Yosemite valley to go to the visitor centre a
 
 Sentinel Dome and Taft Point
 
-![Towards Sentinel Dome](/adventures/assets/2024-usa/day-23-yosemite-valley-02.webp)
+![Towards Sentinel Dome](../../../assets/adventures/assets/2024-usa/day-23-yosemite-valley-02.webp)
 
-![](/adventures/assets/2024-usa/day-23-yosemite-valley-03.webp)
+![](../../../assets/adventures/assets/2024-usa/day-23-yosemite-valley-03.webp)
 
-![](/adventures/assets/2024-usa/day-23-yosemite-valley-04.webp)
+![](../../../assets/adventures/assets/2024-usa/day-23-yosemite-valley-04.webp)
 
-![](/adventures/assets/2024-usa/day-23-yosemite-valley-05.webp)
+![](../../../assets/adventures/assets/2024-usa/day-23-yosemite-valley-05.webp)
 
-![At the top of Sentinel Dome](/adventures/assets/2024-usa/day-23-yosemite-valley-06.webp)
+![At the top of Sentinel Dome](../../../assets/adventures/assets/2024-usa/day-23-yosemite-valley-06.webp)
 
-![](/adventures/assets/2024-usa/day-23-yosemite-valley-07.webp)
+![](../../../assets/adventures/assets/2024-usa/day-23-yosemite-valley-07.webp)
 
-![Summit panorama](/adventures/assets/2024-usa/day-23-yosemite-valley-08.webp)
+![Summit panorama](../../../assets/adventures/assets/2024-usa/day-23-yosemite-valley-08.webp)
 
-![](/adventures/assets/2024-usa/day-23-yosemite-valley-09.webp)
+![](../../../assets/adventures/assets/2024-usa/day-23-yosemite-valley-09.webp)
 
-![](/adventures/assets/2024-usa/day-23-yosemite-valley-10.webp)
+![](../../../assets/adventures/assets/2024-usa/day-23-yosemite-valley-10.webp)
 
-![Another ‘horsey’ to ride](/adventures/assets/2024-usa/day-23-yosemite-valley-11.webp)
+![Another ‘horsey’ to ride](../../../assets/adventures/assets/2024-usa/day-23-yosemite-valley-11.webp)
 
-![](/adventures/assets/2024-usa/day-23-yosemite-valley-12.webp)
+![](../../../assets/adventures/assets/2024-usa/day-23-yosemite-valley-12.webp)
 
-![](/adventures/assets/2024-usa/day-23-yosemite-valley-13.webp)
+![](../../../assets/adventures/assets/2024-usa/day-23-yosemite-valley-13.webp)
 
-![Yosemite valley](/adventures/assets/2024-usa/day-23-yosemite-valley-14.webp)
+![Yosemite valley](../../../assets/adventures/assets/2024-usa/day-23-yosemite-valley-14.webp)
 
-![Beautiful pine woods](/adventures/assets/2024-usa/day-23-yosemite-valley-15.webp)
+![Beautiful pine woods](../../../assets/adventures/assets/2024-usa/day-23-yosemite-valley-15.webp)
 
-![](/adventures/assets/2024-usa/day-23-yosemite-valley-16.webp)
+![](../../../assets/adventures/assets/2024-usa/day-23-yosemite-valley-16.webp)
 
-![](/adventures/assets/2024-usa/day-23-yosemite-valley-17.webp)
+![](../../../assets/adventures/assets/2024-usa/day-23-yosemite-valley-17.webp)
 
-![The ‘fissures’ - terrifying!](/adventures/assets/2024-usa/day-23-yosemite-valley-18.webp)
+![The ‘fissures’ - terrifying!](../../../assets/adventures/assets/2024-usa/day-23-yosemite-valley-18.webp)
 
-![](/adventures/assets/2024-usa/day-23-yosemite-valley-19.webp)
+![](../../../assets/adventures/assets/2024-usa/day-23-yosemite-valley-19.webp)
 
-![](/adventures/assets/2024-usa/day-23-yosemite-valley-20.webp)
+![](../../../assets/adventures/assets/2024-usa/day-23-yosemite-valley-20.webp)
 
-![Taft Point](/adventures/assets/2024-usa/day-23-yosemite-valley-21.webp)
+![Taft Point](../../../assets/adventures/assets/2024-usa/day-23-yosemite-valley-21.webp)
 
-![](/adventures/assets/2024-usa/day-23-yosemite-valley-22.webp)
+![](../../../assets/adventures/assets/2024-usa/day-23-yosemite-valley-22.webp)
 
-![](/adventures/assets/2024-usa/day-23-yosemite-valley-23.webp)
+![](../../../assets/adventures/assets/2024-usa/day-23-yosemite-valley-23.webp)
 
 Accommodation:
 

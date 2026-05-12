@@ -8,7 +8,7 @@ year: 2025
 order: 4
 date: "2025-07-31"
 sleepLocation: "Zermatt"
-heroImage: "/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-01.webp"
+heroImage: "../../../assets/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-01.webp"
 ---
 ## Travel Log
 
@@ -20,80 +20,80 @@ Back at the hotel the kids went in the hot tub while Nick went for a short but s
 
 In Zermatt they get the party started early for tomorrow’s Swiss National Day, and we heard that from 4pm there would be music and street food and fun down along the Bahnhofstrasse. The atmosphere was buzzing and the streets were heaving. We got ice creams all around and enjoyed the vibe. We got the girls new sunglasses in Decathlon and headed home, pretty tired and ready for dinner. We had thought to eat at one of the stalls but there was so much to choose from and it would have been 50:50 whether the kids would have liked it or not.
 
-![](/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-02.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-02.webp)
 
-![](/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-03.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-03.webp)
 
-![](/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-04.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-04.webp)
 
-![](/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-05.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-05.webp)
 
-![](/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-06.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-06.webp)
 
-![](/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-07.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-07.webp)
 
-![](/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-08.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-08.webp)
 
-![](/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-09.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-09.webp)
 
-![](/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-10.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-10.webp)
 
-![](/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-11.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-11.webp)
 
-![](/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-12.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-12.webp)
 
-![](/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-13.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-13.webp)
 
-![](/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-14.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-14.webp)
 
-![](/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-15.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-15.webp)
 
-![](/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-16.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-16.webp)
 
-![](/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-17.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-17.webp)
 
-![](/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-18.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-18.webp)
 
-![](/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-19.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-19.webp)
 
-![](/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-20.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-20.webp)
 
-![](/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-21.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-21.webp)
 
-![](/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-22.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-22.webp)
 
-![](/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-23.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-23.webp)
 
-![](/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-24.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-24.webp)
 
-![](/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-25.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-25.webp)
 
-![](/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-26.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-26.webp)
 
-![](/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-27.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-27.webp)
 
-![](/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-28.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-28.webp)
 
-![](/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-29.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-29.webp)
 
-![](/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-30.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-30.webp)
 
-![](/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-31.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-31.webp)
 
-![](/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-32.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-32.webp)
 
-![](/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-33.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-33.webp)
 
-![](/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-34.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-34.webp)
 
-![](/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-35.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-35.webp)
 
 []()
 
-![](/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-36.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-36.webp)
 
-![](/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-37.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-37.webp)
 
-![](/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-38.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-38.webp)
 
-![](/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-39.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-04-zermatt-matterhorn-glacier-paradise-39.webp)

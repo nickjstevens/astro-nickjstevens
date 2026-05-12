@@ -6,7 +6,7 @@ tripSlug: "2025-usa"
 kind: "day"
 year: 2025
 order: 5
-heroImage: "/adventures/assets/2025-usa/day-05-skiing-at-cranmore-01.webp"
+heroImage: "../../../assets/adventures/assets/2025-usa/day-05-skiing-at-cranmore-01.webp"
 sourceUrl: "https://nickjstevens.notion.site/day-5-skiing-at-cranmore-2ceed18142a580ca8b96c80ec03248e0?pvs=25"
 ---
 ## Travel Log
@@ -19,14 +19,14 @@ Nick clocked up 25km of runs and a top speed of 44.4mph. Now his thighs hurt!
 
 All our clothing is now completely soaked so it’s been quite the challenge to hang It up to dry.
 
-![IMG_2888.jpeg](/adventures/assets/2025-usa/day-05-skiing-at-cranmore-01.webp)
+![IMG_2888.jpeg](../../../assets/adventures/assets/2025-usa/day-05-skiing-at-cranmore-01.webp)
 
-![IMG_2899.jpeg](/adventures/assets/2025-usa/day-05-skiing-at-cranmore-02.webp)
+![IMG_2899.jpeg](../../../assets/adventures/assets/2025-usa/day-05-skiing-at-cranmore-02.webp)
 
-![IMG_2904.jpeg](/adventures/assets/2025-usa/day-05-skiing-at-cranmore-03.webp)
+![IMG_2904.jpeg](../../../assets/adventures/assets/2025-usa/day-05-skiing-at-cranmore-03.webp)
 
-![IMG_2907.jpeg](/adventures/assets/2025-usa/day-05-skiing-at-cranmore-04.webp)
+![IMG_2907.jpeg](../../../assets/adventures/assets/2025-usa/day-05-skiing-at-cranmore-04.webp)
 
-![IMG_2912.jpeg](/adventures/assets/2025-usa/day-05-skiing-at-cranmore-05.webp)
+![IMG_2912.jpeg](../../../assets/adventures/assets/2025-usa/day-05-skiing-at-cranmore-05.webp)
 
-![IMG_2916.jpeg](/adventures/assets/2025-usa/day-05-skiing-at-cranmore-06.webp)
+![IMG_2916.jpeg](../../../assets/adventures/assets/2025-usa/day-05-skiing-at-cranmore-06.webp)

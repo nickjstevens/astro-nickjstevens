@@ -6,7 +6,7 @@ tripSlug: "2025-usa"
 kind: "day"
 year: 2025
 order: 6
-heroImage: "/adventures/assets/2025-usa/day-06-mountain-coaster-and-cookies-with-santa-01.webp"
+heroImage: "../../../assets/adventures/assets/2025-usa/day-06-mountain-coaster-and-cookies-with-santa-01.webp"
 sourceUrl: "https://nickjstevens.notion.site/day-6-mountain-coaster-and-cookies-with-santa-2ceed18142a5806dadbac1bad665373c?pvs=25"
 ---
 ## Travel Log
@@ -17,28 +17,28 @@ The snow tubing after was practically an extreme sport - our first run they said
 
 As the sun set we took the chair lift to the top of the mountain for lovely views and cookies with Santa. The cookies were some sort of artificial flavour and colouring nightmare. When we got back down it was fully night and we were tired and cold by now. Unfortunately Nick had to drive all the way back to Cranmore again after realisimg he’d left his ski helmet from the day before!
 
-![IMG_2919.jpeg](/adventures/assets/2025-usa/day-06-mountain-coaster-and-cookies-with-santa-01.webp)
+![IMG_2919.jpeg](../../../assets/adventures/assets/2025-usa/day-06-mountain-coaster-and-cookies-with-santa-01.webp)
 
-![IMG_9996.jpeg](/adventures/assets/2025-usa/day-06-mountain-coaster-and-cookies-with-santa-02.webp)
+![IMG_9996.jpeg](../../../assets/adventures/assets/2025-usa/day-06-mountain-coaster-and-cookies-with-santa-02.webp)
 
-![IMG_0005.jpeg](/adventures/assets/2025-usa/day-06-mountain-coaster-and-cookies-with-santa-03.webp)
+![IMG_0005.jpeg](../../../assets/adventures/assets/2025-usa/day-06-mountain-coaster-and-cookies-with-santa-03.webp)
 
-![IMG_0009.jpeg](/adventures/assets/2025-usa/day-06-mountain-coaster-and-cookies-with-santa-04.webp)
+![IMG_0009.jpeg](../../../assets/adventures/assets/2025-usa/day-06-mountain-coaster-and-cookies-with-santa-04.webp)
 
-![IMG_2929.jpeg](/adventures/assets/2025-usa/day-06-mountain-coaster-and-cookies-with-santa-05.webp)
+![IMG_2929.jpeg](../../../assets/adventures/assets/2025-usa/day-06-mountain-coaster-and-cookies-with-santa-05.webp)
 
-![IMG_0020.jpeg](/adventures/assets/2025-usa/day-06-mountain-coaster-and-cookies-with-santa-06.webp)
+![IMG_0020.jpeg](../../../assets/adventures/assets/2025-usa/day-06-mountain-coaster-and-cookies-with-santa-06.webp)
 
-![IMG_0027.jpeg](/adventures/assets/2025-usa/day-06-mountain-coaster-and-cookies-with-santa-07.webp)
+![IMG_0027.jpeg](../../../assets/adventures/assets/2025-usa/day-06-mountain-coaster-and-cookies-with-santa-07.webp)
 
-![IMG_2935.jpeg](/adventures/assets/2025-usa/day-06-mountain-coaster-and-cookies-with-santa-08.webp)
+![IMG_2935.jpeg](../../../assets/adventures/assets/2025-usa/day-06-mountain-coaster-and-cookies-with-santa-08.webp)
 
-![IMG_2954.jpeg](/adventures/assets/2025-usa/day-06-mountain-coaster-and-cookies-with-santa-09.webp)
+![IMG_2954.jpeg](../../../assets/adventures/assets/2025-usa/day-06-mountain-coaster-and-cookies-with-santa-09.webp)
 
-![IMG_2973.jpeg](/adventures/assets/2025-usa/day-06-mountain-coaster-and-cookies-with-santa-10.webp)
+![IMG_2973.jpeg](../../../assets/adventures/assets/2025-usa/day-06-mountain-coaster-and-cookies-with-santa-10.webp)
 
-![IMG_2981.jpeg](/adventures/assets/2025-usa/day-06-mountain-coaster-and-cookies-with-santa-11.webp)
+![IMG_2981.jpeg](../../../assets/adventures/assets/2025-usa/day-06-mountain-coaster-and-cookies-with-santa-11.webp)
 
-![IMG_2994.jpeg](/adventures/assets/2025-usa/day-06-mountain-coaster-and-cookies-with-santa-12.webp)
+![IMG_2994.jpeg](../../../assets/adventures/assets/2025-usa/day-06-mountain-coaster-and-cookies-with-santa-12.webp)
 
-![IMG_0054.jpeg](/adventures/assets/2025-usa/day-06-mountain-coaster-and-cookies-with-santa-13.webp)
+![IMG_0054.jpeg](../../../assets/adventures/assets/2025-usa/day-06-mountain-coaster-and-cookies-with-santa-13.webp)

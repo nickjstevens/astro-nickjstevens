@@ -13,29 +13,29 @@ activitiesPm: "Half Moon Bay"
 activitiesEvening: "Dinner with Gill at Sam’s"
 drivingTime: "4.5 Hours"
 accommodation: "Fairfield by Marriot"
-heroImage: "/adventures/assets/2024-usa/day-25-the-coast-01.webp"
+heroImage: "../../../assets/adventures/assets/2024-usa/day-25-the-coast-01.webp"
 ---
 ## Travel Log
 
 To write
 
-![Morning reflections as we leave Yosemite](/adventures/assets/2024-usa/day-25-the-coast-02.webp)
+![Morning reflections as we leave Yosemite](../../../assets/adventures/assets/2024-usa/day-25-the-coast-02.webp)
 
-![A fantastic coffee shop and nursery - Mountain Sage Coffee in Groveland](/adventures/assets/2024-usa/day-25-the-coast-03.webp)
+![A fantastic coffee shop and nursery - Mountain Sage Coffee in Groveland](../../../assets/adventures/assets/2024-usa/day-25-the-coast-03.webp)
 
-![](/adventures/assets/2024-usa/day-25-the-coast-04.webp)
+![](../../../assets/adventures/assets/2024-usa/day-25-the-coast-04.webp)
 
-![Pacifica and the sea](/adventures/assets/2024-usa/day-25-the-coast-05.webp)
+![Pacifica and the sea](../../../assets/adventures/assets/2024-usa/day-25-the-coast-05.webp)
 
-![](/adventures/assets/2024-usa/day-25-the-coast-06.webp)
+![](../../../assets/adventures/assets/2024-usa/day-25-the-coast-06.webp)
 
-![](/adventures/assets/2024-usa/day-25-the-coast-07.webp)
+![](../../../assets/adventures/assets/2024-usa/day-25-the-coast-07.webp)
 
-![](/adventures/assets/2024-usa/day-25-the-coast-08.webp)
+![](../../../assets/adventures/assets/2024-usa/day-25-the-coast-08.webp)
 
-![The biggest meatball ever in this ‘kids’ meal](/adventures/assets/2024-usa/day-25-the-coast-09.webp)
+![The biggest meatball ever in this ‘kids’ meal](../../../assets/adventures/assets/2024-usa/day-25-the-coast-09.webp)
 
-![The land of the setting sun](/adventures/assets/2024-usa/day-25-the-coast-10.webp)
+![The land of the setting sun](../../../assets/adventures/assets/2024-usa/day-25-the-coast-10.webp)
 
 Accommodation:
 

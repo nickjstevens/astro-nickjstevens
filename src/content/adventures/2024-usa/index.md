@@ -7,7 +7,7 @@ kind: "trip"
 year: 2024
 order: 0
 icon: "🇺🇸"
-heroImage: "/adventures/assets/2024-usa/index-01.webp"
+heroImage: "../../../assets/adventures/assets/2024-usa/index-01.webp"
 ---
 ## 2024 Summer Road Trip
 

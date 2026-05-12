@@ -4,7 +4,7 @@ description: "Seismic codes, for example ASCE 4 98, allow for peak broadening an
 pubDate: 2019-06-28
 updatedDate: 2022-05-13
 tags: ["Engineering", "Software", "Simulation"]
-heroImage: "/blog-assets/notion-migration/peak-broadening-of-secondary-response-spectra/Untitled 256.png"
+heroImage: "../../assets/blog-assets/notion-migration/peak-broadening-of-secondary-response-spectra/Untitled 256.png"
 ---
 
 Seismic codes, for example ASCE 4-98, allow for peak broadening and lowering of in-structure secondary response spectra (SRS). This post captures an Excel user defined function (using VBA) that can peak broaden (and lower) a given secondary response spectra.
@@ -17,8 +17,8 @@ The approach taken is that given in ASCE 4-98 where the peaks may be broadened b
 
 The spreadsheet with the VBA code and a worked example is attached below. A screenshot of the function in action is shown below. You can see that it is appropriately broadens the spectra, and that the peak is nicely reduced.
 
-[Peak-Broaden-and-Lower](/blog-assets/notion-migration/peak-broadening-of-secondary-response-spectra/Peak-Broaden-and-Lower.xlsm)
+[Peak-Broaden-and-Lower](../../assets/blog-assets/notion-migration/peak-broadening-of-secondary-response-spectra/Peak-Broaden-and-Lower.xlsm)
 
-![Untitled 256](/blog-assets/notion-migration/peak-broadening-of-secondary-response-spectra/Untitled%20256.png)
+![Untitled 256](../../assets/blog-assets/notion-migration/peak-broadening-of-secondary-response-spectra/Untitled%20256.png)
 
 Excel Function to Peak Broaden and Lower Secondary Response Spectra

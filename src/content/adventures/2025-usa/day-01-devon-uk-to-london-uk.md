@@ -11,7 +11,7 @@ activitiesAm: "Flight "
 activitiesPm: "Pick up car"
 drivingTime: "Air BnB"
 accommodation: "Hyatt Place Pena Station/Denver airport"
-heroImage: "/adventures/assets/2025-usa/day-01-devon-uk-to-london-uk-01.webp"
+heroImage: "../../../assets/adventures/assets/2025-usa/day-01-devon-uk-to-london-uk-01.webp"
 sourceUrl: "https://nickjstevens.notion.site/day-1-devon-uk-to-london-uk-2baed18142a581e98c70c15144bf5e44?pvs=25"
 ---
 ## Travel Log
@@ -26,6 +26,6 @@ The Executive Lounge turned out to be a good deal though - nice assortment of fo
 
 We tried to turn in for an early night as we’ll be up at 5:30am for breakfast and to get to the airport.
 
-![](/adventures/assets/2025-usa/day-01-devon-uk-to-london-uk-01.webp)
+![](../../../assets/adventures/assets/2025-usa/day-01-devon-uk-to-london-uk-01.webp)
 
-![IMG_9663.jpeg](/adventures/assets/2025-usa/day-01-devon-uk-to-london-uk-02.webp)
+![IMG_9663.jpeg](../../../assets/adventures/assets/2025-usa/day-01-devon-uk-to-london-uk-02.webp)

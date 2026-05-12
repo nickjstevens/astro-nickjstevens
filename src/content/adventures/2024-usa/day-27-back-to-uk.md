@@ -13,14 +13,14 @@ activitiesPm: "Drive home"
 activitiesEvening: "Arrive home UK"
 drivingTime: "4 hours"
 accommodation: "Home"
-heroImage: "/adventures/assets/2024-usa/day-27-back-to-uk-01.webp"
+heroImage: "../../../assets/adventures/assets/2024-usa/day-27-back-to-uk-01.webp"
 ---
-![](/adventures/assets/2024-usa/day-27-back-to-uk-02.webp)
+![](../../../assets/adventures/assets/2024-usa/day-27-back-to-uk-02.webp)
 
-![](/adventures/assets/2024-usa/day-27-back-to-uk-03.webp)
+![](../../../assets/adventures/assets/2024-usa/day-27-back-to-uk-03.webp)
 
-![](/adventures/assets/2024-usa/day-27-back-to-uk-04.webp)
+![](../../../assets/adventures/assets/2024-usa/day-27-back-to-uk-04.webp)
 
-![](/adventures/assets/2024-usa/day-27-back-to-uk-05.webp)
+![](../../../assets/adventures/assets/2024-usa/day-27-back-to-uk-05.webp)
 
-![Red-eye flight home](/adventures/assets/2024-usa/day-27-back-to-uk-06.webp)
+![Red-eye flight home](../../../assets/adventures/assets/2024-usa/day-27-back-to-uk-06.webp)

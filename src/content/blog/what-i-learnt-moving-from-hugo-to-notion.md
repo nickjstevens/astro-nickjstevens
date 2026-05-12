@@ -4,14 +4,14 @@ description: "I recently made the decision to migrate my website from Hugo, a st
 pubDate: 2020-10-14
 updatedDate: 2022-05-13
 tags: ["Productivity", "Software"]
-heroImage: "/blog-assets/notion-migration/what-i-learnt-moving-from-hugo-to-notion/94911389-2BE3-4364-B2CF-E5153F6E4A30.jpeg"
+heroImage: "../../assets/blog-assets/notion-migration/what-i-learnt-moving-from-hugo-to-notion/94911389-2BE3-4364-B2CF-E5153F6E4A30.jpeg"
 ---
 
 I recently made the decision to migrate my website from [Hugo](https://gohugo.io/), a static site generator, to [Notion](https://www.notion.so/), a no code tool.
 
 Having made the leap, I wanted to summarise my reasons for doing so, and some of the trade-offs involved. Plus, some practical tips if you are thinking of doing the same. 
 
-![My Notion-based site homepage on a mobile device](/blog-assets/notion-migration/what-i-learnt-moving-from-hugo-to-notion/94911389-2BE3-4364-B2CF-E5153F6E4A30.jpeg)
+![My Notion-based site homepage on a mobile device](../../assets/blog-assets/notion-migration/what-i-learnt-moving-from-hugo-to-notion/94911389-2BE3-4364-B2CF-E5153F6E4A30.jpeg)
 
 ## Start with Why
 

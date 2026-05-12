@@ -8,7 +8,7 @@ year: 2025
 order: 10
 date: "2025-08-06"
 sleepLocation: "Adelboden"
-heroImage: "/adventures/assets/2025-switzerland/day-10-adelboden-oeschinensee-01.webp"
+heroImage: "../../../assets/adventures/assets/2025-switzerland/day-10-adelboden-oeschinensee-01.webp"
 ---
 ## Travel Log
 
@@ -26,52 +26,52 @@ We bought a couple of bratwurst and frites for the kids, and four (!) lattes for
 
 It’s our last night at the spa hotel in Adelboden so we made sure to enjoy the pools in the afternoon. Tomorrow we’re off to Grindelwald.
 
-![](/adventures/assets/2025-switzerland/day-10-adelboden-oeschinensee-02.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-10-adelboden-oeschinensee-02.webp)
 
-![](/adventures/assets/2025-switzerland/day-10-adelboden-oeschinensee-03.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-10-adelboden-oeschinensee-03.webp)
 
-![](/adventures/assets/2025-switzerland/day-10-adelboden-oeschinensee-04.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-10-adelboden-oeschinensee-04.webp)
 
-![](/adventures/assets/2025-switzerland/day-10-adelboden-oeschinensee-05.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-10-adelboden-oeschinensee-05.webp)
 
-![](/adventures/assets/2025-switzerland/day-10-adelboden-oeschinensee-06.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-10-adelboden-oeschinensee-06.webp)
 
-![](/adventures/assets/2025-switzerland/day-10-adelboden-oeschinensee-07.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-10-adelboden-oeschinensee-07.webp)
 
-![](/adventures/assets/2025-switzerland/day-10-adelboden-oeschinensee-08.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-10-adelboden-oeschinensee-08.webp)
 
-![](/adventures/assets/2025-switzerland/day-10-adelboden-oeschinensee-09.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-10-adelboden-oeschinensee-09.webp)
 
-![](/adventures/assets/2025-switzerland/day-10-adelboden-oeschinensee-10.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-10-adelboden-oeschinensee-10.webp)
 
-![](/adventures/assets/2025-switzerland/day-10-adelboden-oeschinensee-11.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-10-adelboden-oeschinensee-11.webp)
 
-![](/adventures/assets/2025-switzerland/day-10-adelboden-oeschinensee-12.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-10-adelboden-oeschinensee-12.webp)
 
-![](/adventures/assets/2025-switzerland/day-10-adelboden-oeschinensee-13.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-10-adelboden-oeschinensee-13.webp)
 
-![](/adventures/assets/2025-switzerland/day-10-adelboden-oeschinensee-14.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-10-adelboden-oeschinensee-14.webp)
 
-![](/adventures/assets/2025-switzerland/day-10-adelboden-oeschinensee-15.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-10-adelboden-oeschinensee-15.webp)
 
 []()
 
-![](/adventures/assets/2025-switzerland/day-10-adelboden-oeschinensee-16.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-10-adelboden-oeschinensee-16.webp)
 
-![](/adventures/assets/2025-switzerland/day-10-adelboden-oeschinensee-17.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-10-adelboden-oeschinensee-17.webp)
 
-![](/adventures/assets/2025-switzerland/day-10-adelboden-oeschinensee-18.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-10-adelboden-oeschinensee-18.webp)
 
-![](/adventures/assets/2025-switzerland/day-10-adelboden-oeschinensee-19.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-10-adelboden-oeschinensee-19.webp)
 
-![](/adventures/assets/2025-switzerland/day-10-adelboden-oeschinensee-20.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-10-adelboden-oeschinensee-20.webp)
 
-![](/adventures/assets/2025-switzerland/day-10-adelboden-oeschinensee-21.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-10-adelboden-oeschinensee-21.webp)
 
-![](/adventures/assets/2025-switzerland/day-10-adelboden-oeschinensee-22.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-10-adelboden-oeschinensee-22.webp)
 
-![](/adventures/assets/2025-switzerland/day-10-adelboden-oeschinensee-23.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-10-adelboden-oeschinensee-23.webp)
 
-![](/adventures/assets/2025-switzerland/day-10-adelboden-oeschinensee-24.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-10-adelboden-oeschinensee-24.webp)
 
-![](/adventures/assets/2025-switzerland/day-10-adelboden-oeschinensee-25.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-10-adelboden-oeschinensee-25.webp)

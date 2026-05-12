@@ -13,7 +13,7 @@ activitiesPm: "Hike"
 activitiesEvening: "Durango Rodeo"
 drivingTime: "30 minutes"
 accommodation: "Airbnb"
-heroImage: "/adventures/assets/2024-usa/day-07-durango-01.webp"
+heroImage: "../../../assets/adventures/assets/2024-usa/day-07-durango-01.webp"
 ---
 ## Travel Log
 
@@ -31,35 +31,35 @@ Accommodation: 8/10
 
 Purgatory / Durango area: 7/10
 
-![Beautiful Colorado, near Andrews Lake](/adventures/assets/2024-usa/day-07-durango-02.webp)
+![Beautiful Colorado, near Andrews Lake](../../../assets/adventures/assets/2024-usa/day-07-durango-02.webp)
 
-![Losing the trail near Molas Lake](/adventures/assets/2024-usa/day-07-durango-03.webp)
+![Losing the trail near Molas Lake](../../../assets/adventures/assets/2024-usa/day-07-durango-03.webp)
 
-![](/adventures/assets/2024-usa/day-07-durango-04.webp)
+![](../../../assets/adventures/assets/2024-usa/day-07-durango-04.webp)
 
-![Andrew’s Lake](/adventures/assets/2024-usa/day-07-durango-05.webp)
+![Andrew’s Lake](../../../assets/adventures/assets/2024-usa/day-07-durango-05.webp)
 
-![Mountain meadow](/adventures/assets/2024-usa/day-07-durango-06.webp)
+![Mountain meadow](../../../assets/adventures/assets/2024-usa/day-07-durango-06.webp)
 
-![](/adventures/assets/2024-usa/day-07-durango-07.webp)
+![](../../../assets/adventures/assets/2024-usa/day-07-durango-07.webp)
 
-![Mountains and sky](/adventures/assets/2024-usa/day-07-durango-08.webp)
+![Mountains and sky](../../../assets/adventures/assets/2024-usa/day-07-durango-08.webp)
 
-![Through an aspen grove](/adventures/assets/2024-usa/day-07-durango-09.webp)
+![Through an aspen grove](../../../assets/adventures/assets/2024-usa/day-07-durango-09.webp)
 
-![](/adventures/assets/2024-usa/day-07-durango-10.webp)
+![](../../../assets/adventures/assets/2024-usa/day-07-durango-10.webp)
 
-![Tears after we lost the trail and had to bushwhack](/adventures/assets/2024-usa/day-07-durango-11.webp)
+![Tears after we lost the trail and had to bushwhack](../../../assets/adventures/assets/2024-usa/day-07-durango-11.webp)
 
-![](/adventures/assets/2024-usa/day-07-durango-12.webp)
+![](../../../assets/adventures/assets/2024-usa/day-07-durango-12.webp)
 
-![The rodeo at Durango](/adventures/assets/2024-usa/day-07-durango-13.webp)
+![The rodeo at Durango](../../../assets/adventures/assets/2024-usa/day-07-durango-13.webp)
 
-![](/adventures/assets/2024-usa/day-07-durango-14.webp)
+![](../../../assets/adventures/assets/2024-usa/day-07-durango-14.webp)
 
-![](/adventures/assets/2024-usa/day-07-durango-15.webp)
+![](../../../assets/adventures/assets/2024-usa/day-07-durango-15.webp)
 
-![Dinner. Not vegan friendly.](/adventures/assets/2024-usa/day-07-durango-16.webp)
+![Dinner. Not vegan friendly.](../../../assets/adventures/assets/2024-usa/day-07-durango-16.webp)
 
 Accommodation:
 

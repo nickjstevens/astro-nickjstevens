@@ -32,7 +32,7 @@ const blog = defineCollection({
 
 const adventures = defineCollection({
 	loader: glob({ base: './src/content/adventures', pattern: '**/*.{md,mdx}' }),
-	schema: z.object({
+	schema: ({ image }) => z.object({
 		title: z.string(),
 		description: z.string(),
 		tripTitle: z.string(),
@@ -47,7 +47,7 @@ const adventures = defineCollection({
 		activitiesEvening: z.string().optional(),
 		drivingTime: z.string().optional(),
 		accommodation: z.string().optional(),
-		heroImage: z.string().optional(),
+		heroImage: image().optional(),
 		icon: z.string().optional(),
 		sourceUrl: z.string().url().optional(),
 	}),

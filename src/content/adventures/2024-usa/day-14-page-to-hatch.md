@@ -12,7 +12,7 @@ activitiesAm: "Antelope Canyon & Horseshoe bend overlook"
 activitiesPm: "Kanab"
 drivingTime: "2 hours"
 accommodation: "Airbnb"
-heroImage: "/adventures/assets/2024-usa/day-14-page-to-hatch-01.webp"
+heroImage: "../../../assets/adventures/assets/2024-usa/day-14-page-to-hatch-01.webp"
 ---
 ## Travel Log
 
@@ -20,19 +20,19 @@ Sadly due to the risk of flash floods our antelope canyon tour was cancelled. An
 
 Because the time changed again and we lost an hour we arrived at check in time meaning a relaxing evening with another delicious steak dinner and a family movie. Hatch is a tiny village with no real services but the holiday house is in a beautiful valley surrounded by red cliffs and we can see the Rockies again in the far distance. Nick managed to go for a run and we had a chance to catch up with laundry. In the evening we watched a family movie with popcorn.
 
-![Our holiday house near Hatch](/adventures/assets/2024-usa/day-14-page-to-hatch-02.webp)
+![Our holiday house near Hatch](../../../assets/adventures/assets/2024-usa/day-14-page-to-hatch-02.webp)
 
-![](/adventures/assets/2024-usa/day-14-page-to-hatch-03.webp)
+![](../../../assets/adventures/assets/2024-usa/day-14-page-to-hatch-03.webp)
 
-![Pit stop in Kanab](/adventures/assets/2024-usa/day-14-page-to-hatch-04.webp)
+![Pit stop in Kanab](../../../assets/adventures/assets/2024-usa/day-14-page-to-hatch-04.webp)
 
-![](/adventures/assets/2024-usa/day-14-page-to-hatch-05.webp)
+![](../../../assets/adventures/assets/2024-usa/day-14-page-to-hatch-05.webp)
 
-![Lake Powell](/adventures/assets/2024-usa/day-14-page-to-hatch-06.webp)
+![Lake Powell](../../../assets/adventures/assets/2024-usa/day-14-page-to-hatch-06.webp)
 
-![Panorama near Hatch](/adventures/assets/2024-usa/day-14-page-to-hatch-07.webp)
+![Panorama near Hatch](../../../assets/adventures/assets/2024-usa/day-14-page-to-hatch-07.webp)
 
-![Sunset view](/adventures/assets/2024-usa/day-14-page-to-hatch-08.webp)
+![Sunset view](../../../assets/adventures/assets/2024-usa/day-14-page-to-hatch-08.webp)
 
 Accommodation:
 

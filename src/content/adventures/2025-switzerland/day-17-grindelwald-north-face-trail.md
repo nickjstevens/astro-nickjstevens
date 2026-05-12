@@ -8,7 +8,7 @@ year: 2025
 order: 17
 date: "2025-08-13"
 sleepLocation: "Grindelwald"
-heroImage: "/adventures/assets/2025-switzerland/day-17-grindelwald-north-face-trail-01.webp"
+heroImage: "../../../assets/adventures/assets/2025-switzerland/day-17-grindelwald-north-face-trail-01.webp"
 ---
 ## Travel Log
 
@@ -24,58 +24,58 @@ The pool was busy but the kids had a lot of fun and ate well from their chicken 
 
 Back at the chalet we relaxed on the patio, packing our bags ready for an early departure tomorrow for our drive to the airport.
 
-![](/adventures/assets/2025-switzerland/day-17-grindelwald-north-face-trail-02.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-17-grindelwald-north-face-trail-02.webp)
 
-![](/adventures/assets/2025-switzerland/day-17-grindelwald-north-face-trail-03.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-17-grindelwald-north-face-trail-03.webp)
 
-![](/adventures/assets/2025-switzerland/day-17-grindelwald-north-face-trail-04.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-17-grindelwald-north-face-trail-04.webp)
 
-![](/adventures/assets/2025-switzerland/day-17-grindelwald-north-face-trail-05.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-17-grindelwald-north-face-trail-05.webp)
 
-![](/adventures/assets/2025-switzerland/day-17-grindelwald-north-face-trail-06.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-17-grindelwald-north-face-trail-06.webp)
 
-![](/adventures/assets/2025-switzerland/day-17-grindelwald-north-face-trail-07.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-17-grindelwald-north-face-trail-07.webp)
 
-![](/adventures/assets/2025-switzerland/day-17-grindelwald-north-face-trail-08.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-17-grindelwald-north-face-trail-08.webp)
 
-![](/adventures/assets/2025-switzerland/day-17-grindelwald-north-face-trail-09.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-17-grindelwald-north-face-trail-09.webp)
 
-![](/adventures/assets/2025-switzerland/day-17-grindelwald-north-face-trail-10.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-17-grindelwald-north-face-trail-10.webp)
 
-![](/adventures/assets/2025-switzerland/day-17-grindelwald-north-face-trail-11.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-17-grindelwald-north-face-trail-11.webp)
 
-![](/adventures/assets/2025-switzerland/day-17-grindelwald-north-face-trail-12.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-17-grindelwald-north-face-trail-12.webp)
 
-![](/adventures/assets/2025-switzerland/day-17-grindelwald-north-face-trail-13.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-17-grindelwald-north-face-trail-13.webp)
 
-![](/adventures/assets/2025-switzerland/day-17-grindelwald-north-face-trail-14.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-17-grindelwald-north-face-trail-14.webp)
 
-![](/adventures/assets/2025-switzerland/day-17-grindelwald-north-face-trail-15.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-17-grindelwald-north-face-trail-15.webp)
 
 []()
 
-![](/adventures/assets/2025-switzerland/day-17-grindelwald-north-face-trail-16.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-17-grindelwald-north-face-trail-16.webp)
 
-![](/adventures/assets/2025-switzerland/day-17-grindelwald-north-face-trail-17.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-17-grindelwald-north-face-trail-17.webp)
 
-![](/adventures/assets/2025-switzerland/day-17-grindelwald-north-face-trail-18.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-17-grindelwald-north-face-trail-18.webp)
 
-![](/adventures/assets/2025-switzerland/day-17-grindelwald-north-face-trail-19.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-17-grindelwald-north-face-trail-19.webp)
 
-![](/adventures/assets/2025-switzerland/day-17-grindelwald-north-face-trail-20.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-17-grindelwald-north-face-trail-20.webp)
 
-![](/adventures/assets/2025-switzerland/day-17-grindelwald-north-face-trail-21.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-17-grindelwald-north-face-trail-21.webp)
 
-![](/adventures/assets/2025-switzerland/day-17-grindelwald-north-face-trail-22.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-17-grindelwald-north-face-trail-22.webp)
 
-![](/adventures/assets/2025-switzerland/day-17-grindelwald-north-face-trail-23.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-17-grindelwald-north-face-trail-23.webp)
 
-![](/adventures/assets/2025-switzerland/day-17-grindelwald-north-face-trail-24.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-17-grindelwald-north-face-trail-24.webp)
 
-![](/adventures/assets/2025-switzerland/day-17-grindelwald-north-face-trail-25.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-17-grindelwald-north-face-trail-25.webp)
 
-![](/adventures/assets/2025-switzerland/day-17-grindelwald-north-face-trail-26.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-17-grindelwald-north-face-trail-26.webp)
 
-![](/adventures/assets/2025-switzerland/day-17-grindelwald-north-face-trail-27.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-17-grindelwald-north-face-trail-27.webp)
 
-![](/adventures/assets/2025-switzerland/day-17-grindelwald-north-face-trail-28.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-17-grindelwald-north-face-trail-28.webp)

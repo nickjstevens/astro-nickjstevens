@@ -4,7 +4,7 @@ description: "If you are looking to drive ANSYS Workbench with Excel and Python,
 pubDate: 2019-07-10
 updatedDate: 2022-05-13
 tags: ["Engineering", "Software", "ANSYS"]
-heroImage: "/blog-assets/notion-migration/ansys-workbench-with-excel-and-python/Untitled 211.png"
+heroImage: "../../assets/blog-assets/notion-migration/ansys-workbench-with-excel-and-python/Untitled 211.png"
 ---
 
 If you are looking to drive ANSYS Workbench with Excel and Python, you may have come across the post by PADT here: [http://www.padtinc.com/blog/the-focus/workbench-and-excel-part-2-driving-workbench-from-excel-with-python](http://www.padtinc.com/blog/the-focus/workbench-and-excel-part-2-driving-workbench-from-excel-with-python). This was a really useful introduction, but I had some issues with getting the examples to work.
@@ -21,15 +21,15 @@ The Python script is the interface between Excel and ANSYS and will need to be m
 
 The Excel sheet looks like this:
 
-![Excel worksheet to drive ANSYS and extract results](/blog-assets/notion-migration/ansys-workbench-with-excel-and-python/Untitled%20211.png)
+![Excel worksheet to drive ANSYS and extract results](../../assets/blog-assets/notion-migration/ansys-workbench-with-excel-and-python/Untitled%20211.png)
 
 ## Files for Scripting ANSYS Workbench with Excel and Python
 
 - Excel Workbook: TowerTool1.xlsm
-[TowerTool1](/blog-assets/notion-migration/ansys-workbench-with-excel-and-python/TowerTool1.xlsm)
+[TowerTool1](../../assets/blog-assets/notion-migration/ansys-workbench-with-excel-and-python/TowerTool1.xlsm)
 - ANSYS Workbench Project: ExcelTower1.wbpz
-[ExcelTower1.wbpz](/blog-assets/notion-migration/ansys-workbench-with-excel-and-python/ExcelTower1.wbpz.zip)
+[ExcelTower1.wbpz](../../assets/blog-assets/notion-migration/ansys-workbench-with-excel-and-python/ExcelTower1.wbpz.zip)
 - Python Script: updateWB2.py
-[updateWB2](/blog-assets/notion-migration/ansys-workbench-with-excel-and-python/updateWB2.py)
+[updateWB2](../../assets/blog-assets/notion-migration/ansys-workbench-with-excel-and-python/updateWB2.py)
 
 I hope these work for you, but if you have any issues or questions then get in touch.

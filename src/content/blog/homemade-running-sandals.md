@@ -4,7 +4,7 @@ description: "I am now thoroughly converted to the barefoot and minimalist runni
 pubDate: 2019-06-23
 updatedDate: 2022-05-13
 tags: ["Running", "Productivity"]
-heroImage: "/blog-assets/notion-migration/homemade-running-sandals/2012-11-03_11-47-59_P1100023.jpg"
+heroImage: "../../assets/blog-assets/notion-migration/homemade-running-sandals/2012-11-03_11-47-59_P1100023.jpg"
 ---
 
 *Reposted from 2012...*
@@ -21,7 +21,7 @@ Then just follow the instructions at [invisibleshoe.com](http://www.invisiblesho
 
 Here is a picture of my home made running sandals (version 1.0):
 
-![Homemade running sandals](/blog-assets/notion-migration/homemade-running-sandals/2012-11-03_11-47-59_P1100023.jpg)
+![Homemade running sandals](../../assets/blog-assets/notion-migration/homemade-running-sandals/2012-11-03_11-47-59_P1100023.jpg)
 
 I then upgraded them to version 2.0 by gluing on a second layer of rubber (as the car mat I used was very thin) using Shoe Goo glue. I also found that the knot under the sole was irritating me, so instead of the knot I melted the end of the cord to make a blob which stops the cord pulling through, and I backed up this up with some Shoe Goo. By the way, the Shoe Goo stuff is quite amazing, it is a combination of glue and filler, and is perfect for repairing shoes. I've also used it on the soles of running shoes which have worn through, as Shoe Goo effectively forms a replacement rubber sole.
 

@@ -12,7 +12,7 @@ activitiesAm: "Area 15 Meow Wolf"
 activitiesPm: "Neon museum"
 activitiesEvening: "Neon Jackpot"
 accommodation: "Hilton Grand Vacations Club Elara"
-heroImage: "/adventures/assets/2024-usa/day-20-museums-01.webp"
+heroImage: "../../../assets/adventures/assets/2024-usa/day-20-museums-01.webp"
 ---
 ## Travel Log
 
@@ -22,29 +22,29 @@ Area 15 was still a pretty cool place to hang out and we had a nice lunch there 
 
 Once we got back we nipped out to see the Bellagio fountains, it was late and we were tired but it is something we had to do before moving on. We made it to watch two shows and the kids seemed suitably impressed. It was a different atmosphere after dark and there were lots of questions about the outfits of scantily clad women on the strip!
 
-![Area15](/adventures/assets/2024-usa/day-20-museums-02.webp)
+![Area15](../../../assets/adventures/assets/2024-usa/day-20-museums-02.webp)
 
-![The Meow Wolf had some great visual areas, but wasn’t very good for kids really](/adventures/assets/2024-usa/day-20-museums-03.webp)
+![The Meow Wolf had some great visual areas, but wasn’t very good for kids really](../../../assets/adventures/assets/2024-usa/day-20-museums-03.webp)
 
-![](/adventures/assets/2024-usa/day-20-museums-04.webp)
+![](../../../assets/adventures/assets/2024-usa/day-20-museums-04.webp)
 
-![](/adventures/assets/2024-usa/day-20-museums-05.webp)
+![](../../../assets/adventures/assets/2024-usa/day-20-museums-05.webp)
 
-![The Neon Museum - really interesting and a quieter pace compared to the rest of the Strip](/adventures/assets/2024-usa/day-20-museums-06.webp)
+![The Neon Museum - really interesting and a quieter pace compared to the rest of the Strip](../../../assets/adventures/assets/2024-usa/day-20-museums-06.webp)
 
-![](/adventures/assets/2024-usa/day-20-museums-07.webp)
+![](../../../assets/adventures/assets/2024-usa/day-20-museums-07.webp)
 
-![](/adventures/assets/2024-usa/day-20-museums-08.webp)
+![](../../../assets/adventures/assets/2024-usa/day-20-museums-08.webp)
 
-![](/adventures/assets/2024-usa/day-20-museums-09.webp)
+![](../../../assets/adventures/assets/2024-usa/day-20-museums-09.webp)
 
-![The kids enjoyed the treasure hunt](/adventures/assets/2024-usa/day-20-museums-10.webp)
+![The kids enjoyed the treasure hunt](../../../assets/adventures/assets/2024-usa/day-20-museums-10.webp)
 
-![](/adventures/assets/2024-usa/day-20-museums-11.webp)
+![](../../../assets/adventures/assets/2024-usa/day-20-museums-11.webp)
 
-![The fountains at Bellagio](/adventures/assets/2024-usa/day-20-museums-12.webp)
+![The fountains at Bellagio](../../../assets/adventures/assets/2024-usa/day-20-museums-12.webp)
 
-![](/adventures/assets/2024-usa/day-20-museums-13.webp)
+![](../../../assets/adventures/assets/2024-usa/day-20-museums-13.webp)
 
 Accomodation:
 

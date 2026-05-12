@@ -12,7 +12,7 @@ activitiesAm: "Purgatory Resort"
 activitiesPm: "Honeyville "
 activitiesEvening: "Live music & dinner @ James Ranch"
 accommodation: "Airbnb"
-heroImage: "/adventures/assets/2024-usa/day-06-purgatory-resort-01.webp"
+heroImage: "../../../assets/adventures/assets/2024-usa/day-06-purgatory-resort-01.webp"
 ---
 ## Travel Log
 
@@ -28,41 +28,41 @@ Later we headed down the valley to pop in to the honey farm - Honeyville - becau
 
 Purgatory resort: 9/10
 
-![Thea matching up her gemstones](/adventures/assets/2024-usa/day-06-purgatory-resort-02.webp)
+![Thea matching up her gemstones](../../../assets/adventures/assets/2024-usa/day-06-purgatory-resort-02.webp)
 
-![Cartwheels with a view](/adventures/assets/2024-usa/day-06-purgatory-resort-03.webp)
+![Cartwheels with a view](../../../assets/adventures/assets/2024-usa/day-06-purgatory-resort-03.webp)
 
-![The honey factory - distillery](/adventures/assets/2024-usa/day-06-purgatory-resort-04.webp)
+![The honey factory - distillery](../../../assets/adventures/assets/2024-usa/day-06-purgatory-resort-04.webp)
 
-![Stormy skies](/adventures/assets/2024-usa/day-06-purgatory-resort-05.webp)
+![Stormy skies](../../../assets/adventures/assets/2024-usa/day-06-purgatory-resort-05.webp)
 
-![Panning for gems](/adventures/assets/2024-usa/day-06-purgatory-resort-06.webp)
+![Panning for gems](../../../assets/adventures/assets/2024-usa/day-06-purgatory-resort-06.webp)
 
-![Summer holiday smiles](/adventures/assets/2024-usa/day-06-purgatory-resort-07.webp)
+![Summer holiday smiles](../../../assets/adventures/assets/2024-usa/day-06-purgatory-resort-07.webp)
 
-![Two bears](/adventures/assets/2024-usa/day-06-purgatory-resort-08.webp)
+![Two bears](../../../assets/adventures/assets/2024-usa/day-06-purgatory-resort-08.webp)
 
-![The start of the toboggan run](/adventures/assets/2024-usa/day-06-purgatory-resort-09.webp)
+![The start of the toboggan run](../../../assets/adventures/assets/2024-usa/day-06-purgatory-resort-09.webp)
 
-![Heading up the mountain coaster](/adventures/assets/2024-usa/day-06-purgatory-resort-10.webp)
+![Heading up the mountain coaster](../../../assets/adventures/assets/2024-usa/day-06-purgatory-resort-10.webp)
 
-![Purgatory Flats](/adventures/assets/2024-usa/day-06-purgatory-resort-11.webp)
+![Purgatory Flats](../../../assets/adventures/assets/2024-usa/day-06-purgatory-resort-11.webp)
 
-![Overlooking Purgatory Flats from a lovely rock viewpoint](/adventures/assets/2024-usa/day-06-purgatory-resort-12.webp)
+![Overlooking Purgatory Flats from a lovely rock viewpoint](../../../assets/adventures/assets/2024-usa/day-06-purgatory-resort-12.webp)
 
-![Through the aspen groves](/adventures/assets/2024-usa/day-06-purgatory-resort-13.webp)
+![Through the aspen groves](../../../assets/adventures/assets/2024-usa/day-06-purgatory-resort-13.webp)
 
-![The trail goes ever on and on](/adventures/assets/2024-usa/day-06-purgatory-resort-14.webp)
+![The trail goes ever on and on](../../../assets/adventures/assets/2024-usa/day-06-purgatory-resort-14.webp)
 
-![Balcony with a view](/adventures/assets/2024-usa/day-06-purgatory-resort-15.webp)
+![Balcony with a view](../../../assets/adventures/assets/2024-usa/day-06-purgatory-resort-15.webp)
 
-![High altitude cartwheels](/adventures/assets/2024-usa/day-06-purgatory-resort-16.webp)
+![High altitude cartwheels](../../../assets/adventures/assets/2024-usa/day-06-purgatory-resort-16.webp)
 
-![Sunny and stormy](/adventures/assets/2024-usa/day-06-purgatory-resort-17.webp)
+![Sunny and stormy](../../../assets/adventures/assets/2024-usa/day-06-purgatory-resort-17.webp)
 
-![Heading up the chair lift for the toboggan run](/adventures/assets/2024-usa/day-06-purgatory-resort-18.webp)
+![Heading up the chair lift for the toboggan run](../../../assets/adventures/assets/2024-usa/day-06-purgatory-resort-18.webp)
 
-![Classic Colorado](/adventures/assets/2024-usa/day-06-purgatory-resort-19.webp)
+![Classic Colorado](../../../assets/adventures/assets/2024-usa/day-06-purgatory-resort-19.webp)
 
 Accommodation:
 

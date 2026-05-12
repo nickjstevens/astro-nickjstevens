@@ -12,7 +12,7 @@ activitiesAm: "Pool"
 activitiesPm: "Flyover"
 activitiesEvening: "Cirque du Solei"
 accommodation: "Hilton Grand Vacations Club Elara"
-heroImage: "/adventures/assets/2024-usa/day-19-sightseeing-01.webp"
+heroImage: "../../../assets/adventures/assets/2024-usa/day-19-sightseeing-01.webp"
 ---
 ## Travel Log
 
@@ -20,19 +20,19 @@ After a good nights sleep in our luxurious apartment and a starbucks coffee (whi
 
 We had a couple hours relaxing and recovering back at our hotel and made an early dinner before heading back out again for the Cirque Du Soleil Mystere performance @ Treasure Island. We decided to drive as it was a 40 minute walk along the strip each way. The performance was fun, a little odd, not quite what we had expected but still impressive and the enjoyable. Thea fell asleep but the Jasper and Bess enjoyed it and Thea enjoyed the parts she was awake for.
 
-![Thea loves Hello Kitty!](/adventures/assets/2024-usa/day-19-sightseeing-02.webp)
+![Thea loves Hello Kitty!](../../../assets/adventures/assets/2024-usa/day-19-sightseeing-02.webp)
 
-![Pizza in New York, New York](/adventures/assets/2024-usa/day-19-sightseeing-03.webp)
+![Pizza in New York, New York](../../../assets/adventures/assets/2024-usa/day-19-sightseeing-03.webp)
 
-![More Hello Kitty merch!](/adventures/assets/2024-usa/day-19-sightseeing-04.webp)
+![More Hello Kitty merch!](../../../assets/adventures/assets/2024-usa/day-19-sightseeing-04.webp)
 
-![The M&M Shop](/adventures/assets/2024-usa/day-19-sightseeing-05.webp)
+![The M&M Shop](../../../assets/adventures/assets/2024-usa/day-19-sightseeing-05.webp)
 
-![](/adventures/assets/2024-usa/day-19-sightseeing-06.webp)
+![](../../../assets/adventures/assets/2024-usa/day-19-sightseeing-06.webp)
 
-![Cirque du Soleil](/adventures/assets/2024-usa/day-19-sightseeing-07.webp)
+![Cirque du Soleil](../../../assets/adventures/assets/2024-usa/day-19-sightseeing-07.webp)
 
-![](/adventures/assets/2024-usa/day-19-sightseeing-08.webp)
+![](../../../assets/adventures/assets/2024-usa/day-19-sightseeing-08.webp)
 
 Accommodation:
 

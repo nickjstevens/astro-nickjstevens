@@ -8,7 +8,7 @@ year: 2025
 order: 8
 date: "2025-08-04"
 sleepLocation: "Adelboden"
-heroImage: "/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-01.webp"
+heroImage: "../../../assets/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-01.webp"
 ---
 ## Travel Log
 
@@ -34,82 +34,82 @@ Dinner is included in our stay and was a very fancy pants dining experience. Hau
 
 As a busy day ended, we watched the sunset make the mountains turn red, and the moon rise over the distant waterfall. Breathtaking.
 
-![](/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-02.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-02.webp)
 
-![](/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-03.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-03.webp)
 
-![](/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-04.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-04.webp)
 
-![](/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-05.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-05.webp)
 
-![](/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-06.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-06.webp)
 
-![](/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-07.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-07.webp)
 
-![](/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-08.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-08.webp)
 
-![](/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-09.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-09.webp)
 
-![](/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-10.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-10.webp)
 
-![](/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-11.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-11.webp)
 
-![](/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-12.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-12.webp)
 
-![](/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-13.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-13.webp)
 
-![](/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-14.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-14.webp)
 
-![](/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-15.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-15.webp)
 
-![](/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-16.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-16.webp)
 
-![](/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-17.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-17.webp)
 
-![](/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-18.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-18.webp)
 
-![](/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-19.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-19.webp)
 
-![](/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-20.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-20.webp)
 
-![](/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-21.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-21.webp)
 
-![](/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-22.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-22.webp)
 
-![](/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-23.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-23.webp)
 
-![](/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-24.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-24.webp)
 
-![](/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-25.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-25.webp)
 
-![](/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-26.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-26.webp)
 
-![](/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-27.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-27.webp)
 
-![](/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-28.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-28.webp)
 
-![](/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-29.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-29.webp)
 
-![](/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-30.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-30.webp)
 
-![](/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-31.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-31.webp)
 
-![](/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-32.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-32.webp)
 
-![](/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-33.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-33.webp)
 
-![](/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-34.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-34.webp)
 
-![](/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-35.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-35.webp)
 
-![](/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-36.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-36.webp)
 
-![](/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-37.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-37.webp)
 
-![](/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-38.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-38.webp)
 
-![](/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-39.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-39.webp)
 
-![](/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-40.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-40.webp)
 
-![](/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-41.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-08-zermatt-to-adelboden-41.webp)

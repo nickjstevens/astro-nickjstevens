@@ -4,14 +4,14 @@ description: "Introduction to Warping of Open Sections"
 pubDate: 2019-06-20
 updatedDate: 2022-05-13
 tags: ["Engineering", "Simulation"]
-heroImage: "/blog-assets/notion-migration/beam-elements-with-warping-in-ansys-workbench/Untitled 219.png"
+heroImage: "../../assets/blog-assets/notion-migration/beam-elements-with-warping-in-ansys-workbench/Untitled 219.png"
 ---
 
 ## Introduction to Warping of Open Sections
 
 Warping of open sections is a challenging yet important area of structural engineering. Warping is important for open sections experiencing torsion, including (perhaps not immediately obvious) beams curved on plan (see Figure below) where torsion is induced due to the curved path the beam follows.
 
-![Untitled 219](/blog-assets/notion-migration/beam-elements-with-warping-in-ansys-workbench/Untitled%20219.png)
+![Untitled 219](../../assets/blog-assets/notion-migration/beam-elements-with-warping-in-ansys-workbench/Untitled%20219.png)
 
 Industry guidance for curved beams can be found in SCI P281, Design of Curved Steel by The Steel Construction Institute. One suggested option is to activate the warping degree of freedom that is often deactivated as the default behaviour for most beam elements. This is explored below. The use of beam elements with an additional warping degree of freedom is considerably simpler than the alternative suggested in SCI P281 to use an I-beam represented with beam elements for the flanges and shell elements for the web.
 
@@ -31,13 +31,13 @@ Visibility of the input commands also then allows you to modify these commands u
 
 `keyopt,1,1,1 ! assuming you have just one element type, change TYPE 1 to have KEYOPT(1)=1`
 
-![Untitled 220](/blog-assets/notion-migration/beam-elements-with-warping-in-ansys-workbench/Untitled%20220.png)
+![Untitled 220](../../assets/blog-assets/notion-migration/beam-elements-with-warping-in-ansys-workbench/Untitled%20220.png)
 
 ## Post Processing Warping Quantities
 
 Activating the warping degree of freedom will give an additional output quantity – warping bimoment. This warping bimoment can be converted to an equal and opposite bending moment in the plane of each flange by dividing the warping bimoment by the depth between the centroids of the flanges, as shown in the Figure below.
 
-![Untitled 221](/blog-assets/notion-migration/beam-elements-with-warping-in-ansys-workbench/Untitled%20221.png)
+![Untitled 221](../../assets/blog-assets/notion-migration/beam-elements-with-warping-in-ansys-workbench/Untitled%20221.png)
 
 Determining the performance of open sections subject to bending and torsion can be found using the guidance in SCI P057, Design of Members Subject to Combined Bending and Torsion by The Steel Construction Institute. Even if you do turn on warping using the Command Snippet above, you must also be careful in the post-processing. Combined Stress as reported by the Beam Results tool does not give a true von Mises stress (it gives axial + bending only) and therefore if you need to know the von Mises stress including the effects of warping and torsion, then you need to use APDL to post-process the results.
 

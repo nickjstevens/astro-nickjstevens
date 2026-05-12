@@ -12,7 +12,7 @@ activitiesAm: "Hiking"
 activitiesPm: "Hiking"
 activitiesEvening: "Barn dance"
 accommodation: "Airbnb"
-heroImage: "/adventures/assets/2024-usa/day-24-mariposa-and-wawona-01.webp"
+heroImage: "../../../assets/adventures/assets/2024-usa/day-24-mariposa-and-wawona-01.webp"
 ---
 ## Travel Log
 
@@ -20,65 +20,65 @@ Our plans for today were a bit uncertain. This is the first day of our holiday w
 
 We then drove up to Glacier point, the weather wasn’t looking great but this was our last chance to see it. Fortunately the cloud cleared just as we got to the top, it was incredible and we sat there for a while just soaking up the view. We then went home for dinner and out to a Barndance in Wawona, this was great atmosphere and we joined in for a few dances before driving back out to the view point on the glacier point road to see the stars after dark.
 
-![Giant Sequoias](/adventures/assets/2024-usa/day-24-mariposa-and-wawona-02.webp)
+![Giant Sequoias](../../../assets/adventures/assets/2024-usa/day-24-mariposa-and-wawona-02.webp)
 
-![](/adventures/assets/2024-usa/day-24-mariposa-and-wawona-03.webp)
+![](../../../assets/adventures/assets/2024-usa/day-24-mariposa-and-wawona-03.webp)
 
-![](/adventures/assets/2024-usa/day-24-mariposa-and-wawona-04.webp)
+![](../../../assets/adventures/assets/2024-usa/day-24-mariposa-and-wawona-04.webp)
 
-![A neat covered bridge at Wawona](/adventures/assets/2024-usa/day-24-mariposa-and-wawona-05.webp)
+![A neat covered bridge at Wawona](../../../assets/adventures/assets/2024-usa/day-24-mariposa-and-wawona-05.webp)
 
-![](/adventures/assets/2024-usa/day-24-mariposa-and-wawona-06.webp)
+![](../../../assets/adventures/assets/2024-usa/day-24-mariposa-and-wawona-06.webp)
 
-![](/adventures/assets/2024-usa/day-24-mariposa-and-wawona-07.webp)
+![](../../../assets/adventures/assets/2024-usa/day-24-mariposa-and-wawona-07.webp)
 
-![](/adventures/assets/2024-usa/day-24-mariposa-and-wawona-08.webp)
+![](../../../assets/adventures/assets/2024-usa/day-24-mariposa-and-wawona-08.webp)
 
-![](/adventures/assets/2024-usa/day-24-mariposa-and-wawona-09.webp)
+![](../../../assets/adventures/assets/2024-usa/day-24-mariposa-and-wawona-09.webp)
 
-![](/adventures/assets/2024-usa/day-24-mariposa-and-wawona-10.webp)
+![](../../../assets/adventures/assets/2024-usa/day-24-mariposa-and-wawona-10.webp)
 
-![Where is the view?!](/adventures/assets/2024-usa/day-24-mariposa-and-wawona-11.webp)
+![Where is the view?!](../../../assets/adventures/assets/2024-usa/day-24-mariposa-and-wawona-11.webp)
 
-![Luckily the clouds soon cleared!](/adventures/assets/2024-usa/day-24-mariposa-and-wawona-12.webp)
+![Luckily the clouds soon cleared!](../../../assets/adventures/assets/2024-usa/day-24-mariposa-and-wawona-12.webp)
 
-![](/adventures/assets/2024-usa/day-24-mariposa-and-wawona-13.webp)
+![](../../../assets/adventures/assets/2024-usa/day-24-mariposa-and-wawona-13.webp)
 
-![Glacier Point](/adventures/assets/2024-usa/day-24-mariposa-and-wawona-14.webp)
+![Glacier Point](../../../assets/adventures/assets/2024-usa/day-24-mariposa-and-wawona-14.webp)
 
-![](/adventures/assets/2024-usa/day-24-mariposa-and-wawona-15.webp)
+![](../../../assets/adventures/assets/2024-usa/day-24-mariposa-and-wawona-15.webp)
 
-![](/adventures/assets/2024-usa/day-24-mariposa-and-wawona-16.webp)
+![](../../../assets/adventures/assets/2024-usa/day-24-mariposa-and-wawona-16.webp)
 
-![](/adventures/assets/2024-usa/day-24-mariposa-and-wawona-17.webp)
+![](../../../assets/adventures/assets/2024-usa/day-24-mariposa-and-wawona-17.webp)
 
-![](/adventures/assets/2024-usa/day-24-mariposa-and-wawona-18.webp)
+![](../../../assets/adventures/assets/2024-usa/day-24-mariposa-and-wawona-18.webp)
 
-![](/adventures/assets/2024-usa/day-24-mariposa-and-wawona-19.webp)
+![](../../../assets/adventures/assets/2024-usa/day-24-mariposa-and-wawona-19.webp)
 
-![](/adventures/assets/2024-usa/day-24-mariposa-and-wawona-20.webp)
+![](../../../assets/adventures/assets/2024-usa/day-24-mariposa-and-wawona-20.webp)
 
-![](/adventures/assets/2024-usa/day-24-mariposa-and-wawona-21.webp)
+![](../../../assets/adventures/assets/2024-usa/day-24-mariposa-and-wawona-21.webp)
 
-![](/adventures/assets/2024-usa/day-24-mariposa-and-wawona-22.webp)
+![](../../../assets/adventures/assets/2024-usa/day-24-mariposa-and-wawona-22.webp)
 
-![](/adventures/assets/2024-usa/day-24-mariposa-and-wawona-23.webp)
+![](../../../assets/adventures/assets/2024-usa/day-24-mariposa-and-wawona-23.webp)
 
-![](/adventures/assets/2024-usa/day-24-mariposa-and-wawona-24.webp)
+![](../../../assets/adventures/assets/2024-usa/day-24-mariposa-and-wawona-24.webp)
 
-![](/adventures/assets/2024-usa/day-24-mariposa-and-wawona-25.webp)
+![](../../../assets/adventures/assets/2024-usa/day-24-mariposa-and-wawona-25.webp)
 
-![](/adventures/assets/2024-usa/day-24-mariposa-and-wawona-26.webp)
+![](../../../assets/adventures/assets/2024-usa/day-24-mariposa-and-wawona-26.webp)
 
-![Barn dance evening at Wawona](/adventures/assets/2024-usa/day-24-mariposa-and-wawona-27.webp)
+![Barn dance evening at Wawona](../../../assets/adventures/assets/2024-usa/day-24-mariposa-and-wawona-27.webp)
 
-![](/adventures/assets/2024-usa/day-24-mariposa-and-wawona-28.webp)
+![](../../../assets/adventures/assets/2024-usa/day-24-mariposa-and-wawona-28.webp)
 
-![](/adventures/assets/2024-usa/day-24-mariposa-and-wawona-29.webp)
+![](../../../assets/adventures/assets/2024-usa/day-24-mariposa-and-wawona-29.webp)
 
-![](/adventures/assets/2024-usa/day-24-mariposa-and-wawona-30.webp)
+![](../../../assets/adventures/assets/2024-usa/day-24-mariposa-and-wawona-30.webp)
 
-![The camera can’t really capture it, but we went stargazing after the barn dance a short way up the Glacier Point road](/adventures/assets/2024-usa/day-24-mariposa-and-wawona-31.webp)
+![The camera can’t really capture it, but we went stargazing after the barn dance a short way up the Glacier Point road](../../../assets/adventures/assets/2024-usa/day-24-mariposa-and-wawona-31.webp)
 
 Accommodation:
 

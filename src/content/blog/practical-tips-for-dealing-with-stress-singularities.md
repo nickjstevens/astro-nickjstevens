@@ -4,10 +4,10 @@ description: "Stress Singularities Introduction"
 pubDate: 2019-06-22
 updatedDate: 2022-05-13
 tags: ["Engineering", "Simulation"]
-heroImage: "/blog-assets/notion-migration/practical-tips-for-dealing-with-stress-singularities/Untitled 222.png"
+heroImage: "../../assets/blog-assets/notion-migration/practical-tips-for-dealing-with-stress-singularities/Untitled 222.png"
 ---
 
-![Untitled 222](/blog-assets/notion-migration/practical-tips-for-dealing-with-stress-singularities/Untitled%20222.png)
+![Untitled 222](../../assets/blog-assets/notion-migration/practical-tips-for-dealing-with-stress-singularities/Untitled%20222.png)
 
 ## Stress Singularities Introduction
 
@@ -33,25 +33,25 @@ The following example shows a sharp corner, and demonstrates a stress diverging 
 
 The model is a simple sharp corner, fixed on the right-hand side and with a load applied to the left-hand side.
 
-![Untitled 223](/blog-assets/notion-migration/practical-tips-for-dealing-with-stress-singularities/Untitled%20223.png)
+![Untitled 223](../../assets/blog-assets/notion-migration/practical-tips-for-dealing-with-stress-singularities/Untitled%20223.png)
 
 *Stress Singularity Example*
 
 Say we are interested in the peak stress, which occurs at this sharp corner. The result is a von Mises stress of 41.63MPa for 33178 elements:
 
-![Untitled 224](/blog-assets/notion-migration/practical-tips-for-dealing-with-stress-singularities/Untitled%20224.png)
+![Untitled 224](../../assets/blog-assets/notion-migration/practical-tips-for-dealing-with-stress-singularities/Untitled%20224.png)
 
 *Coarse Mesh*
 
 The mesh is refined to give 48.58MPa using 53986 elements:
 
-![Untitled 225](/blog-assets/notion-migration/practical-tips-for-dealing-with-stress-singularities/Untitled%20225.png)
+![Untitled 225](../../assets/blog-assets/notion-migration/practical-tips-for-dealing-with-stress-singularities/Untitled%20225.png)
 
 *Fine Mesh*
 
 The mesh is refined further to give 65.63MPa using 388259 elements:
 
-![Untitled 226](/blog-assets/notion-migration/practical-tips-for-dealing-with-stress-singularities/Untitled%20226.png)
+![Untitled 226](../../assets/blog-assets/notion-migration/practical-tips-for-dealing-with-stress-singularities/Untitled%20226.png)
 
 *Very Fine Mesh*
 

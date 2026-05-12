@@ -4,7 +4,7 @@ description: "Use a custom Excel VBA function to return alpha values for bolted 
 pubDate: 2022-05-13
 updatedDate: 2022-05-13
 tags: ["Engineering", "Software"]
-heroImage: "/blog-assets/notion-migration/custom-excel-vba-function-for-sci-bolted-joint-assessment/Untitled 209.png"
+heroImage: "../../assets/blog-assets/notion-migration/custom-excel-vba-function-for-sci-bolted-joint-assessment/Untitled 209.png"
 ---
 
 The principle of [DRY (Don’t Repeat Yourself)](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) is well-known in software engineering circles as a way of reusing code to make software easier to maintain, debug and check. We can use the same approach in engineering calculations by packaging a function so that it can be checked once, and reused many times.
@@ -13,11 +13,11 @@ The use case here is using a custom Excel VBA function to return the alpha value
 
 An example spreadsheet, complete with the custom function is attached below:
 
-[SCI-Bolted-Joint-Alpha.xlsm](/blog-assets/notion-migration/custom-excel-vba-function-for-sci-bolted-joint-assessment/SCI-Bolted-Joint-Alpha.xlsm)
+[SCI-Bolted-Joint-Alpha.xlsm](../../assets/blog-assets/notion-migration/custom-excel-vba-function-for-sci-bolted-joint-assessment/SCI-Bolted-Joint-Alpha.xlsm)
 
 The function is as simple to use as calling `=alpha(m1,m2,e)` where `m1`, `m2` and `e` are the distances as defined in SCI P207.
 
-![Example Excel alpha function for SCI bolted joint assessment](/blog-assets/notion-migration/custom-excel-vba-function-for-sci-bolted-joint-assessment/Untitled%20209.png)
+![Example Excel alpha function for SCI bolted joint assessment](../../assets/blog-assets/notion-migration/custom-excel-vba-function-for-sci-bolted-joint-assessment/Untitled%20209.png)
 
 The VBA code is below:
 

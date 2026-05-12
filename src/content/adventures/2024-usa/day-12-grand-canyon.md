@@ -12,7 +12,7 @@ activitiesAm: "Williams"
 activitiesPm: "GC village"
 drivingTime: "2 hours 15 minutes"
 accommodation: "Maswik Lodge"
-heroImage: "/adventures/assets/2024-usa/day-12-grand-canyon-01.webp"
+heroImage: "../../../assets/adventures/assets/2024-usa/day-12-grand-canyon-01.webp"
 ---
 ## Travel Log
 
@@ -24,45 +24,45 @@ We finally arrived at the South Rim mid afternoon and did some view points and v
 
 We watched a magnificent thunder storm from the rim (the one place you are not meant to go in thunder and lightning) we felt reassured by all the photographers that had set up their tripods but did dash inside when a lightening strike hit very close to us and our skin was tingling with static. Sadly we didn’t catch any lightning on camera. Once the storm had passed we stayed for sunset, it turned out to be a beautiful evening. Unfortunately everyone else in the park was also watching the sunset so by the time we got to the food court the crowds all arrived at the same time and the food options quickly dwindled. Despite the rather basic accommodation and food (fairly typical of national parks) the views were magnificent and hopefully the kids grasped the scale of it.
 
-![Thea tucking in to a proper American donut](/adventures/assets/2024-usa/day-12-grand-canyon-02.webp)
+![Thea tucking in to a proper American donut](../../../assets/adventures/assets/2024-usa/day-12-grand-canyon-02.webp)
 
-![Pink or pink? So much choice…!](/adventures/assets/2024-usa/day-12-grand-canyon-03.webp)
+![Pink or pink? So much choice…!](../../../assets/adventures/assets/2024-usa/day-12-grand-canyon-03.webp)
 
-![Williams, on Route 66](/adventures/assets/2024-usa/day-12-grand-canyon-04.webp)
+![Williams, on Route 66](../../../assets/adventures/assets/2024-usa/day-12-grand-canyon-04.webp)
 
-![](/adventures/assets/2024-usa/day-12-grand-canyon-05.webp)
+![](../../../assets/adventures/assets/2024-usa/day-12-grand-canyon-05.webp)
 
-![Our first view of the Grand Canyon at Mather Point](/adventures/assets/2024-usa/day-12-grand-canyon-06.webp)
+![Our first view of the Grand Canyon at Mather Point](../../../assets/adventures/assets/2024-usa/day-12-grand-canyon-06.webp)
 
-![](/adventures/assets/2024-usa/day-12-grand-canyon-07.webp)
+![](../../../assets/adventures/assets/2024-usa/day-12-grand-canyon-07.webp)
 
-![](/adventures/assets/2024-usa/day-12-grand-canyon-08.webp)
+![](../../../assets/adventures/assets/2024-usa/day-12-grand-canyon-08.webp)
 
-![](/adventures/assets/2024-usa/day-12-grand-canyon-09.webp)
+![](../../../assets/adventures/assets/2024-usa/day-12-grand-canyon-09.webp)
 
-![](/adventures/assets/2024-usa/day-12-grand-canyon-10.webp)
+![](../../../assets/adventures/assets/2024-usa/day-12-grand-canyon-10.webp)
 
-![](/adventures/assets/2024-usa/day-12-grand-canyon-11.webp)
+![](../../../assets/adventures/assets/2024-usa/day-12-grand-canyon-11.webp)
 
-![Sunset from Yavapai Point](/adventures/assets/2024-usa/day-12-grand-canyon-12.webp)
+![Sunset from Yavapai Point](../../../assets/adventures/assets/2024-usa/day-12-grand-canyon-12.webp)
 
-![](/adventures/assets/2024-usa/day-12-grand-canyon-13.webp)
+![](../../../assets/adventures/assets/2024-usa/day-12-grand-canyon-13.webp)
 
-![](/adventures/assets/2024-usa/day-12-grand-canyon-14.webp)
+![](../../../assets/adventures/assets/2024-usa/day-12-grand-canyon-14.webp)
 
-![](/adventures/assets/2024-usa/day-12-grand-canyon-15.webp)
+![](../../../assets/adventures/assets/2024-usa/day-12-grand-canyon-15.webp)
 
-![](/adventures/assets/2024-usa/day-12-grand-canyon-16.webp)
+![](../../../assets/adventures/assets/2024-usa/day-12-grand-canyon-16.webp)
 
-![](/adventures/assets/2024-usa/day-12-grand-canyon-17.webp)
+![](../../../assets/adventures/assets/2024-usa/day-12-grand-canyon-17.webp)
 
-![The sky was incredible](/adventures/assets/2024-usa/day-12-grand-canyon-18.webp)
+![The sky was incredible](../../../assets/adventures/assets/2024-usa/day-12-grand-canyon-18.webp)
 
-![](/adventures/assets/2024-usa/day-12-grand-canyon-19.webp)
+![](../../../assets/adventures/assets/2024-usa/day-12-grand-canyon-19.webp)
 
-![](/adventures/assets/2024-usa/day-12-grand-canyon-20.webp)
+![](../../../assets/adventures/assets/2024-usa/day-12-grand-canyon-20.webp)
 
-![](/adventures/assets/2024-usa/day-12-grand-canyon-21.webp)
+![](../../../assets/adventures/assets/2024-usa/day-12-grand-canyon-21.webp)
 
 Accommodation:
 

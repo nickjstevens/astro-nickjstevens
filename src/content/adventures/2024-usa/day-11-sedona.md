@@ -11,7 +11,7 @@ sleepLocation: "Sedona"
 activitiesAm: "Broken Arrow Jeep Tour"
 activitiesPm: "Relax by pool"
 accommodation: "Airbnb"
-heroImage: "/adventures/assets/2024-usa/day-11-sedona-01.webp"
+heroImage: "../../../assets/adventures/assets/2024-usa/day-11-sedona-01.webp"
 ---
 ## Travel Log
 
@@ -21,55 +21,55 @@ After the tour we returned to the same ice cream place as yesterday for our favo
 
 We spent the rest of the day relaxing again at our holiday house and pool, making the most of it before having to leave the following morning. The table tennis table got a lot of use as this is Jasper's favourite activity in the world.
 
-![In front of the fountains in Tlaquepaque](/adventures/assets/2024-usa/day-11-sedona-02.webp)
+![In front of the fountains in Tlaquepaque](../../../assets/adventures/assets/2024-usa/day-11-sedona-02.webp)
 
-![](/adventures/assets/2024-usa/day-11-sedona-03.webp)
+![](../../../assets/adventures/assets/2024-usa/day-11-sedona-03.webp)
 
-![](/adventures/assets/2024-usa/day-11-sedona-04.webp)
+![](../../../assets/adventures/assets/2024-usa/day-11-sedona-04.webp)
 
-![](/adventures/assets/2024-usa/day-11-sedona-05.webp)
+![](../../../assets/adventures/assets/2024-usa/day-11-sedona-05.webp)
 
-![](/adventures/assets/2024-usa/day-11-sedona-06.webp)
+![](../../../assets/adventures/assets/2024-usa/day-11-sedona-06.webp)
 
-![](/adventures/assets/2024-usa/day-11-sedona-07.webp)
+![](../../../assets/adventures/assets/2024-usa/day-11-sedona-07.webp)
 
-![Fantastic galleries](/adventures/assets/2024-usa/day-11-sedona-08.webp)
+![Fantastic galleries](../../../assets/adventures/assets/2024-usa/day-11-sedona-08.webp)
 
-![](/adventures/assets/2024-usa/day-11-sedona-09.webp)
+![](../../../assets/adventures/assets/2024-usa/day-11-sedona-09.webp)
 
-![The aptly named “Love Gelato” ice cream parlour](/adventures/assets/2024-usa/day-11-sedona-10.webp)
+![The aptly named “Love Gelato” ice cream parlour](../../../assets/adventures/assets/2024-usa/day-11-sedona-10.webp)
 
-![](/adventures/assets/2024-usa/day-11-sedona-11.webp)
+![](../../../assets/adventures/assets/2024-usa/day-11-sedona-11.webp)
 
-![Even the benches are pretty in Sedona](/adventures/assets/2024-usa/day-11-sedona-12.webp)
+![Even the benches are pretty in Sedona](../../../assets/adventures/assets/2024-usa/day-11-sedona-12.webp)
 
-![The view from Submarine Rock](/adventures/assets/2024-usa/day-11-sedona-13.webp)
+![The view from Submarine Rock](../../../assets/adventures/assets/2024-usa/day-11-sedona-13.webp)
 
-![](/adventures/assets/2024-usa/day-11-sedona-14.webp)
+![](../../../assets/adventures/assets/2024-usa/day-11-sedona-14.webp)
 
-![](/adventures/assets/2024-usa/day-11-sedona-15.webp)
+![](../../../assets/adventures/assets/2024-usa/day-11-sedona-15.webp)
 
-![](/adventures/assets/2024-usa/day-11-sedona-16.webp)
+![](../../../assets/adventures/assets/2024-usa/day-11-sedona-16.webp)
 
-![](/adventures/assets/2024-usa/day-11-sedona-17.webp)
+![](../../../assets/adventures/assets/2024-usa/day-11-sedona-17.webp)
 
-![](/adventures/assets/2024-usa/day-11-sedona-18.webp)
+![](../../../assets/adventures/assets/2024-usa/day-11-sedona-18.webp)
 
-![](/adventures/assets/2024-usa/day-11-sedona-19.webp)
+![](../../../assets/adventures/assets/2024-usa/day-11-sedona-19.webp)
 
-![](/adventures/assets/2024-usa/day-11-sedona-20.webp)
+![](../../../assets/adventures/assets/2024-usa/day-11-sedona-20.webp)
 
-![](/adventures/assets/2024-usa/day-11-sedona-21.webp)
+![](../../../assets/adventures/assets/2024-usa/day-11-sedona-21.webp)
 
-![](/adventures/assets/2024-usa/day-11-sedona-22.webp)
+![](../../../assets/adventures/assets/2024-usa/day-11-sedona-22.webp)
 
-![](/adventures/assets/2024-usa/day-11-sedona-23.webp)
+![](../../../assets/adventures/assets/2024-usa/day-11-sedona-23.webp)
 
-![Pink Jeep Tours - we really enjoyed our tour with them](/adventures/assets/2024-usa/day-11-sedona-24.webp)
+![Pink Jeep Tours - we really enjoyed our tour with them](../../../assets/adventures/assets/2024-usa/day-11-sedona-24.webp)
 
-![Table tennis champion](/adventures/assets/2024-usa/day-11-sedona-25.webp)
+![Table tennis champion](../../../assets/adventures/assets/2024-usa/day-11-sedona-25.webp)
 
-![](/adventures/assets/2024-usa/day-11-sedona-26.webp)
+![](../../../assets/adventures/assets/2024-usa/day-11-sedona-26.webp)
 
 Pink Jeep Tour: 7/10
 

@@ -4,7 +4,7 @@ description: "I’ve created two Excel functions that are useful for seismic ana
 pubDate: 2019-06-12
 updatedDate: 2022-05-13
 tags: ["Engineering", "Simulation", "Software"]
-heroImage: "/blog-assets/notion-migration/excel-secondary-response-spectra/Untitled 238.png"
+heroImage: "../../assets/blog-assets/notion-migration/excel-secondary-response-spectra/Untitled 238.png"
 ---
 
 I’ve created two **Excel functions **that are useful for seismic analysis. One function calculates **secondary response spectra** from an acceleration time history; the other function calculates the **time history response** of a single degree of freedom (SDOF) oscillator to arbitrary base excitation.
@@ -115,9 +115,9 @@ Where:
 
 So given an acceleration time history, we can generate secondary response spectra. An example input base excitation is shown below, along with the calculated response spectrum at 4% damping.
 
-![Acceleration Time History (Base Excitation)](/blog-assets/notion-migration/excel-secondary-response-spectra/Untitled%20238.png)
+![Acceleration Time History (Base Excitation)](../../assets/blog-assets/notion-migration/excel-secondary-response-spectra/Untitled%20238.png)
 
-![Excel Secondary Response Spectra at 4% Damping](/blog-assets/notion-migration/excel-secondary-response-spectra/Untitled%20239.png)
+![Excel Secondary Response Spectra at 4% Damping](../../assets/blog-assets/notion-migration/excel-secondary-response-spectra/Untitled%20239.png)
 
 # Excel SDOF Response Function
 
@@ -223,9 +223,9 @@ $$
 
 So given an acceleration time history and an oscillator with a given frequency, we can calculate the SDOF response time history. Two examples are given below, one with a 1Hz oscillator and one with a 5Hz oscillator.
 
-![Response Acceleration Time History – 1Hz Oscillator](/blog-assets/notion-migration/excel-secondary-response-spectra/Untitled%20240.png)
+![Response Acceleration Time History – 1Hz Oscillator](../../assets/blog-assets/notion-migration/excel-secondary-response-spectra/Untitled%20240.png)
 
-![Response Acceleration Time History – 5Hz](/blog-assets/notion-migration/excel-secondary-response-spectra/Untitled%20241.png)
+![Response Acceleration Time History – 5Hz](../../assets/blog-assets/notion-migration/excel-secondary-response-spectra/Untitled%20241.png)
 
 These functions have only been self-checked, so do your own verification before using the results.
 
@@ -233,4 +233,4 @@ These functions have only been self-checked, so do your own verification before 
 
 The link to the attached spreadsheet below contains the two functions discussed above, with examples to show you how best to use the functions.
 
-[Excel-Secondary-Response-Spectra-Example-Spreadsheet](/blog-assets/notion-migration/excel-secondary-response-spectra/Excel-Secondary-Response-Spectra-Example-Spreadsheet.xlsm)
+[Excel-Secondary-Response-Spectra-Example-Spreadsheet](../../assets/blog-assets/notion-migration/excel-secondary-response-spectra/Excel-Secondary-Response-Spectra-Example-Spreadsheet.xlsm)

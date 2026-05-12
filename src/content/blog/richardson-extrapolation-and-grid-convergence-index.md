@@ -4,7 +4,7 @@ description: "Update December 2017 – Web App Version!"
 pubDate: 2019-06-17
 updatedDate: 2022-05-13
 tags: ["Engineering", "Simulation", "Software"]
-heroImage: "/blog-assets/notion-migration/richardson-extrapolation-and-grid-convergence-index/Untitled 218.png"
+heroImage: "../../assets/blog-assets/notion-migration/richardson-extrapolation-and-grid-convergence-index/Untitled 218.png"
 ---
 
 ## Update December 2017 – Web App Version!
@@ -26,7 +26,7 @@ This is comparable to the absolute functions used in the non-uniform refinement 
 
 The updated spreadsheet, v2.2, is here:
 
-[Element_Refinement_Convergence_Richardson_Extrapolation_v2.2](/blog-assets/notion-migration/richardson-extrapolation-and-grid-convergence-index/Element_Refinement_Convergence_Richardson_Extrapolation_v2.2.xlsx)
+[Element_Refinement_Convergence_Richardson_Extrapolation_v2.2](../../assets/blog-assets/notion-migration/richardson-extrapolation-and-grid-convergence-index/Element_Refinement_Convergence_Richardson_Extrapolation_v2.2.xlsx)
 
 ## Update August 2016 – Added Non-Uniform Mesh Refinement
 
@@ -53,6 +53,6 @@ The simple spreadsheet can be found here:
 
 A screenshot of the spreadsheet is below. Enter your results in the yellow cells. It is important that uniform mesh refinement is used (i.e. the edge length ratio between meshes is constant).
 
-![Untitled 218](/blog-assets/notion-migration/richardson-extrapolation-and-grid-convergence-index/Untitled%20218.png)
+![Untitled 218](../../assets/blog-assets/notion-migration/richardson-extrapolation-and-grid-convergence-index/Untitled%20218.png)
 
 Mesh convergence is one of the most important aspects of numerical analysis, so it is worth having tools like this to help explore your analysis. I hope you find it useful.

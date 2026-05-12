@@ -8,7 +8,7 @@ year: 2025
 order: 2
 date: "2025-07-29"
 sleepLocation: "Zermatt"
-heroImage: "/adventures/assets/2025-switzerland/day-02-chamonix-to-zermatt-via-emosson-dam-01.webp"
+heroImage: "../../../assets/adventures/assets/2025-switzerland/day-02-chamonix-to-zermatt-via-emosson-dam-01.webp"
 ---
 ## Travel Log
 
@@ -28,46 +28,46 @@ After marvelling at the apartment and the size of the balcony, we then headed in
 
 We were back in time for the kids to go in the hot tub, though I still haven’t found where the nudest sauna is…
 
-![](/adventures/assets/2025-switzerland/day-02-chamonix-to-zermatt-via-emosson-dam-02.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-02-chamonix-to-zermatt-via-emosson-dam-02.webp)
 
-![](/adventures/assets/2025-switzerland/day-02-chamonix-to-zermatt-via-emosson-dam-03.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-02-chamonix-to-zermatt-via-emosson-dam-03.webp)
 
-![](/adventures/assets/2025-switzerland/day-02-chamonix-to-zermatt-via-emosson-dam-04.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-02-chamonix-to-zermatt-via-emosson-dam-04.webp)
 
-![](/adventures/assets/2025-switzerland/day-02-chamonix-to-zermatt-via-emosson-dam-05.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-02-chamonix-to-zermatt-via-emosson-dam-05.webp)
 
-![](/adventures/assets/2025-switzerland/day-02-chamonix-to-zermatt-via-emosson-dam-06.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-02-chamonix-to-zermatt-via-emosson-dam-06.webp)
 
-![](/adventures/assets/2025-switzerland/day-02-chamonix-to-zermatt-via-emosson-dam-07.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-02-chamonix-to-zermatt-via-emosson-dam-07.webp)
 
-![](/adventures/assets/2025-switzerland/day-02-chamonix-to-zermatt-via-emosson-dam-08.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-02-chamonix-to-zermatt-via-emosson-dam-08.webp)
 
-![](/adventures/assets/2025-switzerland/day-02-chamonix-to-zermatt-via-emosson-dam-09.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-02-chamonix-to-zermatt-via-emosson-dam-09.webp)
 
-![](/adventures/assets/2025-switzerland/day-02-chamonix-to-zermatt-via-emosson-dam-10.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-02-chamonix-to-zermatt-via-emosson-dam-10.webp)
 
-![](/adventures/assets/2025-switzerland/day-02-chamonix-to-zermatt-via-emosson-dam-11.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-02-chamonix-to-zermatt-via-emosson-dam-11.webp)
 
-![](/adventures/assets/2025-switzerland/day-02-chamonix-to-zermatt-via-emosson-dam-12.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-02-chamonix-to-zermatt-via-emosson-dam-12.webp)
 
-![](/adventures/assets/2025-switzerland/day-02-chamonix-to-zermatt-via-emosson-dam-13.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-02-chamonix-to-zermatt-via-emosson-dam-13.webp)
 
-![](/adventures/assets/2025-switzerland/day-02-chamonix-to-zermatt-via-emosson-dam-14.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-02-chamonix-to-zermatt-via-emosson-dam-14.webp)
 
-![](/adventures/assets/2025-switzerland/day-02-chamonix-to-zermatt-via-emosson-dam-15.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-02-chamonix-to-zermatt-via-emosson-dam-15.webp)
 
-![](/adventures/assets/2025-switzerland/day-02-chamonix-to-zermatt-via-emosson-dam-16.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-02-chamonix-to-zermatt-via-emosson-dam-16.webp)
 
-![](/adventures/assets/2025-switzerland/day-02-chamonix-to-zermatt-via-emosson-dam-17.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-02-chamonix-to-zermatt-via-emosson-dam-17.webp)
 
-![](/adventures/assets/2025-switzerland/day-02-chamonix-to-zermatt-via-emosson-dam-18.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-02-chamonix-to-zermatt-via-emosson-dam-18.webp)
 
-![](/adventures/assets/2025-switzerland/day-02-chamonix-to-zermatt-via-emosson-dam-19.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-02-chamonix-to-zermatt-via-emosson-dam-19.webp)
 
-![](/adventures/assets/2025-switzerland/day-02-chamonix-to-zermatt-via-emosson-dam-20.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-02-chamonix-to-zermatt-via-emosson-dam-20.webp)
 
-![](/adventures/assets/2025-switzerland/day-02-chamonix-to-zermatt-via-emosson-dam-21.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-02-chamonix-to-zermatt-via-emosson-dam-21.webp)
 
-![](/adventures/assets/2025-switzerland/day-02-chamonix-to-zermatt-via-emosson-dam-22.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-02-chamonix-to-zermatt-via-emosson-dam-22.webp)
 
-![](/adventures/assets/2025-switzerland/day-02-chamonix-to-zermatt-via-emosson-dam-23.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-02-chamonix-to-zermatt-via-emosson-dam-23.webp)

@@ -4,7 +4,7 @@ description: "What is Barefoot or Minimalist Running?"
 pubDate: 2012-01-20
 updatedDate: 2022-05-13
 tags: ["Running", "Productivity"]
-heroImage: "/blog-assets/notion-migration/barefoot-running/2012-11-03_11-43-56_P1090933.jpg"
+heroImage: "../../assets/blog-assets/notion-migration/barefoot-running/2012-11-03_11-43-56_P1090933.jpg"
 ---
 
 ## What is Barefoot or Minimalist Running?
@@ -19,7 +19,7 @@ Improving running form is brilliant for improving running economy – who doesn�
 
 Good running form also has the benefit of reducing common running injuries such as runners knee and plantar fasciitis. The foot has perfectly evolved with an arch (one of the strongest structure in nature and in engineering) and doesn’t need supporting underneath. In fact, the engineer in me knows that if you prop an arch in the middle it will transfer the load in a completely different way. This can cause muscle imbalance leading to foot weakness and injuries. There has been a lot of research which has shown no correlation between cushioned and supportive running shoes and prevention of injuries. So at the least you are wasting your money on expensive shoes.
 
-![Barefoot running is great for teaching running form](/blog-assets/notion-migration/barefoot-running/2012-11-03_11-43-56_P1090933.jpg)
+![Barefoot running is great for teaching running form](../../assets/blog-assets/notion-migration/barefoot-running/2012-11-03_11-43-56_P1090933.jpg)
 
 ## How to Get Started
 
@@ -29,7 +29,7 @@ Think about keeping your cadence (leg turnover) high (around 180 steps per minut
 
 For me, I now don’t own a pair of “normal” running shoes. I train totally barefoot or in my homemade sandals to work on form and lower leg strength for my easy runs, and do all the rest in lightweight racing flats which are cheap, light, and have little cushioning and no support.
 
-![Homemade running sandals](/blog-assets/notion-migration/barefoot-running/2012-11-03_11-47-59_P1100023.jpg)
+![Homemade running sandals](../../assets/blog-assets/notion-migration/barefoot-running/2012-11-03_11-47-59_P1100023.jpg)
 
 ## Common Concerns
 

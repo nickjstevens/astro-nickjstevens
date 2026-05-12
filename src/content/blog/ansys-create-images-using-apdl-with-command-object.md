@@ -4,7 +4,7 @@ description: "If you already know how to leverage the power of ANSYS APDL, then 
 pubDate: 2020-09-27
 updatedDate: 2022-05-13
 tags: ["Engineering", "ANSYS"]
-heroImage: "/blog-assets/notion-migration/ansys-create-images-using-apdl-with-command-object/Untitled 242.png"
+heroImage: "../../assets/blog-assets/notion-migration/ansys-create-images-using-apdl-with-command-object/Untitled 242.png"
 ---
 
 If you already know how to leverage the power of ANSYS APDL, then using a Command Object to create images is very helpful. This is particularly useful if you already have APDL scripts for creating screenshots but are using Workbench for a job.
@@ -217,10 +217,10 @@ The above script outputs a number of images and uses defined contour limits to g
 
 The following screenshots show what you see in Mechanical:
 
-![Untitled 242](/blog-assets/notion-migration/ansys-create-images-using-apdl-with-command-object/Untitled%20242.png)
+![Untitled 242](../../assets/blog-assets/notion-migration/ansys-create-images-using-apdl-with-command-object/Untitled%20242.png)
 
-![Untitled 243](/blog-assets/notion-migration/ansys-create-images-using-apdl-with-command-object/Untitled%20243.png)
+![Untitled 243](../../assets/blog-assets/notion-migration/ansys-create-images-using-apdl-with-command-object/Untitled%20243.png)
 
 And this screenshot shows the image files in the analysis directory:
 
-![Untitled 244](/blog-assets/notion-migration/ansys-create-images-using-apdl-with-command-object/Untitled%20244.png)
+![Untitled 244](../../assets/blog-assets/notion-migration/ansys-create-images-using-apdl-with-command-object/Untitled%20244.png)

@@ -12,14 +12,14 @@ activitiesAm: "Apple/google campus"
 activitiesPm: "Flight"
 activitiesEvening: "Flight"
 accommodation: "Flight"
-heroImage: "/adventures/assets/2024-usa/day-26-silicon-valley-01.webp"
+heroImage: "../../../assets/adventures/assets/2024-usa/day-26-silicon-valley-01.webp"
 ---
 ## Travel Log
 
 Overall we drove 2,840 miles over the 3.5 weeks or so.
 
-![Googleplex](/adventures/assets/2024-usa/day-26-silicon-valley-02.webp)
+![Googleplex](../../../assets/adventures/assets/2024-usa/day-26-silicon-valley-02.webp)
 
-![](/adventures/assets/2024-usa/day-26-silicon-valley-03.webp)
+![](../../../assets/adventures/assets/2024-usa/day-26-silicon-valley-03.webp)
 
-![Apple Campus](/adventures/assets/2024-usa/day-26-silicon-valley-04.webp)
+![Apple Campus](../../../assets/adventures/assets/2024-usa/day-26-silicon-valley-04.webp)

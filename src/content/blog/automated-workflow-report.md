@@ -4,7 +4,7 @@ description: "Previously I posted about creating an automated analysis workflow 
 pubDate: 2019-06-22
 updatedDate: 2022-05-13
 tags: ["Engineering", "Simulation"]
-heroImage: "/blog-assets/notion-migration/automated-workflow-report/Untitled 245.png"
+heroImage: "../../assets/blog-assets/notion-migration/automated-workflow-report/Untitled 245.png"
 ---
 
 Previously I posted about creating an automated analysis workflow using the concept of a [Directed Acyclic Graph](https://en.wikipedia.org/wiki/Directed_acyclic_graph) (DAG). This is implemented using the Python package [snakemake](https://snakemake.readthedocs.io/en/stable/). The previous post on creating an analysis workflow can be found [Snakemake Analysis Workflow Management](https://www.nickjstevens.com/blog/snakemake-analysis-workflow-management/).
@@ -13,7 +13,7 @@ This concept can be extended further by including an automated workflow report a
 
 The image below is an example of a simple automated workflow report. It can include graphics (in the case below the entire DAG is printed), text, mathematical expressions, etc. The report is in html format. The goal should be to encapsulate the entire workflow process as a DAG, so that all dependencies are explicitly captured and everything is automated. Whilst my focus is on applying this to engineering simulation, this approach could also apply to “traditional” engineering such as code assessments and other forms of hand calculations. Anything that has dependencies (results, masses, parameters, material properties, …) and that processes results in a way that would benefit from removing manual interaction is a prime candidate for improvement. If the entire workflow is automated, including the final report, then if an error is found or a parameter in the analysis needs updating, then one change is all that is needed to reproduce the entirety of the work. Compare this to how long it would take to change (say) a material property in a number of analyses, rerun manually, extract results manually, combine results to give a summary, and finally copy and paste model screenshots, result summaries etc to a final report…!
 
-![Untitled 245](/blog-assets/notion-migration/automated-workflow-report/Untitled%20245.png)
+![Untitled 245](../../assets/blog-assets/notion-migration/automated-workflow-report/Untitled%20245.png)
 
 Automated Analysis Report
 

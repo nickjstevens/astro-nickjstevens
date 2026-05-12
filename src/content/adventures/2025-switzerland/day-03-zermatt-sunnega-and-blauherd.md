@@ -8,7 +8,7 @@ year: 2025
 order: 3
 date: "2025-07-30"
 sleepLocation: "Zermatt"
-heroImage: "/adventures/assets/2025-switzerland/day-03-zermatt-sunnega-and-blauherd-01.webp"
+heroImage: "../../../assets/adventures/assets/2025-switzerland/day-03-zermatt-sunnega-and-blauherd-01.webp"
 ---
 ## Travel Log
 
@@ -22,56 +22,56 @@ Back in town we picked up some food for dinner (rotisserie chicken, corn on the 
 
 Of course we still had time for the hot tub before dinner, and I found the sauna too for 10 minutes of solitude without kids.
 
-![](/adventures/assets/2025-switzerland/day-03-zermatt-sunnega-and-blauherd-02.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-03-zermatt-sunnega-and-blauherd-02.webp)
 
-![](/adventures/assets/2025-switzerland/day-03-zermatt-sunnega-and-blauherd-03.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-03-zermatt-sunnega-and-blauherd-03.webp)
 
-![](/adventures/assets/2025-switzerland/day-03-zermatt-sunnega-and-blauherd-04.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-03-zermatt-sunnega-and-blauherd-04.webp)
 
-![](/adventures/assets/2025-switzerland/day-03-zermatt-sunnega-and-blauherd-05.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-03-zermatt-sunnega-and-blauherd-05.webp)
 
-![](/adventures/assets/2025-switzerland/day-03-zermatt-sunnega-and-blauherd-06.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-03-zermatt-sunnega-and-blauherd-06.webp)
 
-![](/adventures/assets/2025-switzerland/day-03-zermatt-sunnega-and-blauherd-07.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-03-zermatt-sunnega-and-blauherd-07.webp)
 
-![](/adventures/assets/2025-switzerland/day-03-zermatt-sunnega-and-blauherd-08.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-03-zermatt-sunnega-and-blauherd-08.webp)
 
-![](/adventures/assets/2025-switzerland/day-03-zermatt-sunnega-and-blauherd-09.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-03-zermatt-sunnega-and-blauherd-09.webp)
 
-![](/adventures/assets/2025-switzerland/day-03-zermatt-sunnega-and-blauherd-10.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-03-zermatt-sunnega-and-blauherd-10.webp)
 
-![](/adventures/assets/2025-switzerland/day-03-zermatt-sunnega-and-blauherd-11.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-03-zermatt-sunnega-and-blauherd-11.webp)
 
-![](/adventures/assets/2025-switzerland/day-03-zermatt-sunnega-and-blauherd-12.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-03-zermatt-sunnega-and-blauherd-12.webp)
 
-![](/adventures/assets/2025-switzerland/day-03-zermatt-sunnega-and-blauherd-13.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-03-zermatt-sunnega-and-blauherd-13.webp)
 
-![](/adventures/assets/2025-switzerland/day-03-zermatt-sunnega-and-blauherd-14.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-03-zermatt-sunnega-and-blauherd-14.webp)
 
-![](/adventures/assets/2025-switzerland/day-03-zermatt-sunnega-and-blauherd-15.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-03-zermatt-sunnega-and-blauherd-15.webp)
 
-![](/adventures/assets/2025-switzerland/day-03-zermatt-sunnega-and-blauherd-16.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-03-zermatt-sunnega-and-blauherd-16.webp)
 
 []()
 
-![](/adventures/assets/2025-switzerland/day-03-zermatt-sunnega-and-blauherd-17.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-03-zermatt-sunnega-and-blauherd-17.webp)
 
-![](/adventures/assets/2025-switzerland/day-03-zermatt-sunnega-and-blauherd-18.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-03-zermatt-sunnega-and-blauherd-18.webp)
 
-![](/adventures/assets/2025-switzerland/day-03-zermatt-sunnega-and-blauherd-19.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-03-zermatt-sunnega-and-blauherd-19.webp)
 
-![](/adventures/assets/2025-switzerland/day-03-zermatt-sunnega-and-blauherd-20.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-03-zermatt-sunnega-and-blauherd-20.webp)
 
-![](/adventures/assets/2025-switzerland/day-03-zermatt-sunnega-and-blauherd-21.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-03-zermatt-sunnega-and-blauherd-21.webp)
 
-![](/adventures/assets/2025-switzerland/day-03-zermatt-sunnega-and-blauherd-22.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-03-zermatt-sunnega-and-blauherd-22.webp)
 
-![](/adventures/assets/2025-switzerland/day-03-zermatt-sunnega-and-blauherd-23.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-03-zermatt-sunnega-and-blauherd-23.webp)
 
-![](/adventures/assets/2025-switzerland/day-03-zermatt-sunnega-and-blauherd-24.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-03-zermatt-sunnega-and-blauherd-24.webp)
 
-![](/adventures/assets/2025-switzerland/day-03-zermatt-sunnega-and-blauherd-25.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-03-zermatt-sunnega-and-blauherd-25.webp)
 
-![](/adventures/assets/2025-switzerland/day-03-zermatt-sunnega-and-blauherd-26.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-03-zermatt-sunnega-and-blauherd-26.webp)
 
-![](/adventures/assets/2025-switzerland/day-03-zermatt-sunnega-and-blauherd-27.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-03-zermatt-sunnega-and-blauherd-27.webp)

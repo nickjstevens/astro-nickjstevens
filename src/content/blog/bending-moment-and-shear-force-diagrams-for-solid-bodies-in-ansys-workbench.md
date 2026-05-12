@@ -4,7 +4,7 @@ description: "Bending Moment and Shear Force Diagrams for Solid Bodies in ANSYS 
 pubDate: 2019-07-03
 updatedDate: 2022-05-13
 tags: ["Engineering", "ANSYS"]
-heroImage: "/blog-assets/notion-migration/bending-moment-and-shear-force-diagrams-for-solid-bodies-in-ansys-workbench/Untitled 232.png"
+heroImage: "../../assets/blog-assets/notion-migration/bending-moment-and-shear-force-diagrams-for-solid-bodies-in-ansys-workbench/Untitled 232.png"
 ---
 
 ## Bending Moment and Shear Force Diagrams for Solid Bodies in ANSYS Workbench
@@ -39,7 +39,7 @@ Here is the final Code Snippet for ANSYS Workbench. Insert a Code Snippet object
 
 And the actual Code Snippet to create bending moment and shear force diagrams of solid bodies in ANSYS Workbench is pasted below, but if you have issues copying it, download it below.
 
-[section_forces_moments_WB](/blog-assets/notion-migration/bending-moment-and-shear-force-diagrams-for-solid-bodies-in-ansys-workbench/section_forces_moments_WB.txt)
+[section_forces_moments_WB](../../assets/blog-assets/notion-migration/bending-moment-and-shear-force-diagrams-for-solid-bodies-in-ansys-workbench/section_forces_moments_WB.txt)
 
 ```plain text
 ! =======================================
@@ -304,23 +304,23 @@ allsel
 
 A test case is considered below, where the shear forces and bending moment diagrams are required for a shear pin:
 
-![Untitled 232](/blog-assets/notion-migration/bending-moment-and-shear-force-diagrams-for-solid-bodies-in-ansys-workbench/Untitled%20232.png)
+![Untitled 232](../../assets/blog-assets/notion-migration/bending-moment-and-shear-force-diagrams-for-solid-bodies-in-ansys-workbench/Untitled%20232.png)
 
 *Shear Pin*
 
 The Code Snippet is inserted and the input arguments entered:
 
-![Untitled 233](/blog-assets/notion-migration/bending-moment-and-shear-force-diagrams-for-solid-bodies-in-ansys-workbench/Untitled%20233.png)
+![Untitled 233](../../assets/blog-assets/notion-migration/bending-moment-and-shear-force-diagrams-for-solid-bodies-in-ansys-workbench/Untitled%20233.png)
 
 *Code Snippet Input Arguments*
 
 A number of plots are generated, as well as a text file with the full results:
 
-![Untitled 234](/blog-assets/notion-migration/bending-moment-and-shear-force-diagrams-for-solid-bodies-in-ansys-workbench/Untitled%20234.png)
+![Untitled 234](../../assets/blog-assets/notion-migration/bending-moment-and-shear-force-diagrams-for-solid-bodies-in-ansys-workbench/Untitled%20234.png)
 
 *Bending Moment and Shear Force Diagram Output*
 
-![Untitled 235](/blog-assets/notion-migration/bending-moment-and-shear-force-diagrams-for-solid-bodies-in-ansys-workbench/Untitled%20235.png)
+![Untitled 235](../../assets/blog-assets/notion-migration/bending-moment-and-shear-force-diagrams-for-solid-bodies-in-ansys-workbench/Untitled%20235.png)
 
 *Shear Force Diagram Output Plot*
 

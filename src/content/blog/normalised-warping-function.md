@@ -4,14 +4,14 @@ description: "SCI P057 (Ref 1) provides an excellent reference for warping and t
 pubDate: 2019-06-23
 updatedDate: 2022-05-13
 tags: ["Engineering", "ANSYS", "Simulation"]
-heroImage: "/blog-assets/notion-migration/normalised-warping-function/Untitled 228.png"
+heroImage: "../../assets/blog-assets/notion-migration/normalised-warping-function/Untitled 228.png"
 ---
 
 ## Warping and Torsion
 
 SCI P057 (Ref 1) provides an excellent reference for **warping and torsion of beams**. It contains useful formulas for standard I and channel sections. However, for non-standard sections, for example those built-up from a number of sections (like crane rail girders), it is difficult to obtain an analytical solution to the normalised warping function $W_{ns}$ and warping statical moment $S_{ws}$. These functions are required to calculate the warping normal stress and the warping shear stress respectively. The functions are based on the geometry of the section, but vary at any point on the section.
 
-![Untitled 228](/blog-assets/notion-migration/normalised-warping-function/Untitled%20228.png)
+![Untitled 228](../../assets/blog-assets/notion-migration/normalised-warping-function/Untitled%20228.png)
 
 Warping Stresses
 
@@ -35,13 +35,13 @@ The section is created in ANSYS of an arbitrary length and meshed with a solid m
 
 Displacements are output and processed in Excel to calculate the angle of twist. A typical plot of the angle vs. the distance along the member is shown in the figure below.
 
-![Untitled 229](/blog-assets/notion-migration/normalised-warping-function/Untitled%20229.png)
+![Untitled 229](../../assets/blog-assets/notion-migration/normalised-warping-function/Untitled%20229.png)
 
 *Angle of Twist vs. Distance Along the Member*
 
 Once the angle of twist with distance along the member is calculated this data can be curve fitted with a 3rd order polynomial. Excel can helpfully provide the polynomial coefficients which then means we can differentiate the angle function twice to get $\phi''$. As this is just an equation, we can helpfully plot this as a User Defined Function in ANSYS, as shown below.
 
-![Untitled 230](/blog-assets/notion-migration/normalised-warping-function/Untitled%20230.png)
+![Untitled 230](../../assets/blog-assets/notion-migration/normalised-warping-function/Untitled%20230.png)
 
 *Second Derivative of Angle of Twist*
 
@@ -51,7 +51,7 @@ $W_{ns}=\sigma_w/(E*\phi'')$
 
 $\sigma_w$ is just the SZ stress in this case as there are no other stresses in the axial direction except this normal warping stress. We can also plot the normalised warping function as a User Defined Function in ANSYS, as shown below.
 
-![Untitled 231](/blog-assets/notion-migration/normalised-warping-function/Untitled%20231.png)
+![Untitled 231](../../assets/blog-assets/notion-migration/normalised-warping-function/Untitled%20231.png)
 
 *Normalised Warping Function*
 

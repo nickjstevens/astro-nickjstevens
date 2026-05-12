@@ -8,7 +8,7 @@ year: 2025
 order: 7
 date: "2025-08-03"
 sleepLocation: "Zermatt"
-heroImage: "/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-01.webp"
+heroImage: "../../../assets/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-01.webp"
 ---
 ## Travel Log
 
@@ -28,82 +28,82 @@ Obligatory swim and hot tub followed by an evening stroll for gelato.
 
 Tonight is our last night in Zermatt and it’s been lovely. It’s a great town, and the fact that’s it’s car free makes it really accessible on foot, and good for the step count! Everyone has also been super friendly and welcoming, not to mention speaking impeccable English.
 
-![](/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-02.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-02.webp)
 
-![](/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-03.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-03.webp)
 
-![](/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-04.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-04.webp)
 
-![](/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-05.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-05.webp)
 
-![](/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-06.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-06.webp)
 
-![](/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-07.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-07.webp)
 
-![](/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-08.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-08.webp)
 
-![](/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-09.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-09.webp)
 
-![](/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-10.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-10.webp)
 
-![](/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-11.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-11.webp)
 
-![](/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-12.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-12.webp)
 
-![](/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-13.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-13.webp)
 
-![](/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-14.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-14.webp)
 
-![](/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-15.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-15.webp)
 
-![](/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-16.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-16.webp)
 
-![](/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-17.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-17.webp)
 
-![](/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-18.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-18.webp)
 
-![](/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-19.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-19.webp)
 
-![](/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-20.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-20.webp)
 
-![](/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-21.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-21.webp)
 
-![](/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-22.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-22.webp)
 
-![](/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-23.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-23.webp)
 
-![](/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-24.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-24.webp)
 
-![](/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-25.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-25.webp)
 
-![](/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-26.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-26.webp)
 
-![](/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-27.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-27.webp)
 
-![](/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-28.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-28.webp)
 
-![](/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-29.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-29.webp)
 
-![](/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-30.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-30.webp)
 
-![](/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-31.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-31.webp)
 
-![](/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-32.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-32.webp)
 
-![](/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-33.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-33.webp)
 
-![](/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-34.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-34.webp)
 
-![](/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-35.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-35.webp)
 
-![](/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-36.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-36.webp)
 
-![](/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-37.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-37.webp)
 
-![](/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-38.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-38.webp)
 
-![](/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-39.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-39.webp)
 
-![](/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-40.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-40.webp)
 
-![](/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-41.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-07-zermatt-gornergrat-41.webp)

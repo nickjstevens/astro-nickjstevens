@@ -8,7 +8,7 @@ year: 2025
 order: 6
 date: "2025-08-02"
 sleepLocation: "Zermatt"
-heroImage: "/adventures/assets/2025-switzerland/day-06-zermatt-pottering-in-town-01.webp"
+heroImage: "../../../assets/adventures/assets/2025-switzerland/day-06-zermatt-pottering-in-town-01.webp"
 ---
 ## Travel Log
 
@@ -24,36 +24,36 @@ Of course we had the mandatory gelato plus a swim.
 
 Jasper fell asleep at about 7pm after his first dose of antibiotics.
 
-![](/adventures/assets/2025-switzerland/day-06-zermatt-pottering-in-town-02.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-06-zermatt-pottering-in-town-02.webp)
 
-![](/adventures/assets/2025-switzerland/day-06-zermatt-pottering-in-town-03.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-06-zermatt-pottering-in-town-03.webp)
 
-![](/adventures/assets/2025-switzerland/day-06-zermatt-pottering-in-town-04.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-06-zermatt-pottering-in-town-04.webp)
 
-![](/adventures/assets/2025-switzerland/day-06-zermatt-pottering-in-town-05.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-06-zermatt-pottering-in-town-05.webp)
 
-![](/adventures/assets/2025-switzerland/day-06-zermatt-pottering-in-town-06.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-06-zermatt-pottering-in-town-06.webp)
 
-![](/adventures/assets/2025-switzerland/day-06-zermatt-pottering-in-town-07.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-06-zermatt-pottering-in-town-07.webp)
 
-![](/adventures/assets/2025-switzerland/day-06-zermatt-pottering-in-town-08.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-06-zermatt-pottering-in-town-08.webp)
 
-![](/adventures/assets/2025-switzerland/day-06-zermatt-pottering-in-town-09.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-06-zermatt-pottering-in-town-09.webp)
 
-![](/adventures/assets/2025-switzerland/day-06-zermatt-pottering-in-town-10.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-06-zermatt-pottering-in-town-10.webp)
 
-![](/adventures/assets/2025-switzerland/day-06-zermatt-pottering-in-town-11.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-06-zermatt-pottering-in-town-11.webp)
 
-![](/adventures/assets/2025-switzerland/day-06-zermatt-pottering-in-town-12.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-06-zermatt-pottering-in-town-12.webp)
 
-![](/adventures/assets/2025-switzerland/day-06-zermatt-pottering-in-town-13.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-06-zermatt-pottering-in-town-13.webp)
 
-![](/adventures/assets/2025-switzerland/day-06-zermatt-pottering-in-town-14.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-06-zermatt-pottering-in-town-14.webp)
 
-![](/adventures/assets/2025-switzerland/day-06-zermatt-pottering-in-town-15.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-06-zermatt-pottering-in-town-15.webp)
 
-![](/adventures/assets/2025-switzerland/day-06-zermatt-pottering-in-town-16.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-06-zermatt-pottering-in-town-16.webp)
 
-![](/adventures/assets/2025-switzerland/day-06-zermatt-pottering-in-town-17.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-06-zermatt-pottering-in-town-17.webp)
 
-![](/adventures/assets/2025-switzerland/day-06-zermatt-pottering-in-town-18.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-06-zermatt-pottering-in-town-18.webp)

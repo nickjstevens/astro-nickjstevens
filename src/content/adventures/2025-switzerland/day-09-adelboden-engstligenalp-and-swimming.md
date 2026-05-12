@@ -8,7 +8,7 @@ year: 2025
 order: 9
 date: "2025-08-05"
 sleepLocation: "Adelboden"
-heroImage: "/adventures/assets/2025-switzerland/day-09-adelboden-engstligenalp-and-swimming-01.webp"
+heroImage: "../../../assets/adventures/assets/2025-switzerland/day-09-adelboden-engstligenalp-and-swimming-01.webp"
 ---
 ## Travel Log
 
@@ -22,56 +22,56 @@ After a brief detour to the high street shops for some souvenirs and the kids pl
 
 Our fancy pants dinner was Italian themed tonight, with Nick eating a whole mini octopus.
 
-![](/adventures/assets/2025-switzerland/day-09-adelboden-engstligenalp-and-swimming-02.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-09-adelboden-engstligenalp-and-swimming-02.webp)
 
-![](/adventures/assets/2025-switzerland/day-09-adelboden-engstligenalp-and-swimming-03.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-09-adelboden-engstligenalp-and-swimming-03.webp)
 
-![](/adventures/assets/2025-switzerland/day-09-adelboden-engstligenalp-and-swimming-04.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-09-adelboden-engstligenalp-and-swimming-04.webp)
 
-![](/adventures/assets/2025-switzerland/day-09-adelboden-engstligenalp-and-swimming-05.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-09-adelboden-engstligenalp-and-swimming-05.webp)
 
-![](/adventures/assets/2025-switzerland/day-09-adelboden-engstligenalp-and-swimming-06.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-09-adelboden-engstligenalp-and-swimming-06.webp)
 
-![](/adventures/assets/2025-switzerland/day-09-adelboden-engstligenalp-and-swimming-07.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-09-adelboden-engstligenalp-and-swimming-07.webp)
 
-![](/adventures/assets/2025-switzerland/day-09-adelboden-engstligenalp-and-swimming-08.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-09-adelboden-engstligenalp-and-swimming-08.webp)
 
-![](/adventures/assets/2025-switzerland/day-09-adelboden-engstligenalp-and-swimming-09.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-09-adelboden-engstligenalp-and-swimming-09.webp)
 
-![](/adventures/assets/2025-switzerland/day-09-adelboden-engstligenalp-and-swimming-10.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-09-adelboden-engstligenalp-and-swimming-10.webp)
 
-![](/adventures/assets/2025-switzerland/day-09-adelboden-engstligenalp-and-swimming-11.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-09-adelboden-engstligenalp-and-swimming-11.webp)
 
-![](/adventures/assets/2025-switzerland/day-09-adelboden-engstligenalp-and-swimming-12.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-09-adelboden-engstligenalp-and-swimming-12.webp)
 
-![](/adventures/assets/2025-switzerland/day-09-adelboden-engstligenalp-and-swimming-13.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-09-adelboden-engstligenalp-and-swimming-13.webp)
 
-![](/adventures/assets/2025-switzerland/day-09-adelboden-engstligenalp-and-swimming-14.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-09-adelboden-engstligenalp-and-swimming-14.webp)
 
-![](/adventures/assets/2025-switzerland/day-09-adelboden-engstligenalp-and-swimming-15.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-09-adelboden-engstligenalp-and-swimming-15.webp)
 
-![](/adventures/assets/2025-switzerland/day-09-adelboden-engstligenalp-and-swimming-16.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-09-adelboden-engstligenalp-and-swimming-16.webp)
 
-![](/adventures/assets/2025-switzerland/day-09-adelboden-engstligenalp-and-swimming-17.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-09-adelboden-engstligenalp-and-swimming-17.webp)
 
-![](/adventures/assets/2025-switzerland/day-09-adelboden-engstligenalp-and-swimming-18.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-09-adelboden-engstligenalp-and-swimming-18.webp)
 
-![](/adventures/assets/2025-switzerland/day-09-adelboden-engstligenalp-and-swimming-19.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-09-adelboden-engstligenalp-and-swimming-19.webp)
 
-![](/adventures/assets/2025-switzerland/day-09-adelboden-engstligenalp-and-swimming-20.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-09-adelboden-engstligenalp-and-swimming-20.webp)
 
-![](/adventures/assets/2025-switzerland/day-09-adelboden-engstligenalp-and-swimming-21.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-09-adelboden-engstligenalp-and-swimming-21.webp)
 
-![](/adventures/assets/2025-switzerland/day-09-adelboden-engstligenalp-and-swimming-22.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-09-adelboden-engstligenalp-and-swimming-22.webp)
 
-![](/adventures/assets/2025-switzerland/day-09-adelboden-engstligenalp-and-swimming-23.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-09-adelboden-engstligenalp-and-swimming-23.webp)
 
-![](/adventures/assets/2025-switzerland/day-09-adelboden-engstligenalp-and-swimming-24.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-09-adelboden-engstligenalp-and-swimming-24.webp)
 
-![](/adventures/assets/2025-switzerland/day-09-adelboden-engstligenalp-and-swimming-25.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-09-adelboden-engstligenalp-and-swimming-25.webp)
 
-![](/adventures/assets/2025-switzerland/day-09-adelboden-engstligenalp-and-swimming-26.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-09-adelboden-engstligenalp-and-swimming-26.webp)
 
-![](/adventures/assets/2025-switzerland/day-09-adelboden-engstligenalp-and-swimming-27.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-09-adelboden-engstligenalp-and-swimming-27.webp)
 
-![](/adventures/assets/2025-switzerland/day-09-adelboden-engstligenalp-and-swimming-28.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-09-adelboden-engstligenalp-and-swimming-28.webp)

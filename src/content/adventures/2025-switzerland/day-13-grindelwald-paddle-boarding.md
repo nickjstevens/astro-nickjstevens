@@ -8,7 +8,7 @@ year: 2025
 order: 13
 date: "2025-08-09"
 sleepLocation: "Grindelwald"
-heroImage: "/adventures/assets/2025-switzerland/day-13-grindelwald-paddle-boarding-01.webp"
+heroImage: "../../../assets/adventures/assets/2025-switzerland/day-13-grindelwald-paddle-boarding-01.webp"
 ---
 ## Travel Log
 
@@ -26,46 +26,46 @@ It was stressful driving back to Grindelwald because the traffic was a nightmare
 
 Back at our chalet it was a quick dinner then to bed early.
 
-![](/adventures/assets/2025-switzerland/day-13-grindelwald-paddle-boarding-02.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-13-grindelwald-paddle-boarding-02.webp)
 
-![](/adventures/assets/2025-switzerland/day-13-grindelwald-paddle-boarding-03.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-13-grindelwald-paddle-boarding-03.webp)
 
-![](/adventures/assets/2025-switzerland/day-13-grindelwald-paddle-boarding-04.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-13-grindelwald-paddle-boarding-04.webp)
 
-![](/adventures/assets/2025-switzerland/day-13-grindelwald-paddle-boarding-05.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-13-grindelwald-paddle-boarding-05.webp)
 
-![](/adventures/assets/2025-switzerland/day-13-grindelwald-paddle-boarding-06.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-13-grindelwald-paddle-boarding-06.webp)
 
-![](/adventures/assets/2025-switzerland/day-13-grindelwald-paddle-boarding-07.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-13-grindelwald-paddle-boarding-07.webp)
 
-![](/adventures/assets/2025-switzerland/day-13-grindelwald-paddle-boarding-08.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-13-grindelwald-paddle-boarding-08.webp)
 
-![](/adventures/assets/2025-switzerland/day-13-grindelwald-paddle-boarding-09.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-13-grindelwald-paddle-boarding-09.webp)
 
-![](/adventures/assets/2025-switzerland/day-13-grindelwald-paddle-boarding-10.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-13-grindelwald-paddle-boarding-10.webp)
 
-![](/adventures/assets/2025-switzerland/day-13-grindelwald-paddle-boarding-11.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-13-grindelwald-paddle-boarding-11.webp)
 
-![](/adventures/assets/2025-switzerland/day-13-grindelwald-paddle-boarding-12.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-13-grindelwald-paddle-boarding-12.webp)
 
-![](/adventures/assets/2025-switzerland/day-13-grindelwald-paddle-boarding-13.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-13-grindelwald-paddle-boarding-13.webp)
 
-![](/adventures/assets/2025-switzerland/day-13-grindelwald-paddle-boarding-14.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-13-grindelwald-paddle-boarding-14.webp)
 
-![](/adventures/assets/2025-switzerland/day-13-grindelwald-paddle-boarding-15.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-13-grindelwald-paddle-boarding-15.webp)
 
-![](/adventures/assets/2025-switzerland/day-13-grindelwald-paddle-boarding-16.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-13-grindelwald-paddle-boarding-16.webp)
 
-![](/adventures/assets/2025-switzerland/day-13-grindelwald-paddle-boarding-17.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-13-grindelwald-paddle-boarding-17.webp)
 
-![](/adventures/assets/2025-switzerland/day-13-grindelwald-paddle-boarding-18.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-13-grindelwald-paddle-boarding-18.webp)
 
-![](/adventures/assets/2025-switzerland/day-13-grindelwald-paddle-boarding-19.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-13-grindelwald-paddle-boarding-19.webp)
 
-![](/adventures/assets/2025-switzerland/day-13-grindelwald-paddle-boarding-20.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-13-grindelwald-paddle-boarding-20.webp)
 
-![](/adventures/assets/2025-switzerland/day-13-grindelwald-paddle-boarding-21.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-13-grindelwald-paddle-boarding-21.webp)
 
-![](/adventures/assets/2025-switzerland/day-13-grindelwald-paddle-boarding-22.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-13-grindelwald-paddle-boarding-22.webp)
 
-![](/adventures/assets/2025-switzerland/day-13-grindelwald-paddle-boarding-23.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-13-grindelwald-paddle-boarding-23.webp)

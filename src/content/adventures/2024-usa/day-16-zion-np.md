@@ -12,7 +12,7 @@ activitiesAm: "Bryce/Zion"
 activitiesPm: "Bryce/Zion"
 drivingTime: "1.25 hours"
 accommodation: "Desert Pearl Inn"
-heroImage: "/adventures/assets/2024-usa/day-16-zion-np-01.webp"
+heroImage: "../../../assets/adventures/assets/2024-usa/day-16-zion-np-01.webp"
 ---
 ## Travel Log
 
@@ -24,37 +24,37 @@ Springdale was a lovely little town and the Bumbleberry shop and ice cream place
 
 Once we were home for the day we were glad to escape the heat in the hotel pool. Unfortunately our ‘self catered’ hotel room was really just a microwave and fridge and it was difficult to book the food we had arrived with. We ended up trying to make pasta in a microwave and eating left overs.
 
-![Buffalo grazing](/adventures/assets/2024-usa/day-16-zion-np-02.webp)
+![Buffalo grazing](../../../assets/adventures/assets/2024-usa/day-16-zion-np-02.webp)
 
-![Thea’s new bunny, Melody](/adventures/assets/2024-usa/day-16-zion-np-03.webp)
+![Thea’s new bunny, Melody](../../../assets/adventures/assets/2024-usa/day-16-zion-np-03.webp)
 
-![Checkerboard Mesa](/adventures/assets/2024-usa/day-16-zion-np-04.webp)
+![Checkerboard Mesa](../../../assets/adventures/assets/2024-usa/day-16-zion-np-04.webp)
 
-![Enjoying the slickrock](/adventures/assets/2024-usa/day-16-zion-np-05.webp)
+![Enjoying the slickrock](../../../assets/adventures/assets/2024-usa/day-16-zion-np-05.webp)
 
-![](/adventures/assets/2024-usa/day-16-zion-np-06.webp)
+![](../../../assets/adventures/assets/2024-usa/day-16-zion-np-06.webp)
 
-<video controls playsinline preload="metadata" aria-label="Cartwheels" src="/adventures/assets/2024-usa/day-16-zion-np-07.mov"></video>
+<video controls playsinline preload="metadata" aria-label="Cartwheels" src="../../../assets/adventures/assets/2024-usa/day-16-zion-np-07.mov"></video>
 
-![](/adventures/assets/2024-usa/day-16-zion-np-08.webp)
+![](../../../assets/adventures/assets/2024-usa/day-16-zion-np-08.webp)
 
-![In Zion National Park](/adventures/assets/2024-usa/day-16-zion-np-09.webp)
+![In Zion National Park](../../../assets/adventures/assets/2024-usa/day-16-zion-np-09.webp)
 
-![](/adventures/assets/2024-usa/day-16-zion-np-10.webp)
+![](../../../assets/adventures/assets/2024-usa/day-16-zion-np-10.webp)
 
-![Lunch at MeMe’s in Springdale](/adventures/assets/2024-usa/day-16-zion-np-11.webp)
+![Lunch at MeMe’s in Springdale](../../../assets/adventures/assets/2024-usa/day-16-zion-np-11.webp)
 
-![More cartwheels, this time on the lawn at Zion Lodge](/adventures/assets/2024-usa/day-16-zion-np-12.webp)
+![More cartwheels, this time on the lawn at Zion Lodge](../../../assets/adventures/assets/2024-usa/day-16-zion-np-12.webp)
 
-![Flowering prickly pear cactus](/adventures/assets/2024-usa/day-16-zion-np-13.webp)
+![Flowering prickly pear cactus](../../../assets/adventures/assets/2024-usa/day-16-zion-np-13.webp)
 
-![Great ice cream at Bumbleberry](/adventures/assets/2024-usa/day-16-zion-np-14.webp)
+![Great ice cream at Bumbleberry](../../../assets/adventures/assets/2024-usa/day-16-zion-np-14.webp)
 
-![](/adventures/assets/2024-usa/day-16-zion-np-15.webp)
+![](../../../assets/adventures/assets/2024-usa/day-16-zion-np-15.webp)
 
-![Enjoying the pool](/adventures/assets/2024-usa/day-16-zion-np-16.webp)
+![Enjoying the pool](../../../assets/adventures/assets/2024-usa/day-16-zion-np-16.webp)
 
-![Zion Lodge](/adventures/assets/2024-usa/day-16-zion-np-17.webp)
+![Zion Lodge](../../../assets/adventures/assets/2024-usa/day-16-zion-np-17.webp)
 
 Accommodation:
 

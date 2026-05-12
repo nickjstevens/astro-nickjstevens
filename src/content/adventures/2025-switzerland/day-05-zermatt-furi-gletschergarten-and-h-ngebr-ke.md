@@ -8,7 +8,7 @@ year: 2025
 order: 5
 date: "2025-08-01"
 sleepLocation: "Zermatt"
-heroImage: "/adventures/assets/2025-switzerland/day-05-zermatt-furi-gletschergarten-and-h-ngebr-ke-01.webp"
+heroImage: "../../../assets/adventures/assets/2025-switzerland/day-05-zermatt-furi-gletschergarten-and-h-ngebr-ke-01.webp"
 ---
 ## Travel Log
 
@@ -26,56 +26,56 @@ Back in town and with weary feet we recharged with an ice cream and a stop in th
 
 Of course, it was time for a swim when we got back to the apartment.
 
-![](/adventures/assets/2025-switzerland/day-05-zermatt-furi-gletschergarten-and-h-ngebr-ke-02.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-05-zermatt-furi-gletschergarten-and-h-ngebr-ke-02.webp)
 
-![](/adventures/assets/2025-switzerland/day-05-zermatt-furi-gletschergarten-and-h-ngebr-ke-03.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-05-zermatt-furi-gletschergarten-and-h-ngebr-ke-03.webp)
 
-![](/adventures/assets/2025-switzerland/day-05-zermatt-furi-gletschergarten-and-h-ngebr-ke-04.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-05-zermatt-furi-gletschergarten-and-h-ngebr-ke-04.webp)
 
-![](/adventures/assets/2025-switzerland/day-05-zermatt-furi-gletschergarten-and-h-ngebr-ke-05.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-05-zermatt-furi-gletschergarten-and-h-ngebr-ke-05.webp)
 
-![](/adventures/assets/2025-switzerland/day-05-zermatt-furi-gletschergarten-and-h-ngebr-ke-06.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-05-zermatt-furi-gletschergarten-and-h-ngebr-ke-06.webp)
 
-![](/adventures/assets/2025-switzerland/day-05-zermatt-furi-gletschergarten-and-h-ngebr-ke-07.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-05-zermatt-furi-gletschergarten-and-h-ngebr-ke-07.webp)
 
-![](/adventures/assets/2025-switzerland/day-05-zermatt-furi-gletschergarten-and-h-ngebr-ke-08.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-05-zermatt-furi-gletschergarten-and-h-ngebr-ke-08.webp)
 
-![](/adventures/assets/2025-switzerland/day-05-zermatt-furi-gletschergarten-and-h-ngebr-ke-09.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-05-zermatt-furi-gletschergarten-and-h-ngebr-ke-09.webp)
 
-![](/adventures/assets/2025-switzerland/day-05-zermatt-furi-gletschergarten-and-h-ngebr-ke-10.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-05-zermatt-furi-gletschergarten-and-h-ngebr-ke-10.webp)
 
-![](/adventures/assets/2025-switzerland/day-05-zermatt-furi-gletschergarten-and-h-ngebr-ke-11.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-05-zermatt-furi-gletschergarten-and-h-ngebr-ke-11.webp)
 
-![](/adventures/assets/2025-switzerland/day-05-zermatt-furi-gletschergarten-and-h-ngebr-ke-12.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-05-zermatt-furi-gletschergarten-and-h-ngebr-ke-12.webp)
 
-![](/adventures/assets/2025-switzerland/day-05-zermatt-furi-gletschergarten-and-h-ngebr-ke-13.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-05-zermatt-furi-gletschergarten-and-h-ngebr-ke-13.webp)
 
-![](/adventures/assets/2025-switzerland/day-05-zermatt-furi-gletschergarten-and-h-ngebr-ke-14.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-05-zermatt-furi-gletschergarten-and-h-ngebr-ke-14.webp)
 
-![](/adventures/assets/2025-switzerland/day-05-zermatt-furi-gletschergarten-and-h-ngebr-ke-15.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-05-zermatt-furi-gletschergarten-and-h-ngebr-ke-15.webp)
 
-![](/adventures/assets/2025-switzerland/day-05-zermatt-furi-gletschergarten-and-h-ngebr-ke-16.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-05-zermatt-furi-gletschergarten-and-h-ngebr-ke-16.webp)
 
-![](/adventures/assets/2025-switzerland/day-05-zermatt-furi-gletschergarten-and-h-ngebr-ke-17.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-05-zermatt-furi-gletschergarten-and-h-ngebr-ke-17.webp)
 
-![](/adventures/assets/2025-switzerland/day-05-zermatt-furi-gletschergarten-and-h-ngebr-ke-18.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-05-zermatt-furi-gletschergarten-and-h-ngebr-ke-18.webp)
 
-![](/adventures/assets/2025-switzerland/day-05-zermatt-furi-gletschergarten-and-h-ngebr-ke-19.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-05-zermatt-furi-gletschergarten-and-h-ngebr-ke-19.webp)
 
-![](/adventures/assets/2025-switzerland/day-05-zermatt-furi-gletschergarten-and-h-ngebr-ke-20.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-05-zermatt-furi-gletschergarten-and-h-ngebr-ke-20.webp)
 
-![](/adventures/assets/2025-switzerland/day-05-zermatt-furi-gletschergarten-and-h-ngebr-ke-21.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-05-zermatt-furi-gletschergarten-and-h-ngebr-ke-21.webp)
 
-![](/adventures/assets/2025-switzerland/day-05-zermatt-furi-gletschergarten-and-h-ngebr-ke-22.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-05-zermatt-furi-gletschergarten-and-h-ngebr-ke-22.webp)
 
-![](/adventures/assets/2025-switzerland/day-05-zermatt-furi-gletschergarten-and-h-ngebr-ke-23.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-05-zermatt-furi-gletschergarten-and-h-ngebr-ke-23.webp)
 
-![](/adventures/assets/2025-switzerland/day-05-zermatt-furi-gletschergarten-and-h-ngebr-ke-24.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-05-zermatt-furi-gletschergarten-and-h-ngebr-ke-24.webp)
 
-![](/adventures/assets/2025-switzerland/day-05-zermatt-furi-gletschergarten-and-h-ngebr-ke-25.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-05-zermatt-furi-gletschergarten-and-h-ngebr-ke-25.webp)
 
-![](/adventures/assets/2025-switzerland/day-05-zermatt-furi-gletschergarten-and-h-ngebr-ke-26.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-05-zermatt-furi-gletschergarten-and-h-ngebr-ke-26.webp)
 
-![](/adventures/assets/2025-switzerland/day-05-zermatt-furi-gletschergarten-and-h-ngebr-ke-27.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-05-zermatt-furi-gletschergarten-and-h-ngebr-ke-27.webp)
 
-![](/adventures/assets/2025-switzerland/day-05-zermatt-furi-gletschergarten-and-h-ngebr-ke-28.webp)
+![](../../../assets/adventures/assets/2025-switzerland/day-05-zermatt-furi-gletschergarten-and-h-ngebr-ke-28.webp)

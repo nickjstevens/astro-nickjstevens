@@ -11,7 +11,7 @@ sleepLocation: "Springdale "
 activitiesAm: "Zion overlook trail"
 activitiesPm: "pool"
 accommodation: "Desert Pearl Inn"
-heroImage: "/adventures/assets/2024-usa/day-17-hiking-zion-01.webp"
+heroImage: "../../../assets/adventures/assets/2024-usa/day-17-hiking-zion-01.webp"
 ---
 ## Travel Log
 
@@ -21,25 +21,25 @@ We were back down by lunch where we were met with thunderstorms while playing in
 
 We walked into town for dinner at Porters, it was not great, but this was rectified with Bumbleberry’s ice cream and another dip in the pool after dinner - such a great way to entertain the kids for hours and relaxing for us.
 
-![Canyon Overlook trail](/adventures/assets/2024-usa/day-17-hiking-zion-02.webp)
+![Canyon Overlook trail](../../../assets/adventures/assets/2024-usa/day-17-hiking-zion-02.webp)
 
-![](/adventures/assets/2024-usa/day-17-hiking-zion-03.webp)
+![](../../../assets/adventures/assets/2024-usa/day-17-hiking-zion-03.webp)
 
-![The view from Canyon Overlook - not bad!](/adventures/assets/2024-usa/day-17-hiking-zion-04.webp)
+![The view from Canyon Overlook - not bad!](../../../assets/adventures/assets/2024-usa/day-17-hiking-zion-04.webp)
 
-![It was hot out](/adventures/assets/2024-usa/day-17-hiking-zion-05.webp)
+![It was hot out](../../../assets/adventures/assets/2024-usa/day-17-hiking-zion-05.webp)
 
-![](/adventures/assets/2024-usa/day-17-hiking-zion-06.webp)
+![](../../../assets/adventures/assets/2024-usa/day-17-hiking-zion-06.webp)
 
-![](/adventures/assets/2024-usa/day-17-hiking-zion-07.webp)
+![](../../../assets/adventures/assets/2024-usa/day-17-hiking-zion-07.webp)
 
-![](/adventures/assets/2024-usa/day-17-hiking-zion-08.webp)
+![](../../../assets/adventures/assets/2024-usa/day-17-hiking-zion-08.webp)
 
-![](/adventures/assets/2024-usa/day-17-hiking-zion-09.webp)
+![](../../../assets/adventures/assets/2024-usa/day-17-hiking-zion-09.webp)
 
-![](/adventures/assets/2024-usa/day-17-hiking-zion-10.webp)
+![](../../../assets/adventures/assets/2024-usa/day-17-hiking-zion-10.webp)
 
-![Afternoon thunderstorm by the pool](/adventures/assets/2024-usa/day-17-hiking-zion-11.webp)
+![Afternoon thunderstorm by the pool](../../../assets/adventures/assets/2024-usa/day-17-hiking-zion-11.webp)
 
 Accommodation:
 

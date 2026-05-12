@@ -4,7 +4,7 @@ description: "Any given analysis or simulation usually involves taking some inpu
 pubDate: 2019-06-21
 updatedDate: 2022-05-13
 tags: ["Engineering", "Simulation"]
-heroImage: "/blog-assets/notion-migration/snakemake-analysis-workflow-management/Untitled%20210.png"
+heroImage: "/blog-assets/notion-migration/snakemake-analysis-workflow-management/Untitled 210.png"
 ---
 
 Any given analysis or simulation usually involves taking some input data, creating loads cases, running a model, processing results, perhaps combining load cases into load combinations and then reporting on the results against the acceptance criteria. This is a workflow and can benefit significantly with the concept of **workflow management**. Workflow management is where a tool is used to manage the dependencies of each step in the simulation process, keeping track of the status of the inputs and outputs and only rerunning a downstream step when necessary.

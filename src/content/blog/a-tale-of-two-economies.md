@@ -3,7 +3,7 @@ title: "A Tale of Two Economies"
 description: "A Comparative Analysis of Gross Domestic Product and Private Product Remaining for the UK"
 pubDate: 2025-06-25
 updatedDate: 2025-06-25
-heroImage: "../../assets/GDP%20to%20PPR%20Gap.png"
+heroImage: "../../assets/GDP to PPR Gap.png"
 tags: ["Economics"]
 layout: '../../layouts/BlogPost.astro'
 ---

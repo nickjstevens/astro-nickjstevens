@@ -4,7 +4,7 @@ description: "Introduction to Warping of Open Sections"
 pubDate: 2019-06-20
 updatedDate: 2022-05-13
 tags: ["Engineering", "Simulation"]
-heroImage: "/blog-assets/notion-migration/beam-elements-with-warping-in-ansys-workbench/Untitled%20219.png"
+heroImage: "/blog-assets/notion-migration/beam-elements-with-warping-in-ansys-workbench/Untitled 219.png"
 ---
 
 ## Introduction to Warping of Open Sections

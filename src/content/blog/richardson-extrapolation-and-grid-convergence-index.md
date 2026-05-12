@@ -4,7 +4,7 @@ description: "Update December 2017 – Web App Version!"
 pubDate: 2019-06-17
 updatedDate: 2022-05-13
 tags: ["Engineering", "Simulation", "Software"]
-heroImage: "/blog-assets/notion-migration/richardson-extrapolation-and-grid-convergence-index/Untitled%20218.png"
+heroImage: "/blog-assets/notion-migration/richardson-extrapolation-and-grid-convergence-index/Untitled 218.png"
 ---
 
 ## Update December 2017 – Web App Version!

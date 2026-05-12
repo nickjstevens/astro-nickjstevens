@@ -4,7 +4,7 @@ description: "A while ago I was on the hunt for an Excel macro to create a list 
 pubDate: 2019-07-10
 updatedDate: 2022-05-13
 tags: ["Engineering", "Software"]
-heroImage: "/blog-assets/notion-migration/excel-combinations-macro/Untitled%20236.png"
+heroImage: "/blog-assets/notion-migration/excel-combinations-macro/Untitled 236.png"
 ---
 
 A while ago I was on the hunt for an Excel macro to create a list of all possible combinations of a number of variables. An example might be setting up load cases for finite element analysis where there are a number of variables or parameters which can have a range of values and a large number of possible combinations all the values. For example, a part might be subject to a “high”, “medium” or “low” load (3), and could have say four possible hole diameters (4) and three possible material specifications (3). The total number of unique combinations is 3*4*3=36. To write them all out for this simple example would not be too arduous, but if you had several more parameters, each with several possible values, then you can see how quickly the number of combinations can escalate.

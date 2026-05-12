@@ -4,7 +4,7 @@ description: "Seismic codes, for example ASCE 4 98, allow for peak broadening an
 pubDate: 2019-06-28
 updatedDate: 2022-05-13
 tags: ["Engineering", "Software", "Simulation"]
-heroImage: "/blog-assets/notion-migration/peak-broadening-of-secondary-response-spectra/Untitled%20256.png"
+heroImage: "/blog-assets/notion-migration/peak-broadening-of-secondary-response-spectra/Untitled 256.png"
 ---
 
 Seismic codes, for example ASCE 4-98, allow for peak broadening and lowering of in-structure secondary response spectra (SRS). This post captures an Excel user defined function (using VBA) that can peak broaden (and lower) a given secondary response spectra.

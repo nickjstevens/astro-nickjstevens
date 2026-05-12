@@ -4,7 +4,7 @@ description: "If you already know how to leverage the power of ANSYS APDL, then 
 pubDate: 2020-09-27
 updatedDate: 2022-05-13
 tags: ["Engineering", "ANSYS"]
-heroImage: "/blog-assets/notion-migration/ansys-create-images-using-apdl-with-command-object/Untitled%20242.png"
+heroImage: "/blog-assets/notion-migration/ansys-create-images-using-apdl-with-command-object/Untitled 242.png"
 ---
 
 If you already know how to leverage the power of ANSYS APDL, then using a Command Object to create images is very helpful. This is particularly useful if you already have APDL scripts for creating screenshots but are using Workbench for a job.

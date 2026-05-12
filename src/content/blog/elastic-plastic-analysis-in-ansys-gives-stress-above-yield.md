@@ -4,7 +4,7 @@ description: "If you’ve ever turned on bilinear elastic perfectly plastic prop
 pubDate: 2019-07-17
 updatedDate: 2022-05-13
 tags: ["Engineering", "ANSYS", "Simulation"]
-heroImage: "/blog-assets/notion-migration/elastic-plastic-analysis-in-ansys-gives-stress-above-yield/Untitled%20206.png"
+heroImage: "/blog-assets/notion-migration/elastic-plastic-analysis-in-ansys-gives-stress-above-yield/Untitled 206.png"
 ---
 
 If you’ve ever turned on bilinear elastic-perfectly-plastic properties, you may have wondered why sometimes an elastic-plastic analysis in ANSYS gives stress above yield.

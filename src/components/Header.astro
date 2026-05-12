@@ -31,7 +31,7 @@ const pricedInLinks = [
 					</summary>
 					<div class="site-dropdown-menu">
 						{pricedInLinks.map((link) => (
-							<a href={link.href} class:list={{ active: link.active }}>{link.label}</a>
+							<a href={link.href} class:list={{ active: link.active }} data-astro-reload>{link.label}</a>
 						))}
 					</div>
 				</details>
@@ -50,7 +50,7 @@ const pricedInLinks = [
 	</nav>
 </header>
 <script is:inline>
-	(() => {
+	document.addEventListener('astro:page-load', () => {
 		const storageKey = 'site-theme';
 		const root = document.documentElement;
 		const toggle = document.getElementById('site-theme-toggle');
@@ -80,5 +80,5 @@ const pricedInLinks = [
 		document.addEventListener('keydown', (event) => {
 			if (event.key === 'Escape') document.querySelectorAll('.site-dropdown[open]').forEach((dropdown) => dropdown.removeAttribute('open'));
 		});
-	})();
+	});
 </script>

@@ -1,7 +1,7 @@
 ---
 title: "Watch ANSYS Monitor Files Using Python"
 description: "A small Python script for watching the most recent ANSYS monitor file and printing progress as it updates."
-pubDate: 2026-05-10
+pubDate: 2022-05-13
 updatedDate: 2022-05-13
 tags: ["Engineering", "ANSYS", "Software"]
 heroImage: "../../assets/blog-placeholder-4.jpg"

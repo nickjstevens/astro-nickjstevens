@@ -1,7 +1,7 @@
 ---
 title: "Custom Excel VBA Function for SCI Bolted Joint Assessment"
 description: "Use a custom Excel VBA function to return alpha values for bolted joint assessments using SCI P207."
-pubDate: 2026-05-10
+pubDate: 2022-05-13
 updatedDate: 2022-05-13
 tags: ["Engineering", "Software"]
 heroImage: "/blog-assets/notion-migration/custom-excel-vba-function-for-sci-bolted-joint-assessment/Untitled%20209.png"

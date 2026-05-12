@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://nickjstevens.com/sitemap-index.xml

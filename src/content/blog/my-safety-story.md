@@ -4,6 +4,7 @@ description: "There is no single, universal definition of safety. Its personal. 
 pubDate: 2021-02-08
 updatedDate: 2025-07-13
 tags: ["Philosophy", "Engineering"]
+heroImage: "/blog-assets/notion-migration/my-safety-story/120BE644-B882-4BFB-B06D-6AC81239D02E.jpeg"
 ---
 
 There is no single, universal definition of safety. Its personal. It’s relative. Which is why I want to share a little personal safety story. Perhaps this acts as a catalyst to engage. Or perhaps it’s just some self catharsis in writing this down. Either way, mental health and wellbeing is the lens through which I look at safety. 

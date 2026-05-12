@@ -4,6 +4,7 @@ description: "Use a custom Excel VBA function to return alpha values for bolted 
 pubDate: 2026-05-10
 updatedDate: 2022-05-13
 tags: ["Engineering", "Software"]
+heroImage: "/blog-assets/notion-migration/custom-excel-vba-function-for-sci-bolted-joint-assessment/Untitled%20209.png"
 ---
 
 The principle of [DRY (Don’t Repeat Yourself)](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) is well-known in software engineering circles as a way of reusing code to make software easier to maintain, debug and check. We can use the same approach in engineering calculations by packaging a function so that it can be checked once, and reused many times.

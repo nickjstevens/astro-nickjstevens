@@ -3,7 +3,7 @@ title: "Saturday Blueprint on the Power of the Mind"
 description: "Saturday Blueprint on the power of the mind. Finding lessons in true survival stories. "
 pubDate: 2022-06-18
 updatedDate: 2022-06-18
-heroImage: "https://images.unsplash.com/photo-1476370648495-3533f64427a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDF8fERlYXRofGVufDB8fHx8MTY1NTUwMjUwMQ&ixlib=rb-1.2.1&q=80&w=2000"
+heroImage: "../../assets/images/2022/06/54B0E665-31B1-4F36-B9F8-019FF6301C51.jpeg"
 tags: ["Newsletter"]
 layout: '../../layouts/BlogPost.astro'
 ---

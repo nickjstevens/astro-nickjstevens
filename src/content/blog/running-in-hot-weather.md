@@ -4,6 +4,7 @@ description: "Here are a collection of old tips for handling the heat when runni
 pubDate: 2020-09-27
 updatedDate: 2022-05-13
 tags: ["Running"]
+heroImage: "/blog-assets/notion-migration/running-in-hot-weather/silas-baisch-VhnEBuVUdvY-unsplash.jpg"
 ---
 
 Here are a collection of old tips for handling the heat when running:

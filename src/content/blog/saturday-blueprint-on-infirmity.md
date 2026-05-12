@@ -3,7 +3,7 @@ title: "Saturday Blueprint on Infirmity"
 description: "On the infirmity of life through the lens of an ultra race. "
 pubDate: 2022-07-09
 updatedDate: 2022-07-09
-heroImage: "https://images.unsplash.com/photo-1534768654272-e97681c3a2c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDF8fEFnZXxlbnwwfHx8fDE2NTczMDQwMTU&ixlib=rb-1.2.1&q=80&w=2000"
+heroImage: "../../assets/images/2022/07/AF6FFCAC-81DF-495F-BF85-F08A2BE1D73A.jpeg"
 tags: ["Newsletter", "Running", "Philosophy"]
 layout: '../../layouts/BlogPost.astro'
 ---

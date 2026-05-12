@@ -3,7 +3,7 @@ title: "Saturday Blueprint on Great Books"
 description: "The timeless knowledge of truly great books"
 pubDate: 2022-07-16
 updatedDate: 2022-07-16
-heroImage: "https://images.unsplash.com/photo-1495446815901-a7297e633e8d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDJ8fGJvb2tzfGVufDB8fHx8MTY1NzkwNzgwNw&ixlib=rb-1.2.1&q=80&w=2000"
+heroImage: "../../assets/images/2022/07/2B7CD7A2-6B41-4994-86BA-8F5AB1FDD51E_1_201_a.jpeg"
 tags: ["Newsletter", "Philosophy"]
 layout: '../../layouts/BlogPost.astro'
 ---

@@ -19,4 +19,7 @@ export default defineConfig({
 		remarkPlugins: [remarkMath],
 		rehypePlugins: [rehypeKatex],
 	},
+	image: {
+		domains: ['images.unsplash.com', 'www.dietdoctor.com', 'www.datocms-assets.com'],
+	},
 });

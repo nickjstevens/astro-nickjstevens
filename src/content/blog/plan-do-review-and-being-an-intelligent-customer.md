@@ -4,6 +4,7 @@ description: "There are numerous “decision cycles”, as outlined on Wikipedia
 pubDate: 2019-06-25
 updatedDate: 2022-05-13
 tags: ["Productivity", "Engineering", "Creativity"]
+heroImage: "/blog-assets/notion-migration/plan-do-review-and-being-an-intelligent-customer/IMG_0594.png"
 ---
 
 There are numerous “decision cycles”, as outlined on [Wikipedia](https://en.m.wikipedia.org/wiki/Decision_cycle), including the famous Plan-Do-Check-Act (PDCA) from the quality bible ISO 9001, but I favour a simple 3-step model of **Plan-Do-Review**. I feel like the “Act” of PDCA is really a “Do” in disguise and therefore should be preceded by a Plan and then go into the Do loop for a continuous cycle. In other words PDCA feels like the “Acting” to make a change is done without Planning, if that makes sense...

@@ -3,7 +3,7 @@ title: "On the cold"
 description: "Over the last 18 months or so I’ve used Wim Hof Method breathing and cold therapy as way to improve my mental and physical health."
 pubDate: 2022-05-20
 updatedDate: 2022-05-20
-heroImage: "https://images.unsplash.com/photo-1457269449834-928af64c684d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDN8fGNvbGQlMjBzbm93Zmxha2V8ZW58MHx8fHwxNjUyODIwMDk3&ixlib=rb-1.2.1&q=80&w=2000"
+heroImage: "../../assets/images/2022/05/05EF73F4-5E49-4FAA-B505-1F1D7161C798.jpeg"
 tags: ["Philosophy", "Health"]
 layout: '../../layouts/BlogPost.astro'
 ---

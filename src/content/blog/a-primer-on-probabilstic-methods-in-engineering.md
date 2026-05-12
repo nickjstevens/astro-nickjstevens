@@ -3,7 +3,7 @@ title: "A Primer on Probabilistic Methods in Engineering - Part 1"
 description: "A high-level introduction to probabilistic methods in engineering"
 pubDate: 2020-12-01
 updatedDate: 2020-12-01
-heroImage: "https://images.unsplash.com/photo-1570303345338-e1f0eddf4946?q=80&w=1371&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+heroImage: "../../assets/images/notion/A%20Primer%20on%20Probabilistic%20Methods%20in%20Engineering%20-%20497cb266e3974548b96fccf017bc5d9d/F4560DE4-9630-4D1E-ACA3-CE7950597436.jpeg"
 tags: ["Engineering", "Simulation"]
 layout: '../../layouts/BlogPost.astro'
 ---

@@ -3,7 +3,7 @@ title: "Saturday Blueprint on the Principal-Agent Problem"
 description: "Builders as an example of the principal-agent problem. The mindfulness singularity - where all we have is this present moment. "
 pubDate: 2022-07-23
 updatedDate: 2022-07-23
-heroImage: "https://images.unsplash.com/photo-1637561696264-bca8c24878e5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDF8fGFsaWdubWVudHxlbnwwfHx8fDE2NTg1MDc4NTc&ixlib=rb-1.2.1&q=80&w=2000"
+heroImage: "../../assets/images/2022/07/FEE750B3-4C20-464A-9F88-D9E05A42548D_1_105_c.jpeg"
 tags: ["Newsletter", "Philosophy"]
 layout: '../../layouts/BlogPost.astro'
 ---

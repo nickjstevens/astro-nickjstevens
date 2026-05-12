@@ -4,6 +4,7 @@ description: "NAFEMS Stochastic Working Group Challenge Problems 01 and 02"
 pubDate: 2019-10-22
 updatedDate: 2022-05-13
 tags: ["Engineering", "Simulation", "Software"]
+heroImage: "/blog-assets/notion-migration/nafems-challenge-problems/Untitled%20249.png"
 ---
 
 ## NAFEMS Stochastic Working Group Challenge Problems 01 and 02

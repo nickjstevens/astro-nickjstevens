@@ -3,7 +3,7 @@ title: "Saturday Blueprint on Researching and Learning"
 description: "Find your love of learning"
 pubDate: 2023-06-24
 updatedDate: 2023-06-24
-heroImage: "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDJ8fGxlYXJuaW5nfGVufDB8fHx8MTY4NjkwMjc3MHww&ixlib=rb-4.0.3&q=80&w=2000"
+heroImage: "../../assets/images/2023/06/Duolingo_Sharing-1.png"
 tags: ["Newsletter", "Software", "Productivity"]
 layout: '../../layouts/BlogPost.astro'
 ---

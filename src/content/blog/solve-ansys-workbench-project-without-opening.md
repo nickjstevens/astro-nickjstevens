@@ -4,6 +4,7 @@ description: "If you have a remote Linux server that can be used for solving, bu
 pubDate: 2019-06-27
 updatedDate: 2022-05-13
 tags: ["Engineering", "ANSYS"]
+heroImage: "../../assets/blog-placeholder-3.jpg"
 ---
 
 If you have a remote Linux server that can be used for solving, but there is a big lag with the graphics, then this tip to solve a Workbench project without opening it may be useful.

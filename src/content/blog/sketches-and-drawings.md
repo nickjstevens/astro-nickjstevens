@@ -4,6 +4,7 @@ description: "A collection of drawings I’ve done."
 pubDate: 2022-03-19
 updatedDate: 2022-05-13
 tags: ["Creativity"]
+heroImage: "/blog-assets/notion-migration/sketches-and-drawings/5C04ED0A-668E-4441-8D46-B1EE5E96346C.jpeg"
 ---
 
 A collection of drawings I’ve done. 

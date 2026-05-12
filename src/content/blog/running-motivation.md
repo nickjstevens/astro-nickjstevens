@@ -4,6 +4,7 @@ description: "This is a collection of my favourite motivational running clips fr
 pubDate: 2019-10-20
 updatedDate: 2022-05-13
 tags: ["Running"]
+heroImage: "http://youtu.be/5D56ZAvcxN0"
 ---
 
 This is a collection of my favourite motivational running clips from around the web, and running quotes and words of wisdom. They are the perfect to watch the evening before a big race - really gets you in the zone and gives you some fresh mental imagery for the tough spots in the race.

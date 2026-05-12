@@ -3,7 +3,7 @@ title: "Saturday Blueprint on Dartmoor"
 description: "Everyone can benefit from time in nature. Dartmoor is one such open space that I find hugely uplifting. "
 pubDate: 2023-02-18
 updatedDate: 2023-02-18
-heroImage: "https://images.unsplash.com/photo-1615470602509-262bb542d35f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDN8fGRhcnRtb29yfGVufDB8fHx8MTY3NjA5OTc1Nw&ixlib=rb-4.0.3&q=80&w=2000"
+heroImage: "../../assets/images/2023/02/IMG_0911.jpeg"
 tags: ["Newsletter", "Running", "Nature"]
 layout: '../../layouts/BlogPost.astro'
 ---

@@ -4,6 +4,7 @@ description: "SCI P057 (Ref 1) provides an excellent reference for warping and t
 pubDate: 2019-06-23
 updatedDate: 2022-05-13
 tags: ["Engineering", "ANSYS", "Simulation"]
+heroImage: "/blog-assets/notion-migration/normalised-warping-function/Untitled%20228.png"
 ---
 
 ## Warping and Torsion

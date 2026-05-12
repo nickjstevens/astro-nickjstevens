@@ -4,6 +4,7 @@ description: "ANSYS Workbench allows you to plot the absolute stress error energ
 pubDate: 2019-06-24
 updatedDate: 2022-05-13
 tags: ["Engineering", "ANSYS"]
+heroImage: "/blog-assets/notion-migration/ansys-percentage-stress-error/Untitled%20246.png"
 ---
 
 ANSYS Workbench allows you to plot the absolute stress error energy (SERR), which is a measure of the discretisation error within the model. Error occurs for displacement-based problems because displacement compatibility is enforced resulting in a **continuous** displacement field from element to element, but a **discontinuous **stress field. To obtain more acceptable stresses, averaging of the element nodal stresses is done. The error due to this averaging can be quantified, which is how the stress error energy is calculated.

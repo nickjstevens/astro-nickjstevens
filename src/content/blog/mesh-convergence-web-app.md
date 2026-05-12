@@ -4,6 +4,7 @@ description: "Mesh convergence is one of the cornerstones of engineering verific
 pubDate: 2019-06-19
 updatedDate: 2022-05-13
 tags: ["Engineering", "Simulation"]
+heroImage: "/blog-assets/notion-migration/mesh-convergence-web-app/Untitled%20248.png"
 ---
 
 Mesh convergence is one of the cornerstones of engineering verification, and to provide users with the best tools I’m happy to launch my [Mesh Convergence Web App](https://www.nickjstevens.com/fea/richardson-extrapolation/). It’s free, easy and addresses a hugely important aspect of simulation governance. 

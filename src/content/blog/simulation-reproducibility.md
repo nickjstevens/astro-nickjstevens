@@ -4,6 +4,7 @@ description: "[!note] 📄 30 Second Summary : The overriding principle for impr
 pubDate: 2020-10-19
 updatedDate: 2022-05-13
 tags: ["Engineering", "Simulation"]
+heroImage: "/blog-assets/notion-migration/simulation-reproducibility/Untitled%20257.png"
 ---
 
 > [!note] 📄

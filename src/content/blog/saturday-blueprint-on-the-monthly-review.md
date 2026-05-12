@@ -3,7 +3,7 @@ title: "Saturday Blueprint on the Monthly Review"
 description: "My suggested prompts for a Monthly Review, plus my full Monthly Review template."
 pubDate: 2023-03-25
 updatedDate: 2023-03-25
-heroImage: "https://images.unsplash.com/photo-1630086444439-97f3e422cc13?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDExfHxtaXJyb3J8ZW58MHx8fHwxNjc4MDMyNDEw&ixlib=rb-4.0.3&q=80&w=2000"
+heroImage: "../../assets/images/2023/03/2023-03-02-06-29-15.jpeg"
 tags: ["Newsletter", "Productivity"]
 layout: '../../layouts/BlogPost.astro'
 ---

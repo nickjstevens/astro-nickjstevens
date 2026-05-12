@@ -4,6 +4,7 @@ description: "I listened to audiobook on Audible as of 2019 05 23 . Extreme Owne
 pubDate: 2019-06-27
 updatedDate: 2022-05-13
 tags: ["Productivity", "Books"]
+heroImage: "../../assets/blog-placeholder-1.jpg"
 ---
 
 ## Introduction and Context

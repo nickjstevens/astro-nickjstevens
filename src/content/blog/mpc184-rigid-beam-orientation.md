@@ -4,6 +4,7 @@ description: "In APDL, you can display the element coordinate system from the Sy
 pubDate: 2019-06-20
 updatedDate: 2022-05-13
 tags: ["Engineering", "ANSYS"]
+heroImage: "../../assets/blog-placeholder-2.jpg"
 ---
 
 In APDL, you can display the element coordinate system from the Symbols dialog box. However, there is a bug where for MPC184 rigid beam elements the displayed element coordinate system is not correct. This means it is not obvious which axis is which in terms of shear and bending moment output. I had previously raised this as a ticket with ANSYS help, and after investigating they confirmed that the default orientation (noting that MPC184 rigid beams do not use an orientation node) is the same as that of a BEAM188 without an orientation node.

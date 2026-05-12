@@ -4,6 +4,7 @@ description: "Controlling changes and keeping track of revisions of FE model fil
 pubDate: 2020-09-27
 updatedDate: 2022-05-13
 tags: ["Engineering", "ANSYS", "Simulation"]
+heroImage: "/blog-assets/notion-migration/svn-subversion-with-tortoisesvn-for-change-control/Untitled%20214.png"
 ---
 
 Controlling changes and keeping track of revisions of FE model files isn’t always easy, but I’d like to share how I use SVN subversion and the free Windows software TortoiseSVN to manage finite element model files (and even associated files like spreadsheets and documents). I use it particularly for ANSYS APDL files, which are generally a number of text files and perfect for management using SVN.

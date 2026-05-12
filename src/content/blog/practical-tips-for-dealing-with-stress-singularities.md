@@ -4,6 +4,7 @@ description: "Stress Singularities Introduction"
 pubDate: 2019-06-22
 updatedDate: 2022-05-13
 tags: ["Engineering", "Simulation"]
+heroImage: "/blog-assets/notion-migration/practical-tips-for-dealing-with-stress-singularities/Untitled%20222.png"
 ---
 
 ![Untitled 222](/blog-assets/notion-migration/practical-tips-for-dealing-with-stress-singularities/Untitled%20222.png)

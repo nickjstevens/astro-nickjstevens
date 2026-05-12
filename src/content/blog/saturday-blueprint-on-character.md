@@ -3,7 +3,7 @@ title: "Saturday Blueprint on Character"
 description: "Character is fate. I share my habits for strengthening character and building discipline. "
 pubDate: 2022-06-25
 updatedDate: 2022-06-25
-heroImage: "https://images.unsplash.com/photo-1447727214830-cbcbf097b52c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDN8fHJvb3NldmVsdHxlbnwwfHx8fDE2NTYwOTI1NTc&ixlib=rb-1.2.1&q=80&w=2000"
+heroImage: "../../assets/images/2022/06/dave-lowe-kkQ7oxgQKeM-unsplash.jpg"
 tags: ["Newsletter", "Philosophy"]
 layout: '../../layouts/BlogPost.astro'
 ---

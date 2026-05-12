@@ -3,7 +3,7 @@ title: "Saturday Blueprint on Contrast and Dichotomy"
 description: "An exploration of the dichotomies we see in everyday life and how to embrace imperfection. "
 pubDate: 2023-03-18
 updatedDate: 2023-03-18
-heroImage: "https://images.unsplash.com/photo-1535707798491-2303c91896a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDE1fHxtb3VudGFpbiUyMGFib3ZlJTIwY2xvdWR8ZW58MHx8fHwxNjc4MDMwNTIz&ixlib=rb-4.0.3&q=80&w=2000"
+heroImage: "../../assets/images/2023/03/annie-spratt-FNQbnOKvQ_k-unsplash.jpg"
 tags: ["Newsletter", "Philosophy"]
 layout: '../../layouts/BlogPost.astro'
 ---

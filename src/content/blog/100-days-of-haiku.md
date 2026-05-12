@@ -3,7 +3,7 @@ title: "100 days of haiku"
 description: "Haiku is a form of micro poetry; I did one haiku a day for 100 days and loved it"
 pubDate: 2022-05-27
 updatedDate: 2022-05-27
-heroImage: "https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDMzNXx8bGVhZiUyMGF1dHVtbnxlbnwwfHx8fDE2NTI4MjE4ODI&ixlib=rb-1.2.1&q=80&w=2000"
+heroImage: "../../assets/images/2022/05/25DEC2C0-E9AC-42B2-8DE3-16CBB8E95E09.jpeg"
 tags: ["Creativity"]
 layout: '../../layouts/BlogPost.astro'
 ---

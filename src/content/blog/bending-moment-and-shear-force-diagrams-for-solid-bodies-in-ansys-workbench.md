@@ -4,6 +4,7 @@ description: "Bending Moment and Shear Force Diagrams for Solid Bodies in ANSYS 
 pubDate: 2019-07-03
 updatedDate: 2022-05-13
 tags: ["Engineering", "ANSYS"]
+heroImage: "/blog-assets/notion-migration/bending-moment-and-shear-force-diagrams-for-solid-bodies-in-ansys-workbench/Untitled%20232.png"
 ---
 
 ## Bending Moment and Shear Force Diagrams for Solid Bodies in ANSYS Workbench

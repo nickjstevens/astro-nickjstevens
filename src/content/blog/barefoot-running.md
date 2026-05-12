@@ -4,6 +4,7 @@ description: "What is Barefoot or Minimalist Running?"
 pubDate: 2012-01-20
 updatedDate: 2022-05-13
 tags: ["Running", "Productivity"]
+heroImage: "/blog-assets/notion-migration/barefoot-running/2012-11-03_11-43-56_P1090933.jpg"
 ---
 
 ## What is Barefoot or Minimalist Running?

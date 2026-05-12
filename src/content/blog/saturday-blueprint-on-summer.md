@@ -3,7 +3,7 @@ title: "Saturday Blueprint on Summer"
 description: "Summer is a time for writing less and living more."
 pubDate: 2022-08-06
 updatedDate: 2022-08-06
-heroImage: "https://images.unsplash.com/photo-1504309092620-4d0ec726efa4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDQxfHxzdW1tZXJ8ZW58MHx8fHwxNjU5NzMzMDI0&ixlib=rb-1.2.1&q=80&w=2000"
+heroImage: "../../assets/images/2022/08/A812539C-8CCC-4672-803E-D88EB1DFD2E5_1_105_c.jpeg"
 tags: ["Newsletter", "Philosophy"]
 layout: '../../layouts/BlogPost.astro'
 ---

@@ -4,6 +4,7 @@ description: "Previously I posted about creating an automated analysis workflow 
 pubDate: 2019-06-22
 updatedDate: 2022-05-13
 tags: ["Engineering", "Simulation"]
+heroImage: "/blog-assets/notion-migration/automated-workflow-report/Untitled%20245.png"
 ---
 
 Previously I posted about creating an automated analysis workflow using the concept of a [Directed Acyclic Graph](https://en.wikipedia.org/wiki/Directed_acyclic_graph) (DAG). This is implemented using the Python package [snakemake](https://snakemake.readthedocs.io/en/stable/). The previous post on creating an analysis workflow can be found [Snakemake Analysis Workflow Management](https://www.nickjstevens.com/blog/snakemake-analysis-workflow-management/).

@@ -3,7 +3,7 @@ title: "Saturday Blueprint on Keto"
 description: "Hunger, body fat storage and satiety are not controlled by willpower, or calorie counting, but by hormones. "
 pubDate: 2022-07-02
 updatedDate: 2022-07-02
-heroImage: "https://images.unsplash.com/photo-1560717845-968823efbee1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDV8fGtldG98ZW58MHx8fHwxNjU2NTg3OTg2&ixlib=rb-1.2.1&q=80&w=2000"
+heroImage: "https://www.dietdoctor.com/android-icon-192x192.png"
 tags: ["Newsletter", "Health"]
 layout: '../../layouts/BlogPost.astro'
 ---

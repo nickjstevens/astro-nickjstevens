@@ -4,6 +4,7 @@ description: "If you are looking to drive ANSYS Workbench with Excel and Python,
 pubDate: 2019-07-10
 updatedDate: 2022-05-13
 tags: ["Engineering", "Software", "ANSYS"]
+heroImage: "/blog-assets/notion-migration/ansys-workbench-with-excel-and-python/Untitled%20211.png"
 ---
 
 If you are looking to drive ANSYS Workbench with Excel and Python, you may have come across the post by PADT here: [http://www.padtinc.com/blog/the-focus/workbench-and-excel-part-2-driving-workbench-from-excel-with-python](http://www.padtinc.com/blog/the-focus/workbench-and-excel-part-2-driving-workbench-from-excel-with-python). This was a really useful introduction, but I had some issues with getting the examples to work.

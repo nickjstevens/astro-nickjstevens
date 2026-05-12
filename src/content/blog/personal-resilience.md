@@ -4,6 +4,7 @@ description: "Those on the Babcock Graduate Scheme have been given the task of a
 pubDate: 2020-07-12
 updatedDate: 2022-05-13
 tags: ["Productivity", "Philosophy"]
+heroImage: "https://images.unsplash.com/photo-1525857597365-5f6dbff2e36e?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjYzOTIxfQ"
 ---
 
 ![](https://images.unsplash.com/photo-1525857597365-5f6dbff2e36e?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjYzOTIxfQ)

@@ -3,7 +3,7 @@ title: "Saturday Blueprint on Learning from Children"
 description: "Children can teach us a lot about being present if we just take a moment to observe."
 pubDate: 2022-07-30
 updatedDate: 2022-07-30
-heroImage: "https://images.unsplash.com/photo-1489641024260-20e5cb3ee4aa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDF8fGpvdXJuZXl8ZW58MHx8fHwxNjU5MTE1MDU4&ixlib=rb-1.2.1&q=80&w=2000"
+heroImage: "https://www.datocms-assets.com/46938/1658311735-zoe-podcast-strawberry-sugar.png?auto&#x3D;format&amp;crop&#x3D;focalpoint&amp;fit&#x3D;crop&amp;fp-x&#x3D;0.27&amp;fp-y&#x3D;0.29&amp;h&#x3D;627&amp;w&#x3D;1200"
 tags: ["Newsletter", "Philosophy"]
 layout: '../../layouts/BlogPost.astro'
 ---

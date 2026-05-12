@@ -3,7 +3,7 @@ title: "Saturday Blueprint on Creativity"
 description: "Hi 👋. Here is this week's Saturday Blueprint. 🤔 Quote I’m thinking about: Every now and again take a good look at something not made with hands — a mountain,..."
 pubDate: 2022-05-28
 updatedDate: 2022-05-28
-heroImage: "https://images.unsplash.com/photo-1652543549421-ea252bd209f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8YWxsfDh8fHx8fHwyfHwxNjUzNTQ0MDkw&ixlib=rb-1.2.1&q=80&w=2000"
+heroImage: "../../assets/images/2022/05/00AB80AC-EB64-430C-813E-429AA7949FA0_1_105_c.jpeg"
 tags: ["Newsletter", "Creativity"]
 layout: '../../layouts/BlogPost.astro'
 ---

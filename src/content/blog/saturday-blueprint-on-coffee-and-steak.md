@@ -3,7 +3,7 @@ title: "Saturday Blueprint on Coffee and Steak"
 description: "Coffee can be an anchor to thinking. Steak is what I think we evolved to eat. "
 pubDate: 2022-06-11
 updatedDate: 2022-06-11
-heroImage: "https://images.unsplash.com/photo-1546964124-0cce460f38ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDJ8fHJpYmV5ZXxlbnwwfHx8fDE2NTQ4NzcyMzc&ixlib=rb-1.2.1&q=80&w=2000"
+heroImage: "../../assets/images/2022/06/4A454FAA-8169-494B-96F7-45F10D2236D5_1_105_c.jpeg"
 tags: ["Newsletter", "Health"]
 layout: '../../layouts/BlogPost.astro'
 ---

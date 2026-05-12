@@ -4,6 +4,7 @@ description: "I am now thoroughly converted to the barefoot and minimalist runni
 pubDate: 2019-06-23
 updatedDate: 2022-05-13
 tags: ["Running", "Productivity"]
+heroImage: "/blog-assets/notion-migration/homemade-running-sandals/2012-11-03_11-47-59_P1100023.jpg"
 ---
 
 *Reposted from 2012...*

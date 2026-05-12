@@ -3,7 +3,7 @@ title: "Saturday Blueprint on Why I Write"
 description: "I explore the benefits of writing, how writing helps you think, and how writing is a great creativity enabler. I’ll also cover how I write and the tools I use."
 pubDate: 2023-03-11
 updatedDate: 2023-03-11
-heroImage: "https://images.unsplash.com/photo-1518674660708-0e2c0473e68e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDE5fHx3cml0aW5nfGVufDB8fHx8MTY3NjgwMDYyMQ&ixlib=rb-4.0.3&q=80&w=2000"
+heroImage: "../../assets/images/2023/02/florian-klauer-mk7D-4UCfmg-unsplash.jpg"
 tags: ["Newsletter", "Creativity"]
 layout: '../../layouts/BlogPost.astro'
 ---

@@ -3,7 +3,7 @@ title: "Saturday Blueprint on Injury"
 description: "Another late-night trip to Accident and Emergency with my daughter and a bit of reflection on the experience."
 pubDate: 2023-05-27
 updatedDate: 2023-05-27
-heroImage: "https://images.unsplash.com/photo-1612933510543-5b442296703b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDV8fGluanVyeXxlbnwwfHx8fDE2ODUwODA5MTd8MA&ixlib=rb-4.0.3&q=80&w=2000"
+heroImage: "../../assets/images/2023/05/2023-04-30-06-44-04.jpeg"
 tags: ["Newsletter"]
 layout: '../../layouts/BlogPost.astro'
 ---

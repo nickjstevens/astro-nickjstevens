@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import BaseHead from '../../components/BaseHead.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
+import { Image } from 'astro:assets';
 
 const entries = await getCollection('adventures');
 const trips = entries
@@ -29,7 +30,7 @@ for (const entry of entries) {
 				<div class="adventure-grid">
 					{trips.map((trip) => (
 						<a class="adventure-card" href={`/adventures/${trip.data.tripSlug}/`}>
-							{trip.data.heroImage && <img src={trip.data.heroImage} alt="" loading="lazy" />}
+							{trip.data.heroImage && <Image src={trip.data.heroImage} alt="" width={600} height={337} loading="lazy" />}
 							<div>
 								<p class="card-kicker">{trip.data.icon} {trip.data.year} · {daysByTrip.get(trip.data.tripSlug) ?? 0} days</p>
 								<h2>{trip.data.title}</h2>

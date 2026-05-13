@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from 'astro:content';
 import AdventureLayout from '../../../layouts/AdventureLayout.astro';
+import { Image } from 'astro:assets';
 
 export async function getStaticPaths() {
 	const entries = await getCollection('adventures');
@@ -25,7 +26,7 @@ const days = allEntries
 			{days.map((day) => (
 				<li>
 					<a href={`/adventures/${day.data.tripSlug}/${day.id.split('/').pop()}/`}>
-						{day.data.heroImage && <img src={day.data.heroImage} alt="" loading="eager" />}
+						{day.data.heroImage && <Image src={day.data.heroImage} alt="" width={176} height={132} loading="eager" />}
 						<span>Day {day.data.order}</span>
 						<strong>{day.data.title.replace(/^Day\s+\d+\s*-\s*/i, '')}</strong>
 						{day.data.sleepLocation && <em>{day.data.sleepLocation}</em>}

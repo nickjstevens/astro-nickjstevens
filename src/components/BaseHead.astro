@@ -5,7 +5,6 @@ import '../styles/global.css';
 import { SITE_TITLE } from '../consts';
 import FallbackImage from '../assets/header.png';
 import type { ImageMetadata } from 'astro';
-import { ClientRouter } from 'astro:transitions';
 
 interface Props {
 	title: string;
@@ -43,8 +42,6 @@ const { title, description, image = FallbackImage } = Astro.props;
 <meta name="title" content={title} />
 <meta name="description" content={description} />
 
-<ClientRouter />
-
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
 <meta property="og:url" content={Astro.url} />
@@ -64,5 +61,4 @@ const { title, description, image = FallbackImage } = Astro.props;
 		document.documentElement.setAttribute('data-theme', theme);
 	};
 	applyTheme();
-	document.addEventListener('astro:after-swap', applyTheme);
 </script>

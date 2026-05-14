@@ -1,4 +1,6 @@
 ---
+import Search from './Search.astro';
+
 const rawPathname = Astro.url.pathname.replace(import.meta.env.BASE_URL, '');
 const pathname = rawPathname.length > 1 ? rawPathname.replace(/\/$/, '') : rawPathname;
 const isPricedIn = pathname.startsWith('/priced-in');
@@ -39,7 +41,9 @@ const pricedInLinks = [
 				<a href="/ai-tool-map" class:list={{ active: pathname === '/ai-tool-map' }}>AI Tool Map</a>
 				<a href="/about" class:list={{ active: pathname === '/about' }}>About</a>
 				<a href="/now" class:list={{ active: pathname === '/now' }}>Now</a>
+				<a href="/contact" class:list={{ active: pathname === '/contact' }}>Contact</a>
 			</div>
+			<Search />
 			<div class="social-links">
 				<a href="https://x.com/nick_j_stevens" target="_blank" rel="noopener noreferrer" aria-label="Follow me on X" data-tooltip="Follow me on X"><svg class="social-icon-glyph" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.9 2h3.68l-8.04 9.19L24 22h-7.4l-5.8-6.58L5.04 22H1.36l8.6-9.84L.8 2h7.6l5.24 5.96L18.9 2Zm-1.29 17.8h2.04L7.3 4.1H5.1L17.6 19.8Z"/></svg></a>
 				<a href="https://github.com/nickjstevens" target="_blank" rel="noopener noreferrer" aria-label="Follow me on GitHub" data-tooltip="Follow me on GitHub"><svg class="social-icon-glyph" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .5A12 12 0 0 0 8.2 23.9c.6.1.8-.2.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.9 1.3 1.9 1.3 1.1 1.9 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.6-1.4-5.6-6.1 0-1.3.5-2.4 1.2-3.3-.1-.3-.5-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.2 11.2 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.6.3 2.9.1 3.2.8.9 1.2 2 1.2 3.3 0 4.8-2.9 5.8-5.6 6.1.4.4.8 1.1.8 2.2v3.3c0 .4.2.8.8.6A12 12 0 0 0 12 .5Z"/></svg></a>

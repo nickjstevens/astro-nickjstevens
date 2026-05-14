@@ -9,7 +9,7 @@ heroImage: "../../assets/blog-assets/notion-migration/nafems-challenge-problems/
 
 ## NAFEMS Stochastic Working Group Challenge Problems 01 and 02
 
-This page provides my solutions to the NAFEMS Stochastic Working Group challenge problems. These problems can be found [here](https://www.nafems.org/about/technical-working-groups/stochastics/challenge_problem/) I’ve used Jupyter notebooks to tackle the problems using the Python programming language. Jupyter notebooks provide a convenient way to interactively explore and run code. The notebooks are on Azure Notebooks where anyone can clone them and start exploring too, found here: [Azure Notebook files](https://notebooks.azure.com/nickjstevens/projects/stochastics-working-group).
+This page provides my solutions to the NAFEMS Stochastic Working Group challenge problems. These problems can be found [here](https://www.nafems.org/community/working-groups/stochastics/challenge_problems/) I’ve used Jupyter notebooks to tackle the problems using the Python programming language. Jupyter notebooks provide a convenient way to interactively explore and run code. The notebooks are on Azure Notebooks where anyone can clone them and start exploring too, found here: [Azure Notebook files](https://notebooks.azure.com/nickjstevens/projects/stochastics-working-group).
 
 ## Challenge Problem 1
 
@@ -154,7 +154,7 @@ $$
 σ_b=\frac{SWBM+WBM}{SM}
 $$
 
-Since sailing to the repair yard under careful monitoring may be considered as an exceptional condition, the allowable stress is raised to 90% of the yield stress. The steel has a yield stress of $315$ MPa, and this gives an allowable stress of $0.90×315=284$ MPa. Based on a deterministic analysis, the sea state is allowable and hence sailing to the repair yard is acceptable. Uncertainty Quantification (UQ) The parameters applied in the deterministic analysis contain uncertainty so each input value can be characterised by a distribution type with a mean value and a standard deviation. The input for UQ is presented in [Table 1](https://www.nafems.org/about/technical-working-groups/stochastics/challenge_problem/).
+Since sailing to the repair yard under careful monitoring may be considered as an exceptional condition, the allowable stress is raised to 90% of the yield stress. The steel has a yield stress of $315$ MPa, and this gives an allowable stress of $0.90×315=284$ MPa. Based on a deterministic analysis, the sea state is allowable and hence sailing to the repair yard is acceptable. Uncertainty Quantification (UQ) The parameters applied in the deterministic analysis contain uncertainty so each input value can be characterised by a distribution type with a mean value and a standard deviation. The input for UQ is presented in [Table 1](https://www.nafems.org/community/working-groups/stochastics/challenge_problems/).
 
 ### **The Challenge**
 

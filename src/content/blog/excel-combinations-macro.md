@@ -13,7 +13,7 @@ I found this post here: [http://stackoverflow.com/questions/24788986/modifying-
 
 An example of the macro in action is in the attached Excel sheet, showing how to list all the combinations.
 
-[List-all-Combinations-Macro](../../assets/blog-assets/notion-migration/excel-combinations-macro/List-all-Combinations-Macro.xlsm)
+[List-all-Combinations-Macro](/blog-assets/notion-migration/excel-combinations-macro/List-all-Combinations-Macro.xlsm)
 
 A screenshot of the workbook is below:
 
@@ -36,4 +36,4 @@ The result:
 
 Also check out the “permutations” function in the itertools library for similar functionality.
 
-Python is reasonably new to me, but I can already see how it can make life easier, and it’s a very easy-to-learn and popular programming language. A great place to start is by downloading [Anaconda](https://www.continuum.io/anaconda-overview) with the excellent [Jupyter Notebook](http://jupyter.org/) where you can interactively run and review Python code very easily.
+Python is reasonably new to me, but I can already see how it can make life easier, and it’s a very easy-to-learn and popular programming language. A great place to start is by downloading [Anaconda](https://www.anaconda.com/download) with the excellent [Jupyter Notebook](https://jupyter.org/) where you can interactively run and review Python code very easily.

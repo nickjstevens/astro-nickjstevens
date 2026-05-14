@@ -34,7 +34,7 @@ Once we were home for the day we were glad to escape the heat in the hotel pool.
 
 ![](../../../assets/adventures/assets/2024-usa/day-16-zion-np-06.webp)
 
-<video controls playsinline preload="metadata" aria-label="Cartwheels" src="../../../assets/adventures/assets/2024-usa/day-16-zion-np-07.mov"></video>
+<video controls playsinline preload="metadata" aria-label="Cartwheels" src="/adventures-assets/2024-usa/day-16-zion-np-07.mov"></video>
 
 ![](../../../assets/adventures/assets/2024-usa/day-16-zion-np-08.webp)
 

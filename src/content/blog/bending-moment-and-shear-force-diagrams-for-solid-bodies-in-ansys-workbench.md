@@ -39,7 +39,7 @@ Here is the final Code Snippet for ANSYS Workbench. Insert a Code Snippet object
 
 And the actual Code Snippet to create bending moment and shear force diagrams of solid bodies in ANSYS Workbench is pasted below, but if you have issues copying it, download it below.
 
-[section_forces_moments_WB](../../assets/blog-assets/notion-migration/bending-moment-and-shear-force-diagrams-for-solid-bodies-in-ansys-workbench/section_forces_moments_WB.txt)
+[section_forces_moments_WB](/blog-assets/notion-migration/bending-moment-and-shear-force-diagrams-for-solid-bodies-in-ansys-workbench/section_forces_moments_WB.txt)
 
 ```plain text
 ! =======================================

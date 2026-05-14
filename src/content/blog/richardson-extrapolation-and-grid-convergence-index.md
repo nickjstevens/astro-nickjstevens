@@ -26,7 +26,7 @@ This is comparable to the absolute functions used in the non-uniform refinement 
 
 The updated spreadsheet, v2.2, is here:
 
-[Element_Refinement_Convergence_Richardson_Extrapolation_v2.2](../../assets/blog-assets/notion-migration/richardson-extrapolation-and-grid-convergence-index/Element_Refinement_Convergence_Richardson_Extrapolation_v2.2.xlsx)
+[Element_Refinement_Convergence_Richardson_Extrapolation_v2.2](/blog-assets/notion-migration/richardson-extrapolation-and-grid-convergence-index/Element_Refinement_Convergence_Richardson_Extrapolation_v2.2.xlsx)
 
 ## Update August 2016 – Added Non-Uniform Mesh Refinement
 
@@ -36,7 +36,7 @@ I’ve now updated the spreadsheet to be able to use non-uniform mesh refinement
 
 ## Mesh Convergence Using Richardson Extrapolation and Grid Convergence Index
 
-After reading the excellent post written by [Angus Ramsay](http://www.ramsay-maunder.co.uk/software/rre/) explaining Recursive Richardson Extrapolation (RRE), and the associated programme, it prompted me to do my own reading and I created a simple Excel spreadsheet to help me understand the RRE approach. RRE essentially extrapolates the results from a discretised mesh solution to estimate the **exact solution**.
+After reading the excellent post written by [Angus Ramsay](https://www.ramsay-maunder.co.uk/software/) explaining Recursive Richardson Extrapolation (RRE), and the associated programme, it prompted me to do my own reading and I created a simple Excel spreadsheet to help me understand the RRE approach. RRE essentially extrapolates the results from a discretised mesh solution to estimate the **exact solution**.
 
 In addition, I also included in my Excel spreadsheet the 95% confidence bands predicted by the Grid Convergence Index (GCI).
 

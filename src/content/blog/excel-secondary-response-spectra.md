@@ -233,4 +233,4 @@ These functions have only been self-checked, so do your own verification before 
 
 The link to the attached spreadsheet below contains the two functions discussed above, with examples to show you how best to use the functions.
 
-[Excel-Secondary-Response-Spectra-Example-Spreadsheet](../../assets/blog-assets/notion-migration/excel-secondary-response-spectra/Excel-Secondary-Response-Spectra-Example-Spreadsheet.xlsm)
+[Excel-Secondary-Response-Spectra-Example-Spreadsheet](/blog-assets/notion-migration/excel-secondary-response-spectra/Excel-Secondary-Response-Spectra-Example-Spreadsheet.xlsm)

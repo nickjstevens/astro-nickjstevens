@@ -11,7 +11,7 @@ It’s a common practice in the workplace these days to have a short **safety mo
 
 But I recently tried a different tact as an experiment, to bring in the wider mental aspects of health and safety. I did a safety moment that involved a 2 minute meditation. A brief moment of silence, stillness and reflection. 
 
-Mental health and well-being is often overlooked but is so important is today’s “always on” world. In fact, see the graphic below [source](http://www.hse.gov.uk/statistics/causdis/stress.pdf), 602,000 working people are reported to suffer from work-related stress, depression and anxiety. This results in 12.8 Million working days lost. A vast problem by any measure.
+Mental health and well-being is often overlooked but is so important is today’s “always on” world. In fact, see the graphic below [source](https://www.hse.gov.uk/statistics/causdis/), 602,000 working people are reported to suffer from work-related stress, depression and anxiety. This results in 12.8 Million working days lost. A vast problem by any measure.
 
 ![Screen_Shot_2019-11-09_at_09.29.13](../../assets/blog-assets/notion-migration/meditation-safety-moment/Screen_Shot_2019-11-09_at_09.29.13.png)
 

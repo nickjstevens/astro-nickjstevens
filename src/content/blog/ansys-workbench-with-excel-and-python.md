@@ -26,10 +26,10 @@ The Excel sheet looks like this:
 ## Files for Scripting ANSYS Workbench with Excel and Python
 
 - Excel Workbook: TowerTool1.xlsm
-[TowerTool1](../../assets/blog-assets/notion-migration/ansys-workbench-with-excel-and-python/TowerTool1.xlsm)
+[TowerTool1](/blog-assets/notion-migration/ansys-workbench-with-excel-and-python/TowerTool1.xlsm)
 - ANSYS Workbench Project: ExcelTower1.wbpz
-[ExcelTower1.wbpz](../../assets/blog-assets/notion-migration/ansys-workbench-with-excel-and-python/ExcelTower1.wbpz.zip)
+[ExcelTower1.wbpz](/blog-assets/notion-migration/ansys-workbench-with-excel-and-python/ExcelTower1.wbpz.zip)
 - Python Script: updateWB2.py
-[updateWB2](../../assets/blog-assets/notion-migration/ansys-workbench-with-excel-and-python/updateWB2.py)
+[updateWB2](/blog-assets/notion-migration/ansys-workbench-with-excel-and-python/updateWB2.py)
 
 I hope these work for you, but if you have any issues or questions then get in touch.

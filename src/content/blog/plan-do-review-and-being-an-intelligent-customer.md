@@ -22,7 +22,7 @@ There is of course the simple truth that word triplets are biologically easy to 
 
 So I’ll happily stick to my **Plan-Do-Review** to make simple and meaningful progress at work and in life.
 
-I’m also struck by the alignment with the trio from ONR’s Intelligent Customer capability in [NS-TAST-GD-049](http://www.onr.org.uk/operational/tech_asst_guides/ns-tast-gd-049.pdf) simplified to Specify-Oversee-Accept. 
+I’m also struck by the alignment with the trio from ONR’s Intelligent Customer capability in [NS-TAST-GD-049](https://www.onr.org.uk/publications/publication-search?type=nuclearSafetyTAGsPublication%3BnuclearSecurityTAGsPublication%3BsafeguardsTAGsPublication) simplified to Specify-Oversee-Accept.
 
 I’ve sketched out the alignment below which I think is a powerful continuous cycle and expresses to me the equal importance of all three steps if you want to get **Intelligent Results**. 
 

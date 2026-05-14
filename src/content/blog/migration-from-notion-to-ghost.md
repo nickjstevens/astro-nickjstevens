@@ -8,4 +8,4 @@ tags: ["Software"]
 layout: '../../layouts/BlogPost.astro'
 ---
 
-<p>My website, nickjstevens.com, has been a little corner of the internet for me to tinker with. I'm now migrating from Notion over to Ghost. Notion has been a fantastic and easy way for me to share, but I want to have more professional and permanent site now. After some research, I've settled on Ghost as the platform for the future. </p><p>Things will be up and running here shortly, but you can <a href="/blog/newsletter/">subscribe</a> in the meantime if you'd like to stay up to date and receive emails when new content is published.</p>
+<p>My website, nickjstevens.com, has been a little corner of the internet for me to tinker with. I'm now migrating from Notion over to Ghost. Notion has been a fantastic and easy way for me to share, but I want to have more professional and permanent site now. After some research, I've settled on Ghost as the platform for the future. </p><p>Things will be up and running here shortly, but you can <a href="/blog/tag/newsletter/">subscribe</a> in the meantime if you'd like to stay up to date and receive emails when new content is published.</p>

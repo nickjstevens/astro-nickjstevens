@@ -13,7 +13,7 @@ The use case here is using a custom Excel VBA function to return the alpha value
 
 An example spreadsheet, complete with the custom function is attached below:
 
-[SCI-Bolted-Joint-Alpha.xlsm](../../assets/blog-assets/notion-migration/custom-excel-vba-function-for-sci-bolted-joint-assessment/SCI-Bolted-Joint-Alpha.xlsm)
+[SCI-Bolted-Joint-Alpha.xlsm](/blog-assets/notion-migration/custom-excel-vba-function-for-sci-bolted-joint-assessment/SCI-Bolted-Joint-Alpha.xlsm)
 
 The function is as simple to use as calling `=alpha(m1,m2,e)` where `m1`, `m2` and `e` are the distances as defined in SCI P207.
 

@@ -29,6 +29,35 @@ function ensureDistinctChange(delta, label) {
 	}
 }
 
+/**
+ * @typedef {Object} RichardsonInput
+ * @property {number[]} meshSizes - Exactly three mesh sizes in descending order.
+ * @property {number[]} resultValues - Exactly three result values corresponding to the mesh sizes.
+ * @property {number} [factorOfSafety=1.25] - The factor of safety for GCI calculation.
+ * @property {number} [maxIterations=10000] - Maximum iterations for fixed-point convergence.
+ * @property {number} [tolerance=1e-10] - Convergence tolerance for the order of convergence.
+ */
+
+/**
+ * @typedef {Object} RichardsonResults
+ * @property {number} extrapolatedValue - The estimated continuum value.
+ * @property {number} lowerBound - 95% confidence interval lower bound.
+ * @property {number} upperBound - 95% confidence interval upper bound.
+ * @property {number} orderOfConvergence - The calculated order of convergence (p).
+ * @property {number} convergenceCheck - The asymptotic range check value.
+ * @property {{ r12: number, r23: number }} refinementRatios - The calculated mesh refinement ratios.
+ * @property {{ gci12: number, gci23: number }} gridConvergenceIndex - The calculated Grid Convergence Indices.
+ * @property {number} iterations - Number of iterations used for convergence.
+ * @property {number} factorOfSafety - The factor of safety used.
+ * @property {string[]} warnings - Any warning messages generated during calculation.
+ */
+
+/**
+ * Calculates the Richardson extrapolation and Grid Convergence Index.
+ * 
+ * @param {RichardsonInput} [options={}]
+ * @returns {RichardsonResults}
+ */
 export function calculateRichardsonExtrapolation({
 	meshSizes,
 	resultValues,

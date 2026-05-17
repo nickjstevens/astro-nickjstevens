@@ -33,7 +33,7 @@ const visibleMeta = meta.filter((item) => item.value);
 					<h1>{title}</h1>
 					<p class="adventure-description">{description}</p>
 					{date && <p class="adventure-date"><FormattedDate date={date} /></p>}
-					{heroImage && <Image class="adventure-hero-image" src={heroImage} alt="" width={1020} height={510} loading="eager" />}
+					{heroImage && <Image class="adventure-hero-image" src={heroImage as any} alt="" width={1020} height={510} loading="eager" />}
 				</header>
 				{visibleMeta.length > 0 && (
 					<dl class="adventure-meta">

@@ -3,7 +3,19 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 
-const nodes = {
+interface ToolNode {
+  id: string;
+  label: string;
+  category: string;
+  color: string;
+  uvp: string;
+  purpose: string;
+  usage?: string;
+  flow?: string;
+  link: string;
+}
+
+const nodes: Record<string, ToolNode> = {
   AgentsMD: {
     id: 'AgentsMD', label: '📘 AGENTS.md', category: 'Shared Context', color: 'gray',
     uvp: 'Portable instruction contracts that ensure your AI persona and rules follow the codebase across any IDE.',
@@ -64,7 +76,7 @@ const nodes = {
     usage: 'Set token budgets and approved tool lists here.',
     link: 'https://github.com/paperclipai/paperclip'
   },
-  OpenClaw: { id: 'OpenClaw', label: '🦞 OpenClaw', category: 'Orchestration', color: 'blue', uvp: 'Always-on infrastructure: The server hub for persistent background assistant activities.', purpose: 'Server-side hub for long-running assistant tasks.', link: 'https://openclaw.ai' },
+  OpenClaw: { id: 'OpenClaw', label: '🦞 OpenClaw', category: 'Orchestration', color: 'blue', uvp: 'Always-on infrastructure: The server hub for persistent background assistant activities.', purpose: 'Server-side hub for long-running assistant tasks', link: 'https://openclaw.ai' },
   Hermes: { id: 'Hermes', label: '⚡ Hermes Agent', category: 'Orchestration', color: 'blue', uvp: 'Closed-loop learning: Turning development history into a private architectural intelligence asset.', purpose: 'Closed-loop learning system for agent improvement.', link: 'https://hermes-agent.nousresearch.com' },
   Letta: { id: 'Letta', label: '🧭 Letta', category: 'Orchestration', color: 'blue', uvp: 'Stateful continuity: Solves LLM "amnesia" by providing long-term persistent memory.', purpose: 'Stateful memory engine ensuring persistent agent state.', usage: 'Critical for long-term projects requiring history.', link: 'https://github.com/letta-ai/letta' },
   PicoClaw: { id: 'PicoClaw', label: '🪶 PicoClaw', category: 'Orchestration', color: 'blue', uvp: 'Local-first agility: Minimalist orchestration optimized for edge and mobile deployments.', purpose: 'Minimalist orchestration for edge/mobile devices.', link: 'https://picoclaw.io' },

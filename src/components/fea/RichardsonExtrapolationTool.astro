@@ -580,6 +580,42 @@
 	import { axisBottom, axisLeft, line, scaleLinear, select } from 'd3';
 	import { calculateRichardsonExtrapolation } from '../../lib/richardson-extrapolation.js';
 
+	interface Point {
+		meshSize: number;
+		value: number;
+		label: string;
+		kind: string;
+	}
+
+	interface StateInputs {
+		meshSizes: number[];
+		resultValues: number[];
+	}
+
+	interface StateResults {
+		extrapolatedValue: number;
+		lowerBound: number;
+		upperBound: number;
+		orderOfConvergence: number;
+		convergenceCheck: number;
+		refinementRatios: {
+			r12: number;
+			r23: number;
+		};
+		gridConvergenceIndex: {
+			gci12: number;
+			gci23: number;
+		};
+		iterations: number;
+		factorOfSafety: number;
+		warnings: string[];
+	}
+
+	interface AppState {
+		inputs: StateInputs;
+		results: StateResults;
+	}
+
 	const SAMPLE_INPUTS = {
 		meshSize1: 2,
 		meshSize2: 1,
@@ -605,19 +641,19 @@
 		maximumFractionDigits: 2,
 	});
 
-	function formatDecimal(value, digits = 3) {
+	function formatDecimal(value: number, digits = 3): string {
 		return Number.isFinite(value) ? value.toFixed(digits) : '--';
 	}
 
-	function formatValue(value) {
+	function formatValue(value: number): string {
 		return Number.isFinite(value) ? valueFormat.format(value) : '--';
 	}
 
-	function formatPercent(value) {
+	function formatPercent(value: number): string {
 		return Number.isFinite(value) ? percentFormat.format(value) : '--';
 	}
 
-	function formatAxisValue(value) {
+	function formatAxisValue(value: number): string {
 		if (Math.abs(value) >= 1000) {
 			return compactFormat.format(Math.round(value));
 		}
@@ -629,28 +665,28 @@
 		return value.toFixed(2);
 	}
 
-	function numericPadding(minimum, maximum) {
+	function numericPadding(minimum: number, maximum: number): number {
 		const span = Math.abs(maximum - minimum) || Math.max(Math.abs(maximum), 1);
 		return span * 0.14;
 	}
 
-	function initialiseTool(root) {
-		const form = root.querySelector('[data-form]');
-		const status = root.querySelector('[data-status]');
-		const statusList = root.querySelector('[data-status-list]');
-		const chart = root.querySelector('[data-chart]');
-		const chartEmpty = root.querySelector('[data-chart-empty]');
-		const chartCaption = root.querySelector('[data-chart-caption]');
-		const fields = Object.fromEntries(
-			Array.from(root.querySelectorAll('[data-field]')).map((node) => [node.dataset.field, node]),
+	function initialiseTool(root: HTMLElement) {
+		const form = root.querySelector('[data-form]') as HTMLFormElement;
+		const status = root.querySelector('[data-status]') as HTMLElement;
+		const statusList = root.querySelector('[data-status-list]') as HTMLElement;
+		const chart = root.querySelector('[data-chart]') as HTMLElement;
+		const chartEmpty = root.querySelector('[data-chart-empty]') as HTMLElement;
+		const chartCaption = root.querySelector('[data-chart-caption]') as HTMLElement;
+		const fields: Record<string, HTMLElement> = Object.fromEntries(
+			Array.from(root.querySelectorAll<HTMLElement>('[data-field]')).map((node) => [node.dataset.field || '', node]),
 		);
-		const inputs = Object.fromEntries(
-			Array.from(root.querySelectorAll('input[data-key]')).map((node) => [node.dataset.key, node]),
+		const inputs: Record<string, HTMLInputElement> = Object.fromEntries(
+			Array.from(root.querySelectorAll<HTMLInputElement>('input[data-key]')).map((node) => [node.dataset.key || '', node]),
 		);
 
-		let lastState = null;
+		let lastState: AppState | null = null;
 
-		function renderStatusMessages(messages, isError = false) {
+		function renderStatusMessages(messages: string[], isError = false) {
 			status.classList.toggle('is-error', isError);
 			statusList.innerHTML = messages.map((message) => `<li>${message}</li>`).join('');
 		}
@@ -667,11 +703,13 @@
 
 		function loadSampleInputs() {
 			Object.entries(SAMPLE_INPUTS).forEach(([key, value]) => {
-				inputs[key].value = String(value);
+				if (inputs[key]) {
+					inputs[key].value = String(value);
+				}
 			});
 		}
 
-		function readInputs() {
+		function readInputs(): StateInputs {
 			const rawValues = Object.fromEntries(
 				Object.entries(inputs).map(([key, input]) => [key, Number(input.value)]),
 			);
@@ -682,7 +720,7 @@
 			};
 		}
 
-		function renderWarnings(warnings) {
+		function renderWarnings(warnings: string[]) {
 			if (!warnings.length) {
 				renderStatusMessages(['No warnings. The refinement ratios and convergence check are within the usual screening thresholds.']);
 				return;
@@ -691,20 +729,20 @@
 			renderStatusMessages(warnings);
 		}
 
-		function renderChart(state) {
+		function renderChart(state: AppState) {
 			const rect = chart.getBoundingClientRect();
 			const width = Math.max(Math.round(rect.width), 320);
 			const height = 360;
 			const margin = { top: 28, right: 24, bottom: 58, left: 72 };
 			const innerWidth = width - margin.left - margin.right;
 			const innerHeight = height - margin.top - margin.bottom;
-			const meshPoints = state.inputs.meshSizes.map((meshSize, index) => ({
+			const meshPoints: Point[] = state.inputs.meshSizes.map((meshSize, index) => ({
 				meshSize,
 				value: state.inputs.resultValues[index],
 				label: ['Coarsest', 'Medium', 'Finest'][index],
 				kind: 'mesh',
 			}));
-			const exactPoint = {
+			const exactPoint: Point = {
 				meshSize: 0,
 				value: state.results.extrapolatedValue,
 				label: 'Continuum',
@@ -733,7 +771,7 @@
 			const finiteColor = styles.getPropertyValue('--tool-finite').trim() || '#38bdf8';
 			const exactColor = styles.getPropertyValue('--tool-exact').trim() || '#f59e0b';
 			const cardBackground = styles.getPropertyValue('--tool-surface-strong').trim() || 'rgba(15, 23, 42, 0.96)';
-			const lineGenerator = line()
+			const lineGenerator = line<Point>()
 				.x((point) => xScale(point.meshSize))
 				.y((point) => yScale(point.value));
 			const svg = select(chart);
@@ -752,8 +790,8 @@
 				.append('line')
 				.attr('x1', margin.left)
 				.attr('x2', width - margin.right)
-				.attr('y1', (tick) => yScale(tick))
-				.attr('y2', (tick) => yScale(tick))
+				.attr('y1', (tick) => yScale(tick as number))
+				.attr('y2', (tick) => yScale(tick as number))
 				.attr('stroke', gridColor)
 				.attr('stroke-width', 1);
 
@@ -787,8 +825,8 @@
 				.attr('class', 'cap')
 				.attr('x1', exactX - capWidth)
 				.attr('x2', exactX + capWidth)
-				.attr('y1', (value) => yScale(value))
-				.attr('y2', (value) => yScale(value))
+				.attr('y1', (value) => yScale(value as number))
+				.attr('y2', (value) => yScale(value as number))
 				.attr('stroke', exactColor)
 				.attr('stroke-width', 3);
 
@@ -822,14 +860,14 @@
 			svg
 				.append('g')
 				.attr('transform', `translate(0, ${height - margin.bottom})`)
-				.call(axisBottom(xScale).ticks(6).tickFormat((tick) => formatAxisValue(tick)))
+				.call(axisBottom(xScale).ticks(6).tickFormat((tick) => formatAxisValue(tick as number)))
 				.call((group) => group.selectAll('path, line').attr('stroke', axisColor))
 				.call((group) => group.selectAll('text').attr('fill', axisColor));
 
 			svg
 				.append('g')
 				.attr('transform', `translate(${margin.left}, 0)`)
-				.call(axisLeft(yScale).ticks(5).tickFormat((tick) => formatAxisValue(tick)))
+				.call(axisLeft(yScale).ticks(5).tickFormat((tick) => formatAxisValue(tick as number)))
 				.call((group) => group.selectAll('path, line').attr('stroke', axisColor))
 				.call((group) => group.selectAll('text').attr('fill', axisColor));
 
@@ -884,7 +922,7 @@
 			chartCaption.textContent = `Exact estimate ${formatValue(state.results.extrapolatedValue)} with a 95% interval from ${formatValue(state.results.lowerBound)} to ${formatValue(state.results.upperBound)}.`;
 		}
 
-		function renderResults(payload) {
+		function renderResults(payload: StateResults) {
 			fields.extrapolatedValue.textContent = formatValue(payload.extrapolatedValue);
 			fields.lowerBound.textContent = formatValue(payload.lowerBound);
 			fields.upperBound.textContent = formatValue(payload.upperBound);
@@ -899,7 +937,7 @@
 		function runCalculation() {
 			try {
 				const payload = readInputs();
-				const results = calculateRichardsonExtrapolation(payload);
+				const results = calculateRichardsonExtrapolation(payload) as StateResults;
 
 				renderResults(results);
 				lastState = { inputs: payload, results };

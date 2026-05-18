@@ -3,7 +3,9 @@ import PageLayout from '../../layouts/Page.astro';
 import { Image } from 'astro:assets';
 
 // Placeholder images for now - replace with real screenshots
-import toolMapImg from '../../assets/blog/hermes-agent/hermes-map.png';
+import toolMapImg from '../../assets/site/ui/ai-tool-map.png';
+import greatBooksImg from '../../assets/site/ui/great-books.png';
+import podShiftImg from '../../assets/site/ui/pod-shift.png';
 ---
 
 <PageLayout
@@ -26,8 +28,8 @@ import toolMapImg from '../../assets/blog/hermes-agent/hermes-map.png';
 		</a>
 
 		<a href="https://great-books-explorer.vercel.app/" target="_blank" rel="noopener noreferrer" class="tool-card">
-			<div class="image-wrapper placeholder">
-				<span>Screenshot coming soon</span>
+			<div class="image-wrapper">
+				<Image src={greatBooksImg} alt="Great Books Explorer Screenshot" width={800} height={450} />
 			</div>
 			<div class="content">
 				<h3>Great Books Explorer</h3>
@@ -36,8 +38,8 @@ import toolMapImg from '../../assets/blog/hermes-agent/hermes-map.png';
 		</a>
 
 		<a href="https://pod-shift.vercel.app/" target="_blank" rel="noopener noreferrer" class="tool-card">
-			<div class="image-wrapper placeholder">
-				<span>Screenshot coming soon</span>
+			<div class="image-wrapper">
+				<Image src={podShiftImg} alt="Pod Shift Screenshot" width={800} height={450} />
 			</div>
 			<div class="content">
 				<h3>Pod Shift</h3>

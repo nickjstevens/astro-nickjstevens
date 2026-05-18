@@ -11,7 +11,7 @@ sleepLocation: "Las vegas"
 activitiesPm: "Tour casinos"
 drivingTime: "3 hours"
 accommodation: "Hilton Grand Vacations Club Elara"
-heroImage: "../../../assets/adventures/assets/2024-usa/day-18-drive-to-vegas-01.webp"
+heroImage: "../../../assets/adventures/2024-usa/day-18-drive-to-vegas-01.webp"
 ---
 ## Travel Log
 
@@ -19,13 +19,13 @@ We had a leisurely start as it was a fairly short drive to Vegas. The kids had a
 
 After checking in we went for a wander on the strip to see the Paris casino, Bellagio garden, Ceasar’s palace and the miracle mile shops and have some delicious ice cream. We then stayed in for the evening cooking dinner in our apartment and enjoying the view and movies on the projector.
 
-![The view from our room in the Elara by Hilton](../../../assets/adventures/assets/2024-usa/day-18-drive-to-vegas-02.webp)
+![The view from our room in the Elara by Hilton](../../../assets/adventures/2024-usa/day-18-drive-to-vegas-02.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-18-drive-to-vegas-03.webp)
+![](../../../assets/adventures/2024-usa/day-18-drive-to-vegas-03.webp)
 
-![Ice cream of course!](../../../assets/adventures/assets/2024-usa/day-18-drive-to-vegas-04.webp)
+![Ice cream of course!](../../../assets/adventures/2024-usa/day-18-drive-to-vegas-04.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-18-drive-to-vegas-05.webp)
+![](../../../assets/adventures/2024-usa/day-18-drive-to-vegas-05.webp)
 
 Accommodation:
 

@@ -4,7 +4,7 @@ description: "Any given analysis or simulation usually involves taking some inpu
 pubDate: 2019-06-21
 updatedDate: 2022-05-13
 tags: ["Engineering", "Simulation"]
-heroImage: "../../assets/blog-assets/notion-migration/snakemake-analysis-workflow-management/Untitled 210.png"
+heroImage: "../../assets/blog/snakemake-analysis-workflow-management/Untitled-210.png"
 ---
 
 Any given analysis or simulation usually involves taking some input data, creating loads cases, running a model, processing results, perhaps combining load cases into load combinations and then reporting on the results against the acceptance criteria. This is a workflow and can benefit significantly with the concept of **workflow management**. Workflow management is where a tool is used to manage the dependencies of each step in the simulation process, keeping track of the status of the inputs and outputs and only rerunning a downstream step when necessary.
@@ -24,7 +24,7 @@ The best way to learn more is to watch this 15 minute video tutorial showing you
 
 One of the very useful outputs via the snakemake process is a complete graph of all your tasks and dependencies in the form of a **directed acyclic graph** (DAG). This captures the complete analysis workflow, an example from the tutorial is below:
 
-![Untitled 210](../../assets/blog-assets/notion-migration/snakemake-analysis-workflow-management/Untitled%20210.png)
+![Untitled 210](../../assets/blog/snakemake-analysis-workflow-management/Untitled-210.png)
 
 DAG for Snakemake Analysis Workflow
 

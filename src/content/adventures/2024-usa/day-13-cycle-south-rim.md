@@ -12,7 +12,7 @@ activitiesAm: "Cycle tour South Rim"
 activitiesPm: "South rim view points"
 drivingTime: "2.5 hours"
 accommodation: "Hyatt Place Page"
-heroImage: "../../../assets/adventures/assets/2024-usa/day-13-cycle-south-rim-01.webp"
+heroImage: "../../../assets/adventures/2024-usa/day-13-cycle-south-rim-01.webp"
 ---
 ## Travel Log
 
@@ -22,39 +22,39 @@ This became our new favourite activity of the holiday. Because we left early we 
 
 After our ride finished (and a brief downpour) we headed out the east entrance of the park stopping at view points on the way finishing with Desert view watchtower. We then headed to Cameron trading post where we had a delicious lunch/dinner (due to the time changes again on entering the reservation we were very confused and lunch turned into dinner). Nick had a Navajo Taco, the local speciality of beef, beans, green chili, on a Navajo flatbread. We finally reached our hotel around 6pm, the kids had time for a quick swim in the hotel pool before bed.
 
-![](../../../assets/adventures/assets/2024-usa/day-13-cycle-south-rim-02.webp)
+![](../../../assets/adventures/2024-usa/day-13-cycle-south-rim-02.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-13-cycle-south-rim-03.webp)
+![](../../../assets/adventures/2024-usa/day-13-cycle-south-rim-03.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-13-cycle-south-rim-04.webp)
+![](../../../assets/adventures/2024-usa/day-13-cycle-south-rim-04.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-13-cycle-south-rim-05.webp)
+![](../../../assets/adventures/2024-usa/day-13-cycle-south-rim-05.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-13-cycle-south-rim-06.webp)
+![](../../../assets/adventures/2024-usa/day-13-cycle-south-rim-06.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-13-cycle-south-rim-07.webp)
+![](../../../assets/adventures/2024-usa/day-13-cycle-south-rim-07.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-13-cycle-south-rim-08.webp)
+![](../../../assets/adventures/2024-usa/day-13-cycle-south-rim-08.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-13-cycle-south-rim-09.webp)
+![](../../../assets/adventures/2024-usa/day-13-cycle-south-rim-09.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-13-cycle-south-rim-10.webp)
+![](../../../assets/adventures/2024-usa/day-13-cycle-south-rim-10.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-13-cycle-south-rim-11.webp)
+![](../../../assets/adventures/2024-usa/day-13-cycle-south-rim-11.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-13-cycle-south-rim-12.webp)
+![](../../../assets/adventures/2024-usa/day-13-cycle-south-rim-12.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-13-cycle-south-rim-13.webp)
+![](../../../assets/adventures/2024-usa/day-13-cycle-south-rim-13.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-13-cycle-south-rim-14.webp)
+![](../../../assets/adventures/2024-usa/day-13-cycle-south-rim-14.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-13-cycle-south-rim-15.webp)
+![](../../../assets/adventures/2024-usa/day-13-cycle-south-rim-15.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-13-cycle-south-rim-16.webp)
+![](../../../assets/adventures/2024-usa/day-13-cycle-south-rim-16.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-13-cycle-south-rim-17.webp)
+![](../../../assets/adventures/2024-usa/day-13-cycle-south-rim-17.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-13-cycle-south-rim-18.webp)
+![](../../../assets/adventures/2024-usa/day-13-cycle-south-rim-18.webp)
 
 Accommodation:
 

@@ -8,7 +8,7 @@ year: 2025
 order: 14
 date: "2025-08-10"
 sleepLocation: "Grindelwald"
-heroImage: "../../../assets/adventures/assets/2025-switzerland/day-14-grindelwald-jungfraujoch-01.webp"
+heroImage: "../../../assets/adventures/2025-switzerland/day-14-grindelwald-jungfraujoch-01.webp"
 ---
 ## Travel Log
 
@@ -26,58 +26,58 @@ Bess was feeling the effects of the altitude so decided to see if we could go do
 
 Back in Grindelwald Terminal we picked up some more food, and chocolate from the Lindt shop. It was nice to be home at a reasonable hour (4pm) and not totally exhausted and overheated! On the downside though somewhere along the way Nick lost his hat 😢.
 
-![](../../../assets/adventures/assets/2025-switzerland/day-14-grindelwald-jungfraujoch-02.webp)
+![](../../../assets/adventures/2025-switzerland/day-14-grindelwald-jungfraujoch-02.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-14-grindelwald-jungfraujoch-03.webp)
+![](../../../assets/adventures/2025-switzerland/day-14-grindelwald-jungfraujoch-03.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-14-grindelwald-jungfraujoch-04.webp)
+![](../../../assets/adventures/2025-switzerland/day-14-grindelwald-jungfraujoch-04.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-14-grindelwald-jungfraujoch-05.webp)
+![](../../../assets/adventures/2025-switzerland/day-14-grindelwald-jungfraujoch-05.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-14-grindelwald-jungfraujoch-06.webp)
+![](../../../assets/adventures/2025-switzerland/day-14-grindelwald-jungfraujoch-06.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-14-grindelwald-jungfraujoch-07.webp)
+![](../../../assets/adventures/2025-switzerland/day-14-grindelwald-jungfraujoch-07.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-14-grindelwald-jungfraujoch-08.webp)
+![](../../../assets/adventures/2025-switzerland/day-14-grindelwald-jungfraujoch-08.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-14-grindelwald-jungfraujoch-09.webp)
+![](../../../assets/adventures/2025-switzerland/day-14-grindelwald-jungfraujoch-09.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-14-grindelwald-jungfraujoch-10.webp)
+![](../../../assets/adventures/2025-switzerland/day-14-grindelwald-jungfraujoch-10.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-14-grindelwald-jungfraujoch-11.webp)
+![](../../../assets/adventures/2025-switzerland/day-14-grindelwald-jungfraujoch-11.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-14-grindelwald-jungfraujoch-12.webp)
+![](../../../assets/adventures/2025-switzerland/day-14-grindelwald-jungfraujoch-12.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-14-grindelwald-jungfraujoch-13.webp)
+![](../../../assets/adventures/2025-switzerland/day-14-grindelwald-jungfraujoch-13.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-14-grindelwald-jungfraujoch-14.webp)
+![](../../../assets/adventures/2025-switzerland/day-14-grindelwald-jungfraujoch-14.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-14-grindelwald-jungfraujoch-15.webp)
+![](../../../assets/adventures/2025-switzerland/day-14-grindelwald-jungfraujoch-15.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-14-grindelwald-jungfraujoch-16.webp)
+![](../../../assets/adventures/2025-switzerland/day-14-grindelwald-jungfraujoch-16.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-14-grindelwald-jungfraujoch-17.webp)
+![](../../../assets/adventures/2025-switzerland/day-14-grindelwald-jungfraujoch-17.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-14-grindelwald-jungfraujoch-18.webp)
+![](../../../assets/adventures/2025-switzerland/day-14-grindelwald-jungfraujoch-18.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-14-grindelwald-jungfraujoch-19.webp)
+![](../../../assets/adventures/2025-switzerland/day-14-grindelwald-jungfraujoch-19.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-14-grindelwald-jungfraujoch-20.webp)
+![](../../../assets/adventures/2025-switzerland/day-14-grindelwald-jungfraujoch-20.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-14-grindelwald-jungfraujoch-21.webp)
+![](../../../assets/adventures/2025-switzerland/day-14-grindelwald-jungfraujoch-21.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-14-grindelwald-jungfraujoch-22.webp)
+![](../../../assets/adventures/2025-switzerland/day-14-grindelwald-jungfraujoch-22.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-14-grindelwald-jungfraujoch-23.webp)
+![](../../../assets/adventures/2025-switzerland/day-14-grindelwald-jungfraujoch-23.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-14-grindelwald-jungfraujoch-24.webp)
+![](../../../assets/adventures/2025-switzerland/day-14-grindelwald-jungfraujoch-24.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-14-grindelwald-jungfraujoch-25.webp)
+![](../../../assets/adventures/2025-switzerland/day-14-grindelwald-jungfraujoch-25.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-14-grindelwald-jungfraujoch-26.webp)
+![](../../../assets/adventures/2025-switzerland/day-14-grindelwald-jungfraujoch-26.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-14-grindelwald-jungfraujoch-27.webp)
+![](../../../assets/adventures/2025-switzerland/day-14-grindelwald-jungfraujoch-27.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-14-grindelwald-jungfraujoch-28.webp)
+![](../../../assets/adventures/2025-switzerland/day-14-grindelwald-jungfraujoch-28.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-14-grindelwald-jungfraujoch-29.webp)
+![](../../../assets/adventures/2025-switzerland/day-14-grindelwald-jungfraujoch-29.webp)

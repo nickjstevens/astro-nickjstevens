@@ -3,7 +3,7 @@ title: "An essay on children and life"
 description: "What do children teach us about life? Everything. They teach us how our swirling emotions are just below the surface, ever ready to erupt as the ape brain takes over...."
 pubDate: 2022-05-13
 updatedDate: 2022-05-13
-heroImage: "../../assets/images/2022/05/B3460AA9-E3F3-4EBA-AC27-E05BBCACE33B.jpeg"
+heroImage: "../../assets/blog/common/B3460AA9-E3F3-4EBA-AC27-E05BBCACE33B.jpeg"
 tags: ["Philosophy"]
 layout: '../../layouts/BlogPost.astro'
 ---

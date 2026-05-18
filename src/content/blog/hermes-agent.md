@@ -3,7 +3,7 @@ title: "Hermes Agent"
 description: "An AI agent that is simple, powerful, and learns"
 pubDate: 2026-05-16
 updatedDate: 2026-05-16
-heroImage: "../../assets/blog-assets/hermes.png"
+heroImage: "../../assets/blog/hermes-agent/hermes.png"
 tags: ["Productivity", "Software"]
 layout: '../../layouts/BlogPost.astro'
 ---
@@ -28,7 +28,7 @@ Here are some specific examples of what I use Hermes for, all of which was set u
 - Refactoring: convert this Notion export folder over to Obsidian, dealing gracefully with name clashes
 - Spontaneous advice: based on what you know about me, what’s one thing I should do to move me towards my goals
 
-![Hermes Agent Map](../../assets/blog-assets/hermes-map.png)
+![Hermes Agent Map](../../assets/blog/hermes-agent/hermes-map.png)
 
 Honestly, it’s been fantastic, and the fact that it can write to the file system, work with git, employ terminal use, is just so helpful. 
 
@@ -36,6 +36,6 @@ I no longer need to copy and paste between a ChatGPT session to fix some obscure
 
 So if you haven’t tried agentic AI, or want a step up from vanilla Codex, give Hermes Agent a go. 
 
-You might find [my Tool Map](https://www.nickjstevens.com/ai-tool-map/) useful to understand and visualise how the various tools in an AI stack fit together. 
+You might find [my Tool Map](https://www.nickjstevens.com/tool-playground/ai-tool-map/) useful to understand and visualise how the various tools in an AI stack fit together. 
 
 

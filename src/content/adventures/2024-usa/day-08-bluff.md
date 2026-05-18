@@ -11,7 +11,7 @@ sleepLocation: "Bluff"
 activitiesAm: "Durango shops"
 drivingTime: "3 hours"
 accommodation: "Bluff Dwellings Resort"
-heroImage: "../../../assets/adventures/assets/2024-usa/day-08-bluff-01.webp"
+heroImage: "../../../assets/adventures/2024-usa/day-08-bluff-01.webp"
 ---
 ## Travel Log
 
@@ -23,39 +23,39 @@ Accommodation: 10/10 (a perfect spa resort in the desert)
 
 Bluff: 8/10 (we want to come back again)
 
-![Funny bear feet](../../../assets/adventures/assets/2024-usa/day-08-bluff-02.webp)
+![Funny bear feet](../../../assets/adventures/2024-usa/day-08-bluff-02.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-08-bluff-03.webp)
+![](../../../assets/adventures/2024-usa/day-08-bluff-03.webp)
 
-![Durango](../../../assets/adventures/assets/2024-usa/day-08-bluff-04.webp)
+![Durango](../../../assets/adventures/2024-usa/day-08-bluff-04.webp)
 
-![Amazing bookshop in Durango](../../../assets/adventures/assets/2024-usa/day-08-bluff-05.webp)
+![Amazing bookshop in Durango](../../../assets/adventures/2024-usa/day-08-bluff-05.webp)
 
-![Classy expresso for Nick](../../../assets/adventures/assets/2024-usa/day-08-bluff-06.webp)
+![Classy expresso for Nick](../../../assets/adventures/2024-usa/day-08-bluff-06.webp)
 
-![Welcome to Utah](../../../assets/adventures/assets/2024-usa/day-08-bluff-07.webp)
+![Welcome to Utah](../../../assets/adventures/2024-usa/day-08-bluff-07.webp)
 
-![Bluff Dwellings Resort](../../../assets/adventures/assets/2024-usa/day-08-bluff-08.webp)
+![Bluff Dwellings Resort](../../../assets/adventures/2024-usa/day-08-bluff-08.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-08-bluff-09.webp)
+![](../../../assets/adventures/2024-usa/day-08-bluff-09.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-08-bluff-10.webp)
+![](../../../assets/adventures/2024-usa/day-08-bluff-10.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-08-bluff-11.webp)
+![](../../../assets/adventures/2024-usa/day-08-bluff-11.webp)
 
-![Quite possible the most welcome pool in the world to relieve the heat of the desert](../../../assets/adventures/assets/2024-usa/day-08-bluff-12.webp)
+![Quite possible the most welcome pool in the world to relieve the heat of the desert](../../../assets/adventures/2024-usa/day-08-bluff-12.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-08-bluff-13.webp)
+![](../../../assets/adventures/2024-usa/day-08-bluff-13.webp)
 
-![The hot tub was not as hot as the air temperature](../../../assets/adventures/assets/2024-usa/day-08-bluff-14.webp)
+![The hot tub was not as hot as the air temperature](../../../assets/adventures/2024-usa/day-08-bluff-14.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-08-bluff-15.webp)
+![](../../../assets/adventures/2024-usa/day-08-bluff-15.webp)
 
-![Dusk in the desert](../../../assets/adventures/assets/2024-usa/day-08-bluff-16.webp)
+![Dusk in the desert](../../../assets/adventures/2024-usa/day-08-bluff-16.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-08-bluff-17.webp)
+![](../../../assets/adventures/2024-usa/day-08-bluff-17.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-08-bluff-18.webp)
+![](../../../assets/adventures/2024-usa/day-08-bluff-18.webp)
 
 Accommodation:
 

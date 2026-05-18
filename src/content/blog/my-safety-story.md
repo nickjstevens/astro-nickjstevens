@@ -4,7 +4,7 @@ description: "There is no single, universal definition of safety. Its personal. 
 pubDate: 2021-02-08
 updatedDate: 2025-07-13
 tags: ["Philosophy", "Engineering"]
-heroImage: "../../assets/blog-assets/notion-migration/my-safety-story/120BE644-B882-4BFB-B06D-6AC81239D02E.jpeg"
+heroImage: "../../assets/blog/my-safety-story/120BE644-B882-4BFB-B06D-6AC81239D02E.jpeg"
 ---
 
 There is no single, universal definition of safety. Its personal. It’s relative. Which is why I want to share a little personal safety story. Perhaps this acts as a catalyst to engage. Or perhaps it’s just some self catharsis in writing this down. Either way, mental health and wellbeing is the lens through which I look at safety. 
@@ -15,7 +15,7 @@ If you know me well, it’s clear that mental health and wellbeing is my persona
 
 If I trace back the roots of why mental health is important to me the definitive moment was probably having kids. There was something about becoming a parent, that made me realise that every father, mother, son, daughter, should go home safe every day. When you bring into the world a new consciousness, it brings challenges and ultimately big realisations, for me at least. Having kids made me realise there are bigger things than my own self interests. And, frankly, having kids made it essential I find a way to balance work stress and home stress, otherwise I'd have buckled under the strain!
 
-![Écrins National Park, July 2004](../../assets/blog-assets/notion-migration/my-safety-story/120BE644-B882-4BFB-B06D-6AC81239D02E.jpeg)
+![Écrins National Park, July 2004](../../assets/blog/my-safety-story/120BE644-B882-4BFB-B06D-6AC81239D02E.jpeg)
 
 When I was younger, pre kids, I had what I would call a near-death experience mountaineering in the alps. Hardly “touching the void”, but nonetheless, part of my safety story. I was climbing a glacier, roped together with someone in front and someone behind and we skirted a huge buttress on our left. It was dawn. It was beautiful. A rock, the size of a cannonball, buzzed in front of my face, at eye level, about 6 inches out, travelling at a hell of a speed. If it had hit me, it would have taken my head off. I was lucky. There was no warning; I didn't hear it first. This was an inflection point in my life and rocked my deeply (so deeply that I shaved my head and gave up alpine mountaineering overnight). My realisation is that objective danger - those random acts of god - that's a poor game of dice to play. Safety is about managing risks. Random hazards with fatal consequences are very hard to manage. The games we play, and the work we do, should be risks on our terms. Where we are in control. We should know, evaluate, assess and understand the risks on the things we design. And more than the cost-benefit analysis of risks, it's the deeper moral reasoning of “what is right” that should direct us. 
 

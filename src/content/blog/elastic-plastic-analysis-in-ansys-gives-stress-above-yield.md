@@ -4,7 +4,7 @@ description: "If you’ve ever turned on bilinear elastic perfectly plastic prop
 pubDate: 2019-07-17
 updatedDate: 2022-05-13
 tags: ["Engineering", "ANSYS", "Simulation"]
-heroImage: "../../assets/blog-assets/notion-migration/elastic-plastic-analysis-in-ansys-gives-stress-above-yield/Untitled 206.png"
+heroImage: "../../assets/blog/elastic-plastic-analysis-in-ansys-gives-stress-above-yield/Untitled-206.png"
 ---
 
 If you’ve ever turned on bilinear elastic-perfectly-plastic properties, you may have wondered why sometimes an elastic-plastic analysis in ANSYS gives stress above yield.
@@ -19,7 +19,7 @@ This means that if an element integration point exceeds yield, then this limit w
 
 The command which changes this default behaviour is `ERESX`. The ANSYS manual entry is as follows:
 
-![ANSYS Manual Entry for ERESX](../../assets/blog-assets/notion-migration/elastic-plastic-analysis-in-ansys-gives-stress-above-yield/Untitled%20206.png)
+![ANSYS Manual Entry for ERESX](../../assets/blog/elastic-plastic-analysis-in-ansys-gives-stress-above-yield/Untitled-206.png)
 
 # Changing the Default Integration Point Extrapolation Settings
 
@@ -31,9 +31,9 @@ If you are using Workbench, then a command snippet can be used to change this be
 
 So the two figures below show the same analysis, one with default settings and the other using `ERESX,NO`. Yield in this example is set as 700 MPa. You can see that with the default settings, using an elastic-plastic material model, that stresses are significantly above yield.
 
-![Elastic-Plastic Stress in ANSYS Exceeds 700 MPa Yield with Default Settings](../../assets/blog-assets/notion-migration/elastic-plastic-analysis-in-ansys-gives-stress-above-yield/Untitled%20207.png)
+![Elastic-Plastic Stress in ANSYS Exceeds 700 MPa Yield with Default Settings](../../assets/blog/elastic-plastic-analysis-in-ansys-gives-stress-above-yield/Untitled-207.png)
 
-![Elastic-Plastic Stress in ANSYS Limited to 700 MPa Yield with ERESX,NO](../../assets/blog-assets/notion-migration/elastic-plastic-analysis-in-ansys-gives-stress-above-yield/Untitled%20208.png)
+![Elastic-Plastic Stress in ANSYS Limited to 700 MPa Yield with ERESX,NO](../../assets/blog/elastic-plastic-analysis-in-ansys-gives-stress-above-yield/Untitled-208.png)
 
 # Closing Remarks
 

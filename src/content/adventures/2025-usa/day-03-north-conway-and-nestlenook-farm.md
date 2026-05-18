@@ -6,7 +6,7 @@ tripSlug: "2025-usa"
 kind: "day"
 year: 2025
 order: 3
-heroImage: "../../../assets/adventures/assets/2025-usa/day-03-north-conway-and-nestlenook-farm-01.webp"
+heroImage: "../../../assets/adventures/2025-usa/day-03-north-conway-and-nestlenook-farm-01.webp"
 sourceUrl: "https://nickjstevens.notion.site/day-3-north-conway-and-nestlenook-farm-2cced18142a580848caef48685816142?pvs=25"
 ---
 ## Travel Log
@@ -27,54 +27,54 @@ I’ll skip over Thea having a meltdown on the snowshoeing. The sleigh ride was 
 
 Back home, about 6pm now, we cooked those steaks and some sweetcorn for an absolutely delicious meal. Why is it that steak and corn tastes so much better in the States?!
 
-![IMG_2854.jpeg](../../../assets/adventures/assets/2025-usa/day-03-north-conway-and-nestlenook-farm-01.webp)
+![IMG_2854.jpeg](../../../assets/adventures/2025-usa/day-03-north-conway-and-nestlenook-farm-01.webp)
 
-![IMG_2855.jpeg](../../../assets/adventures/assets/2025-usa/day-03-north-conway-and-nestlenook-farm-02.webp)
+![IMG_2855.jpeg](../../../assets/adventures/2025-usa/day-03-north-conway-and-nestlenook-farm-02.webp)
 
-![IMG_2841.jpeg](../../../assets/adventures/assets/2025-usa/day-03-north-conway-and-nestlenook-farm-03.webp)
+![IMG_2841.jpeg](../../../assets/adventures/2025-usa/day-03-north-conway-and-nestlenook-farm-03.webp)
 
-![IMG_2836.jpeg](../../../assets/adventures/assets/2025-usa/day-03-north-conway-and-nestlenook-farm-04.webp)
+![IMG_2836.jpeg](../../../assets/adventures/2025-usa/day-03-north-conway-and-nestlenook-farm-04.webp)
 
-![IMG_2834.jpeg](../../../assets/adventures/assets/2025-usa/day-03-north-conway-and-nestlenook-farm-05.webp)
+![IMG_2834.jpeg](../../../assets/adventures/2025-usa/day-03-north-conway-and-nestlenook-farm-05.webp)
 
-![IMG_2808.jpeg](../../../assets/adventures/assets/2025-usa/day-03-north-conway-and-nestlenook-farm-06.webp)
+![IMG_2808.jpeg](../../../assets/adventures/2025-usa/day-03-north-conway-and-nestlenook-farm-06.webp)
 
-![IMG_2790.jpeg](../../../assets/adventures/assets/2025-usa/day-03-north-conway-and-nestlenook-farm-07.webp)
+![IMG_2790.jpeg](../../../assets/adventures/2025-usa/day-03-north-conway-and-nestlenook-farm-07.webp)
 
-![IMG_2761.jpeg](../../../assets/adventures/assets/2025-usa/day-03-north-conway-and-nestlenook-farm-08.webp)
+![IMG_2761.jpeg](../../../assets/adventures/2025-usa/day-03-north-conway-and-nestlenook-farm-08.webp)
 
-![IMG_2757.jpeg](../../../assets/adventures/assets/2025-usa/day-03-north-conway-and-nestlenook-farm-09.webp)
+![IMG_2757.jpeg](../../../assets/adventures/2025-usa/day-03-north-conway-and-nestlenook-farm-09.webp)
 
-![IMG_2749.jpeg](../../../assets/adventures/assets/2025-usa/day-03-north-conway-and-nestlenook-farm-10.webp)
+![IMG_2749.jpeg](../../../assets/adventures/2025-usa/day-03-north-conway-and-nestlenook-farm-10.webp)
 
-![IMG_2742.jpeg](../../../assets/adventures/assets/2025-usa/day-03-north-conway-and-nestlenook-farm-11.webp)
+![IMG_2742.jpeg](../../../assets/adventures/2025-usa/day-03-north-conway-and-nestlenook-farm-11.webp)
 
-![IMG_2736.jpeg](../../../assets/adventures/assets/2025-usa/day-03-north-conway-and-nestlenook-farm-12.webp)
+![IMG_2736.jpeg](../../../assets/adventures/2025-usa/day-03-north-conway-and-nestlenook-farm-12.webp)
 
-![IMG_2731.jpeg](../../../assets/adventures/assets/2025-usa/day-03-north-conway-and-nestlenook-farm-13.webp)
+![IMG_2731.jpeg](../../../assets/adventures/2025-usa/day-03-north-conway-and-nestlenook-farm-13.webp)
 
-![IMG_9818.jpeg](../../../assets/adventures/assets/2025-usa/day-03-north-conway-and-nestlenook-farm-14.webp)
+![IMG_9818.jpeg](../../../assets/adventures/2025-usa/day-03-north-conway-and-nestlenook-farm-14.webp)
 
-![IMG_9815.jpeg](../../../assets/adventures/assets/2025-usa/day-03-north-conway-and-nestlenook-farm-15.webp)
+![IMG_9815.jpeg](../../../assets/adventures/2025-usa/day-03-north-conway-and-nestlenook-farm-15.webp)
 
-![IMG_2724.jpeg](../../../assets/adventures/assets/2025-usa/day-03-north-conway-and-nestlenook-farm-16.webp)
+![IMG_2724.jpeg](../../../assets/adventures/2025-usa/day-03-north-conway-and-nestlenook-farm-16.webp)
 
-![IMG_9795.jpeg](../../../assets/adventures/assets/2025-usa/day-03-north-conway-and-nestlenook-farm-17.webp)
+![IMG_9795.jpeg](../../../assets/adventures/2025-usa/day-03-north-conway-and-nestlenook-farm-17.webp)
 
-![IMG_9794.jpeg](../../../assets/adventures/assets/2025-usa/day-03-north-conway-and-nestlenook-farm-18.webp)
+![IMG_9794.jpeg](../../../assets/adventures/2025-usa/day-03-north-conway-and-nestlenook-farm-18.webp)
 
-![IMG_9790.jpeg](../../../assets/adventures/assets/2025-usa/day-03-north-conway-and-nestlenook-farm-19.webp)
+![IMG_9790.jpeg](../../../assets/adventures/2025-usa/day-03-north-conway-and-nestlenook-farm-19.webp)
 
-![IMG_2715.jpeg](../../../assets/adventures/assets/2025-usa/day-03-north-conway-and-nestlenook-farm-20.webp)
+![IMG_2715.jpeg](../../../assets/adventures/2025-usa/day-03-north-conway-and-nestlenook-farm-20.webp)
 
-![IMG_2700.jpeg](../../../assets/adventures/assets/2025-usa/day-03-north-conway-and-nestlenook-farm-21.webp)
+![IMG_2700.jpeg](../../../assets/adventures/2025-usa/day-03-north-conway-and-nestlenook-farm-21.webp)
 
-![IMG_2685.jpeg](../../../assets/adventures/assets/2025-usa/day-03-north-conway-and-nestlenook-farm-22.webp)
+![IMG_2685.jpeg](../../../assets/adventures/2025-usa/day-03-north-conway-and-nestlenook-farm-22.webp)
 
-![IMG_2693.jpeg](../../../assets/adventures/assets/2025-usa/day-03-north-conway-and-nestlenook-farm-23.webp)
+![IMG_2693.jpeg](../../../assets/adventures/2025-usa/day-03-north-conway-and-nestlenook-farm-23.webp)
 
-![IMG_2683.jpeg](../../../assets/adventures/assets/2025-usa/day-03-north-conway-and-nestlenook-farm-24.webp)
+![IMG_2683.jpeg](../../../assets/adventures/2025-usa/day-03-north-conway-and-nestlenook-farm-24.webp)
 
-![IMG_2681.jpeg](../../../assets/adventures/assets/2025-usa/day-03-north-conway-and-nestlenook-farm-25.webp)
+![IMG_2681.jpeg](../../../assets/adventures/2025-usa/day-03-north-conway-and-nestlenook-farm-25.webp)
 
-![IMG_2671.jpeg](../../../assets/adventures/assets/2025-usa/day-03-north-conway-and-nestlenook-farm-26.webp)
+![IMG_2671.jpeg](../../../assets/adventures/2025-usa/day-03-north-conway-and-nestlenook-farm-26.webp)

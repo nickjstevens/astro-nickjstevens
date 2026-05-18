@@ -4,10 +4,10 @@ description: "I listened to this on Audible and it’s an excellent and engaging
 pubDate: 2019-06-12
 updatedDate: 2022-05-13
 tags: ["Productivity", "Books"]
-heroImage: "../../assets/blog-assets/notion-migration/the-one-thing-book-review/Untitled 217.png"
+heroImage: "../../assets/blog/the-one-thing-book-review/Untitled-217.png"
 ---
 
-![Untitled 217](../../assets/blog-assets/notion-migration/the-one-thing-book-review/Untitled%20217.png)
+![Untitled 217](../../assets/blog/the-one-thing-book-review/Untitled-217.png)
 
 ## Introduction and Context
 

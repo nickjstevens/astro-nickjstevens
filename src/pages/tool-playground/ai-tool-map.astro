@@ -1,0 +1,327 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+interface ToolNode {
+  id: string;
+  label: string;
+  category: string;
+  color: string;
+  uvp: string;
+  purpose: string;
+  usage?: string;
+  flow?: string;
+  link: string;
+}
+
+const nodes: Record<string, ToolNode> = {
+  AgentsMD: {
+    id: 'AgentsMD', label: '📘 AGENTS.md', category: 'Shared Context', color: 'gray',
+    uvp: 'Portable instruction contracts that ensure your AI persona and rules follow the codebase across any IDE.',
+    purpose: 'Standardizes agent behavior across different IDEs and CLIs using a simple markdown file.',
+    usage: 'Place in root to define available tools and constraints.',
+    flow: 'Fed into execution agents (Codex/Gemini) as system instructions.',
+    link: 'https://agents.md/'
+  },
+  DesignMD: {
+    id: 'DesignMD', label: '🎨 DESIGN.md', category: 'Shared Context', color: 'gray',
+    uvp: 'Design-system context for agents: compresses brand, tokens, component rules, and accessibility standards into a portable markdown brief.',
+    purpose: 'Guides AI-generated interfaces with implementation-ready design-system rules instead of ad hoc visual guesses.',
+    usage: 'Use alongside AGENTS.md when UI work needs consistent style foundations, component behavior, and accessibility acceptance criteria.',
+    flow: 'Fed into design-aware coding agents and UI generators as design instructions for interface implementation.',
+    link: 'https://www.typeui.sh/design-md'
+  },
+  Skills: {
+    id: 'Skills', label: '🧠 Skills', category: 'Shared Context', color: 'yellow',
+    uvp: 'Knowledge-as-code: Encapsulates complex task logic into reusable, proven blueprints.',
+    purpose: 'Library of reusable "know-how" and tool definitions.',
+    usage: 'Define common workflows like deployment or API auth here.',
+    flow: 'Retrieved by Orchestrators and mapped to execution routines.',
+    link: 'https://agentskills.io'
+  },
+  OpenSpec: {
+    id: 'OpenSpec', label: 'Open Spec', category: 'Shared Context', color: 'gray',
+    uvp: 'The vendor-neutral bridge for project intent, preventing proprietary lock-in at the requirement layer.',
+    purpose: 'Ensures portability of intent across different AI ecosystems.',
+    usage: 'Adhere to this when defining custom tools for vendor-neutrality.',
+    link: 'https://openspec.dev'
+  },
+  Impeccable: {
+    id: 'Impeccable', label: '✨ Impeccable', category: 'Shared Context', color: 'gray',
+    uvp: 'Open Spec for taste: A portable design-language layer that gives agents sharper style vocabulary, anti-patterns, and polish commands.',
+    purpose: 'Improves AI-generated frontend design with reusable skills, style references, and critique/audit/polish workflows.',
+    usage: 'Use when UI work needs stronger visual judgment, design-system alignment, and explicit avoidance of generic AI design clichés.',
+    flow: 'Fed into design-aware coding agents as style guidance alongside requirement specs and DESIGN.md context.',
+    link: 'https://github.com/pbakaus/impeccable'
+  },
+  SpecKit: {
+    id: 'SpecKit', label: '🧩 spec-kit', category: 'Shared Context', color: 'gray',
+    uvp: 'The planning compiler: Converts high-level design specs into actionable task lists for agents.',
+    purpose: 'Transforms design docs into executable task structures.',
+    usage: 'Bridge human requirements and agent action items.',
+    link: 'https://github.com/github/spec-kit'
+  },
+  BMad: {
+    id: 'BMad', label: 'BMad', category: 'Shared Context', color: 'gray',
+    uvp: 'Injects agile methodology into AI development to prevent agent drift and ensure QA rigor.',
+    purpose: 'Virtual agile methodology for AI-centric dev teams.',
+    usage: 'Follow for structured handoffs between Analyst/Dev/QA roles.',
+    link: 'https://github.com/bmadcode/BMAD-METHOD'
+  },
+  Paperclip: {
+    id: 'Paperclip', label: '📎 Paperclip', category: 'Governance', color: 'orange',
+    uvp: 'The autonomous executive: Oversees token budgets and security guardrails for the entire stack.',
+    purpose: 'Administrative control plane for resource allocation.',
+    usage: 'Set token budgets and approved tool lists here.',
+    link: 'https://github.com/paperclipai/paperclip'
+  },
+  OpenClaw: { id: 'OpenClaw', label: '🦞 OpenClaw', category: 'Orchestration', color: 'blue', uvp: 'Always-on infrastructure: The server hub for persistent background assistant activities.', purpose: 'Server-side hub for long-running assistant tasks', link: 'https://openclaw.ai' },
+  Hermes: { id: 'Hermes', label: '⚡ Hermes Agent', category: 'Orchestration', color: 'blue', uvp: 'Closed-loop learning: Turning development history into a private architectural intelligence asset.', purpose: 'Closed-loop learning system for agent improvement.', link: 'https://hermes-agent.nousresearch.com' },
+  Letta: { id: 'Letta', label: '🧭 Letta', category: 'Orchestration', color: 'blue', uvp: 'Stateful continuity: Solves LLM "amnesia" by providing long-term persistent memory.', purpose: 'Stateful memory engine ensuring persistent agent state.', usage: 'Critical for long-term projects requiring history.', link: 'https://github.com/letta-ai/letta' },
+  PicoClaw: { id: 'PicoClaw', label: '🪶 PicoClaw', category: 'Orchestration', color: 'blue', uvp: 'Local-first agility: Minimalist orchestration optimized for edge and mobile deployments.', purpose: 'Minimalist orchestration for edge/mobile devices.', link: 'https://picoclaw.io' },
+  OpenAgents: { id: 'OpenAgents', label: '🕸️ OpenAgents', category: 'Orchestration', color: 'green', uvp: 'Visual Workspace: A browser-based canvas for human-agent collaboration.', purpose: 'Web UI layer for visualizing multi-agent workspaces.', link: 'https://openagents.org' },
+  OpenAgentsControl: { id: 'OpenAgentsControl', label: '🎛️ OpenAgentsControl', category: 'Orchestration', color: 'green', uvp: 'Operational oversight: Adds centralized controls and guardrails on top of Crush-based agent workflows.', purpose: 'Plan-first AI agent framework with approval gates, built as a layer over Crush workflows (not OpenAgents workspace tooling).', link: 'https://github.com/darrenhinde/OpenAgentsControl' },
+  Goose: { id: 'Goose', label: '🪿 goose', category: 'Orchestration', color: 'green', uvp: 'General-purpose AI agent orchestration: Goes beyond coding to install, execute, edit, and test with any LLM.', purpose: 'Meta-orchestrator for broad AI automation and cross-model execution, not just code generation.', usage: 'Use when you want general AI agent workflows; complements code-first CLIs such as Codex/Crush.', link: 'https://github.com/aaif-goose/goose' },
+  OMX: { id: 'OMX', label: '🛠️ oh-my-codex (OMX)', category: 'Orchestration', color: 'green', uvp: 'Performance tuning: Specifically optimized for high-velocity OpenAI code generation.', purpose: 'Performance harness for parallel Codex workflows.', link: 'https://github.com/Yeachan-Heo/oh-my-codex' },
+  OMOA: { id: 'OMOA', label: '🧵 oh-my-openagent', category: 'Orchestration', color: 'green', uvp: 'Parallel execution: Background harness for the Crush runtime.', purpose: 'Background harness for Crush runtime.', link: 'https://ohmyopenagent.com' },
+  Trellis: { id: 'Trellis', label: '🌿 Trellis', category: 'Orchestration', color: 'green', uvp: 'Multi-platform coding harness: Unifies specs, tasks, and workflow wiring across many AI coding tools.', purpose: 'Agent harness and workflow framework for AI coding platforms (Codex, Crush, Claude Code, Gemini CLI, and more).', usage: 'Use to standardize coding workflows and context injection across teams and tools.', link: 'https://github.com/mindfold-ai/Trellis' },
+  GeminiCLI: { id: 'GeminiCLI', label: '💎 Gemini CLI', category: 'Execution', color: 'green', uvp: 'Context King: The only CLI tool built to analyze 1M+ tokens of project history.', purpose: 'Google coding agent leveraging massive context.', link: 'https://github.com/google-gemini/gemini-cli' },
+  CodexCLI: { id: 'CodexCLI', label: '🤖 Codex CLI', category: 'Execution', color: 'green', uvp: 'Incremental precision: The gold standard for surgical repository edits.', purpose: 'OpenAI coding agent for terminal-based repo edits and coding automation.', usage: 'Primarily focused on software development tasks (code changes, tests, repo workflows).', link: 'https://github.com/openai/codex' },
+  PiAgent: { id: 'PiAgent', label: '🧰 Pi Agent', category: 'Execution', color: 'green', uvp: 'Universal toolkit: A model-agnostic execution layer for hybrid workflows.', purpose: 'Unified toolkit abstracting multiple LLM providers.', link: 'https://shittycodingagent.ai' },
+  OpenClaude: { id: 'OpenClaude', label: '👐 OpenClaude', category: 'Execution', color: 'green', uvp: 'Model-flexible coding CLI: One coding-agent UX across local and cloud model providers.', purpose: 'Open-source coding-agent CLI supporting OpenAI-compatible APIs, Gemini, Ollama, Codex, and more.', usage: 'Use as a terminal-first coding agent across many backends.', link: 'https://github.com/Gitlawb/openclaude' },
+  Aider: { id: 'Aider', label: '🧑‍💻 Aider', category: 'Execution', color: 'green', uvp: 'Terminal pair-programming specialist: Tight, iterative AI-assisted code editing in existing repos.', purpose: 'AI pair programming tool for terminal-centric coding workflows.', usage: 'Best for code-focused pair programming loops inside git repos.', link: 'https://github.com/Aider-AI/aider' },
+  Plandex: { id: 'Plandex', label: '🗺️ Plandex', category: 'Execution', color: 'green', uvp: 'Large-project coding agent: Built for multi-file, real-world implementation tasks.', purpose: 'Open-source AI coding agent designed for larger codebases and complex coding tasks.', usage: 'Useful for longer-horizon software implementation across many files.', link: 'https://github.com/plandex-ai/plandex' },
+  Cline: { id: 'Cline', label: '🤖 Cline', category: 'Execution', color: 'green', uvp: 'Autonomous coding agent: The open-source standard for AI-driven software engineering in the IDE.', purpose: 'Autonomous coding assistant that can read/write files, execute commands, and use tools to solve complex engineering tasks.', usage: 'Use as a VS Code extension for powerful, autonomous coding loops.', link: 'https://github.com/cline/cline' },
+  Crush: { id: 'Crush', label: '🥤 Crush', category: 'Execution', color: 'green', uvp: 'Open Runtime: Full local-to-cloud flexibility without proprietary lock-in.', purpose: 'Open-source AI coding agent runtime for terminal, IDE, and desktop workflows.', usage: 'Primarily focused on software development tasks rather than general-purpose consumer AI use cases.', link: 'https://github.com/charmbracelet/crush' },
+  Ollama: { id: 'Ollama', label: '🦙 Ollama + Gemma 4', category: 'Inference', color: 'blue', uvp: 'Air-gapped privacy: Private local inference with zero data leakage.', purpose: 'Private local model inference.', link: 'https://ollama.com/' },
+  OpenAIModels: { id: 'OpenAIModels', label: '🧠 OpenAI Models', category: 'Inference', color: 'blue', uvp: 'Logic Leader: High-complexity cloud reasoning for core features.', purpose: 'Cloud reasoning engine for high complexity.', link: 'https://platform.openai.com/docs/models' },
+  GeminiModels: { id: 'GeminiModels', label: '🌌 Gemini Models', category: 'Inference', color: 'blue', uvp: 'Massive Context: Cloud-scale reasoning across your entire project history.', purpose: 'Context-heavy cloud models (1M+ tokens).', link: 'https://ai.google.dev/gemini-api/docs/models' },
+  FileSystem: { id: 'FileSystem', label: '🗂️ Local File System', category: 'Storage', color: 'white', uvp: 'Artifact Truth: The physical anchor for all generated outputs.', purpose: 'Physical source of truth for all code and research.', link: '' },
+  MCP: { id: 'MCP', label: '🔌 MCP', category: 'Protocol', color: 'yellow', uvp: 'The USB standard for AI: One protocol to connect any agent to any local tool.', purpose: 'Model Context Protocol connecting agents to tools.', link: 'https://modelcontextprotocol.io/' },
+  MCPTools: { id: 'MCPTools', label: '🧰 Tools', category: 'Protocol', color: 'yellow', uvp: 'Standard tool interaction protocol.', purpose: 'Standard interfaces for agents to interact with external code.', link: 'https://modelcontextprotocol.io/docs/concepts/tools' },
+  MCPMemory: { id: 'MCPMemory', label: '🧠 Memory', category: 'Protocol', color: 'yellow', uvp: 'Standard context retrieval protocol.', purpose: 'Allows different memory engines to talk to the same agents.', link: '' },
+  MCPSearch: { id: 'MCPSearch', label: '🔎 Search', category: 'Protocol', color: 'yellow', uvp: 'Standard discovery protocol.', purpose: 'Gives agents a unified way to perform web or local searches.', link: '' },
+  MCPFiles: { id: 'MCPFiles', label: '📁 Files', category: 'Protocol', color: 'yellow', uvp: 'Standard file access protocol.', purpose: 'Secure, protocol-based file manipulation for agents.', link: 'https://modelcontextprotocol.io/docs/concepts/resources' },
+  MCPAPIs: { id: 'MCPAPIs', label: '🌐 APIs', category: 'Protocol', color: 'yellow', uvp: 'Standard web integration protocol.', purpose: 'Connects the MCP bus to any REST or GraphQL endpoint.', link: '' }
+};
+
+const recommendedStack = ['Hermes', 'CodexCLI', 'OpenAIModels', 'FileSystem', 'Skills', 'SpecKit', 'Ollama', 'MCP', 'MCPSearch', 'MCPFiles', 'OMX'];
+const labels = {
+  context: ['AgentsMD', 'DesignMD', 'Skills', 'OpenSpec', 'Impeccable', 'SpecKit', 'BMad'],
+  orchestration1: ['OpenClaw', 'Hermes', 'Letta', 'PicoClaw'],
+  orchestration2: ['OpenAgents', 'OpenAgentsControl', 'Goose', 'OMX', 'OMOA', 'Trellis'],
+  execution: ['GeminiCLI', 'CodexCLI', 'PiAgent', 'Crush', 'OpenClaude', 'Aider', 'Plandex', 'Cline'],
+  intelligence: ['Ollama', 'OpenAIModels', 'GeminiModels'],
+  mcp: ['MCP', 'MCPTools', 'MCPMemory', 'MCPSearch', 'MCPFiles', 'MCPAPIs']
+};
+---
+
+<html lang="en">
+  <head>
+    <BaseHead title="AI Tool Map" description="AI Tooling Orchestration Stack Map" />
+    <style>
+      .ai-map-shell { width: min(1200px, calc(100% - 2rem)); margin: 2rem auto 3rem; }
+      .hero { text-align: center; margin-bottom: 2rem; }
+      .hero h1 { font-size: clamp(2rem, 4vw, 3rem); text-transform: uppercase; letter-spacing: -0.03em; font-weight: 800; }
+      .hero p { color: var(--text-muted); max-width: 700px; margin: .75rem auto 0; }
+      .toggle-btn { margin-top: 1.25rem; border: 2px solid #7c3aed; color: #7c3aed; background: transparent; padding: .8rem 1.2rem; border-radius: .8rem; font-weight: 700; cursor: pointer; }
+      .toggle-btn.active { background: #7c3aed; color: #fff; }
+
+      .grid { display: grid; grid-template-columns: 2fr 8fr 2fr; gap: 1rem; }
+      .card { border: 1px solid var(--border); border-radius: 1.2rem; padding: 1rem; background: color-mix(in srgb, var(--surface-alt) 90%, transparent); }
+      .group-title { font-size: .7rem; letter-spacing: .22em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 1rem; font-weight: 700; }
+      .col { display: flex; flex-direction: column; gap: .8rem; }
+      .center-col { display: flex; flex-direction: column; gap: 1rem; }
+      .orchestration, .execution, .intelligence { border: 2px solid rgba(148,163,184,.2); border-radius: 1.2rem; padding: 1rem; }
+      .node-grid-4 { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: .65rem; }
+      .node-grid-3 { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: .65rem; }
+      .bottom-grid { display: grid; grid-template-columns: 8fr 4fr; gap: 1rem; }
+      .node { border: 2px solid rgba(148,163,184,.3); border-radius: .9rem; padding: .7rem .5rem; text-align: center; font-size: .66rem; font-weight: 800; text-transform: uppercase; letter-spacing: .02em; cursor: pointer; background: rgba(255,255,255,.04); }
+      .node-yellow { border-color: #facc15; background: rgba(250,204,21,.12); }
+      .node-blue { border-color: #60a5fa; background: rgba(96,165,250,.12); }
+      .node-green { border-color: #4ade80; background: rgba(74,222,128,.12); }
+      .node-orange { border-color: #fb923c; background: rgba(251,146,60,.12); }
+      .node.gray { border-color: rgba(148,163,184,.45); }
+      .node:hover { transform: translateY(-1px); }
+      .node.dimmed { opacity: .3; filter: grayscale(1); }
+      .node.highlight { outline: 3px solid #7c3aed; box-shadow: 0 0 0 4px rgba(124,58,237,.2); }
+
+      .overlay { position: fixed; z-index: 100; width: min(85vw, 340px); background: #0f172a; color: #fff; border: 1px solid #334155; border-radius: 1rem; display: none; }
+      .overlay.open { display: block; }
+      .overlay-head { padding: .9rem 1rem; border-bottom: 1px solid #334155; display: flex; justify-content: space-between; align-items: center; }
+      .overlay-head button { border: 0; background: transparent; color: #cbd5e1; cursor: pointer; font-size: 1rem; }
+      .overlay-body { padding: .9rem 1rem; font-size: .78rem; line-height: 1.45; max-height: 55vh; overflow: auto; }
+      .overlay small { display: block; text-transform: uppercase; letter-spacing: .15em; color: #94a3b8; margin-bottom: .15rem; }
+      .pill { margin-bottom: .7rem; padding: .6rem; border-radius: .8rem; background: rgba(99,102,241,.2); border: 1px solid rgba(129,140,248,.35); }
+      .footer-note { margin-top: 1.3rem; text-align: center; font-size: .72rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: .11em; }
+      .build { margin-top: 1rem; text-align:center; font-size:.6rem; color: var(--text-muted); letter-spacing: .2em; text-transform: uppercase; }
+      @media (max-width: 1024px) {
+        .grid { grid-template-columns: 1fr; }
+        .node-grid-4 { grid-template-columns: repeat(2,minmax(0,1fr)); }
+        .bottom-grid { grid-template-columns: 1fr; }
+        .node-grid-3 { grid-template-columns: 1fr; }
+      }
+    </style>
+  </head>
+  <body>
+    <Header />
+    <main>
+      <section class="ai-map-shell" id="ai-map-root" data-nodes={JSON.stringify(nodes)} data-recommended={JSON.stringify(recommendedStack)}>
+        <div class="hero">
+          <h1>AI Tooling Orchestration Stack Map</h1>
+          <p>Understanding multi-agent systems, workflows, protocols, and local resources.</p>
+          <button id="stack-toggle" class="toggle-btn" type="button">⚡ Highlight My Recommended Stack</button>
+        </div>
+
+        <div class="grid">
+          <aside class="card">
+            <h3 class="group-title">Context Rail</h3>
+            <div class="col">{labels.context.map((id) => <div class={`node ${nodes[id].color === 'gray' ? 'gray' : `node-${nodes[id].color}`}`} data-node-id={id}>{nodes[id].label}</div>)}</div>
+          </aside>
+
+          <div class="center-col">
+            <div class="card">
+              <div class="group-title" style="text-align:center">Control Plane</div>
+              <div style="display:flex; justify-content:center;"><div class="node node-orange" data-node-id="Paperclip">Paperclip</div></div>
+            </div>
+            <div class="orchestration">
+              <div class="group-title" style="text-align:center">Orchestration &amp; Harnesses</div>
+              <div class="node-grid-4">{labels.orchestration1.map((id) => <div class={`node node-${nodes[id].color}`} data-node-id={id}>{nodes[id].label}</div>)}</div>
+              <div class="node-grid-4" style="margin-top:.6rem;">{labels.orchestration2.map((id) => <div class={`node node-${nodes[id].color}`} data-node-id={id}>{nodes[id].label}</div>)}</div>
+            </div>
+            <div class="execution">
+              <div class="group-title" style="text-align:center">Execution Agent Layer</div>
+              <div class="node-grid-4">{labels.execution.map((id) => <div class={`node node-${nodes[id].color}`} data-node-id={id}>{nodes[id].label}</div>)}</div>
+            </div>
+            <div class="bottom-grid">
+              <div class="intelligence">
+                <div class="group-title" style="text-align:center">Model Intelligence</div>
+                <div class="node-grid-3">{labels.intelligence.map((id) => <div class={`node node-${nodes[id].color}`} data-node-id={id}>{nodes[id].label}</div>)}</div>
+              </div>
+              <div class="card" style="display:flex; align-items:center; justify-content:center;">
+                <div class="node" data-node-id="FileSystem">Local File System</div>
+              </div>
+            </div>
+          </div>
+
+          <aside class="card" style="background: rgba(250,204,21,.08);">
+            <h3 class="group-title">MCP Bus</h3>
+            <div class="col">{labels.mcp.map((id) => <div class="node node-yellow" data-node-id={id}>{nodes[id].label}</div>)}</div>
+          </aside>
+        </div>
+
+        <p class="footer-note" id="hover-hint">Hover components to explore architectural purpose and unique value propositions.</p>
+        <div class="build">Orchestration Topology • Build v20.5</div>
+      </section>
+      <div id="node-overlay" class="overlay" aria-live="polite">
+        <div class="overlay-head">
+          <div>
+            <strong id="ov-label"></strong>
+            <small id="ov-cat"></small>
+          </div>
+          <button type="button" id="ov-close" aria-label="Close details">✕</button>
+        </div>
+        <div class="overlay-body">
+          <div class="pill">
+            <small>Value Proposition</small>
+            <div id="ov-uvp"></div>
+          </div>
+          <div style="margin-bottom:.7rem;">
+            <small>Purpose</small>
+            <div id="ov-purpose"></div>
+          </div>
+          <div id="ov-usage-wrap" style="display:none; margin-bottom:.7rem;">
+            <small>Usage Note</small>
+            <div id="ov-usage"></div>
+          </div>
+          <div id="ov-flow-wrap" style="display:none; border-top:1px solid #334155; padding-top:.7rem;">
+            <small>System Logic</small>
+            <div id="ov-flow"></div>
+          </div>
+          <div id="ov-link-wrap" style="display:none; border-top:1px solid #334155; padding-top:.7rem;">
+            <small>Link</small>
+            <a id="ov-link" href="#" target="_blank" rel="noopener noreferrer" style="color:#93c5fd; text-decoration:underline;"></a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <Footer />
+    <script is:inline>
+      (() => {
+        const root = document.getElementById('ai-map-root');
+        if (!root) return;
+        const nodes = JSON.parse(root.dataset.nodes || '{}');
+        const recommended = new Set(JSON.parse(root.dataset.recommended || '[]'));
+        const nodeEls = [...root.querySelectorAll('[data-node-id]')];
+        const overlay = document.getElementById('node-overlay');
+        const closeBtn = document.getElementById('ov-close');
+        const toggleBtn = document.getElementById('stack-toggle');
+        const hint = document.getElementById('hover-hint');
+        let highlighted = false;
+
+        const setOverlay = (id, event) => {
+          const node = nodes[id];
+          if (!node || !overlay) return;
+          document.getElementById('ov-label').textContent = node.label;
+          document.getElementById('ov-cat').textContent = node.category;
+          document.getElementById('ov-uvp').textContent = node.uvp;
+          document.getElementById('ov-purpose').textContent = node.purpose;
+          const usageWrap = document.getElementById('ov-usage-wrap');
+          const flowWrap = document.getElementById('ov-flow-wrap');
+          const linkWrap = document.getElementById('ov-link-wrap');
+          const linkEl = document.getElementById('ov-link');
+          usageWrap.style.display = node.usage ? 'block' : 'none';
+          flowWrap.style.display = node.flow ? 'block' : 'none';
+          linkWrap.style.display = node.link ? 'block' : 'none';
+          document.getElementById('ov-usage').textContent = node.usage || '';
+          document.getElementById('ov-flow').textContent = node.flow || '';
+          if (node.link && linkEl) {
+            linkEl.href = node.link;
+            linkEl.textContent = node.link;
+          }
+
+          const x = Math.min((event?.clientX || window.innerWidth / 2) + 16, window.innerWidth - 360);
+          const y = Math.min((event?.clientY || window.innerHeight / 2) + 16, window.innerHeight - 420);
+          overlay.style.left = `${Math.max(12, x)}px`;
+          overlay.style.top = `${Math.max(90, y)}px`;
+          overlay.classList.add('open');
+        };
+
+        const hideOverlay = () => overlay?.classList.remove('open');
+
+        nodeEls.forEach((el) => {
+          el.addEventListener('mouseenter', (event) => setOverlay(el.dataset.nodeId, event));
+          el.addEventListener('click', (event) => {
+            event.stopPropagation();
+            setOverlay(el.dataset.nodeId, event);
+          });
+        });
+
+        document.addEventListener('click', (event) => {
+          if (!(event.target instanceof HTMLElement)) return;
+          if (!event.target.closest('#node-overlay') && !event.target.closest('[data-node-id]')) hideOverlay();
+        });
+
+        closeBtn?.addEventListener('click', hideOverlay);
+
+        toggleBtn?.addEventListener('click', () => {
+          highlighted = !highlighted;
+          nodeEls.forEach((el) => {
+            const id = el.dataset.nodeId;
+            const inStack = recommended.has(id);
+            el.classList.toggle('highlight', highlighted && inStack);
+            el.classList.toggle('dimmed', highlighted && !inStack);
+          });
+          toggleBtn.classList.toggle('active', highlighted);
+          toggleBtn.textContent = highlighted ? '⚡ Reset Map' : '⚡ Highlight My Recommended Stack';
+        });
+
+        const isMobile = window.matchMedia('(max-width: 768px)').matches;
+        if (isMobile && hint) {
+          hint.textContent = "Tap tools to see value propositions. Use the 'X' or tap the background to hide.";
+        }
+      })();
+    </script>
+  </body>
+</html>

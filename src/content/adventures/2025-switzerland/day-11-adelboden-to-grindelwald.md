@@ -8,7 +8,7 @@ year: 2025
 order: 11
 date: "2025-08-07"
 sleepLocation: "Grindelwald"
-heroImage: "../../../assets/adventures/assets/2025-switzerland/day-11-adelboden-to-grindelwald-01.webp"
+heroImage: "../../../assets/adventures/2025-switzerland/day-11-adelboden-to-grindelwald-01.webp"
 ---
 ## Travel Log
 
@@ -24,52 +24,52 @@ When we arrived in Grindelwald it was absolutely heaving and trying to park to p
 
 We did manage to get some food from the Coop and hopefully can do without any other big shops now. In the evening we got to experience the quieter side of Grindelwald from our chalet on the hill with lovely views of the Eiger. Jasper watched Jurassic Park on DVD once we finally figured out how to work it.
 
-![](../../../assets/adventures/assets/2025-switzerland/day-11-adelboden-to-grindelwald-02.webp)
+![](../../../assets/adventures/2025-switzerland/day-11-adelboden-to-grindelwald-02.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-11-adelboden-to-grindelwald-03.webp)
+![](../../../assets/adventures/2025-switzerland/day-11-adelboden-to-grindelwald-03.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-11-adelboden-to-grindelwald-04.webp)
+![](../../../assets/adventures/2025-switzerland/day-11-adelboden-to-grindelwald-04.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-11-adelboden-to-grindelwald-05.webp)
+![](../../../assets/adventures/2025-switzerland/day-11-adelboden-to-grindelwald-05.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-11-adelboden-to-grindelwald-06.webp)
+![](../../../assets/adventures/2025-switzerland/day-11-adelboden-to-grindelwald-06.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-11-adelboden-to-grindelwald-07.webp)
+![](../../../assets/adventures/2025-switzerland/day-11-adelboden-to-grindelwald-07.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-11-adelboden-to-grindelwald-08.webp)
+![](../../../assets/adventures/2025-switzerland/day-11-adelboden-to-grindelwald-08.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-11-adelboden-to-grindelwald-09.webp)
+![](../../../assets/adventures/2025-switzerland/day-11-adelboden-to-grindelwald-09.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-11-adelboden-to-grindelwald-10.webp)
+![](../../../assets/adventures/2025-switzerland/day-11-adelboden-to-grindelwald-10.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-11-adelboden-to-grindelwald-11.webp)
+![](../../../assets/adventures/2025-switzerland/day-11-adelboden-to-grindelwald-11.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-11-adelboden-to-grindelwald-12.webp)
+![](../../../assets/adventures/2025-switzerland/day-11-adelboden-to-grindelwald-12.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-11-adelboden-to-grindelwald-13.webp)
+![](../../../assets/adventures/2025-switzerland/day-11-adelboden-to-grindelwald-13.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-11-adelboden-to-grindelwald-14.webp)
+![](../../../assets/adventures/2025-switzerland/day-11-adelboden-to-grindelwald-14.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-11-adelboden-to-grindelwald-15.webp)
+![](../../../assets/adventures/2025-switzerland/day-11-adelboden-to-grindelwald-15.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-11-adelboden-to-grindelwald-16.webp)
+![](../../../assets/adventures/2025-switzerland/day-11-adelboden-to-grindelwald-16.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-11-adelboden-to-grindelwald-17.webp)
+![](../../../assets/adventures/2025-switzerland/day-11-adelboden-to-grindelwald-17.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-11-adelboden-to-grindelwald-18.webp)
+![](../../../assets/adventures/2025-switzerland/day-11-adelboden-to-grindelwald-18.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-11-adelboden-to-grindelwald-19.webp)
+![](../../../assets/adventures/2025-switzerland/day-11-adelboden-to-grindelwald-19.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-11-adelboden-to-grindelwald-20.webp)
+![](../../../assets/adventures/2025-switzerland/day-11-adelboden-to-grindelwald-20.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-11-adelboden-to-grindelwald-21.webp)
+![](../../../assets/adventures/2025-switzerland/day-11-adelboden-to-grindelwald-21.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-11-adelboden-to-grindelwald-22.webp)
+![](../../../assets/adventures/2025-switzerland/day-11-adelboden-to-grindelwald-22.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-11-adelboden-to-grindelwald-23.webp)
+![](../../../assets/adventures/2025-switzerland/day-11-adelboden-to-grindelwald-23.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-11-adelboden-to-grindelwald-24.webp)
+![](../../../assets/adventures/2025-switzerland/day-11-adelboden-to-grindelwald-24.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-11-adelboden-to-grindelwald-25.webp)
+![](../../../assets/adventures/2025-switzerland/day-11-adelboden-to-grindelwald-25.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-11-adelboden-to-grindelwald-26.webp)
+![](../../../assets/adventures/2025-switzerland/day-11-adelboden-to-grindelwald-26.webp)

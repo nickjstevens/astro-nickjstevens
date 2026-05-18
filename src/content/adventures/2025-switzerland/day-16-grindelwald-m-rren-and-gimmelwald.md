@@ -8,7 +8,7 @@ year: 2025
 order: 16
 date: "2025-08-12"
 sleepLocation: "Grindelwald"
-heroImage: "../../../assets/adventures/assets/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-01.webp"
+heroImage: "../../../assets/adventures/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-01.webp"
 ---
 ## Travel Log
 
@@ -24,84 +24,84 @@ We headed back to Grindelwald and straight to the outdoor swimming pool to cool 
 
 In the evening we watched the rest of the second Hunger Games movie on DVD.
 
-![](../../../assets/adventures/assets/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-02.webp)
+![](../../../assets/adventures/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-02.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-03.webp)
+![](../../../assets/adventures/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-03.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-04.webp)
+![](../../../assets/adventures/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-04.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-05.webp)
+![](../../../assets/adventures/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-05.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-06.webp)
+![](../../../assets/adventures/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-06.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-07.webp)
+![](../../../assets/adventures/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-07.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-08.webp)
+![](../../../assets/adventures/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-08.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-09.webp)
+![](../../../assets/adventures/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-09.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-10.webp)
+![](../../../assets/adventures/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-10.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-11.webp)
+![](../../../assets/adventures/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-11.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-12.webp)
+![](../../../assets/adventures/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-12.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-13.webp)
+![](../../../assets/adventures/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-13.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-14.webp)
+![](../../../assets/adventures/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-14.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-15.webp)
+![](../../../assets/adventures/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-15.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-16.webp)
+![](../../../assets/adventures/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-16.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-17.webp)
+![](../../../assets/adventures/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-17.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-18.webp)
+![](../../../assets/adventures/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-18.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-19.webp)
+![](../../../assets/adventures/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-19.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-20.webp)
+![](../../../assets/adventures/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-20.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-21.webp)
+![](../../../assets/adventures/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-21.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-22.webp)
+![](../../../assets/adventures/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-22.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-23.webp)
+![](../../../assets/adventures/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-23.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-24.webp)
+![](../../../assets/adventures/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-24.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-25.webp)
+![](../../../assets/adventures/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-25.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-26.webp)
+![](../../../assets/adventures/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-26.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-27.webp)
+![](../../../assets/adventures/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-27.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-28.webp)
+![](../../../assets/adventures/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-28.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-29.webp)
+![](../../../assets/adventures/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-29.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-30.webp)
+![](../../../assets/adventures/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-30.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-31.webp)
+![](../../../assets/adventures/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-31.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-32.webp)
+![](../../../assets/adventures/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-32.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-33.webp)
+![](../../../assets/adventures/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-33.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-34.webp)
+![](../../../assets/adventures/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-34.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-35.webp)
+![](../../../assets/adventures/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-35.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-36.webp)
+![](../../../assets/adventures/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-36.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-37.webp)
+![](../../../assets/adventures/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-37.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-38.webp)
+![](../../../assets/adventures/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-38.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-39.webp)
+![](../../../assets/adventures/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-39.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-40.webp)
+![](../../../assets/adventures/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-40.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-41.webp)
+![](../../../assets/adventures/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-41.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-42.webp)
+![](../../../assets/adventures/2025-switzerland/day-16-grindelwald-m-rren-and-gimmelwald-42.webp)

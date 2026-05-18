@@ -8,7 +8,7 @@ year: 2025
 order: 15
 date: "2025-08-11"
 sleepLocation: "Grindelwald"
-heroImage: "../../../assets/adventures/assets/2025-switzerland/day-15-grindelwald-m-nnlichen-01.webp"
+heroImage: "../../../assets/adventures/2025-switzerland/day-15-grindelwald-m-nnlichen-01.webp"
 ---
 ## Travel Log
 
@@ -24,68 +24,68 @@ Tomorrow the plan is to get out earlier for a short walk and then spend the lion
 
 A few moments to reflect on Grindelwald (and Lauterbrunnen: the scenery is nice, but it’s so touristy that I don’t think I’d come back. There are just bus load after bus load of tourists and as a town Grindelwald is really spread out and quite confusing with its three train stations and not very walkable at all. Also, because the mountain access is a combination of cable cars and trains it’s much more confusing, especially when not all lifts are covered by the pass. The trains are also much slower than gondolas. Zermatt was walkable and charming. Adelboden was authentic and friendly. Chamonix was accessible and with epic views.
 
-![](../../../assets/adventures/assets/2025-switzerland/day-15-grindelwald-m-nnlichen-02.webp)
+![](../../../assets/adventures/2025-switzerland/day-15-grindelwald-m-nnlichen-02.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-15-grindelwald-m-nnlichen-03.webp)
+![](../../../assets/adventures/2025-switzerland/day-15-grindelwald-m-nnlichen-03.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-15-grindelwald-m-nnlichen-04.webp)
+![](../../../assets/adventures/2025-switzerland/day-15-grindelwald-m-nnlichen-04.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-15-grindelwald-m-nnlichen-05.webp)
+![](../../../assets/adventures/2025-switzerland/day-15-grindelwald-m-nnlichen-05.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-15-grindelwald-m-nnlichen-06.webp)
+![](../../../assets/adventures/2025-switzerland/day-15-grindelwald-m-nnlichen-06.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-15-grindelwald-m-nnlichen-07.webp)
+![](../../../assets/adventures/2025-switzerland/day-15-grindelwald-m-nnlichen-07.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-15-grindelwald-m-nnlichen-08.webp)
+![](../../../assets/adventures/2025-switzerland/day-15-grindelwald-m-nnlichen-08.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-15-grindelwald-m-nnlichen-09.webp)
+![](../../../assets/adventures/2025-switzerland/day-15-grindelwald-m-nnlichen-09.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-15-grindelwald-m-nnlichen-10.webp)
+![](../../../assets/adventures/2025-switzerland/day-15-grindelwald-m-nnlichen-10.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-15-grindelwald-m-nnlichen-11.webp)
+![](../../../assets/adventures/2025-switzerland/day-15-grindelwald-m-nnlichen-11.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-15-grindelwald-m-nnlichen-12.webp)
+![](../../../assets/adventures/2025-switzerland/day-15-grindelwald-m-nnlichen-12.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-15-grindelwald-m-nnlichen-13.webp)
+![](../../../assets/adventures/2025-switzerland/day-15-grindelwald-m-nnlichen-13.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-15-grindelwald-m-nnlichen-14.webp)
+![](../../../assets/adventures/2025-switzerland/day-15-grindelwald-m-nnlichen-14.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-15-grindelwald-m-nnlichen-15.webp)
+![](../../../assets/adventures/2025-switzerland/day-15-grindelwald-m-nnlichen-15.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-15-grindelwald-m-nnlichen-16.webp)
+![](../../../assets/adventures/2025-switzerland/day-15-grindelwald-m-nnlichen-16.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-15-grindelwald-m-nnlichen-17.webp)
+![](../../../assets/adventures/2025-switzerland/day-15-grindelwald-m-nnlichen-17.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-15-grindelwald-m-nnlichen-18.webp)
+![](../../../assets/adventures/2025-switzerland/day-15-grindelwald-m-nnlichen-18.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-15-grindelwald-m-nnlichen-19.webp)
+![](../../../assets/adventures/2025-switzerland/day-15-grindelwald-m-nnlichen-19.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-15-grindelwald-m-nnlichen-20.webp)
+![](../../../assets/adventures/2025-switzerland/day-15-grindelwald-m-nnlichen-20.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-15-grindelwald-m-nnlichen-21.webp)
+![](../../../assets/adventures/2025-switzerland/day-15-grindelwald-m-nnlichen-21.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-15-grindelwald-m-nnlichen-22.webp)
+![](../../../assets/adventures/2025-switzerland/day-15-grindelwald-m-nnlichen-22.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-15-grindelwald-m-nnlichen-23.webp)
+![](../../../assets/adventures/2025-switzerland/day-15-grindelwald-m-nnlichen-23.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-15-grindelwald-m-nnlichen-24.webp)
+![](../../../assets/adventures/2025-switzerland/day-15-grindelwald-m-nnlichen-24.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-15-grindelwald-m-nnlichen-25.webp)
+![](../../../assets/adventures/2025-switzerland/day-15-grindelwald-m-nnlichen-25.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-15-grindelwald-m-nnlichen-26.webp)
+![](../../../assets/adventures/2025-switzerland/day-15-grindelwald-m-nnlichen-26.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-15-grindelwald-m-nnlichen-27.webp)
+![](../../../assets/adventures/2025-switzerland/day-15-grindelwald-m-nnlichen-27.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-15-grindelwald-m-nnlichen-28.webp)
+![](../../../assets/adventures/2025-switzerland/day-15-grindelwald-m-nnlichen-28.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-15-grindelwald-m-nnlichen-29.webp)
+![](../../../assets/adventures/2025-switzerland/day-15-grindelwald-m-nnlichen-29.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-15-grindelwald-m-nnlichen-30.webp)
+![](../../../assets/adventures/2025-switzerland/day-15-grindelwald-m-nnlichen-30.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-15-grindelwald-m-nnlichen-31.webp)
+![](../../../assets/adventures/2025-switzerland/day-15-grindelwald-m-nnlichen-31.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-15-grindelwald-m-nnlichen-32.webp)
+![](../../../assets/adventures/2025-switzerland/day-15-grindelwald-m-nnlichen-32.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-15-grindelwald-m-nnlichen-33.webp)
+![](../../../assets/adventures/2025-switzerland/day-15-grindelwald-m-nnlichen-33.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-15-grindelwald-m-nnlichen-34.webp)
+![](../../../assets/adventures/2025-switzerland/day-15-grindelwald-m-nnlichen-34.webp)

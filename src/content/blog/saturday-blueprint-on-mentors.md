@@ -3,7 +3,7 @@ title: "Saturday Blueprint on Mentors"
 description: "Hi 👋. Here is this week's Saturday Blueprint. 🤔 Quote I’m thinking about: The mind is like a garden which can be cultivated or allowed to run wild. — James..."
 pubDate: 2022-05-21
 updatedDate: 2022-05-21
-heroImage: "../../assets/blog-placeholder-about.jpg"
+heroImage: "../../assets/blog/saturday-blueprint-on-mentors/blog-placeholder-about.jpg"
 tags: ["Newsletter"]
 layout: '../../layouts/BlogPost.astro'
 ---

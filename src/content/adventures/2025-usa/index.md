@@ -7,6 +7,6 @@ kind: "trip"
 year: 2025
 order: 0
 icon: "⛷️"
-heroImage: "../../../assets/adventures/assets/2025-usa/day-01-devon-uk-to-london-uk-01.webp"
+heroImage: "../../../assets/adventures/2025-usa/day-01-devon-uk-to-london-uk-01.webp"
 ---
 A winter family adventure in New England and New York.

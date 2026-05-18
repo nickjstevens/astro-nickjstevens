@@ -12,11 +12,11 @@ activitiesAm: "Jeep Tour"
 activitiesPm: "Ouray Hotsprings"
 drivingTime: "15 minutes"
 accommodation: "Airbnb"
-heroImage: "../../../assets/adventures/assets/2024-usa/day-04-ouray-01.webp"
+heroImage: "../../../assets/adventures/2024-usa/day-04-ouray-01.webp"
 ---
 ## Travel Log
 
-![](../../../assets/adventures/assets/2024-usa/day-04-ouray-02.webp)
+![](../../../assets/adventures/2024-usa/day-04-ouray-02.webp)
 
 Another early start with everyone up well before 6am! After bacon and eggs for breakfast and making our bagel sandwiches for lunch we headed to Ouray for our jeep tour with Alpine Scenic Tours, up into Yankee Boy Basin. The scenery was epic, and the jeep was loads of fun. The seats were suprisingly comfortable which helped with the very bumpy track.
 
@@ -46,39 +46,39 @@ Hot springs: 9/10
 
 Ridgway: 10/10
 
-![](../../../assets/adventures/assets/2024-usa/day-04-ouray-03.webp)
+![](../../../assets/adventures/2024-usa/day-04-ouray-03.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-04-ouray-04.webp)
+![](../../../assets/adventures/2024-usa/day-04-ouray-04.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-04-ouray-05.webp)
+![](../../../assets/adventures/2024-usa/day-04-ouray-05.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-04-ouray-06.webp)
+![](../../../assets/adventures/2024-usa/day-04-ouray-06.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-04-ouray-07.webp)
+![](../../../assets/adventures/2024-usa/day-04-ouray-07.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-04-ouray-08.webp)
+![](../../../assets/adventures/2024-usa/day-04-ouray-08.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-04-ouray-09.webp)
+![](../../../assets/adventures/2024-usa/day-04-ouray-09.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-04-ouray-10.webp)
+![](../../../assets/adventures/2024-usa/day-04-ouray-10.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-04-ouray-11.webp)
+![](../../../assets/adventures/2024-usa/day-04-ouray-11.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-04-ouray-12.webp)
+![](../../../assets/adventures/2024-usa/day-04-ouray-12.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-04-ouray-13.webp)
+![](../../../assets/adventures/2024-usa/day-04-ouray-13.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-04-ouray-14.webp)
+![](../../../assets/adventures/2024-usa/day-04-ouray-14.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-04-ouray-15.webp)
+![](../../../assets/adventures/2024-usa/day-04-ouray-15.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-04-ouray-16.webp)
+![](../../../assets/adventures/2024-usa/day-04-ouray-16.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-04-ouray-17.webp)
+![](../../../assets/adventures/2024-usa/day-04-ouray-17.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-04-ouray-18.webp)
+![](../../../assets/adventures/2024-usa/day-04-ouray-18.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-04-ouray-19.webp)
+![](../../../assets/adventures/2024-usa/day-04-ouray-19.webp)
 
 Accommodation:
 

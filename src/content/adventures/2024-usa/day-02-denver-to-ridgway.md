@@ -12,7 +12,7 @@ activitiesAm: "Driving"
 activitiesPm: "Driving"
 drivingTime: "6 hours"
 accommodation: "Airbnb"
-heroImage: "../../../assets/adventures/assets/2024-usa/day-02-denver-to-ridgway-01.webp"
+heroImage: "../../../assets/adventures/2024-usa/day-02-denver-to-ridgway-01.webp"
 ---
 ## Travel Log
 
@@ -30,23 +30,23 @@ We then passed through a tiny, quirky village called Redstone, we would have lik
 
 We finally checked into our first holiday house, a stunning home in Ridgway with mountain views and a balcony with hammock. After fully exploring it we had a quick dinner and an early night.
 
-![](../../../assets/adventures/assets/2024-usa/day-02-denver-to-ridgway-02.webp)
+![](../../../assets/adventures/2024-usa/day-02-denver-to-ridgway-02.webp)
 
-![Penny hot springs](../../../assets/adventures/assets/2024-usa/day-02-denver-to-ridgway-03.webp)
+![Penny hot springs](../../../assets/adventures/2024-usa/day-02-denver-to-ridgway-03.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-02-denver-to-ridgway-04.webp)
+![](../../../assets/adventures/2024-usa/day-02-denver-to-ridgway-04.webp)
 
-![Frisco](../../../assets/adventures/assets/2024-usa/day-02-denver-to-ridgway-05.webp)
+![Frisco](../../../assets/adventures/2024-usa/day-02-denver-to-ridgway-05.webp)
 
-![Our hotel lobby](../../../assets/adventures/assets/2024-usa/day-02-denver-to-ridgway-06.webp)
+![Our hotel lobby](../../../assets/adventures/2024-usa/day-02-denver-to-ridgway-06.webp)
 
-![Frisco](../../../assets/adventures/assets/2024-usa/day-02-denver-to-ridgway-07.webp)
+![Frisco](../../../assets/adventures/2024-usa/day-02-denver-to-ridgway-07.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-02-denver-to-ridgway-08.webp)
+![](../../../assets/adventures/2024-usa/day-02-denver-to-ridgway-08.webp)
 
-![Frisco village park](../../../assets/adventures/assets/2024-usa/day-02-denver-to-ridgway-09.webp)
+![Frisco village park](../../../assets/adventures/2024-usa/day-02-denver-to-ridgway-09.webp)
 
-![River through Redstone](../../../assets/adventures/assets/2024-usa/day-02-denver-to-ridgway-10.webp)
+![River through Redstone](../../../assets/adventures/2024-usa/day-02-denver-to-ridgway-10.webp)
 
 Accommodation:
 

@@ -4,7 +4,7 @@ description: "A while ago I was on the hunt for an Excel macro to create a list 
 pubDate: 2019-07-10
 updatedDate: 2022-05-13
 tags: ["Engineering", "Software"]
-heroImage: "../../assets/blog-assets/notion-migration/excel-combinations-macro/Untitled 236.png"
+heroImage: "../../assets/blog/excel-combinations-macro/Untitled-236.png"
 ---
 
 A while ago I was on the hunt for an Excel macro to create a list of all possible combinations of a number of variables. An example might be setting up load cases for finite element analysis where there are a number of variables or parameters which can have a range of values and a large number of possible combinations all the values. For example, a part might be subject to a “high”, “medium” or “low” load (3), and could have say four possible hole diameters (4) and three possible material specifications (3). The total number of unique combinations is 3*4*3=36. To write them all out for this simple example would not be too arduous, but if you had several more parameters, each with several possible values, then you can see how quickly the number of combinations can escalate.
@@ -17,7 +17,7 @@ An example of the macro in action is in the attached Excel sheet, showing how to
 
 A screenshot of the workbook is below:
 
-![Untitled 236](../../assets/blog-assets/notion-migration/excel-combinations-macro/Untitled%20236.png)
+![Untitled 236](../../assets/blog/excel-combinations-macro/Untitled-236.png)
 
 Excel Macro to List All Combinations
 
@@ -32,7 +32,7 @@ list(product(("A","B"),("1","2"),("X","Y","Z"),("5","6","7","8","9")))
 
 The result:
 
-![Untitled 237](../../assets/blog-assets/notion-migration/excel-combinations-macro/Untitled%20237.png)
+![Untitled 237](../../assets/blog/excel-combinations-macro/Untitled-237.png)
 
 Also check out the “permutations” function in the itertools library for similar functionality.
 

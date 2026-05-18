@@ -13,7 +13,7 @@ activitiesPm: "Millian Dollar Highway"
 activitiesEvening: "Bar D Chuckwagon"
 drivingTime: "1.5 hours"
 accommodation: "Airbnb"
-heroImage: "../../../assets/adventures/assets/2024-usa/day-05-million-dollar-highway-01.webp"
+heroImage: "../../../assets/adventures/2024-usa/day-05-million-dollar-highway-01.webp"
 ---
 ## Travel Log
 
@@ -31,27 +31,27 @@ Eventually we all calmed down. We stopped in Silverton (an old mining town) for 
 
 Horse ride rating: 6/10
 
-![Bar D chuckwagon](../../../assets/adventures/assets/2024-usa/day-05-million-dollar-highway-02.webp)
+![Bar D chuckwagon](../../../assets/adventures/2024-usa/day-05-million-dollar-highway-02.webp)
 
-![Panning for gold](../../../assets/adventures/assets/2024-usa/day-05-million-dollar-highway-03.webp)
+![Panning for gold](../../../assets/adventures/2024-usa/day-05-million-dollar-highway-03.webp)
 
-![A little train ride. Apparently the engine was a converted Corvair engine.](../../../assets/adventures/assets/2024-usa/day-05-million-dollar-highway-04.webp)
+![A little train ride. Apparently the engine was a converted Corvair engine.](../../../assets/adventures/2024-usa/day-05-million-dollar-highway-04.webp)
 
-![Ice cream in Silverton](../../../assets/adventures/assets/2024-usa/day-05-million-dollar-highway-05.webp)
+![Ice cream in Silverton](../../../assets/adventures/2024-usa/day-05-million-dollar-highway-05.webp)
 
-![Silverton](../../../assets/adventures/assets/2024-usa/day-05-million-dollar-highway-06.webp)
+![Silverton](../../../assets/adventures/2024-usa/day-05-million-dollar-highway-06.webp)
 
-![Views on the million dollar highway](../../../assets/adventures/assets/2024-usa/day-05-million-dollar-highway-07.webp)
+![Views on the million dollar highway](../../../assets/adventures/2024-usa/day-05-million-dollar-highway-07.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-05-million-dollar-highway-08.webp)
+![](../../../assets/adventures/2024-usa/day-05-million-dollar-highway-08.webp)
 
-![Horseback ride (just half a step behind us is a big drop!)](../../../assets/adventures/assets/2024-usa/day-05-million-dollar-highway-09.webp)
+![Horseback ride (just half a step behind us is a big drop!)](../../../assets/adventures/2024-usa/day-05-million-dollar-highway-09.webp)
 
-![Thea the cowgirl](../../../assets/adventures/assets/2024-usa/day-05-million-dollar-highway-10.webp)
+![Thea the cowgirl](../../../assets/adventures/2024-usa/day-05-million-dollar-highway-10.webp)
 
-![Ridgway park](../../../assets/adventures/assets/2024-usa/day-05-million-dollar-highway-11.webp)
+![Ridgway park](../../../assets/adventures/2024-usa/day-05-million-dollar-highway-11.webp)
 
-![Hogging the swings](../../../assets/adventures/assets/2024-usa/day-05-million-dollar-highway-12.webp)
+![Hogging the swings](../../../assets/adventures/2024-usa/day-05-million-dollar-highway-12.webp)
 
 Accommodation:
 

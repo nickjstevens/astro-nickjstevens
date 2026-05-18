@@ -3,7 +3,7 @@ title: "A Tale of Two Economies"
 description: "A Comparative Analysis of Gross Domestic Product and Private Product Remaining for the UK"
 pubDate: 2025-06-25
 updatedDate: 2025-06-25
-heroImage: "../../assets/GDP to PPR Gap.png"
+heroImage: "../../assets/blog/a-tale-of-two-economies/GDP-to-PPR-Gap.png"
 tags: ["Economics"]
 layout: '../../layouts/BlogPost.astro'
 ---
@@ -299,7 +299,7 @@ PPR, in contrast, would have registered an economic cataclysm. Private sector ac
 
 *Sources: Columns (A) and (B) are from Table 1 and Table 2 respectively. Columns (C) and (D) are calculated from this data.*
 
-![GDP to PPR Gap](../../assets/GDP%20to%20PPR%20Gap.png)
+![GDP to PPR Gap](../../assets/blog/a-tale-of-two-economies/GDP-to-PPR-Gap.png)
 
 *Figure 1: GDP to PPR Gap*
 

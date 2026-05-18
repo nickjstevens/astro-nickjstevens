@@ -4,7 +4,7 @@ description: "It’s a common practice in the workplace these days to have a sho
 pubDate: 2019-11-09
 updatedDate: 2022-05-13
 tags: ["Productivity", "Philosophy"]
-heroImage: "../../assets/blog-assets/notion-migration/meditation-safety-moment/Screen_Shot_2019-11-09_at_09.29.13.png"
+heroImage: "../../assets/blog/meditation-safety-moment/Screen_Shot_2019-11-09_at_09.29.13.png"
 ---
 
 It’s a common practice in the workplace these days to have a short **safety moment** at the beginning of meetings. This is an excellent mechanism to stop and reflect on something important, but not directly related to the current task. It’s vital for ensuring a thriving safety culture as it promotes discussion and communication on safety matters. The excellent INPO “Traits of a Healthy Nuclear Safety Culture” is a handy reference, specifically this [pocket guide](https://www.energy-northwest.com/Documents/Employee%20Portal/INPO%20Safety%20Culture%20Traits.pdf).
@@ -13,7 +13,7 @@ But I recently tried a different tact as an experiment, to bring in the wider me
 
 Mental health and well-being is often overlooked but is so important is today’s “always on” world. In fact, see the graphic below [source](https://www.hse.gov.uk/statistics/causdis/), 602,000 working people are reported to suffer from work-related stress, depression and anxiety. This results in 12.8 Million working days lost. A vast problem by any measure.
 
-![Screen_Shot_2019-11-09_at_09.29.13](../../assets/blog-assets/notion-migration/meditation-safety-moment/Screen_Shot_2019-11-09_at_09.29.13.png)
+![Screen_Shot_2019-11-09_at_09.29.13](../../assets/blog/meditation-safety-moment/Screen_Shot_2019-11-09_at_09.29.13.png)
 
 In the business of everyday life how present are you in any given moment? How present are we with our families, or friends; or are we always on our phones, or crunching a work problem in our head at the dinner table, or unable to sleep at night working through something in our minds? What about simply being present with your own company? These days we’ve lost the ability to just be bored. Our phones are always out at the first hint of boredom. There is an Italian saying that is fantastic - *dolce far niente *- the sweetness of doing nothing. Let’s enjoy the feeling of just being.
 

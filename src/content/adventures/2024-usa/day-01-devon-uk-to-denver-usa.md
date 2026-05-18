@@ -13,7 +13,7 @@ activitiesPm: "Flight"
 activitiesEvening: "Collect car"
 drivingTime: "3.5"
 accommodation: "Hyatt Place Pena Station/Denver Airport"
-heroImage: "../../../assets/adventures/assets/2024-usa/day-01-devon-uk-to-denver-usa-01.webp"
+heroImage: "../../../assets/adventures/2024-usa/day-01-devon-uk-to-denver-usa-01.webp"
 ---
 ## Travel Log
 
@@ -31,19 +31,19 @@ Hotel rating:
 - Bess: 8/10
 - Thea: 7/10
 
-![Greenland from the air](../../../assets/adventures/assets/2024-usa/day-01-devon-uk-to-denver-usa-02.webp)
+![Greenland from the air](../../../assets/adventures/2024-usa/day-01-devon-uk-to-denver-usa-02.webp)
 
-![Cosy on the plane](../../../assets/adventures/assets/2024-usa/day-01-devon-uk-to-denver-usa-03.webp)
+![Cosy on the plane](../../../assets/adventures/2024-usa/day-01-devon-uk-to-denver-usa-03.webp)
 
-![5 seats in a row, including a window seat](../../../assets/adventures/assets/2024-usa/day-01-devon-uk-to-denver-usa-04.webp)
+![5 seats in a row, including a window seat](../../../assets/adventures/2024-usa/day-01-devon-uk-to-denver-usa-04.webp)
 
-![Kids getting excited for the first time on a plane](../../../assets/adventures/assets/2024-usa/day-01-devon-uk-to-denver-usa-05.webp)
+![Kids getting excited for the first time on a plane](../../../assets/adventures/2024-usa/day-01-devon-uk-to-denver-usa-05.webp)
 
-![Saying goodbye to our car and heading to the terminal](../../../assets/adventures/assets/2024-usa/day-01-devon-uk-to-denver-usa-06.webp)
+![Saying goodbye to our car and heading to the terminal](../../../assets/adventures/2024-usa/day-01-devon-uk-to-denver-usa-06.webp)
 
-![Arriving a Heathrow](../../../assets/adventures/assets/2024-usa/day-01-devon-uk-to-denver-usa-07.webp)
+![Arriving a Heathrow](../../../assets/adventures/2024-usa/day-01-devon-uk-to-denver-usa-07.webp)
 
-![En-route - courtesy of Paul while we were in the air](../../../assets/adventures/assets/2024-usa/day-01-devon-uk-to-denver-usa-08.webp)
+![En-route - courtesy of Paul while we were in the air](../../../assets/adventures/2024-usa/day-01-devon-uk-to-denver-usa-08.webp)
 
 Accommodation:
 

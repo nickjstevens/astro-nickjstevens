@@ -12,7 +12,7 @@ activitiesAm: "Cathedral rock hike"
 activitiesPm: "Relax by pool"
 activitiesEvening: "Mesa Grill at Airport Rock for dinner"
 accommodation: "Airbnb"
-heroImage: "../../../assets/adventures/assets/2024-usa/day-10-sedona-01.webp"
+heroImage: "../../../assets/adventures/2024-usa/day-10-sedona-01.webp"
 ---
 ## Travel Log
 
@@ -20,41 +20,41 @@ We had yet  another early start for a hike up Cathedral rock. It is so hot in Se
 
 Cathedral Rock hike: 7/10
 
-![Northern Cardinal (red bird)](../../../assets/adventures/assets/2024-usa/day-10-sedona-02.webp)
+![Northern Cardinal (red bird)](../../../assets/adventures/2024-usa/day-10-sedona-02.webp)
 
-![Perfect pool](../../../assets/adventures/assets/2024-usa/day-10-sedona-03.webp)
+![Perfect pool](../../../assets/adventures/2024-usa/day-10-sedona-03.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-10-sedona-04.webp)
+![](../../../assets/adventures/2024-usa/day-10-sedona-04.webp)
 
-![Ice cream to beat the heat](../../../assets/adventures/assets/2024-usa/day-10-sedona-05.webp)
+![Ice cream to beat the heat](../../../assets/adventures/2024-usa/day-10-sedona-05.webp)
 
-![Hot hike up Cathedral Rock](../../../assets/adventures/assets/2024-usa/day-10-sedona-06.webp)
+![Hot hike up Cathedral Rock](../../../assets/adventures/2024-usa/day-10-sedona-06.webp)
 
-![Lizard thingy](../../../assets/adventures/assets/2024-usa/day-10-sedona-07.webp)
+![Lizard thingy](../../../assets/adventures/2024-usa/day-10-sedona-07.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-10-sedona-08.webp)
+![](../../../assets/adventures/2024-usa/day-10-sedona-08.webp)
 
-![Cathedral Rock. Apparently a “vortex” of energy according to Sedona experts](../../../assets/adventures/assets/2024-usa/day-10-sedona-09.webp)
+![Cathedral Rock. Apparently a “vortex” of energy according to Sedona experts](../../../assets/adventures/2024-usa/day-10-sedona-09.webp)
 
-![Jasper at the top of the trail](../../../assets/adventures/assets/2024-usa/day-10-sedona-10.webp)
+![Jasper at the top of the trail](../../../assets/adventures/2024-usa/day-10-sedona-10.webp)
 
-![Thea with her cooling bandana on](../../../assets/adventures/assets/2024-usa/day-10-sedona-11.webp)
+![Thea with her cooling bandana on](../../../assets/adventures/2024-usa/day-10-sedona-11.webp)
 
-![View from the top](../../../assets/adventures/assets/2024-usa/day-10-sedona-12.webp)
+![View from the top](../../../assets/adventures/2024-usa/day-10-sedona-12.webp)
 
-![Rest stop](../../../assets/adventures/assets/2024-usa/day-10-sedona-13.webp)
+![Rest stop](../../../assets/adventures/2024-usa/day-10-sedona-13.webp)
 
-![Even in the shade it was unbearably hot](../../../assets/adventures/assets/2024-usa/day-10-sedona-14.webp)
+![Even in the shade it was unbearably hot](../../../assets/adventures/2024-usa/day-10-sedona-14.webp)
 
-![Family selfie](../../../assets/adventures/assets/2024-usa/day-10-sedona-15.webp)
+![Family selfie](../../../assets/adventures/2024-usa/day-10-sedona-15.webp)
 
-![Cathedral Rock in the background](../../../assets/adventures/assets/2024-usa/day-10-sedona-16.webp)
+![Cathedral Rock in the background](../../../assets/adventures/2024-usa/day-10-sedona-16.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-10-sedona-17.webp)
+![](../../../assets/adventures/2024-usa/day-10-sedona-17.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-10-sedona-18.webp)
+![](../../../assets/adventures/2024-usa/day-10-sedona-18.webp)
 
-![Lightning tracker - our new favourite app for these afternoon thunderstorms](../../../assets/adventures/assets/2024-usa/day-10-sedona-19.webp)
+![Lightning tracker - our new favourite app for these afternoon thunderstorms](../../../assets/adventures/2024-usa/day-10-sedona-19.webp)
 
 Accommodation:
 

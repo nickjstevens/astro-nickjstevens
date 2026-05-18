@@ -4,7 +4,7 @@ description: "In September 2020 I had my first \"viral\" tweet (271,000 impressi
 pubDate: 2020-09-24
 updatedDate: 2022-05-13
 tags: ["Productivity", "Philosophy", "Books"]
-heroImage: "../../assets/blog-assets/notion-migration/antifragile-follow-on-books/Untitled 213.png"
+heroImage: "../../assets/blog/antifragile-follow-on-books/Untitled-213.png"
 ---
 
 In September 2020 I had my first "viral" tweet (271,000 impressions, 22,000 engagements). For me (who had about 100 followers at this time) it was big enough. 
@@ -15,7 +15,7 @@ The tweet (below) was me asking for recommendations for follow-on books given ho
 ![](https://twitter.com/nick_j_stevens/status/1301579787673182209?s=20)
 
 <!-- Column 2 -->
-![Untitled 213](../../assets/blog-assets/notion-migration/antifragile-follow-on-books/Untitled%20213.png)
+![Untitled 213](../../assets/blog/antifragile-follow-on-books/Untitled-213.png)
 
 Given the interest in this, I thought I’d collate and summarise the recommendations to give a top 10 (as curated by Twitter) list of Antifragile follow-on books. 
 

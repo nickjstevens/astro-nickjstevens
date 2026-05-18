@@ -4,12 +4,12 @@ description: "Timoshenko’s “Vibration Problems in Engineering” (4th Editio
 pubDate: 2019-06-21
 updatedDate: 2022-05-13
 tags: ["Engineering"]
-heroImage: "../../assets/blog-assets/notion-migration/error-found-in-timoshenkos-vibration-problems-in-engineering/Untitled 227.png"
+heroImage: "../../assets/blog/error-found-in-timoshenkos-vibration-problems-in-engineering/Untitled-227.png"
 ---
 
 Timoshenko’s “Vibration Problems in Engineering” (4th Edition, 1974) gives an example (2.5-9) for the displacement and frequency of a simple system involving a mass and two springs under preload. The example is shown in the figure below.
 
-![Untitled 227](../../assets/blog-assets/notion-migration/error-found-in-timoshenkos-vibration-problems-in-engineering/Untitled%20227.png)
+![Untitled 227](../../assets/blog/error-found-in-timoshenkos-vibration-problems-in-engineering/Untitled-227.png)
 
 *Problem 2.5-9 from Timoshenko’s Vibration Problems in Engineering*
 

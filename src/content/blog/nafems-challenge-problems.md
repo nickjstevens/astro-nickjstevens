@@ -4,7 +4,7 @@ description: "NAFEMS Stochastic Working Group Challenge Problems 01 and 02"
 pubDate: 2019-10-22
 updatedDate: 2022-05-13
 tags: ["Engineering", "Simulation", "Software"]
-heroImage: "../../assets/blog-assets/notion-migration/nafems-challenge-problems/Untitled 249.png"
+heroImage: "../../assets/blog/nafems-challenge-problems/Untitled-249.png"
 ---
 
 ## NAFEMS Stochastic Working Group Challenge Problems 01 and 02
@@ -105,7 +105,7 @@ plt.show()
 
 ```
 
-![Untitled 249](../../assets/blog-assets/notion-migration/nafems-challenge-problems/Untitled%20249.png)
+![Untitled 249](../../assets/blog/nafems-challenge-problems/Untitled-249.png)
 
 ```python
 ecdf = ECDF(samples)
@@ -119,7 +119,7 @@ plt.show()
 
 ```
 
-![Untitled 250](../../assets/blog-assets/notion-migration/nafems-challenge-problems/Untitled%20250.png)
+![Untitled 250](../../assets/blog/nafems-challenge-problems/Untitled-250.png)
 
 ```python
 %%time
@@ -133,7 +133,7 @@ plt.show()
 
 ```
 
-![Untitled 251](../../assets/blog-assets/notion-migration/nafems-challenge-problems/Untitled%20251.png)
+![Untitled 251](../../assets/blog/nafems-challenge-problems/Untitled-251.png)
 
 ## Challenge Problem 2
 
@@ -254,7 +254,7 @@ plt.show()
 
 ```
 
-![Untitled 252](../../assets/blog-assets/notion-migration/nafems-challenge-problems/Untitled%20252.png)
+![Untitled 252](../../assets/blog/nafems-challenge-problems/Untitled-252.png)
 
 ```python
 ecdf = ECDF(samples)
@@ -268,7 +268,7 @@ plt.show()
 
 ```
 
-![Untitled 253](../../assets/blog-assets/notion-migration/nafems-challenge-problems/Untitled%20253.png)
+![Untitled 253](../../assets/blog/nafems-challenge-problems/Untitled-253.png)
 
 ```python
 %%time
@@ -282,6 +282,6 @@ plt.show()
 
 ```
 
-![Untitled 254](../../assets/blog-assets/notion-migration/nafems-challenge-problems/Untitled%20254.png)
+![Untitled 254](../../assets/blog/nafems-challenge-problems/Untitled-254.png)
 
 And there we have it. I’d love to see other solutions too so I can learn from them.

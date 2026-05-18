@@ -3,7 +3,7 @@ title: "Saturday Blueprint on Parental Love"
 description: "My perspective on love, particularly parental love, and how it is expressed through actions such as creating traditions for children. There is a tension to explore between having high standards for children and simultaneously showing unconditional love."
 pubDate: 2023-04-29
 updatedDate: 2023-04-29
-heroImage: "../../assets/images/2023/04/IMG_3686.jpeg"
+heroImage: "../../assets/blog/saturday-blueprint-on-parental-love/IMG_3686.jpeg"
 tags: ["Newsletter", "Philosophy"]
 layout: '../../layouts/BlogPost.astro'
 ---

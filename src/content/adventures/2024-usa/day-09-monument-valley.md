@@ -12,7 +12,7 @@ activitiesAm: "Monument valley tour"
 activitiesPm: "Driving"
 drivingTime: "4.5 hours"
 accommodation: "Airbnb"
-heroImage: "../../../assets/adventures/assets/2024-usa/day-09-monument-valley-01.webp"
+heroImage: "../../../assets/adventures/2024-usa/day-09-monument-valley-01.webp"
 ---
 ## Travel Log
 
@@ -24,55 +24,55 @@ We then had a long drive to Sedona, still not quite sure how long it took as the
 
 Monument valley tour: 10/10
 
-![The coffee shop in Bluff - really good coffee](../../../assets/adventures/assets/2024-usa/day-09-monument-valley-02.webp)
+![The coffee shop in Bluff - really good coffee](../../../assets/adventures/2024-usa/day-09-monument-valley-02.webp)
 
-![Monument Valley. Left Mitten.](../../../assets/adventures/assets/2024-usa/day-09-monument-valley-03.webp)
+![Monument Valley. Left Mitten.](../../../assets/adventures/2024-usa/day-09-monument-valley-03.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-09-monument-valley-04.webp)
+![](../../../assets/adventures/2024-usa/day-09-monument-valley-04.webp)
 
-![Petroglyphs in Monument Valley](../../../assets/adventures/assets/2024-usa/day-09-monument-valley-05.webp)
+![Petroglyphs in Monument Valley](../../../assets/adventures/2024-usa/day-09-monument-valley-05.webp)
 
-![An arch in Monument Valley](../../../assets/adventures/assets/2024-usa/day-09-monument-valley-06.webp)
+![An arch in Monument Valley](../../../assets/adventures/2024-usa/day-09-monument-valley-06.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-09-monument-valley-07.webp)
+![](../../../assets/adventures/2024-usa/day-09-monument-valley-07.webp)
 
-![Monument Valley antics](../../../assets/adventures/assets/2024-usa/day-09-monument-valley-08.webp)
+![Monument Valley antics](../../../assets/adventures/2024-usa/day-09-monument-valley-08.webp)
 
-![Our guide recommend black and white photography and he was right](../../../assets/adventures/assets/2024-usa/day-09-monument-valley-09.webp)
+![Our guide recommend black and white photography and he was right](../../../assets/adventures/2024-usa/day-09-monument-valley-09.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-09-monument-valley-10.webp)
+![](../../../assets/adventures/2024-usa/day-09-monument-valley-10.webp)
 
-![Sunglasses and smiles in front of the Left Mitten.](../../../assets/adventures/assets/2024-usa/day-09-monument-valley-11.webp)
+![Sunglasses and smiles in front of the Left Mitten.](../../../assets/adventures/2024-usa/day-09-monument-valley-11.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-09-monument-valley-12.webp)
+![](../../../assets/adventures/2024-usa/day-09-monument-valley-12.webp)
 
-![Good hair day on the speeding truck](../../../assets/adventures/assets/2024-usa/day-09-monument-valley-13.webp)
+![Good hair day on the speeding truck](../../../assets/adventures/2024-usa/day-09-monument-valley-13.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-09-monument-valley-14.webp)
+![](../../../assets/adventures/2024-usa/day-09-monument-valley-14.webp)
 
-![Bess the movie star](../../../assets/adventures/assets/2024-usa/day-09-monument-valley-15.webp)
+![Bess the movie star](../../../assets/adventures/2024-usa/day-09-monument-valley-15.webp)
 
-![Never grow up](../../../assets/adventures/assets/2024-usa/day-09-monument-valley-16.webp)
+![Never grow up](../../../assets/adventures/2024-usa/day-09-monument-valley-16.webp)
 
-![Everyone was standing in the road doing selfies so we had to join in too](../../../assets/adventures/assets/2024-usa/day-09-monument-valley-17.webp)
+![Everyone was standing in the road doing selfies so we had to join in too](../../../assets/adventures/2024-usa/day-09-monument-valley-17.webp)
 
-![Bess framing the Left Mitten](../../../assets/adventures/assets/2024-usa/day-09-monument-valley-18.webp)
+![Bess framing the Left Mitten](../../../assets/adventures/2024-usa/day-09-monument-valley-18.webp)
 
-![Handstands with a view](../../../assets/adventures/assets/2024-usa/day-09-monument-valley-19.webp)
+![Handstands with a view](../../../assets/adventures/2024-usa/day-09-monument-valley-19.webp)
 
-![Hear we come Monument Valley](../../../assets/adventures/assets/2024-usa/day-09-monument-valley-20.webp)
+![Hear we come Monument Valley](../../../assets/adventures/2024-usa/day-09-monument-valley-20.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-09-monument-valley-21.webp)
+![](../../../assets/adventures/2024-usa/day-09-monument-valley-21.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-09-monument-valley-22.webp)
+![](../../../assets/adventures/2024-usa/day-09-monument-valley-22.webp)
 
-![Dinosaur prints](../../../assets/adventures/assets/2024-usa/day-09-monument-valley-23.webp)
+![Dinosaur prints](../../../assets/adventures/2024-usa/day-09-monument-valley-23.webp)
 
-![The loneliest souvenir shop in the world](../../../assets/adventures/assets/2024-usa/day-09-monument-valley-24.webp)
+![The loneliest souvenir shop in the world](../../../assets/adventures/2024-usa/day-09-monument-valley-24.webp)
 
-![Dusk swim in Sedona](../../../assets/adventures/assets/2024-usa/day-09-monument-valley-25.webp)
+![Dusk swim in Sedona](../../../assets/adventures/2024-usa/day-09-monument-valley-25.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-09-monument-valley-26.webp)
+![](../../../assets/adventures/2024-usa/day-09-monument-valley-26.webp)
 
 Accommodation:
 

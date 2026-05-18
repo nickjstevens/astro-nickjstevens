@@ -3,7 +3,7 @@ title: "A Primer on Probabilistic Methods in Engineering - Part 1"
 description: "A high-level introduction to probabilistic methods in engineering"
 pubDate: 2020-12-01
 updatedDate: 2020-12-01
-heroImage: "../../assets/images/notion/A Primer on Probabilistic Methods in Engineering - 497cb266e3974548b96fccf017bc5d9d/F4560DE4-9630-4D1E-ACA3-CE7950597436.jpeg"
+heroImage: "../../assets/blog/a-primer-on-probabilstic-methods-in-engineering/F4560DE4-9630-4D1E-ACA3-CE7950597436.jpeg"
 tags: ["Engineering", "Simulation"]
 layout: '../../layouts/BlogPost.astro'
 ---
@@ -16,7 +16,7 @@ To start exploring probability let's look at the weather, notoriously uncertain 
 
 A forecast with a 60% chance of rain expresses more certainty (of rain) than a forecast with a 20% chance of rain. This is obvious, yet a simple example of probabilities in daily life. Both forecasts use probabilities to express the uncertainty, and one forecast has (three times) more certainty of rain than the other. 
 
-![Weather forecasts are a good example of uncertainty in everyday life, and the use of probabilities](../../assets/images/notion/A%20Primer%20on%20Probabilistic%20Methods%20in%20Engineering%20-%20497cb266e3974548b96fccf017bc5d9d/F4560DE4-9630-4D1E-ACA3-CE7950597436.jpeg)
+![Weather forecasts are a good example of uncertainty in everyday life, and the use of probabilities](../../assets/blog/a-primer-on-probabilstic-methods-in-engineering/F4560DE4-9630-4D1E-ACA3-CE7950597436.jpeg)
 
 Weather forecasts are a good example of uncertainty in everyday life, and the use of probabilities
 
@@ -26,7 +26,7 @@ Something with a probability of 1, or 100%, is something with absolute certainty
 
 The probability spectrum is shown in the sketch below, from impossible (pigs might fly), to certain (we all will die). In the middle, as well as the weather in England, we also have a coin flip for an unbiased coin - something with a 50:50, or 50%, probability.
 
-![The probability spectrum (pigs might fly to death)](../../assets/images/notion/A%20Primer%20on%20Probabilistic%20Methods%20in%20Engineering%20-%20497cb266e3974548b96fccf017bc5d9d/probability_spectrum.png)
+![The probability spectrum (pigs might fly to death)](../../assets/blog/a-primer-on-probabilstic-methods-in-engineering/probability_spectrum.png)
 
 The probability spectrum (pigs might fly to death)
 
@@ -83,7 +83,7 @@ Uncertainty can be categorised in the following ways, (with the first two being 
 - Ontological
     - Belief system uncertainty
 
-![Types of uncertainty](../../assets/images/notion/A%20Primer%20on%20Probabilistic%20Methods%20in%20Engineering%20-%20497cb266e3974548b96fccf017bc5d9d/types_of_uncertainty.png)
+![Types of uncertainty](../../assets/blog/a-primer-on-probabilstic-methods-in-engineering/types_of_uncertainty.png)
 
 Types of uncertainty
 
@@ -139,7 +139,7 @@ In this pendulum example there are input parameters or variables. Parameters lik
 
 To explore the normal distribution, think about a commute. In COVID-19 times this may be considerably shorter, but a commute can be approximated as a normal distribution, that is, you have an average commute (say 30 minutes), but there is some uncertainty, and actually it varies either side of this. If we were to draw a graph with the x-axis representing the commute time, then the y-axis representing the probability or likelihood of that commute time occurring on any given day. It would look like a bell-shaped curve. The most likely commute is the mean value - the peak of the bell curve. But sometimes there are "tail events", referring to the tails of the bell curve, which are unlikely but where the commute time might be horribly long due to a pileup on the A38, or unusually short getting to the office during lockdown. The figure below shows this, and a normal distribution is described by just two numbers - the mean (the peak) and the standard deviation (a measure of the spread). 
 
-![A normal distribution - a bell-shaped curve, also called a Gaussian distribution. ](../../assets/images/notion/A%20Primer%20on%20Probabilistic%20Methods%20in%20Engineering%20-%20497cb266e3974548b96fccf017bc5d9d/Untitled.png)
+![A normal distribution - a bell-shaped curve, also called a Gaussian distribution. ](../../assets/blog/a-primer-on-probabilstic-methods-in-engineering/Untitled.png)
 
 A normal distribution - a bell-shaped curve, also called a Gaussian distribution. 
 
@@ -160,17 +160,17 @@ But our measurement of the input parameters is not perfect. We'll just explore a
 
 So let's do that. The initial angle is given as a normal distribution with a mean of 135 degrees and a standard deviation of 0.001 degrees. We can sample (the metaphorical close your eyes and put your hand in the sweetie jar) and pull out a value for the angle, say 135.00056, run the model, and get an angular velocity. We repeat this 1000 times, and then get a distribution of angular velocities, looking something like the graph below (although will of course be different each time due to the randomness of the sampling).
 
-![](../../assets/images/notion/A%20Primer%20on%20Probabilistic%20Methods%20in%20Engineering%20-%20497cb266e3974548b96fccf017bc5d9d/download.png)
+![](../../assets/blog/a-primer-on-probabilstic-methods-in-engineering/download.png)
 
 So we can see that a very slight change in initial angle gives a range of the maximum absolute angular velocity anywhere between 14 rad/s and 20 rad/s! Sensitive or what!
 
 Instead of the histogram plot above, we can instead more helpfully plot this as a cumulative distribution function (CDF), which will show our angular velocity vs. the cumulative probability. This is shown below and means we can do useful things like read off the 95% probability. For this example, the angular velocity that bounds 95% of the expected cases is 19.81 rad/s. 
 
-![](../../assets/images/notion/A%20Primer%20on%20Probabilistic%20Methods%20in%20Engineering%20-%20497cb266e3974548b96fccf017bc5d9d/download-1.png)
+![](../../assets/blog/a-primer-on-probabilstic-methods-in-engineering/download-1.png)
 
 And to reflect back on the conservative brigade; in some cases it may be clear cut what parameter values will give a conservative design, but this pendulum example shows that this isn't always the case. Even with this simulation model, it's not easy to guess the conservative initial conditions. A plot of initial angle against the maximum angular velocity (see below) shows there is now correlation, no "conservative" initial angle to give a conservative response. The conservative brigade would in this case be marching right off a cliff.
 
-![](../../assets/images/notion/A%20Primer%20on%20Probabilistic%20Methods%20in%20Engineering%20-%20497cb266e3974548b96fccf017bc5d9d/download-2.png)
+![](../../assets/blog/a-primer-on-probabilstic-methods-in-engineering/download-2.png)
 
 ## Crazier weather
 
@@ -221,7 +221,7 @@ The framework then looks like this:
 
 This extended framework is shown in the figure below.
 
-![Probabilistic framework](../../assets/images/notion/A%20Primer%20on%20Probabilistic%20Methods%20in%20Engineering%20-%20497cb266e3974548b96fccf017bc5d9d/IMG_4138.JPG.png)
+![Probabilistic framework](../../assets/blog/a-primer-on-probabilstic-methods-in-engineering/IMG_4138.JPG.png)
 
 Probabilistic framework
 

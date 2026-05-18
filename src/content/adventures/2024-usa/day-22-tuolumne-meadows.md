@@ -12,61 +12,61 @@ activitiesAm: "Tuolumne meadows"
 activitiesPm: "Toulumne meadows"
 drivingTime: "3.5 Hours"
 accommodation: "Airbnb"
-heroImage: "../../../assets/adventures/assets/2024-usa/day-22-tuolumne-meadows-01.webp"
+heroImage: "../../../assets/adventures/2024-usa/day-22-tuolumne-meadows-01.webp"
 ---
 ## Travel Log
 
 We grabbed a coffee and some bagel sandwiches for the day from Great Basin Bakery and then drove the Tioga Pass. This road was incredible, it is our favourite scenery of Yosemite, in our opinion more impressive than the valley. We love the granite boulders and scrambling up them. We popped to the visitor centre and then took the kids up  Pot hole dome. We didn’t take the most sensible route and found ourselves half way up a steep wall of granite, too dangerous to go back down we had to keep going and hope that no one slipped and fell! Fortunately we all survived and after exploring the granite plateau at the top (Thea developed an obsession with granite boulders and pretending they were a horse to ride) we cooled off after with a dip in Tanaya lake. It was icy cold but invigorating and so peaceful, the girls declined to join us but played happily on the beach. We reluctantly had to leave this area as we still had a long way to drive to our accommodation in Yosemite West. We stopped at Olmsted point for our first view of half dome and then drove into the valley to stock up on food at the general store. We eventually got to our holiday house around 6pm. Nick went for an evening run and we had a little walk out to meet him before dinner.
 
-![Pothole Dome](../../../assets/adventures/assets/2024-usa/day-22-tuolumne-meadows-02.webp)
+![Pothole Dome](../../../assets/adventures/2024-usa/day-22-tuolumne-meadows-02.webp)
 
-![Girls in pink on Pothole Dome](../../../assets/adventures/assets/2024-usa/day-22-tuolumne-meadows-03.webp)
+![Girls in pink on Pothole Dome](../../../assets/adventures/2024-usa/day-22-tuolumne-meadows-03.webp)
 
-![Panorama](../../../assets/adventures/assets/2024-usa/day-22-tuolumne-meadows-04.webp)
+![Panorama](../../../assets/adventures/2024-usa/day-22-tuolumne-meadows-04.webp)
 
-![Artistic moves](../../../assets/adventures/assets/2024-usa/day-22-tuolumne-meadows-05.webp)
+![Artistic moves](../../../assets/adventures/2024-usa/day-22-tuolumne-meadows-05.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-22-tuolumne-meadows-06.webp)
+![](../../../assets/adventures/2024-usa/day-22-tuolumne-meadows-06.webp)
 
-![Thea in a sea of granite](../../../assets/adventures/assets/2024-usa/day-22-tuolumne-meadows-07.webp)
+![Thea in a sea of granite](../../../assets/adventures/2024-usa/day-22-tuolumne-meadows-07.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-22-tuolumne-meadows-08.webp)
+![](../../../assets/adventures/2024-usa/day-22-tuolumne-meadows-08.webp)
 
-![Thea riding the ‘horsey’](../../../assets/adventures/assets/2024-usa/day-22-tuolumne-meadows-09.webp)
+![Thea riding the ‘horsey’](../../../assets/adventures/2024-usa/day-22-tuolumne-meadows-09.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-22-tuolumne-meadows-10.webp)
+![](../../../assets/adventures/2024-usa/day-22-tuolumne-meadows-10.webp)
 
-![A dip in Tenaya Lake - absolutely beautiful](../../../assets/adventures/assets/2024-usa/day-22-tuolumne-meadows-11.webp)
+![A dip in Tenaya Lake - absolutely beautiful](../../../assets/adventures/2024-usa/day-22-tuolumne-meadows-11.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-22-tuolumne-meadows-12.webp)
+![](../../../assets/adventures/2024-usa/day-22-tuolumne-meadows-12.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-22-tuolumne-meadows-13.webp)
+![](../../../assets/adventures/2024-usa/day-22-tuolumne-meadows-13.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-22-tuolumne-meadows-14.webp)
+![](../../../assets/adventures/2024-usa/day-22-tuolumne-meadows-14.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-22-tuolumne-meadows-15.webp)
+![](../../../assets/adventures/2024-usa/day-22-tuolumne-meadows-15.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-22-tuolumne-meadows-16.webp)
+![](../../../assets/adventures/2024-usa/day-22-tuolumne-meadows-16.webp)
 
-![Antics at Olmsted Point](../../../assets/adventures/assets/2024-usa/day-22-tuolumne-meadows-17.webp)
+![Antics at Olmsted Point](../../../assets/adventures/2024-usa/day-22-tuolumne-meadows-17.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-22-tuolumne-meadows-18.webp)
+![](../../../assets/adventures/2024-usa/day-22-tuolumne-meadows-18.webp)
 
-![That first view of El Capitan is always amazing](../../../assets/adventures/assets/2024-usa/day-22-tuolumne-meadows-19.webp)
+![That first view of El Capitan is always amazing](../../../assets/adventures/2024-usa/day-22-tuolumne-meadows-19.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-22-tuolumne-meadows-20.webp)
+![](../../../assets/adventures/2024-usa/day-22-tuolumne-meadows-20.webp)
 
-![Tunnel View](../../../assets/adventures/assets/2024-usa/day-22-tuolumne-meadows-21.webp)
+![Tunnel View](../../../assets/adventures/2024-usa/day-22-tuolumne-meadows-21.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-22-tuolumne-meadows-22.webp)
+![](../../../assets/adventures/2024-usa/day-22-tuolumne-meadows-22.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-22-tuolumne-meadows-23.webp)
+![](../../../assets/adventures/2024-usa/day-22-tuolumne-meadows-23.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-22-tuolumne-meadows-24.webp)
+![](../../../assets/adventures/2024-usa/day-22-tuolumne-meadows-24.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-22-tuolumne-meadows-25.webp)
+![](../../../assets/adventures/2024-usa/day-22-tuolumne-meadows-25.webp)
 
-![Yosemite sunset](../../../assets/adventures/assets/2024-usa/day-22-tuolumne-meadows-26.webp)
+![Yosemite sunset](../../../assets/adventures/2024-usa/day-22-tuolumne-meadows-26.webp)
 
 Accommodation:
 

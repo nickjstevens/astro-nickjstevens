@@ -4,7 +4,7 @@ description: "[!note] 📄 30 Second Summary : The overriding principle for impr
 pubDate: 2020-10-19
 updatedDate: 2022-05-13
 tags: ["Engineering", "Simulation"]
-heroImage: "../../assets/blog-assets/notion-migration/simulation-reproducibility/Untitled 257.png"
+heroImage: "../../assets/blog/simulation-reproducibility/Untitled-257.png"
 ---
 
 > [!note] 📄
@@ -20,7 +20,7 @@ In the broadest sense this issue of reproducibility might be called Configuratio
 
 I've previously written about the benefits of managing analysis workflows ([Snakemake Analysis Workflow Management](https://www.nickjstevens.com/blog/snakemake-analysis-workflow-management/)) and in being able to automate analysis reports ([Automated Workflow Report](https://www.nickjstevens.com/blog/automated-workflow-report/)).
 
-![A workflow example from Snakemake Analysis Workflow Management](../../assets/blog-assets/notion-migration/simulation-reproducibility/Untitled%20257.png)
+![A workflow example from Snakemake Analysis Workflow Management](../../assets/blog/simulation-reproducibility/Untitled-257.png)
 
 ## What is the problem we're trying to solve?
 

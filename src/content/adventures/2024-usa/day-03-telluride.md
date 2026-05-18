@@ -12,7 +12,7 @@ activitiesAm: "Telluride Village"
 activitiesPm: "Telluride mountain resort"
 drivingTime: "45 minutes"
 accommodation: "Airbnb"
-heroImage: "../../../assets/adventures/assets/2024-usa/day-03-telluride-01.webp"
+heroImage: "../../../assets/adventures/2024-usa/day-03-telluride-01.webp"
 ---
 ## Travel Log
 
@@ -26,35 +26,35 @@ Overall Telluride seems like the perfect mountain town, and we loved the Aspen t
 
 
 
-![Looking down on Telluride](../../../assets/adventures/assets/2024-usa/day-03-telluride-02.webp)
+![Looking down on Telluride](../../../assets/adventures/2024-usa/day-03-telluride-02.webp)
 
-![Too hot for Bess…](../../../assets/adventures/assets/2024-usa/day-03-telluride-03.webp)
+![Too hot for Bess…](../../../assets/adventures/2024-usa/day-03-telluride-03.webp)
 
-![Smiles and sunshine](../../../assets/adventures/assets/2024-usa/day-03-telluride-04.webp)
+![Smiles and sunshine](../../../assets/adventures/2024-usa/day-03-telluride-04.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-03-telluride-05.webp)
+![](../../../assets/adventures/2024-usa/day-03-telluride-05.webp)
 
-![Incredible views from the highway](../../../assets/adventures/assets/2024-usa/day-03-telluride-06.webp)
+![Incredible views from the highway](../../../assets/adventures/2024-usa/day-03-telluride-06.webp)
 
-![The end of the road and looking back down the valley](../../../assets/adventures/assets/2024-usa/day-03-telluride-07.webp)
+![The end of the road and looking back down the valley](../../../assets/adventures/2024-usa/day-03-telluride-07.webp)
 
-![The river trail past the beaver pond](../../../assets/adventures/assets/2024-usa/day-03-telluride-08.webp)
+![The river trail past the beaver pond](../../../assets/adventures/2024-usa/day-03-telluride-08.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-03-telluride-09.webp)
+![](../../../assets/adventures/2024-usa/day-03-telluride-09.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-03-telluride-10.webp)
+![](../../../assets/adventures/2024-usa/day-03-telluride-10.webp)
 
-![The kids required lots of Shave Ice (slush puppy) to keep them cool](../../../assets/adventures/assets/2024-usa/day-03-telluride-11.webp)
+![The kids required lots of Shave Ice (slush puppy) to keep them cool](../../../assets/adventures/2024-usa/day-03-telluride-11.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-03-telluride-12.webp)
+![](../../../assets/adventures/2024-usa/day-03-telluride-12.webp)
 
-![The refreshing San Miguel river](../../../assets/adventures/assets/2024-usa/day-03-telluride-13.webp)
+![The refreshing San Miguel river](../../../assets/adventures/2024-usa/day-03-telluride-13.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-03-telluride-14.webp)
+![](../../../assets/adventures/2024-usa/day-03-telluride-14.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-03-telluride-15.webp)
+![](../../../assets/adventures/2024-usa/day-03-telluride-15.webp)
 
-![](../../../assets/adventures/assets/2024-usa/day-03-telluride-16.webp)
+![](../../../assets/adventures/2024-usa/day-03-telluride-16.webp)
 
 Accommodation:
 

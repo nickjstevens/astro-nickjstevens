@@ -4,7 +4,7 @@ description: "Here are a collection of old tips for handling the heat when runni
 pubDate: 2020-09-27
 updatedDate: 2022-05-13
 tags: ["Running"]
-heroImage: "../../assets/blog-assets/notion-migration/running-in-hot-weather/silas-baisch-VhnEBuVUdvY-unsplash.jpg"
+heroImage: "../../assets/blog/running-in-hot-weather/silas-baisch-VhnEBuVUdvY-unsplash.jpg"
 ---
 
 Here are a collection of old tips for handling the heat when running:
@@ -15,4 +15,4 @@ Here are a collection of old tips for handling the heat when running:
 - Have someone give you an ice lolly at an aid station on the way round!
 - Even when it is not that hot, it is important to try and keep as cool as possible during a race, especially an ultra.
 
-![Running in the Heat ~ Photo by Silas Baisch on Unsplash](../../assets/blog-assets/notion-migration/running-in-hot-weather/silas-baisch-VhnEBuVUdvY-unsplash.jpg)
+![Running in the Heat ~ Photo by Silas Baisch on Unsplash](../../assets/blog/running-in-hot-weather/silas-baisch-VhnEBuVUdvY-unsplash.jpg)

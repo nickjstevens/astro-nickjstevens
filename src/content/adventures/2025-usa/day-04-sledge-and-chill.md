@@ -6,7 +6,7 @@ tripSlug: "2025-usa"
 kind: "day"
 year: 2025
 order: 4
-heroImage: "../../../assets/adventures/assets/2025-usa/day-04-sledge-and-chill-01.webp"
+heroImage: "../../../assets/adventures/2025-usa/day-04-sledge-and-chill-01.webp"
 sourceUrl: "https://nickjstevens.notion.site/day-4-sledge-and-chill-2cded18142a580eabe44de5e85476a35?pvs=25"
 ---
 ## Travel Log
@@ -21,14 +21,14 @@ Nick and Alex went for a sunny winter walk along the river - nice to stretch our
 
 In the evening we watching Furry Vengeance - a funny movie, and played some air hockey.
 
-![IMG_9978.jpeg](../../../assets/adventures/assets/2025-usa/day-04-sledge-and-chill-01.webp)
+![IMG_9978.jpeg](../../../assets/adventures/2025-usa/day-04-sledge-and-chill-01.webp)
 
-![IMG_2857.jpeg](../../../assets/adventures/assets/2025-usa/day-04-sledge-and-chill-02.webp)
+![IMG_2857.jpeg](../../../assets/adventures/2025-usa/day-04-sledge-and-chill-02.webp)
 
-![IMG_2864.jpeg](../../../assets/adventures/assets/2025-usa/day-04-sledge-and-chill-03.webp)
+![IMG_2864.jpeg](../../../assets/adventures/2025-usa/day-04-sledge-and-chill-03.webp)
 
-![IMG_2876.jpeg](../../../assets/adventures/assets/2025-usa/day-04-sledge-and-chill-04.webp)
+![IMG_2876.jpeg](../../../assets/adventures/2025-usa/day-04-sledge-and-chill-04.webp)
 
-![IMG_2880.jpeg](../../../assets/adventures/assets/2025-usa/day-04-sledge-and-chill-05.webp)
+![IMG_2880.jpeg](../../../assets/adventures/2025-usa/day-04-sledge-and-chill-05.webp)
 
-![IMG_2882.jpeg](../../../assets/adventures/assets/2025-usa/day-04-sledge-and-chill-06.webp)
+![IMG_2882.jpeg](../../../assets/adventures/2025-usa/day-04-sledge-and-chill-06.webp)

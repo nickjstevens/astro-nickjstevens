@@ -7,7 +7,7 @@ kind: "day"
 year: 2025
 order: 18
 date: "2025-08-14"
-heroImage: "../../../assets/adventures/assets/2025-switzerland/day-18-grindelwald-to-devon-uk-01.webp"
+heroImage: "../../../assets/adventures/2025-switzerland/day-18-grindelwald-to-devon-uk-01.webp"
 ---
 ## Travel Log
 
@@ -17,22 +17,22 @@ The flight home and the timings through passport control were painless and quick
 
 All in all we were back home in Devon by 9pm. What a great holiday!
 
-![](../../../assets/adventures/assets/2025-switzerland/day-18-grindelwald-to-devon-uk-02.webp)
+![](../../../assets/adventures/2025-switzerland/day-18-grindelwald-to-devon-uk-02.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-18-grindelwald-to-devon-uk-03.webp)
+![](../../../assets/adventures/2025-switzerland/day-18-grindelwald-to-devon-uk-03.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-18-grindelwald-to-devon-uk-04.webp)
+![](../../../assets/adventures/2025-switzerland/day-18-grindelwald-to-devon-uk-04.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-18-grindelwald-to-devon-uk-05.webp)
+![](../../../assets/adventures/2025-switzerland/day-18-grindelwald-to-devon-uk-05.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-18-grindelwald-to-devon-uk-06.webp)
+![](../../../assets/adventures/2025-switzerland/day-18-grindelwald-to-devon-uk-06.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-18-grindelwald-to-devon-uk-07.webp)
+![](../../../assets/adventures/2025-switzerland/day-18-grindelwald-to-devon-uk-07.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-18-grindelwald-to-devon-uk-08.webp)
+![](../../../assets/adventures/2025-switzerland/day-18-grindelwald-to-devon-uk-08.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-18-grindelwald-to-devon-uk-09.webp)
+![](../../../assets/adventures/2025-switzerland/day-18-grindelwald-to-devon-uk-09.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-18-grindelwald-to-devon-uk-10.webp)
+![](../../../assets/adventures/2025-switzerland/day-18-grindelwald-to-devon-uk-10.webp)
 
-![](../../../assets/adventures/assets/2025-switzerland/day-18-grindelwald-to-devon-uk-11.webp)
+![](../../../assets/adventures/2025-switzerland/day-18-grindelwald-to-devon-uk-11.webp)

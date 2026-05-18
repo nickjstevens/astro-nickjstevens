@@ -1,0 +1,104 @@
+---
+import PageLayout from '../../layouts/Page.astro';
+import { Image } from 'astro:assets';
+
+// Placeholder images for now - replace with real screenshots
+import toolMapImg from '../../assets/blog/hermes-agent/hermes-map.png';
+---
+
+<PageLayout
+	title="Tool Playground"
+	description="A collection of work-in-progress tools and experiments."
+>
+	<p>
+		Welcome to my Tool Playground! This is where I keep work-in-progress tools I'm developing or experimenting with.
+	</p>
+
+	<div class="tool-grid">
+		<a href="/tool-playground/ai-tool-map" class="tool-card">
+			<div class="image-wrapper">
+				<Image src={toolMapImg} alt="AI Tool Map Screenshot" width={800} height={450} />
+			</div>
+			<div class="content">
+				<h3>AI Tool Map</h3>
+				<p>A map of the AI tooling orchestration stack.</p>
+			</div>
+		</a>
+
+		<a href="https://great-books-explorer.vercel.app/" target="_blank" rel="noopener noreferrer" class="tool-card">
+			<div class="image-wrapper placeholder">
+				<span>Screenshot coming soon</span>
+			</div>
+			<div class="content">
+				<h3>Great Books Explorer</h3>
+				<p>An interactive way to explore classic literature.</p>
+			</div>
+		</a>
+
+		<a href="https://pod-shift.vercel.app/" target="_blank" rel="noopener noreferrer" class="tool-card">
+			<div class="image-wrapper placeholder">
+				<span>Screenshot coming soon</span>
+			</div>
+			<div class="content">
+				<h3>Pod Shift</h3>
+				<p>A tool for podcast discovery and management.</p>
+			</div>
+		</a>
+	</div>
+
+	<style>
+		.tool-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+			gap: 2rem;
+			margin-top: 2rem;
+		}
+		.tool-card {
+			display: flex;
+			flex-direction: column;
+			border: 1px solid var(--border);
+			border-radius: 1rem;
+			overflow: hidden;
+			text-decoration: none;
+			color: inherit;
+			transition: transform 0.2s ease, box-shadow 0.2s ease;
+			background: var(--surface-alt);
+		}
+		.tool-card:hover {
+			transform: translateY(-4px);
+			box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+		}
+		.image-wrapper {
+			aspect-ratio: 16 / 9;
+			overflow: hidden;
+			background: #eee;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.image-wrapper img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+		.image-wrapper.placeholder {
+			background: color-mix(in srgb, var(--accent) 10%, transparent);
+			color: var(--text-muted);
+			font-size: 0.9rem;
+			font-style: italic;
+		}
+		.content {
+			padding: 1.25rem;
+		}
+		.content h3 {
+			margin: 0 0 0.5rem 0;
+			font-size: 1.25rem;
+		}
+		.content p {
+			margin: 0;
+			font-size: 0.9rem;
+			color: var(--text-muted);
+			line-height: 1.4;
+		}
+	</style>
+</PageLayout>

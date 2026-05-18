@@ -12,7 +12,7 @@ activitiesAm: "Death valley"
 activitiesPm: "Drive"
 drivingTime: "5 hours"
 accommodation: "Holiday Inn & Suites"
-heroImage: "../../../assets/adventures/assets/2024-usa/day-21-death-valley-01.webp"
+heroImage: "../../../assets/adventures/2024-usa/day-21-death-valley-01.webp"
 ---
 ## Travel Log
 
@@ -20,21 +20,21 @@ We left Vegas early for a long day on the road. It was a relief to leave the cha
 
 Finally we arrived in Bishop around 5pm, we checked into our hotel, it was pretty basic but had everything we needed. The kids managed a quick swim at the pool and then we had Sushi for dinner at Yamatani Japanese Restaurant this was a real treat as we were trying not to eat out much but there was no catering option at our hotel and it was nice to not have something smoked or fried for a change!
 
-![The hot road](../../../assets/adventures/assets/2024-usa/day-21-death-valley-02.webp)
+![The hot road](../../../assets/adventures/2024-usa/day-21-death-valley-02.webp)
 
-![Jasper at Zabriskie Point](../../../assets/adventures/assets/2024-usa/day-21-death-valley-03.webp)
+![Jasper at Zabriskie Point](../../../assets/adventures/2024-usa/day-21-death-valley-03.webp)
 
-![Bess at Zabriskie Point](../../../assets/adventures/assets/2024-usa/day-21-death-valley-04.webp)
+![Bess at Zabriskie Point](../../../assets/adventures/2024-usa/day-21-death-valley-04.webp)
 
-![Thea at Zabriskie Point](../../../assets/adventures/assets/2024-usa/day-21-death-valley-05.webp)
+![Thea at Zabriskie Point](../../../assets/adventures/2024-usa/day-21-death-valley-05.webp)
 
-![We ignored that sign, but not for long - it was HOT!](../../../assets/adventures/assets/2024-usa/day-21-death-valley-06.webp)
+![We ignored that sign, but not for long - it was HOT!](../../../assets/adventures/2024-usa/day-21-death-valley-06.webp)
 
-![The Mesquite Flat Sand Dunes](../../../assets/adventures/assets/2024-usa/day-21-death-valley-07.webp)
+![The Mesquite Flat Sand Dunes](../../../assets/adventures/2024-usa/day-21-death-valley-07.webp)
 
-![Furnace Creek living up to it’s name. It was 3 degC hotter when we came out of the visitor centre.](../../../assets/adventures/assets/2024-usa/day-21-death-valley-08.webp)
+![Furnace Creek living up to it’s name. It was 3 degC hotter when we came out of the visitor centre.](../../../assets/adventures/2024-usa/day-21-death-valley-08.webp)
 
-![A sushi restaurant in Bistop, CA.](../../../assets/adventures/assets/2024-usa/day-21-death-valley-09.webp)
+![A sushi restaurant in Bistop, CA.](../../../assets/adventures/2024-usa/day-21-death-valley-09.webp)
 
 Accommodation:
 

@@ -94,6 +94,7 @@ const nodes: Record<string, ToolNode> = {
   Plandex: { id: 'Plandex', label: '🗺️ Plandex', category: 'Execution', color: 'green', uvp: 'Large-project coding agent: Built for multi-file, real-world implementation tasks.', purpose: 'Open-source AI coding agent designed for larger codebases and complex coding tasks.', usage: 'Useful for longer-horizon software implementation across many files.', link: 'https://github.com/plandex-ai/plandex' },
   Cline: { id: 'Cline', label: '🤖 Cline', category: 'Execution', color: 'green', uvp: 'Autonomous coding agent: The open-source standard for AI-driven software engineering in the IDE.', purpose: 'Autonomous coding assistant that can read/write files, execute commands, and use tools to solve complex engineering tasks.', usage: 'Use as a VS Code extension for powerful, autonomous coding loops.', link: 'https://github.com/cline/cline' },
   Crush: { id: 'Crush', label: '🥤 Crush', category: 'Execution', color: 'green', uvp: 'Open Runtime: Full local-to-cloud flexibility without proprietary lock-in.', purpose: 'Open-source AI coding agent runtime for terminal, IDE, and desktop workflows.', usage: 'Primarily focused on software development tasks rather than general-purpose consumer AI use cases.', link: 'https://github.com/charmbracelet/crush' },
+  OpenCode: { id: 'OpenCode', label: '🧑‍💻 opencode', category: 'Execution', color: 'green', uvp: 'Actively evolving open coding agent: A fast-moving open-source terminal/IDE coding tool with strong workflow extensibility.', purpose: 'Open-source AI coding assistant for terminal and editor workflows.', usage: 'Use when you want an actively developed coding agent with a lightweight local workflow footprint.', link: 'https://opencode.ai/' },
   Ollama: { id: 'Ollama', label: '🦙 Ollama + Gemma 4', category: 'Inference', color: 'blue', uvp: 'Air-gapped privacy: Private local inference with zero data leakage.', purpose: 'Private local model inference.', link: 'https://ollama.com/' },
   OpenAIModels: { id: 'OpenAIModels', label: '🧠 OpenAI Models', category: 'Inference', color: 'blue', uvp: 'Logic Leader: High-complexity cloud reasoning for core features.', purpose: 'Cloud reasoning engine for high complexity.', link: 'https://platform.openai.com/docs/models' },
   GeminiModels: { id: 'GeminiModels', label: '🌌 Gemini Models', category: 'Inference', color: 'blue', uvp: 'Massive Context: Cloud-scale reasoning across your entire project history.', purpose: 'Context-heavy cloud models (1M+ tokens).', link: 'https://ai.google.dev/gemini-api/docs/models' },
@@ -111,7 +112,7 @@ const labels = {
   context: ['AgentsMD', 'DesignMD', 'Skills', 'OpenSpec', 'Impeccable', 'SpecKit', 'BMad'],
   orchestration1: ['OpenClaw', 'Hermes', 'Letta', 'PicoClaw'],
   orchestration2: ['OpenAgents', 'OpenAgentsControl', 'Goose', 'OMX', 'OMOA', 'Trellis'],
-  execution: ['GeminiCLI', 'CodexCLI', 'PiAgent', 'Crush', 'OpenClaude', 'Aider', 'Plandex', 'Cline'],
+  execution: ['GeminiCLI', 'CodexCLI', 'PiAgent', 'Crush', 'OpenCode', 'OpenClaude', 'Aider', 'Plandex', 'Cline'],
   intelligence: ['Ollama', 'OpenAIModels', 'GeminiModels'],
   mcp: ['MCP', 'MCPTools', 'MCPMemory', 'MCPSearch', 'MCPFiles', 'MCPAPIs']
 };

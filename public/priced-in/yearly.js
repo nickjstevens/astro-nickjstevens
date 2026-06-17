@@ -115,7 +115,7 @@ createApp({
       }
       const denominatorLabel = this.denominatorLabel();
       const rebaseLabel = this.rebased ? 'rebased to 100 at the first shared visible year' : 'shown in raw priced-in terms';
-      const bitcoinLabel = 'with bitcoin history truncated before 2017';
+      const bitcoinLabel = 'with Bitcoin availability determined by the selected Bitcoin denominator';
       if (this.mode === 'single') {
         const suffix = this.pairUsesBitcoin(this.itemKey, this.denominatorSeriesRef()) ? `, and ${bitcoinLabel}` : '';
         return `Yearly values for ${this.seriesName(this.itemKey)} priced in ${denominatorLabel}, ${rebaseLabel}, across the ${this.selectedRange} range${suffix}.`;
@@ -164,6 +164,22 @@ createApp({
     },
     pairUsesBitcoin(numeratorKey, denominatorKey) {
       return this.isBitcoinSeriesRef(numeratorKey) || this.isBitcoinSeriesRef(denominatorKey);
+    },
+    contextKeyFromSeriesRef(seriesKey = '') {
+      return String(seriesKey || '').replace(/^context:/, '');
+    },
+    displayStartYearForSeriesRef(seriesKey = '') {
+      if (!seriesKey) return null;
+      const contextKey = this.contextKeyFromSeriesRef(seriesKey);
+      const configured = this.contextSeries[contextKey]?.metadata?.display_start_year;
+      if (configured) return Number(configured);
+      return this.isBitcoinSeriesRef(seriesKey) ? 2017 : null;
+    },
+    pairDisplayStartYear(...seriesRefs) {
+      const starts = seriesRefs
+        .map((seriesRef) => this.displayStartYearForSeriesRef(seriesRef))
+        .filter((year) => Number.isFinite(year));
+      return starts.length ? Math.max(...starts) : null;
     },
     isBitcoinQuotedColumn(columnKey) {
       if (this.rebased) return false;
@@ -265,7 +281,8 @@ createApp({
         if (numeratorValue == null || denominatorValue == null || denominatorValue === 0) return { year, value: null, observed: false };
         return { year, value: numeratorValue / denominatorValue, observed: true };
       }).filter((point) => point.year >= fromYear && point.year <= toYear && point.observed);
-      if (this.pairUsesBitcoin(numeratorKey, denominatorKey)) points = points.filter((point) => point.year >= 2017);
+      const displayStartYear = this.pairDisplayStartYear(numeratorKey, denominatorKey);
+      if (displayStartYear) points = points.filter((point) => point.year >= displayStartYear);
       return this.applySeriesTransforms(points, forcedStartYear);
     },
     downloadCsv() {

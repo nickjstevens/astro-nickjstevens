@@ -373,6 +373,19 @@ createApp({
       const normalized = String(seriesRef || '').toLowerCase();
       return normalized.includes('bitcoin') || normalized === 'btc' || normalized.endsWith('_btc') || normalized.endsWith(':btc') || normalized.endsWith('_bitcoin') || normalized.includes('context_bitcoin');
     },
+    displayStartYearForSeriesRef(seriesRef = '') {
+      if (!seriesRef) return null;
+      const contextKey = String(seriesRef || '').replace(/^context:/, '');
+      const configured = this.contextSeries[contextKey]?.metadata?.display_start_year;
+      if (configured) return Number(configured);
+      return this.isBitcoinSeriesRef(seriesRef) ? 2017 : null;
+    },
+    pairDisplayStartYear(...seriesRefs) {
+      const starts = seriesRefs
+        .map((seriesRef) => this.displayStartYearForSeriesRef(seriesRef))
+        .filter((year) => Number.isFinite(year));
+      return starts.length ? Math.max(...starts) : null;
+    },
     pairUsesBitcoin({ numeratorKey = this.itemKey, denominatorType = this.denominatorSeriesType(), denominatorKey = this.denominatorSeriesKey() } = {}) {
       const numeratorSeriesRef = numeratorKey?.startsWith('context:') ? numeratorKey : `item:${numeratorKey || ''}`;
       const denominatorSeriesRef = `${denominatorType}:${denominatorKey}`;
@@ -404,9 +417,8 @@ createApp({
           return { year, value: item.values[idx] / denominatorValue };
         })
         .filter((point) => point.year >= from && point.year <= to && point.value != null);
-      if (this.pairUsesBitcoin({ numeratorKey, denominatorType: this.denominatorSeriesType(), denominatorKey: this.denominatorSeriesKey() })) {
-        points = points.filter((point) => Number(point.year) >= 2017);
-      }
+      const displayStartYear = this.pairDisplayStartYear(`item:${numeratorKey}`, `${this.denominatorSeriesType()}:${this.denominatorSeriesKey()}`);
+      if (displayStartYear) points = points.filter((point) => Number(point.year) >= displayStartYear);
       return this.applySeriesTransforms(points.map((point) => ({ ...point, rawValue: point.value })));
     },
     visibleOverlaySeries(seriesKey) {
@@ -414,9 +426,8 @@ createApp({
       let points = this.years
         .map((year) => ({ year, value: this.pointValueForSeries(seriesKey, year) }))
         .filter((point) => point.year >= from && point.year <= to && point.value != null);
-      if (this.pairUsesBitcoin({ numeratorKey: seriesKey, denominatorType: this.denominatorSeriesType(), denominatorKey: this.denominatorSeriesKey() }) || this.isBitcoinSeriesRef(seriesKey)) {
-        points = points.filter((point) => Number(point.year) >= 2017);
-      }
+      const displayStartYear = this.pairDisplayStartYear(seriesKey, `${this.denominatorSeriesType()}:${this.denominatorSeriesKey()}`);
+      if (displayStartYear) points = points.filter((point) => Number(point.year) >= displayStartYear);
       return this.applySeriesTransforms(points.map((point) => ({ ...point, rawValue: point.value })));
     },
     applySeriesTransforms(points) {
@@ -456,7 +467,7 @@ createApp({
       if (denominatorKey === 'real_fiat') return `${formatHoverGbp(pricedValue)} (CPI-adjusted)`;
       if (denominatorKey === 'gold') return `${formatUnitValue(pricedValue)} oz gold (${formatHoverGbp(gbpValue)})`;
       if (denominatorKey === 'hours') return `${formatUnitValue(pricedValue)} hours at median wage (${formatHoverGbp(gbpValue)})`;
-      if (denominatorKey === 'bitcoin') return `${formatBitcoinHuman(pricedValue)} (${formatHoverGbp(gbpValue)})`;
+      if (this.isBitcoinSeriesRef(`context:${denominatorKey}`)) return `${formatBitcoinHuman(pricedValue)} (${formatHoverGbp(gbpValue)})`;
       return `${formatUnitValue(pricedValue)} ${this.denominatorSeriesLabel()} (${formatHoverGbp(gbpValue)})`;
     },
     buildHoverLabel(point, hoverStats = null) {

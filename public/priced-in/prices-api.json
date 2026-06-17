@@ -371,7 +371,126 @@
           "note": "Annual average denominator reference source (historic years remain approximate placeholders pending full rebuild)."
         }
       ],
-      "series_basis": "calendar_year_average"
+      "series_basis": "calendar_year_average",
+      "metadata": {
+        "display_start_year": 2017
+      }
+    },
+    "bitcoin_power_law": {
+      "label": "Bitcoin power law (BTC)",
+      "unit": "BTC power-law",
+      "values": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        0.21,
+        1.57,
+        10.02,
+        41.15,
+        120.36,
+        332.35,
+        845.29,
+        1799.97,
+        3262.7,
+        6013.88,
+        10032.61,
+        15022.17,
+        25946.45,
+        38609.39,
+        54889.08,
+        75959.29
+      ],
+      "sources": [
+        {
+          "name": "Giovanni Santostasi & Stephen Perrenod, \u201cA Mechanistic Derivation of the Bitcoin Price Power Law: Network Adoption Dynamics and Generalised Metcalfe Scaling\u201d",
+          "url": "/priced-in/sources/bitcoin-power-law-santostasi-perrenod-2026.pdf",
+          "type": "paper",
+          "date": "2026-02-18",
+          "note": "Uses the paper\u2019s direct price power-law fit, log10 P(t) = -16.509 + 5.690 log10 t, where P is USD/BTC and t is days since the 3 January 2009 Genesis Block. Annual denominator values are daily formula averages converted to GBP using annual GBP-per-USD FX."
+        },
+        {
+          "name": "FRED (OECD MEI): CCUSMA02GBA618N annual USD exchange rate for UK (GBP per USD)",
+          "url": "https://fred.stlouisfed.org/data/CCUSMA02GBA618N",
+          "type": "official",
+          "date": "2026-02-16",
+          "note": "Annual GBP-per-USD averages used to convert the paper\u2019s USD/BTC power-law price into GBP/BTC for a UK-priced denominator."
+        }
+      ],
+      "lineage": [
+        "Power-law USD/BTC price from Santostasi & Perrenod: log10 P(t) = -16.509 + 5.690 log10 t.",
+        "t is measured in days since the Bitcoin Genesis Block on 3 January 2009; 2010 starts on 17 July, matching the paper\u2019s reliable exchange-price window.",
+        "Daily formula values are averaged by calendar year, then converted to GBP/BTC with annual GBP-per-USD FX so UK item prices can be divided by the denominator.",
+        "This is a smoothed model denominator intended to remove Bitcoin cycle volatility, not a spot or market-average Bitcoin price."
+      ],
+      "series_basis": "calendar_year_daily_formula_average",
+      "metadata": {
+        "formula": "log10(P_USD_per_BTC) = -16.509 + 5.690 * log10(days_since_2009_01_03)",
+        "paper_authors": [
+          "Giovanni Santostasi",
+          "Stephen Perrenod"
+        ],
+        "institution": "Scientific Bitcoin Institute",
+        "display_start_year": 2010,
+        "price_basis": "Power-law fitted USD/BTC converted to GBP/BTC",
+        "volatility_note": "Uses the fitted long-run power-law trajectory rather than market Bitcoin prices, so denomination removes most cycle volatility."
+      }
     },
     "real_fiat": {
       "label": "GBP, CPI-adjusted (\u00a3)",
@@ -4843,7 +4962,8 @@
     "salary_benchmark": "Earnings-based salary denominators were removed because the hours-worked series now captures that comparison more directly.",
     "diesel": "Diesel 2003-2025 uses exact calendar-year averages from the DESNZ weekly road fuel price workbook.",
     "water": "South West Water uses sparse direct anchors (2014, 2024, 2025) plus interpolation/back-casting where published comparable annual bill data are limited.",
-    "drinks": "Beer and wine series prioritise direct ONS average-price time series where available. Beer uses ONS RPI average price for draught lager per pint from 1987. Wine uses ONS RPI average price per 175ml glass from 2011, back-cast to 1987 with the ONS wines-and-spirits on-sales RPI index. Pre-1987 values are deliberately left blank rather than inferred from broad CPI/RPI because no comparable drink-specific ONS series was found; 2025 values are provisional CPIH-index adjusted estimates."
+    "drinks": "Beer and wine series prioritise direct ONS average-price time series where available. Beer uses ONS RPI average price for draught lager per pint from 1987. Wine uses ONS RPI average price per 175ml glass from 2011, back-cast to 1987 with the ONS wines-and-spirits on-sales RPI index. Pre-1987 values are deliberately left blank rather than inferred from broad CPI/RPI because no comparable drink-specific ONS series was found; 2025 values are provisional CPIH-index adjusted estimates.",
+    "bitcoin_power_law": "Bitcoin power-law denominator uses Santostasi & Perrenod\u2019s fitted direct price law, log10 P(t) = -16.509 + 5.690 log10 t, averaged daily by calendar year and converted from USD/BTC into GBP/BTC with annual GBP-per-USD FX. It is included alongside, not instead of, the existing market Bitcoin series, to price goods in a smoothed Bitcoin unit of account that removes most cycle volatility."
   },
   "schema": {
     "version": "2.1.0",

@@ -256,7 +256,7 @@ createApp({
       return this.denominatorSeriesType() === 'context' && this.denominatorSeriesKey() !== 'fiat';
     },
     canSwapPair() {
-      return !!this.currentItem && this.denominatorSeriesKey() !== this.itemKey;
+      return !!this.currentItem && this.denominator !== this.itemKey && this.denominator !== `item:${this.itemKey}`;
     },
     currentItem() {
       return this.items.find((item) => item.key === this.itemKey) || null;
@@ -285,6 +285,33 @@ createApp({
         borderColor: `hsla(${hue}, 88%, 46%, ${borderAlpha})`,
         color: this.isDarkMode ? 'hsl(178, 90%, 78%)' : 'hsl(192, 78%, 28%)',
       };
+    },
+    referenceItemFromContext(contextKey, context) {
+      return {
+        key: `context:${contextKey}`,
+        name: context.label || contextKey,
+        category: 'reference',
+        values: context.values || [],
+        sources: context.sources || [],
+        metadata: {
+          unit_basis: 'Reference denominator series',
+          geography: 'United Kingdom',
+          price_basis: context.metadata?.price_basis || context.series_basis || 'Reference series',
+          frequency: 'Annual',
+          last_updated: context.metadata?.last_updated || 'See sources',
+          reference_context_key: contextKey,
+        },
+      };
+    },
+    withReferenceItems(items = []) {
+      const existingKeys = new Set(items.map((item) => item.key));
+      const referenceItems = Object.entries(this.contextSeries)
+        .filter(([contextKey]) => !existingKeys.has(`context:${contextKey}`))
+        .map(([contextKey, context]) => this.referenceItemFromContext(contextKey, context));
+      return [...items, ...referenceItems];
+    },
+    realItemDenominators() {
+      return this.items.filter((item) => !item.metadata?.reference_context_key);
     },
     categoryBadgeStyle(category, itemKey) {
       const palettes = {
@@ -712,37 +739,14 @@ createApp({
         : (this.contextSeries[this.denominatorSeriesKey()]?.lineage || []);
       return lineage.length ? `Lineage: ${lineage.join(' → ')}` : '';
     },
-    ensureContextAsSwappableItem(contextKey) {
-      const syntheticKey = `context_${contextKey}`;
-      if (this.items.some((item) => item.key === syntheticKey)) return syntheticKey;
-      const context = this.contextSeries[contextKey];
-      if (!context) return null;
-      this.items.push({
-        key: syntheticKey,
-        name: context.label,
-        category: 'reference',
-        values: context.values || [],
-        sources: context.sources || [],
-        metadata: {
-          unit_basis: 'Reference denominator series',
-          geography: 'United Kingdom',
-          price_basis: 'Nominal annual average',
-          frequency: 'Annual',
-          last_updated: context?.metadata?.last_updated || 'See sources',
-        },
-      });
-      this.denominators.push({ value: `item:${syntheticKey}`, label: context.label });
-      return syntheticKey;
-    },
     swapPair() {
-      let denominatorItemKey = this.denominatorSeriesKey();
-      if (this.denominatorSeriesType() === 'context') {
-        denominatorItemKey = this.ensureContextAsSwappableItem(denominatorItemKey);
-      }
+      const denominatorItemKey = this.denominatorSeriesType() === 'context'
+        ? `context:${this.denominatorSeriesKey()}`
+        : this.denominatorSeriesKey();
       if (!denominatorItemKey || denominatorItemKey === this.itemKey) return;
       const previousItemKey = this.itemKey;
       this.itemKey = denominatorItemKey;
-      this.denominator = `item:${previousItemKey}`;
+      this.denominator = previousItemKey.startsWith('context:') ? previousItemKey : `item:${previousItemKey}`;
       this.syncUrlAndRender();
     },
     toggleTheme() {
@@ -852,14 +856,14 @@ createApp({
         const payload = await response.json();
         this.years = payload.years;
         this.contextSeries = payload.contextSeries;
-        this.items = payload.items;
+        this.items = this.withReferenceItems(payload.items);
         this.denominators = [
           ...Object.entries(this.contextSeries).map(([value, d]) => ({ value: `context:${value}`, label: d.label })),
-          ...this.items.map((item) => ({ value: `item:${item.key}`, label: item.name })),
+          ...this.realItemDenominators().map((item) => ({ value: `item:${item.key}`, label: item.name })),
         ];
         if (!this.itemKey || !this.items.some((item) => item.key === this.itemKey)) this.itemKey = this.items[0]?.key || '';
         if (!this.denominators.some((denominator) => denominator.value === this.denominator)) this.denominator = this.denominators[0]?.value || 'context:fiat';
-        if (this.denominator === `item:${this.itemKey}`) {
+        if (this.denominator === this.itemKey || this.denominator === `item:${this.itemKey}`) {
           const fallbackContext = this.denominators.find((denominator) => denominator.value.startsWith('context:fiat'))?.value
             || this.denominators.find((denominator) => denominator.value.startsWith('context:'))?.value
             || 'context:fiat';

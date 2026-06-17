@@ -95,7 +95,7 @@
         </header>
         <p class="lineage prominent-insight">{{ insightText() }}</p>
         <p class="lineage">{{ purchasingPowerText() }}</p>
-        <p v-if="bitcoinSparseWarningApplies()" class="notice">Bitcoin is hidden before 2017 because early annual averages are sparse and highly volatile.</p>
+        <p v-if="bitcoinSparseWarningApplies()" class="notice">Bitcoin-derived series use their configured start years; the market Bitcoin series remains hidden before 2017 because early annual averages are sparse and highly volatile.</p>
         <p v-if="goldAlternativeText()" class="lineage">{{ goldAlternativeText() }}</p>
         <dl class="stats-strip">
           <div class="stat"><dt>CAGR <span class="term-help" role="button" tabindex="0" aria-label="Compound annual growth rate: the average yearly rate of change over the selected period." title="Compound annual growth rate: the average yearly rate of change over the selected period.">?</span></dt><dd>{{ chartStats().cagrSelected }}</dd></div>

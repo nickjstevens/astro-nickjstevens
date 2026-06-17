@@ -527,6 +527,33 @@ createApp({
     categoryDisplayLabel(category) {
       return this.categoryLabel(category);
     },
+    referenceItemFromContext(contextKey, context) {
+      return {
+        key: `context:${contextKey}`,
+        name: context.label || contextKey,
+        category: 'reference',
+        values: context.values || [],
+        sources: context.sources || [],
+        metadata: {
+          unit_basis: 'Reference denominator series',
+          geography: 'United Kingdom',
+          price_basis: context.metadata?.price_basis || context.series_basis || 'Reference series',
+          frequency: 'Annual',
+          last_updated: context.metadata?.last_updated || 'See sources',
+          reference_context_key: contextKey,
+        },
+      };
+    },
+    withReferenceItems(items = []) {
+      const existingKeys = new Set(items.map((item) => item.key));
+      const referenceItems = Object.entries(this.contextSeries)
+        .filter(([contextKey]) => !existingKeys.has(`context:${contextKey}`))
+        .map(([contextKey, context]) => this.referenceItemFromContext(contextKey, context));
+      return [...items, ...referenceItems];
+    },
+    realItemDenominators() {
+      return this.items.filter((item) => !item.metadata?.reference_context_key);
+    },
     categoryBadgeStyle(category, itemKey) {
       const palettes = {
         housing: { hue: 4, sat: 78, lightness: [40, 46, 52, 58, 64] },
@@ -1484,10 +1511,10 @@ createApp({
         if (!isValidDataset(payload)) throw new Error('dataset malformed');
         this.years = payload.years;
         this.contextSeries = payload.contextSeries;
-        this.items = payload.items;
+        this.items = this.withReferenceItems(payload.items);
         this.denominators = [
           ...Object.entries(this.contextSeries).map(([value, d]) => ({ value: `context:${value}`, label: d.label })),
-          ...this.items.map((item) => ({ value: `item:${item.key}`, label: item.name })),
+          ...this.realItemDenominators().map((item) => ({ value: `item:${item.key}`, label: item.name })),
         ];
         if (!this.denominators.some((denominator) => denominator.value === this.allDenominator)) this.allDenominator = this.denominators[0]?.value || 'context:fiat';
         this.perChartDenominator = Object.fromEntries(this.items.map((item) => [item.key, this.allDenominator]));

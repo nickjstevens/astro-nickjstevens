@@ -200,6 +200,23 @@ createApp({
       if (this.denominatorType() === 'item') return this.items.find((item) => item.key === this.denominatorKey())?.name || this.denominatorKey();
       return this.contextSeries[this.denominatorKey()]?.label || this.denominatorKey();
     },
+    referenceItemFromContext(contextKey, context) {
+      return {
+        key: `context:${contextKey}`,
+        name: context.label || contextKey,
+        category: 'reference',
+        values: context.values || [],
+        sources: context.sources || [],
+        metadata: { reference_context_key: contextKey },
+      };
+    },
+    withReferenceItems(items = []) {
+      const existingKeys = new Set(items.map((item) => item.key));
+      const referenceItems = Object.entries(this.contextSeries)
+        .filter(([contextKey]) => !existingKeys.has(`context:${contextKey}`))
+        .map(([contextKey, context]) => this.referenceItemFromContext(contextKey, context));
+      return [...items, ...referenceItems];
+    },
     formatTableValue(value, columnKey) {
       if (this.mode === 'macro') {
         return formatNumber(value);
@@ -331,7 +348,7 @@ createApp({
         if (!isValidDataset(payload)) throw new Error('dataset malformed');
         this.years = payload.years;
         this.contextSeries = payload.contextSeries;
-        this.items = payload.items;
+        this.items = this.withReferenceItems(payload.items);
         if (this.mode === 'single' && (!this.itemKey || !this.items.some((item) => item.key === this.itemKey))) this.itemKey = this.items[0]?.key || '';
         if (this.mode === 'ratio') {
           if (!this.numeratorKey) this.numeratorKey = this.items[0]?.key || '';

@@ -3,7 +3,7 @@ title: "Pricing the World in Bitcoin, Without the Noise"
 description: "Adding a Bitcoin power law denominator to Priced In, based on the Santostasi and Perrenod paper."
 pubDate: 2026-06-19
 updatedDate: 2026-06-19
-heroImage: "../../assets/blog/bitcoin-power-law-priced-in/bitcoin-market-vs-power-law.png"
+heroImage: "../../assets/blog/bitcoin-power-law-priced-in/bitcoin-power-law-hero.jpg"
 tags: ["Economics", "Software"]
 layout: '../../layouts/BlogPost.astro'
 ---

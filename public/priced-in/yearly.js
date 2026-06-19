@@ -76,8 +76,9 @@ createApp({
       const series = this.macroMetric.series;
       const lastYear = series.at(-1)?.year;
       if (!lastYear) return [];
-      const minYear = this.selectedRange === 'last10' ? lastYear - 9
-        : this.selectedRange === 'last20' ? lastYear - 19
+      const minYear = this.selectedRange === 'last5' ? lastYear - 4
+        : this.selectedRange === 'last10' ? lastYear - 9
+          : this.selectedRange === 'last20' ? lastYear - 19
           : this.selectedRange === 'last30' ? lastYear - 29
             : this.selectedRange === 'last40' ? lastYear - 39
               : series[0]?.year;
@@ -247,6 +248,7 @@ createApp({
       document.documentElement.setAttribute('data-theme', this.theme);
     },
     rangeBounds() {
+      if (this.selectedRange === 'last5') return [this.years[Math.max(0, this.years.length - 5)], this.years[this.years.length - 1]];
       if (this.selectedRange === 'last10') return [this.years[Math.max(0, this.years.length - 10)], this.years[this.years.length - 1]];
       if (this.selectedRange === 'last20') return [this.years[Math.max(0, this.years.length - 20)], this.years[this.years.length - 1]];
       if (this.selectedRange === 'last30') return [this.years[Math.max(0, this.years.length - 30)], this.years[this.years.length - 1]];

@@ -4,6 +4,7 @@ const STORAGE_KEYS = {
 };
 
 const RANGE_OPTIONS = [
+  { value: 'last5', label: 'Last 5Y' },
   { value: 'last10', label: 'Last 10Y' },
   { value: 'last20', label: 'Last 20Y' },
   { value: 'last30', label: 'Last 30Y' },
@@ -747,6 +748,7 @@ createApp({
       return this.annualSeriesValuesForKey(seriesKey)[annualIndex] ?? null;
     },
     rangeBounds() {
+      if (this.selectedRange === 'last5') return [this.years[Math.max(0, this.years.length - 5)], this.years[this.years.length - 1]];
       if (this.selectedRange === 'last10') return [this.years[Math.max(0, this.years.length - 10)], this.years[this.years.length - 1]];
       if (this.selectedRange === 'last20') return [this.years[Math.max(0, this.years.length - 20)], this.years[this.years.length - 1]];
       if (this.selectedRange === 'last30') return [this.years[Math.max(0, this.years.length - 30)], this.years[this.years.length - 1]];

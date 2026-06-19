@@ -1,6 +1,7 @@
 const { createApp, nextTick } = Vue;
 const THEME_KEY = 'site-theme';
 const RANGE_OPTIONS = [
+  { value: 'last5', label: 'Last 5Y' },
   { value: 'last10', label: 'Last 10Y' },
   { value: 'last20', label: 'Last 20Y' },
   { value: 'last30', label: 'Last 30Y' },
@@ -77,8 +78,9 @@ createApp({
       if (!series.length) return [];
       const years = series.map((point) => point.year);
       const last = years.at(-1);
-      const from = this.selectedRange === 'last10' ? last - 9
-        : this.selectedRange === 'last20' ? last - 19
+      const from = this.selectedRange === 'last5' ? last - 4
+        : this.selectedRange === 'last10' ? last - 9
+          : this.selectedRange === 'last20' ? last - 19
           : this.selectedRange === 'last30' ? last - 29
             : this.selectedRange === 'last40' ? last - 39
               : years[0];

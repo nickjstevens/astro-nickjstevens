@@ -6,7 +6,7 @@ import { getCollection } from 'astro:content';
 import FormattedDate from '../../components/FormattedDate.astro';
 import { Image } from 'astro:assets';
 
-const posts = await getCollection('blog');
+const posts = await getCollection('blog', ({ data }) => !data.draft);
 const postsByTag = posts.reduce((acc, post) => {
 	if (post.data.tags) {
 		post.data.tags.forEach((tag) => {

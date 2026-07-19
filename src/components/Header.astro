@@ -7,6 +7,7 @@ const isPricedIn = pathname.startsWith('/priced-in');
 const isBlog = pathname === '/blog' || pathname.startsWith('/blog/');
 const isTags = pathname === '/blog/tags' || pathname.startsWith('/blog/tag/');
 const isAdventures = pathname === '/adventures' || pathname.startsWith('/adventures/');
+const isDashboard = pathname === '/dashboard';
 
 const pricedInLinks = [
 	{ href: '/priced-in/index.html', label: 'Cost of Living', active: pathname === '/priced-in' || pathname.startsWith('/priced-in/index.html') },
@@ -26,6 +27,7 @@ const pricedInLinks = [
 				<a href="/blog" class:list={{ active: isBlog && !isTags }}>Articles</a>
 				<a href="/blog/tags" class:list={{ active: isTags }}>Categories</a>
 				<a href="/adventures" class:list={{ active: isAdventures }}>Adventures</a>
+				<a href="/dashboard" class:list={{ active: isDashboard }}>Dashboard</a>
 				<details class="site-dropdown">
 					<summary class:list={{ active: isPricedIn }}>
 						Priced In

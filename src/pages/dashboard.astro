@@ -1,0 +1,489 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const title = 'Dashboard | Nick J Stevens';
+const description = 'A live Bitcoin dashboard comparing current market price and hash rate with long-run power-law trend lines.';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={title} description={description} />
+		<style>
+			.dashboard-shell {
+				width: min(var(--container-wide), calc(100% - 2rem));
+				padding: clamp(1.8rem, 4vw, 3.6rem) 0 4rem;
+			}
+
+			.dashboard-hero {
+				margin-bottom: clamp(1.6rem, 4vw, 2.6rem);
+				padding: clamp(1.35rem, 3vw, 2rem);
+				border: 1px solid var(--border);
+				border-radius: 18px;
+				background:
+					radial-gradient(circle at top left, color-mix(in srgb, var(--accent) 26%, transparent), transparent 36%),
+					var(--surface-strong);
+				box-shadow: var(--box-shadow);
+			}
+
+			.dashboard-kicker {
+				margin: 0 0 0.55rem;
+				color: var(--accent);
+				font-size: 0.78rem;
+				font-weight: 700;
+				letter-spacing: 0.09em;
+				text-transform: uppercase;
+			}
+
+			.dashboard-hero h1 {
+				max-width: 780px;
+				margin-bottom: 0.75rem;
+				font-size: clamp(2.2rem, 5.4vw, 4.1rem);
+				line-height: 1;
+			}
+
+			.dashboard-hero p {
+				max-width: 760px;
+				margin: 0;
+				color: var(--text-muted);
+				font-size: clamp(1rem, 2vw, 1.16rem);
+			}
+
+			.dashboard-grid {
+				display: grid;
+				grid-template-columns: repeat(2, minmax(0, 1fr));
+				gap: 1rem;
+			}
+
+			.metric-card {
+				display: grid;
+				gap: 1rem;
+				padding: clamp(1.05rem, 2.4vw, 1.45rem);
+				border: 1px solid var(--border);
+				border-radius: 16px;
+				background: var(--surface-strong);
+				box-shadow: var(--box-shadow);
+			}
+
+			.metric-card h2 {
+				margin: 0;
+				font-size: clamp(1.35rem, 2.5vw, 1.8rem);
+			}
+
+			.metric-summary {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(9.5rem, 1fr));
+				gap: 0.7rem;
+			}
+
+			.metric-tile {
+				min-height: 7.3rem;
+				padding: 0.85rem;
+				border: 1px solid var(--border);
+				border-radius: 14px;
+				background: var(--surface-alt);
+			}
+
+			.metric-label {
+				display: block;
+				margin-bottom: 0.35rem;
+				color: var(--text-muted);
+				font-size: 0.78rem;
+				font-weight: 700;
+				letter-spacing: 0.06em;
+				line-height: 1.2;
+				text-transform: uppercase;
+			}
+
+			.metric-value {
+				display: block;
+				color: var(--text);
+				font-size: clamp(1.2rem, 3vw, 1.85rem);
+				font-weight: 700;
+				line-height: 1.1;
+			}
+
+			.metric-note {
+				margin: 0;
+				color: var(--text-muted);
+				font-size: 0.92rem;
+			}
+
+			.band-meter {
+				position: relative;
+				height: 0.9rem;
+				border: 1px solid var(--border);
+				border-radius: 999px;
+				background: linear-gradient(90deg, #38bdf8 0%, #22c55e 35%, #facc15 65%, #ef4444 100%);
+				overflow: hidden;
+			}
+
+			.band-meter::after {
+				content: '';
+				position: absolute;
+				top: -0.45rem;
+				left: calc(var(--meter-position, 50) * 1%);
+				width: 0.18rem;
+				height: 1.8rem;
+				border-radius: 999px;
+				background: var(--text);
+				box-shadow: 0 0 0 2px var(--surface-strong);
+			}
+
+			.chart-wrap {
+				min-height: 260px;
+				padding: 0.75rem;
+				border: 1px solid var(--border);
+				border-radius: 14px;
+				background: color-mix(in srgb, var(--surface-alt) 68%, transparent);
+			}
+
+			.power-chart {
+				width: 100%;
+				height: 260px;
+				display: block;
+				border-radius: 10px;
+				background: rgba(15, 23, 42, 0.42);
+				color: rgba(148, 163, 184, 0.7);
+			}
+
+			.axis-label,
+			.chart-label {
+				fill: var(--text-muted);
+				font: 700 12px Atkinson, sans-serif;
+			}
+
+			.chart-line-model {
+				fill: none;
+				stroke: #60a5fa;
+				stroke-width: 2.5;
+			}
+
+			.chart-line-actual {
+				fill: none;
+				stroke: #fb923c;
+				stroke-width: 2.5;
+			}
+
+			.chart-area {
+				fill: rgba(59, 130, 246, 0.08);
+			}
+
+			.chart-point {
+				fill: #f97316;
+				stroke: var(--surface-strong);
+				stroke-width: 2;
+			}
+
+			.dashboard-status {
+				margin-top: 1rem;
+				color: var(--text-muted);
+				font-size: 0.94rem;
+			}
+
+			.dashboard-status[data-state='error'] {
+				color: #fca5a5;
+			}
+
+			.source-list {
+				margin: 1.6rem 0 0;
+				padding: 1rem 1.2rem;
+				border: 1px solid var(--border);
+				border-radius: 14px;
+				background: var(--surface-alt);
+				color: var(--text-muted);
+				font-size: 0.95rem;
+			}
+
+			.source-list p,
+			.source-list ul {
+				margin: 0;
+			}
+
+			.source-list ul {
+				margin-top: 0.55rem;
+			}
+
+			@media (max-width: 920px) {
+				.dashboard-grid {
+					grid-template-columns: 1fr;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main class="dashboard-shell">
+			<section class="dashboard-hero">
+				<p class="dashboard-kicker">Live monetary dashboard</p>
+				<h1>Bitcoin power-law pulse check</h1>
+				<p>
+					A compact dashboard for comparing spot Bitcoin price and network hash rate with long-run power-law trend estimates. Values update in the browser from public data sources.
+				</p>
+			</section>
+
+			<section class="dashboard-grid" aria-label="Bitcoin dashboard metrics">
+				<article class="metric-card" data-dashboard-card="price">
+					<h2>Price vs power law</h2>
+					<div class="metric-summary">
+						<div class="metric-tile">
+							<span class="metric-label">Current price</span>
+							<span class="metric-value" data-price-current>Loading…</span>
+						</div>
+						<div class="metric-tile">
+							<span class="metric-label">Power-law price</span>
+							<span class="metric-value" data-price-model>Loading…</span>
+						</div>
+						<div class="metric-tile">
+							<span class="metric-label">Cycle percentile</span>
+							<span class="metric-value" data-price-percentile>Loading…</span>
+						</div>
+					</div>
+					<div class="band-meter" data-price-meter style="--meter-position: 50" aria-hidden="true"></div>
+					<div class="chart-wrap">
+						<svg class="power-chart" data-price-chart role="img" aria-label="Bitcoin current price compared with power law trend"></svg>
+					</div>
+					<p class="metric-note" data-price-note>
+						Using Santostasi &amp; Perrenod’s fitted direct price law and the published 0.302 dex residual spread.
+					</p>
+				</article>
+
+				<article class="metric-card" data-dashboard-card="hashrate">
+					<h2>Hash rate vs fitted power law</h2>
+					<div class="metric-summary">
+						<div class="metric-tile">
+							<span class="metric-label">Actual hash rate</span>
+							<span class="metric-value" data-hash-current>Loading…</span>
+						</div>
+						<div class="metric-tile">
+							<span class="metric-label">Power-law hash rate</span>
+							<span class="metric-value" data-hash-model>Loading…</span>
+						</div>
+						<div class="metric-tile">
+							<span class="metric-label">Trend percentile</span>
+							<span class="metric-value" data-hash-percentile>Loading…</span>
+						</div>
+					</div>
+					<div class="band-meter" data-hash-meter style="--meter-position: 50" aria-hidden="true"></div>
+					<div class="chart-wrap">
+						<svg class="power-chart" data-hash-chart role="img" aria-label="Bitcoin actual hash rate compared with fitted power law trend"></svg>
+					</div>
+					<p class="metric-note" data-hash-note>
+						The hash-rate trend is fitted in-browser as log10(hash rate) vs log10(days since Genesis) from Mempool.space historical data.
+					</p>
+				</article>
+			</section>
+
+			<div class="dashboard-status" data-dashboard-status>Fetching live market and network data…</div>
+
+			<section class="source-list" aria-label="Dashboard source notes">
+				<p><strong>Method notes:</strong></p>
+				<ul>
+					<li>Price model: <code>log10(USD/BTC) = -16.509 + 5.690 × log10(days since 2009-01-03)</code>.</li>
+					<li>Price percentile: current log-price residual mapped through the paper’s residual distribution, σ = 0.302 dex.</li>
+					<li>Hash-rate model: ordinary least squares fit of historical hash-rate observations against Bitcoin network age in log-log space.</li>
+					<li>Sources: CoinGecko simple price API; Mempool.space hash-rate API; Santostasi &amp; Perrenod Bitcoin power-law paper.</li>
+				</ul>
+			</section>
+		</main>
+		<Footer />
+
+		<script is:inline>
+			const GENESIS_UTC = Date.UTC(2009, 0, 3);
+			const MS_PER_DAY = 24 * 60 * 60 * 1000;
+			const PRICE_INTERCEPT = -16.509;
+			const PRICE_EXPONENT = 5.690;
+			const PRICE_SIGMA_DEX = 0.302;
+
+			const usdFormatter = new Intl.NumberFormat('en-US', {
+				style: 'currency',
+				currency: 'USD',
+				maximumFractionDigits: 0,
+			});
+
+			const percentFormatter = new Intl.NumberFormat('en-GB', {
+				maximumFractionDigits: 0,
+			});
+
+			const setText = (selector, text) => {
+				const el = document.querySelector(selector);
+				if (el) el.textContent = text;
+			};
+
+			const setMeter = (selector, percentile) => {
+				const el = document.querySelector(selector);
+				if (!el) return;
+				el.style.setProperty('--meter-position', String(Math.max(0, Math.min(100, percentile))));
+				el.setAttribute('aria-label', `${percentFormatter.format(percentile)} percentile`);
+			};
+
+			const daysSinceGenesis = (date = new Date()) => Math.max(1, Math.floor((date.getTime() - GENESIS_UTC) / MS_PER_DAY));
+			const powerLawPrice = (days) => 10 ** (PRICE_INTERCEPT + PRICE_EXPONENT * Math.log10(days));
+
+			function erf(x) {
+				const sign = x < 0 ? -1 : 1;
+				const absX = Math.abs(x);
+				const a1 = 0.254829592;
+				const a2 = -0.284496736;
+				const a3 = 1.421413741;
+				const a4 = -1.453152027;
+				const a5 = 1.061405429;
+				const p = 0.3275911;
+				const t = 1 / (1 + p * absX);
+				const y = 1 - (((((a5 * t + a4) * t) + a3) * t + a2) * t + a1) * t * Math.exp(-absX * absX);
+				return sign * y;
+			}
+
+			const normalCdf = (z) => 0.5 * (1 + erf(z / Math.SQRT2));
+
+			function linearRegression(points) {
+				const n = points.length;
+				const meanX = points.reduce((sum, point) => sum + point.x, 0) / n;
+				const meanY = points.reduce((sum, point) => sum + point.y, 0) / n;
+				let numerator = 0;
+				let denominator = 0;
+				for (const point of points) {
+					numerator += (point.x - meanX) * (point.y - meanY);
+					denominator += (point.x - meanX) ** 2;
+				}
+				const slope = numerator / denominator;
+				const intercept = meanY - slope * meanX;
+				const residuals = points.map((point) => point.y - (intercept + slope * point.x));
+				const sigma = Math.sqrt(residuals.reduce((sum, residual) => sum + residual ** 2, 0) / Math.max(1, n - 2));
+				return { intercept, slope, sigma };
+			}
+
+			function formatHashrate(hashesPerSecond) {
+				if (!Number.isFinite(hashesPerSecond) || hashesPerSecond <= 0) return '—';
+				const eh = hashesPerSecond / 1e18;
+				if (eh >= 1) return `${new Intl.NumberFormat('en-GB', { maximumFractionDigits: 0 }).format(eh)} EH/s`;
+				const ph = hashesPerSecond / 1e15;
+				if (ph >= 1) return `${new Intl.NumberFormat('en-GB', { maximumFractionDigits: 1 }).format(ph)} PH/s`;
+				const th = hashesPerSecond / 1e12;
+				return `${new Intl.NumberFormat('en-GB', { maximumFractionDigits: 1 }).format(th)} TH/s`;
+			}
+
+			function renderLogChart(svg, series, options) {
+				if (!svg || !series.length) return;
+				const width = 720;
+				const height = 260;
+				const margin = { top: 18, right: 22, bottom: 34, left: 50 };
+				const plotWidth = width - margin.left - margin.right;
+				const plotHeight = height - margin.top - margin.bottom;
+				const values = series.flatMap((point) => [point.actual, point.model]).filter((value) => Number.isFinite(value) && value > 0);
+				const minYear = Math.min(...series.map((point) => point.year));
+				const maxYear = Math.max(...series.map((point) => point.year));
+				const minLog = Math.floor(Math.min(...values.map(Math.log10)));
+				const maxLog = Math.ceil(Math.max(...values.map(Math.log10)));
+				const x = (year) => margin.left + ((year - minYear) / Math.max(1, maxYear - minYear)) * plotWidth;
+				const y = (value) => margin.top + (1 - ((Math.log10(value) - minLog) / Math.max(1, maxLog - minLog))) * plotHeight;
+				const path = (key) => series
+					.filter((point) => Number.isFinite(point[key]) && point[key] > 0)
+					.map((point, index) => `${index === 0 ? 'M' : 'L'} ${x(point.year).toFixed(2)} ${y(point[key]).toFixed(2)}`)
+					.join(' ');
+				const yTicks = Array.from({ length: maxLog - minLog + 1 }, (_, index) => minLog + index);
+				const current = series[series.length - 1];
+				svg.setAttribute('viewBox', `0 0 ${width} ${height}`);
+				svg.innerHTML = `
+					<rect x="0" y="0" width="${width}" height="${height}" rx="12" class="chart-area"></rect>
+					${yTicks.map((tick) => `<line x1="${margin.left}" x2="${width - margin.right}" y1="${y(10 ** tick).toFixed(2)}" y2="${y(10 ** tick).toFixed(2)}" stroke="currentColor" opacity="0.12"></line><text x="8" y="${(y(10 ** tick) + 4).toFixed(2)}" class="axis-label">${options.yTick(tick)}</text>`).join('')}
+					<line x1="${margin.left}" x2="${width - margin.right}" y1="${height - margin.bottom}" y2="${height - margin.bottom}" stroke="currentColor" opacity="0.18"></line>
+					<text x="${margin.left}" y="${height - 10}" class="axis-label">${minYear}</text>
+					<text x="${width - margin.right - 38}" y="${height - 10}" class="axis-label">${maxYear}</text>
+					<path d="${path('model')}" class="chart-line-model"></path>
+					<path d="${path('actual')}" class="chart-line-actual"></path>
+					<circle cx="${x(current.year).toFixed(2)}" cy="${y(current.actual).toFixed(2)}" r="5" class="chart-point"></circle>
+					<text x="${margin.left + 8}" y="${margin.top + 18}" class="chart-label">Blue: power law · Orange: actual</text>
+				`;
+			}
+
+			async function fetchJson(url) {
+				const response = await fetch(url, { headers: { accept: 'application/json' } });
+				if (!response.ok) throw new Error(`${url} returned ${response.status}`);
+				return response.json();
+			}
+
+			async function updatePrice() {
+				const data = await fetchJson('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd&include_last_updated_at=true');
+				const currentPrice = data?.bitcoin?.usd;
+				if (!Number.isFinite(currentPrice)) throw new Error('CoinGecko did not return a Bitcoin USD price');
+				const asOf = data.bitcoin.last_updated_at ? new Date(data.bitcoin.last_updated_at * 1000) : new Date();
+				const days = daysSinceGenesis(asOf);
+				const modelPrice = powerLawPrice(days);
+				const residualDex = Math.log10(currentPrice) - Math.log10(modelPrice);
+				const percentile = normalCdf(residualDex / PRICE_SIGMA_DEX) * 100;
+				setText('[data-price-current]', usdFormatter.format(currentPrice));
+				setText('[data-price-model]', usdFormatter.format(modelPrice));
+				setText('[data-price-percentile]', `${percentFormatter.format(percentile)}th`);
+				setText('[data-price-note]', `${residualDex >= 0 ? 'Above' : 'Below'} trend by ${Math.abs(10 ** residualDex - 1).toLocaleString('en-GB', { style: 'percent', maximumFractionDigits: 0 })}; CoinGecko as of ${asOf.toLocaleString('en-GB')}.`);
+				setMeter('[data-price-meter]', percentile);
+
+				const currentYear = asOf.getUTCFullYear();
+				const series = [];
+				for (let year = 2011; year <= currentYear; year += 1) {
+					const date = year === currentYear ? asOf : new Date(Date.UTC(year, 6, 1));
+					series.push({ year, model: powerLawPrice(daysSinceGenesis(date)), actual: year === currentYear ? currentPrice : Number.NaN });
+				}
+				renderLogChart(document.querySelector('[data-price-chart]'), series, { yTick: (tick) => `$${10 ** tick >= 1000 ? `${10 ** (tick - 3)}k` : 10 ** tick}` });
+			}
+
+			async function updateHashrate() {
+				const data = await fetchJson('https://mempool.space/api/v1/mining/hashrate/all');
+				const rows = (data?.hashrates ?? [])
+					.map((row) => ({ date: new Date(row.timestamp * 1000), hash: Number(row.avgHashrate) }))
+					.filter((row) => Number.isFinite(row.hash) && row.hash > 0 && daysSinceGenesis(row.date) > 0);
+				if (rows.length < 100) throw new Error('Mempool.space did not return enough hash-rate history');
+				const fitPoints = rows.map((row) => ({ x: Math.log10(daysSinceGenesis(row.date)), y: Math.log10(row.hash) }));
+				const fit = linearRegression(fitPoints);
+				const latest = rows.at(-1);
+				const latestDays = daysSinceGenesis(latest.date);
+				const modelHash = 10 ** (fit.intercept + fit.slope * Math.log10(latestDays));
+				const residualDex = Math.log10(latest.hash) - Math.log10(modelHash);
+				const percentile = normalCdf(residualDex / fit.sigma) * 100;
+				setText('[data-hash-current]', formatHashrate(latest.hash));
+				setText('[data-hash-model]', formatHashrate(modelHash));
+				setText('[data-hash-percentile]', `${percentFormatter.format(percentile)}th`);
+				setText('[data-hash-note]', `${residualDex >= 0 ? 'Above' : 'Below'} fitted trend by ${Math.abs(10 ** residualDex - 1).toLocaleString('en-GB', { style: 'percent', maximumFractionDigits: 0 })}; fitted exponent ${fit.slope.toFixed(2)} from ${rows.length.toLocaleString('en-GB')} daily observations.`);
+				setMeter('[data-hash-meter]', percentile);
+
+				const byYear = new Map();
+				for (const row of rows) {
+					const year = row.date.getUTCFullYear();
+					const bucket = byYear.get(year) ?? { sum: 0, count: 0, days: 0 };
+					bucket.sum += row.hash;
+					bucket.count += 1;
+					bucket.days += daysSinceGenesis(row.date);
+					byYear.set(year, bucket);
+				}
+				const series = Array.from(byYear.entries())
+					.filter(([year]) => year >= 2011)
+					.map(([year, bucket]) => {
+						const averageDays = bucket.days / bucket.count;
+						return { year, actual: bucket.sum / bucket.count, model: 10 ** (fit.intercept + fit.slope * Math.log10(averageDays)) };
+					});
+				renderLogChart(document.querySelector('[data-hash-chart]'), series, { yTick: (tick) => `1e${tick}` });
+			}
+
+			async function initDashboard() {
+				const status = document.querySelector('[data-dashboard-status]');
+				try {
+					await Promise.all([updatePrice(), updateHashrate()]);
+					if (status) {
+						status.textContent = `Updated ${new Date().toLocaleString('en-GB')}.`;
+						status.removeAttribute('data-state');
+					}
+				} catch (error) {
+					console.error(error);
+					if (status) {
+						status.textContent = `Dashboard data could not be loaded: ${error.message}`;
+						status.setAttribute('data-state', 'error');
+					}
+				}
+			}
+
+			initDashboard();
+		</script>
+	</body>
+</html>
